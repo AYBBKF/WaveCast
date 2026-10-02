@@ -1,0 +1,11 @@
+build/stills/
+build/review_*.jpg
+build/cover_preview.jpg
+build/video_silent.mp4
+build/render.log
+assets/raw/
+assets/cut/
+assets/contact_sheet.png
+assets/bg_preview.jpg
+audio/mix_raw.wav
+audio/mix_final.wav
