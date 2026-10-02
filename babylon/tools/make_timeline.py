@@ -23,6 +23,7 @@ words = NARRATION.split()
 END = re.compile(r'[.!؟…؛]$')
 PAUSE = re.compile(r'[،,:]$')
 
+TOTAL = float(sys.argv[2]) if len(sys.argv) > 2 else None   # final film length (narration + lead-in + inserted pauses + hold)
 if len(sys.argv) > 1:
     times = [tuple(map(float, x.split('-'))) for x in open(sys.argv[1]).read().split()]
     assert len(times) == len(words), (len(times), len(words))
@@ -61,11 +62,12 @@ for j, g in enumerate(merged):
     out.append({'text': ' '.join(words[k] for k in g), 'start': round(start, 2), 'end': round(end, 2), 'n': len(g)})
 
 os.makedirs(f'{ROOT}/build', exist_ok=True)
-json.dump({'provisional': provisional, 'duration': round(times[-1][1] + 2.2, 2),
+DUR = round(TOTAL or times[-1][1] + 2.2, 2)
+json.dump({'provisional': provisional, 'duration': DUR,
            'words': [{'w': w, 's': round(a, 2), 'e': round(b, 2)} for w, (a, b) in zip(words, times)], 'groups': out},
           open(f'{ROOT}/build/timeline.json', 'w'), ensure_ascii=False, indent=1)
 open(f'{ROOT}/build/timeline.js', 'w').write('window.TIMELINE=' + json.dumps(
-    {'provisional': provisional, 'duration': round(times[-1][1] + 2.2, 2), 'groups': out,
+    {'provisional': provisional, 'duration': DUR, 'groups': out,
      'words': [{'w': w, 's': round(a, 2)} for w, (a, b) in zip(words, times)]}, ensure_ascii=False) + ';\n')
 
 def ts(x):

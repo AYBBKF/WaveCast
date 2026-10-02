@@ -45,16 +45,21 @@ function coin(x, y, r, t, key, a = 1) {
   for (let i = 0; i < 3; i++) { const yy = -r * 0.25 + i * r * 0.25; ctx.beginPath(); ctx.moveTo(-r * 0.3, yy); ctx.lineTo(r * 0.3, yy); ctx.stroke(); }
   ctx.restore();
 }
-// exactly ten coins: nine stay together, one is saved into the jar
+const easeIn = p => p * p * p;
+// exactly ten coins: nine stay together, one is saved into the open jar
 function tenCoins(t, t0, tSplit, cx, cy, jar) {
   const r = 34, pos = [];
   for (let i = 0; i < 10; i++) pos.push([cx + (i % 5 - 2) * 84, cy + Math.floor(i / 5) * 84]);
   for (let i = 0; i < 10; i++) {
     const p = pop(t, t0 + i * 0.07, 0.3);
     if (i === 9 && t >= tSplit) {
-      const m = easeInOut(prog(stepT(t), tSplit, tSplit + 0.9));
-      const x = lerp(pos[i][0], jar[0], m), y = lerp(pos[i][1], jar[1] - 40, m) - Math.sin(m * Math.PI) * 140;
-      coin(x, y, r * lerp(1, 0.8, m), t, 'c9', m > 0.97 ? 0 : 1);
+      // arc to just above the OPEN jar mouth, then drop straight in; clipped at the front rim so it visibly goes inside
+      const m = easeInOut(prog(stepT(t), tSplit, tSplit + 0.8)), d = easeIn(prog(stepT(t), tSplit + 0.8, tSplit + 1.15));
+      const x = lerp(pos[i][0], jar.x, m), y = lerp(pos[i][1], jar.top - 46, m) - Math.sin(m * Math.PI) * 140 + d * 110;
+      ctx.save(); ctx.beginPath(); ctx.rect(0, 0, W, jar.rim); ctx.clip();
+      coin(x, y, r * lerp(1, 0.78, m), t, 'c9', 1);
+      ctx.restore();
+      if (d > 0.6) sparkle(jar.x + 26, jar.rim - 10, 22, t, 1 - prog(t, tSplit + 1.15, tSplit + 1.6));
     } else {
       const shift = t >= tSplit ? -18 * easeOut(prog(t, tSplit, tSplit + 0.5)) : 0;   // the nine close ranks
       coin(pos[i][0] + shift, pos[i][1], r * p.s, t, 'c' + i, p.a);
@@ -136,10 +141,14 @@ function sScribe(t) {
 function sTenth(t) {
   drawBg('bg_interior', 1.3, 0.35, 0.45);
   const m = pop(t, Q.ask + 0.1, 0.5); sticker('sec_mentor', 250, 1330, 520, { t, alpha: m.a, anchor: 'bottom' });
-  const jar = [820, 1120];
-  if (t > Q.learn1 - 0.3) sticker('jar', jar[0], jar[1], 220, { t, alpha: pop(t, Q.learn1 - 0.3).a });
+  const jw = 230, jh = jw * (IMG.jar ? IMG.jar.height / IMG.jar.width : PLACEHOLDER.jar);
+  const jar = { x: 820, y: 1120, top: 1120 - jh / 2, rim: 1120 - jh / 2 + jh * 0.14 };   // rim = front lip of the open mouth
+  if (t > Q.learn1 - 0.3) {
+    const ja = pop(t, Q.learn1 - 0.3).a; sticker('jar', jar.x, jar.y, jw, { t, alpha: ja, still: true });
+    if (!IMG.jar) { ctx.save(); ctx.globalAlpha = ja; ctx.fillStyle = '#3a2416'; ctx.beginPath(); ctx.ellipse(jar.x, jar.rim - 6, jw * 0.3, 14, 0, 0, Math.PI * 2); ctx.fill(); ctx.restore(); }  // placeholder open mouth
+  }
   if (t > Q.learn1) tenCoins(t, Q.learn1, Q.tenth + 0.15, 540, 620, jar);
-  if (t > Q.tenth + 0.9) card('العُشر', 820, 920, { t, alpha: pop(t, Q.tenth + 0.9).a, scale: pop(t, Q.tenth + 0.9).s, size: 48, fill: C.mustard });
+  if (t > Q.tenth + 0.9) card('العُشر', 820, 1330, { t, alpha: pop(t, Q.tenth + 0.9).a, scale: pop(t, Q.tenth + 0.9).s, size: 48, fill: C.mustard });
 }
 function sJewels(t) {
   drawBg('bg_street', 1.25, 0.6, 0.55);
@@ -172,8 +181,10 @@ function sLesson(t) {
   card('خبرة في الطوب', 540, 620, { t, alpha: a.a, scale: a.s, font: 'cairo', size: 58, rot: -0.03 });
   card('خبرة في الجواهر', 540, 1000, { t, alpha: b.a, scale: b.s, font: 'cairo', size: 58, rot: 0.02 });
   if (t > Q.lesson + 1.4) {
-    const p = pop(t, Q.lesson + 1.4); ctx.save(); ctx.globalAlpha = p.a; ctx.font = '900 120px Cairo'; ctx.fillStyle = C.coral;
-    ctx.textAlign = 'center'; ctx.textBaseline = 'middle'; ctx.direction = 'rtl'; ctx.fillText('≠', 540, 812); ctx.restore();
+    // hand-drawn "not equal" sign (the Arabic font has no ≠ glyph)
+    const p = pop(t, Q.lesson + 1.4); ctx.save(); ctx.globalAlpha = p.a; ctx.translate(540, 812); ctx.scale(p.s, p.s);
+    ctx.strokeStyle = C.coral; ctx.lineCap = 'round'; ctx.lineWidth = 16;
+    ctx.beginPath(); ctx.moveTo(-60, -22); ctx.lineTo(60, -22); ctx.moveTo(-60, 22); ctx.lineTo(60, 22); ctx.moveTo(26, -64); ctx.lineTo(-26, 64); ctx.stroke(); ctx.restore();
   }
 }
 function sWorkshop(t) {
