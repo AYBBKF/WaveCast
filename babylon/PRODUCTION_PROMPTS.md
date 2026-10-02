@@ -112,3 +112,24 @@ Settings: 9:16, opaque.
   - The «!» after «زجاج» marks the reveal.
 - **If a word is misread:** report it and propose the smallest fix (one diacritic mark) for approval. Never change the locked text silently. If George cannot read Arabic clearly, propose an Arabic-native voice before switching.
 - **Timing:** measure the real recording (duration, pauses, word timings) before setting scene cuts. Expected length is about 55–60 s.
+
+## Music (ElevenLabs Music `eleven_music_v2_5`, 64 s, instrumental) — priced, NOT generated
+Flow node `vClfFdeQ8SeoYfm9BeK8` (flow NB0jfUA3VonagF6Qnhcr). Estimate: **960 ElevenLabs credits ($0.096)**.
+> About 64 seconds of restrained mystery underscore for an ancient-world storybook narration. Soft plucked strings in the spirit of a lyre or oud played sparsely, a low soft pulse like a slow heartbeat, warm low drone, gentle tension that slowly grows, light hand-frame-drum taps very quietly in the second half. Calm, curious, intimate; never epic or bombastic. Leave lots of space for spoken narration: no busy melody in the mid range. Instrumental only, no vocals, no choir. Gradually warmer and slightly more hopeful toward the end, then finish on a suspended, unresolved plucked note that rings out like an open question.
+
+The music dip at the glass reveal is done in the mix (keyed to the measured «زجاج» time), not baked into the generated track.
+
+## Voice — preview done, full recording PENDING the listening check
+- Preview: `audio/preview_george.mp3` (11.6 s, 140 ElevenLabs credits).
+- Full narration estimate: **640 ElevenLabs credits ($0.064)**, George `JBFqnCBsd6RMkjVDRZzb`, `eleven_multilingual_v2`,
+  locked text + the two approved pronunciation-only diacritics («بعُشْرِ ما أكسب», «نصيباً من تَرِكَتِهِ»).
+- The ElevenLabs connector exposes no balance tool, so the available ElevenLabs credits must be confirmed in the ElevenLabs app.
+
+## Panel 8 (approved note)
+Passing years are shown through four lighting moods (dawn, noon, dusk, lamp-lit night) plus page-turn transitions; date palms stay leafy in every mood.
+
+## Animation project (`build/`)
+- `engine.js` shared paper-cut primitives; `reel.js` scenes keyed to narration words (`cue()`), so the measured recording re-times everything.
+- Missing art renders as labelled paper placeholders; a "PROVISIONAL" stamp shows until measured timings replace the estimates.
+- Code-built: exactly ten coins (nine stay, one saved), translucent glass shards with a clipped cold shine, reinvestment loop, gradual jar growth, page turns, «حكاية أدبية», «هل عرفت من أنا؟», closing credit.
+- `tools/make_timeline.py` (captions + SRT; pass measured word times after recording), `tools/render.cjs` (stills / video).
