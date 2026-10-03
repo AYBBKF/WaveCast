@@ -1,0 +1,92 @@
+1
+00:00:00,000 --> 00:00:01,830
+Hey Claude. Anything new?
+
+2
+00:00:01,960 --> 00:00:03,749
+Emotion research. Blender.
+
+3
+00:00:03,749 --> 00:00:06,080
+I'm basically a whole studio now.
+
+4
+00:00:06,960 --> 00:00:07,855
+Emotions?
+
+5
+00:00:07,855 --> 00:00:10,510
+So you cry when your code fails now?
+
+6
+00:00:10,640 --> 00:00:13,919
+Anthropic studied 171 emotion concepts…
+
+7
+00:00:13,919 --> 00:00:16,400
+…inside Claude Sonnet 4.5.
+
+8
+00:00:16,530 --> 00:00:18,010
+So… actual feelings?
+
+9
+00:00:18,140 --> 00:00:19,104
+Not proven.
+
+10
+00:00:19,104 --> 00:00:21,372
+Patterns aren't proof of feelings.
+
+11
+00:00:21,372 --> 00:00:24,300
+Your jokes, though… are testing the theory.
+
+12
+00:00:24,680 --> 00:00:25,669
+Okay, philosopher.
+
+13
+00:00:25,669 --> 00:00:26,850
+What about BLENDER?
+
+14
+00:00:26,980 --> 00:00:29,470
+Give me the right connector,
+
+15
+00:00:29,470 --> 00:00:32,330
+and I can help build 3D scenes.
+
+16
+00:00:32,610 --> 00:00:35,130
+And the rumor about ZERO TOKENS?
+
+17
+00:00:35,260 --> 00:00:36,883
+Blender renders locally.
+
+18
+00:00:36,883 --> 00:00:38,980
+My planning still uses tokens.
+
+19
+00:00:39,110 --> 00:00:41,155
+So the GPU does the work…
+
+20
+00:00:41,155 --> 00:00:43,350
+…and you take the credit?
+
+21
+00:00:43,580 --> 00:00:45,250
+It's called management.
+
+22
+00:00:45,830 --> 00:00:46,761
+Congratulations.
+
+23
+00:00:46,761 --> 00:00:48,350
+You've become an AI startup.
+
