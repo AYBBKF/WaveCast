@@ -84,6 +84,23 @@ def compress_pauses(x, max_pause=0.5, keep=0.38, thr_db=-40):
     return np.concatenate(out)
 
 
+def find_pauses(x, min_gap=0.12, thr_db=-38):
+    """Midpoints (s) of silent gaps inside a clip: where caption phrases should change."""
+    hop = int(0.01 * SR)
+    rms = np.array([np.sqrt(np.mean(x[i:i + hop] ** 2) + 1e-12) for i in range(0, len(x), hop)])
+    quiet = 20 * np.log10(rms) < thr_db
+    out, i = [], 0
+    while i < len(quiet):
+        if quiet[i]:
+            j = i
+            while j < len(quiet) and quiet[j]: j += 1
+            if i > 0 and j < len(quiet) and (j - i) * 0.01 >= min_gap: out.append((i + j) / 2 * 0.01)
+            i = j
+        else:
+            i += 1
+    return out
+
+
 def envelope(x):
     n = int(np.ceil(len(x) / SR * FPS)); hop = SR // FPS
     e = np.array([np.sqrt(np.mean(x[i * hop:(i + 1) * hop] ** 2) + 1e-12) for i in range(n)])
@@ -102,8 +119,13 @@ for lid, spk, fname, text, phrases in LINES:
     else:
         dur = round(len(spoken(text).split()) / RATE[spk] + 0.3, 2)
         x, pending, env = np.zeros(int(dur * SR), np.float32), True, []
-    # phrase timing: proportional to caption length over the line (re-check against the real clip)
+    # phrase timing: proportional to caption length, then snapped to the nearest real pause in the clip
     w = np.array([len(p.replace('*', '')) + 6 for p in phrases], float); edges = np.concatenate([[0], np.cumsum(w) / w.sum()]) * dur
+    if not pending and len(phrases) > 1:
+        pauses = find_pauses(x)
+        for k in range(1, len(phrases)):
+            near = [p for p in pauses if abs(p - edges[k]) < 0.8]
+            if near: edges[k] = min(near, key=lambda p: abs(p - edges[k]))
     caps = [{'text': p, 'start': round(t + edges[k], 3), 'end': round(t + edges[k + 1] + (0.15 if k == len(phrases) - 1 else 0), 3)}
             for k, p in enumerate(phrases)]
     lines_out.append({'id': lid, 'speaker': spk, 'start': round(t, 3), 'end': round(t + dur, 3), 'pending': pending,
