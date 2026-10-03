@@ -16,6 +16,9 @@ MODEL_DIR = sys.argv[1] if len(sys.argv) > 1 else '.'
 
 # Same voice for a character in every line.
 VOICE = {'GPT': ('am_puck', 'en-us', 1.08), 'CLAUDE': ('bm_george', 'en-gb', 0.94)}
+# Short lines Whisper misheard at full speed ("Hey Claude", "rumor"): slower and with a comma.
+SPEED = {'1': 0.92, '9': 0.92}
+TEXT = {'1': 'Hey, Claude. Anything new?'}
 
 # Spoken text = PRODUCTION.md lines without eleven_v3 tags. Kokoro reads digits well enough, but the
 # spelled-out forms keep "171" and "4.5" unambiguous.
@@ -28,8 +31,9 @@ for lid, spk, fname, text in LINES:
     out = f'{ROOT}/audio/vo/{fname}.mp3'
     if os.path.exists(out):
         print('keep', fname); continue
-    spoken = re.sub(r'\[[^\]]*\]\s*', '', text).strip()
+    spoken = TEXT.get(lid) or re.sub(r'\[[^\]]*\]\s*', '', text).strip()
     voice, lang, speed = VOICE[spk]
+    speed = SPEED.get(lid, speed)
     samples, sr = k.create(spoken, voice=voice, speed=speed, lang=lang)
     tmp = out[:-4] + '.wav'
     sf.write(tmp, np.asarray(samples, np.float32), sr)

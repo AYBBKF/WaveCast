@@ -1,11 +1,11 @@
 {
- "total": 47.28,
+ "total": 47.56,
  "lines": [
   {
    "id": 1,
    "speaker": "GPT",
    "start": 0.0,
-   "end": 1.27,
+   "end": 1.33,
    "pending": false,
    "file": "01_gpt.mp3",
    "text": "[casual] Hey Claude. Anything new?",
@@ -13,47 +13,48 @@
     {
      "text": "Hey Claude. Anything new?",
      "start": 0.0,
-     "end": 1.42
+     "end": 1.48
     }
    ],
    "env": [
-    0.22,
-    0.69,
-    0.85,
-    0.74,
-    0.44,
-    0.39,
-    0.59,
-    0.85,
+    0.0,
+    0.56,
+    0.9,
     1.0,
-    1.0,
-    1.0,
-    1.0,
-    0.99,
-    0.78,
-    0.6,
-    0.57,
-    0.7,
-    0.85,
-    0.91,
-    0.86,
+    0.98,
+    0.75,
+    0.4,
+    0.42,
     0.68,
-    0.33,
-    0.46,
-    0.76,
+    0.95,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    0.75,
+    0.57,
+    0.66,
+    0.81,
+    0.91,
+    0.92,
+    0.81,
+    0.54,
+    0.44,
+    0.71,
+    0.84,
+    0.85,
+    0.83,
+    0.83,
+    0.83,
     0.83,
     0.81,
-    0.8,
-    0.79,
-    0.78,
-    0.72,
-    0.61,
-    0.51,
-    0.42,
-    0.36,
-    0.26,
-    0.06,
-    0.0,
+    0.74,
+    0.64,
+    0.53,
+    0.47,
+    0.41,
+    0.29,
+    0.12,
     0.0,
     0.0
    ]
@@ -61,21 +62,21 @@
   {
    "id": 2,
    "speaker": "CLAUDE",
-   "start": 1.55,
-   "end": 6.17,
+   "start": 1.61,
+   "end": 6.23,
    "pending": false,
    "file": "02_claude.mp3",
    "text": "[proudly] Emotion research. Blender. I'm basically a whole studio now.",
    "captions": [
     {
      "text": "Emotion research. Blender.",
-     "start": 1.55,
-     "end": 3.75
+     "start": 1.61,
+     "end": 3.81
     },
     {
      "text": "I'm basically a whole studio now.",
-     "start": 3.75,
-     "end": 6.32
+     "start": 3.81,
+     "end": 6.38
     }
    ],
    "env": [
@@ -223,21 +224,21 @@
   {
    "id": 3,
    "speaker": "GPT",
-   "start": 7.2,
-   "end": 9.49,
+   "start": 7.26,
+   "end": 9.55,
    "pending": false,
    "file": "03_gpt.mp3",
    "text": "[teasing] Emotions? So you cry when your code fails now?",
    "captions": [
     {
      "text": "Emotions?",
-     "start": 7.2,
-     "end": 7.803
+     "start": 7.26,
+     "end": 7.863
     },
     {
      "text": "So you cry when your code fails now?",
-     "start": 7.803,
-     "end": 9.64
+     "start": 7.863,
+     "end": 9.7
     }
    ],
    "env": [
@@ -315,21 +316,21 @@
   {
    "id": 4,
    "speaker": "CLAUDE",
-   "start": 9.77,
-   "end": 16.86,
+   "start": 9.83,
+   "end": 16.92,
    "pending": false,
    "file": "04_claude.mp3",
    "text": "[matter-of-fact] Anthropic studied one hundred seventy-one emotion concepts... inside Claude Sonnet four point five.",
    "captions": [
     {
      "text": "Anthropic studied *171* emotion concepts\u2026",
-     "start": 9.77,
-     "end": 13.83
+     "start": 9.83,
+     "end": 13.89
     },
     {
      "text": "\u2026inside Claude Sonnet 4.5.",
-     "start": 13.83,
-     "end": 17.01
+     "start": 13.89,
+     "end": 17.07
     }
    ],
    "env": [
@@ -551,16 +552,16 @@
   {
    "id": 5,
    "speaker": "GPT",
-   "start": 17.14,
-   "end": 18.36,
+   "start": 17.2,
+   "end": 18.42,
    "pending": false,
    "file": "05_gpt.mp3",
    "text": "[suspicious] So... actual feelings?",
    "captions": [
     {
      "text": "So\u2026 actual feelings?",
-     "start": 17.14,
-     "end": 18.51
+     "start": 17.2,
+     "end": 18.57
     }
    ],
    "env": [
@@ -606,26 +607,26 @@
   {
    "id": 6,
    "speaker": "CLAUDE",
-   "start": 18.64,
-   "end": 24.53,
+   "start": 18.7,
+   "end": 24.59,
    "pending": false,
    "file": "06_claude.mp3",
    "text": "[calmly] Not proven. Patterns aren't proof of feelings. [dryly] Your jokes, though... are testing the theory.",
    "captions": [
     {
      "text": "Not proven.",
-     "start": 18.64,
-     "end": 19.485
+     "start": 18.7,
+     "end": 19.545
     },
     {
      "text": "Patterns aren't proof of feelings.",
-     "start": 19.485,
-     "end": 21.475
+     "start": 19.545,
+     "end": 21.535
     },
     {
      "text": "Your jokes, though\u2026 are testing the theory.",
-     "start": 21.475,
-     "end": 24.68
+     "start": 21.535,
+     "end": 24.74
     }
    ],
    "env": [
@@ -811,21 +812,21 @@
   {
    "id": 7,
    "speaker": "GPT",
-   "start": 25.06,
-   "end": 27.03,
+   "start": 25.12,
+   "end": 27.09,
    "pending": false,
    "file": "07_gpt.mp3",
    "text": "[sarcastic] Okay, philosopher. What about Blender?",
    "captions": [
     {
      "text": "Okay, philosopher.",
-     "start": 25.06,
-     "end": 26.025
+     "start": 25.12,
+     "end": 26.085
     },
     {
      "text": "What about *BLENDER*?",
-     "start": 26.025,
-     "end": 27.18
+     "start": 26.085,
+     "end": 27.24
     }
    ],
    "env": [
@@ -894,21 +895,21 @@
   {
    "id": 8,
    "speaker": "CLAUDE",
-   "start": 27.31,
-   "end": 31.36,
+   "start": 27.37,
+   "end": 31.42,
    "pending": false,
    "file": "08_claude.mp3",
    "text": "Give me the right connector, and I can help build 3D scenes.",
    "captions": [
     {
      "text": "Give me the right connector,",
-     "start": 27.31,
-     "end": 28.86
+     "start": 27.37,
+     "end": 28.92
     },
     {
      "text": "and I can help build 3D scenes.",
-     "start": 28.86,
-     "end": 31.51
+     "start": 28.92,
+     "end": 31.57
     }
    ],
    "env": [
@@ -1039,66 +1040,73 @@
   {
    "id": 9,
    "speaker": "GPT",
-   "start": 31.79,
-   "end": 33.42,
+   "start": 31.85,
+   "end": 33.7,
    "pending": false,
    "file": "09_gpt.mp3",
    "text": "[sly] And the rumor about zero tokens?",
    "captions": [
     {
      "text": "And the rumor about *ZERO TOKENS?*",
-     "start": 31.79,
-     "end": 33.57
+     "start": 31.85,
+     "end": 33.85
     }
    ],
    "env": [
-    0.29,
-    0.67,
-    0.85,
-    0.91,
-    0.88,
-    0.91,
+    0.14,
+    0.62,
+    0.84,
+    0.94,
+    0.98,
+    0.96,
+    0.89,
+    0.92,
     1.0,
     1.0,
-    0.99,
+    1.0,
+    0.97,
     0.98,
     1.0,
     1.0,
     0.98,
-    0.88,
-    0.93,
-    1.0,
-    1.0,
-    0.82,
-    0.57,
-    0.53,
-    0.64,
-    0.75,
     0.86,
+    0.84,
+    0.99,
+    1.0,
+    0.93,
+    0.71,
+    0.5,
+    0.57,
+    0.68,
+    0.79,
+    0.88,
     0.91,
     0.92,
     0.92,
-    0.87,
-    0.74,
-    0.51,
-    0.42,
-    0.52,
-    0.69,
-    0.83,
-    0.82,
-    0.67,
-    0.37,
-    0.11,
-    0.41,
+    0.89,
+    0.79,
+    0.54,
+    0.32,
+    0.44,
+    0.6,
+    0.79,
+    0.85,
+    0.78,
     0.58,
-    0.53,
-    0.4,
-    0.36,
-    0.32,
-    0.32,
-    0.41,
-    0.42,
-    0.26,
+    0.28,
+    0.35,
+    0.6,
+    0.68,
+    0.61,
+    0.47,
+    0.37,
+    0.34,
+    0.31,
+    0.33,
+    0.45,
+    0.48,
+    0.38,
+    0.14,
     0.0,
     0.0
    ]
@@ -1106,21 +1114,21 @@
   {
    "id": 10,
    "speaker": "CLAUDE",
-   "start": 33.7,
-   "end": 37.87,
+   "start": 33.98,
+   "end": 38.15,
    "pending": false,
    "file": "10_claude.mp3",
    "text": "Blender renders locally. My planning still uses tokens.",
    "captions": [
     {
      "text": "Blender renders locally.",
-     "start": 33.7,
-     "end": 35.56
+     "start": 33.98,
+     "end": 35.84
     },
     {
      "text": "My planning still uses tokens.",
-     "start": 35.56,
-     "end": 38.02
+     "start": 35.84,
+     "end": 38.3
     }
    ],
    "env": [
@@ -1255,21 +1263,21 @@
   {
    "id": 11,
    "speaker": "GPT",
-   "start": 38.15,
-   "end": 40.71,
+   "start": 38.43,
+   "end": 40.99,
    "pending": false,
    "file": "11_gpt.mp3",
    "text": "[accusing] So the GPU does the work... and you take the credit?",
    "captions": [
     {
      "text": "So the GPU does the work\u2026",
-     "start": 38.15,
-     "end": 39.43
+     "start": 38.43,
+     "end": 39.71
     },
     {
      "text": "\u2026and you take the credit?",
-     "start": 39.43,
-     "end": 40.86
+     "start": 39.71,
+     "end": 41.14
     }
    ],
    "env": [
@@ -1355,16 +1363,16 @@
   {
    "id": 12,
    "speaker": "CLAUDE",
-   "start": 41.09,
-   "end": 42.7,
+   "start": 41.37,
+   "end": 42.98,
    "pending": false,
    "file": "12_claude.mp3",
    "text": "[smug, unbothered] It's called management.",
    "captions": [
     {
      "text": "It's called management.",
-     "start": 41.09,
-     "end": 42.85
+     "start": 41.37,
+     "end": 43.13
     }
    ],
    "env": [
@@ -1422,21 +1430,21 @@
   {
    "id": 13,
    "speaker": "GPT",
-   "start": 43.43,
-   "end": 46.0,
+   "start": 43.71,
+   "end": 46.28,
    "pending": false,
    "file": "13_gpt.mp3",
    "text": "[deadpan] Congratulations. You've become an AI startup.",
    "captions": [
     {
      "text": "Congratulations.",
-     "start": 43.43,
-     "end": 44.44
+     "start": 43.71,
+     "end": 44.72
     },
     {
      "text": "You've become an AI startup.",
-     "start": 44.44,
-     "end": 46.15
+     "start": 44.72,
+     "end": 46.43
     }
    ],
    "env": [
