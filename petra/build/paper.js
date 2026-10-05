@@ -10,6 +10,9 @@
     navy: '#1F2A44', ink: '#2A2320', white: '#FFFDF7', skin: '#C98E6B', skinDk: '#A9714F', hair: '#5A3A26',
   };
 
+  let BOIL = 0;                                         // stop-motion edge variant (0 for stills)
+  const setBoil = b => { BOIL = b | 0; };
+
   // ---------- deterministic randomness ----------
   function rng(seed) {
     let a = (seed * 2654435761) >>> 0 || 1;
@@ -77,13 +80,14 @@
 
   // A cut-paper piece: soft shadow + irregular white border + fill + texture.
   function piece(ctx, pts, fill, o = {}) {
-    const seed = o.seed ?? 1, w = wobble(pts, seed, o.amp ?? 2.4, o.step ?? 14);
+    // BOIL shifts only the cut edges (stop-motion jitter); texture seeds stay fixed so nothing flickers
+    const seed = o.seed ?? 1, w = wobble(pts, seed + BOIL * 7919, o.amp ?? 2.4, o.step ?? 14);
     const xs = w.map(p => p[0]), ys = w.map(p => p[1]);
     const bx = Math.min(...xs), by = Math.min(...ys), bw = Math.max(...xs) - bx, bh = Math.max(...ys) - by;
     ctx.save();
     if (o.shadow !== false) { ctx.shadowColor = 'rgba(40,25,15,' + (o.shadowA ?? 0.28) + ')'; ctx.shadowBlur = o.blur ?? 10; ctx.shadowOffsetX = o.sx ?? 3; ctx.shadowOffsetY = o.sy ?? 5; }
     if (o.border !== 0) {                               // irregular white cutout border
-      const wb = wobble(pts, seed + 99, (o.amp ?? 2.4) + 1.2, o.step ?? 14);
+      const wb = wobble(pts, seed + 99 + BOIL * 7919, (o.amp ?? 2.4) + 1.2, o.step ?? 14);
       poly(ctx, wb); ctx.lineJoin = 'round'; ctx.lineWidth = 2 * (o.border ?? 4); ctx.strokeStyle = o.borderColor || PAL.white; ctx.stroke();
       ctx.fillStyle = o.borderColor || PAL.white; ctx.fill();
     }
@@ -307,5 +311,5 @@
     }
   }
 
-  root.PAPER = { PAL, rng, wobble, poly, rect, ellipsePts, piece, tracing, texture, backdrop, cliff, facade, urnTomb, artisan, tool, forearm, chips, jordanMap, city };
+  root.PAPER = { PAL, setBoil, rng, wobble, poly, rect, ellipsePts, piece, tracing, texture, backdrop, cliff, facade, urnTomb, artisan, tool, forearm, chips, jordanMap, city };
 })(typeof window !== 'undefined' ? window : globalThis);

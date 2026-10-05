@@ -2,7 +2,7 @@
 
 DEEP CURIOUS · Arabic educational Reel · 9:16, 1080×1920, 30 fps · target 55–65 s (set by the real narration)
 
-**Status: STOPPED FOR STORYBOARD APPROVAL.** No production assets, narration or music have been generated.
+**Status: storyboard approved; Reel rendered with free fallbacks.** Both paid routes were still unfunded on 2026-10-05 (Higgsfield 0 credits; ElevenLabs refused the 38-credit preview with 22 credits left). See §7 for exactly what made what.
 
 ## 1. Tools, balances and live prices (checked 2026-10-05)
 
@@ -137,3 +137,23 @@ Sound effects (chisel taps, falling fragments, canyon ambience, paper transition
 4. Build the animation: parallax, masks, controlled stone removal, falling fragments. Captions in 2–6-word groups, at most two lines, right-to-left, inside mobile-safe areas.
 5. Music and sound effects; mix and master.
 6. Deliver the MP4, Arabic SRT, vertical cover, Arabic title, description, tags, sources and project files.
+
+## 7. Production record (what was actually used)
+
+| Element | Made with | Notes |
+|---|---|---|
+| Narration | **Piper TTS, voice `ar_JO-kareem` (medium), offline open-source**, run in the Higgsfield sandbox (no credits) | Not George/ElevenLabs. Input was a fully diacritized copy of the locked narration; a script verified the letters are identical to the locked text (only vowel marks added). Length scale 0.68, so 116 words come to about 64 s. |
+| Narration check | faster-whisper `small` (Arabic) in the sandbox | Every line was recovered in order. Small-model slips are on hard words such as تدريجياً, خشنة and the ي of ألفي. There was no listening check (I can't hear audio). |
+| Artwork and animation | **Code-drawn paper-cut collage** (`build/paper.js`, `build/reel.js`) | Not GPT Image 2.5. One facade geometry drives every carving stage. Stop-motion "boil" on the cut edges at 8 fps. |
+| Music | Synthesised in `tools/build_audio.py`: Karplus-Strong oud-like plucks in D Hijaz, a drone, a frame-drum pulse | Not ElevenLabs Music. Opens up at the reveal, dips at the tomb twist, returns warmer (D major) at the end. |
+| Sound effects | Synthesised: chisel clinks, stone fragments, paper peels, pops, whoosh, thud, canyon wind | Cue times are exported from the animation (`build/cues.json`). |
+| Captions and SRT | Drawn in code (Cairo, right-to-left, per-word highlights); `deliverables/petra_ar.srt` | 30 groups of 2–6 words, timed to the measured audio. |
+
+**Rebuild:**
+1. `python3 tools/make_timeline.py`
+2. `node tools/render.cjs cues build/cues.json`
+3. `python3 tools/build_audio.py`
+4. `node tools/render.cjs video build/video_silent.mp4`, then mux with `audio/mix_master.wav`
+5. `node tools/render.cjs cover deliverables/petra_cover_1080x1920.png`
+
+**Upgrade path:** with credits, swap in George for `audio/narration_kareem.mp3` and re-run from step 1 (all cuts follow the new timing). Generated art can replace the code layers one at a time.

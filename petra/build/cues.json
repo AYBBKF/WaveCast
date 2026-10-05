@@ -1,0 +1,350 @@
+{
+ "total": 64.78,
+ "cues": [
+  {
+   "type": "chisel",
+   "t": 0.32,
+   "gain": 1
+  },
+  {
+   "type": "stones",
+   "t": 0.44,
+   "gain": 0.7
+  },
+  {
+   "type": "chisel",
+   "t": 1.22,
+   "gain": 1
+  },
+  {
+   "type": "stones",
+   "t": 1.34,
+   "gain": 0.7
+  },
+  {
+   "type": "chisel",
+   "t": 2.12,
+   "gain": 1
+  },
+  {
+   "type": "stones",
+   "t": 2.24,
+   "gain": 0.7
+  },
+  {
+   "type": "chisel",
+   "t": 3.02,
+   "gain": 1
+  },
+  {
+   "type": "stones",
+   "t": 3.14,
+   "gain": 0.7
+  },
+  {
+   "type": "chisel",
+   "t": 3.92,
+   "gain": 1
+  },
+  {
+   "type": "stones",
+   "t": 4.04,
+   "gain": 0.7
+  },
+  {
+   "type": "paper",
+   "t": 5.07,
+   "gain": 0.9
+  },
+  {
+   "type": "stones",
+   "t": 5.47,
+   "gain": 0.5
+  },
+  {
+   "type": "paper",
+   "t": 5.843,
+   "gain": 0.9
+  },
+  {
+   "type": "stones",
+   "t": 6.243,
+   "gain": 0.5
+  },
+  {
+   "type": "paper",
+   "t": 6.615,
+   "gain": 0.9
+  },
+  {
+   "type": "stones",
+   "t": 7.015,
+   "gain": 0.5
+  },
+  {
+   "type": "paper",
+   "t": 7.388,
+   "gain": 0.9
+  },
+  {
+   "type": "stones",
+   "t": 7.788,
+   "gain": 0.5
+  },
+  {
+   "type": "pop",
+   "t": 8.12,
+   "gain": 0.7
+  },
+  {
+   "type": "chisel",
+   "t": 11.65,
+   "gain": 1.1
+  },
+  {
+   "type": "stones",
+   "t": 11.75,
+   "gain": 0.8
+  },
+  {
+   "type": "chisel",
+   "t": 12.27,
+   "gain": 1.1
+  },
+  {
+   "type": "stones",
+   "t": 12.37,
+   "gain": 0.8
+  },
+  {
+   "type": "chisel",
+   "t": 12.89,
+   "gain": 1.1
+  },
+  {
+   "type": "stones",
+   "t": 12.99,
+   "gain": 0.8
+  },
+  {
+   "type": "chisel",
+   "t": 13.51,
+   "gain": 1.1
+  },
+  {
+   "type": "stones",
+   "t": 13.61,
+   "gain": 0.8
+  },
+  {
+   "type": "chisel",
+   "t": 14.13,
+   "gain": 1.1
+  },
+  {
+   "type": "stones",
+   "t": 14.23,
+   "gain": 0.8
+  },
+  {
+   "type": "chisel",
+   "t": 14.75,
+   "gain": 1.1
+  },
+  {
+   "type": "stones",
+   "t": 14.85,
+   "gain": 0.8
+  },
+  {
+   "type": "chisel",
+   "t": 15.37,
+   "gain": 1.1
+  },
+  {
+   "type": "stones",
+   "t": 15.47,
+   "gain": 0.8
+  },
+  {
+   "type": "pop",
+   "t": 15.72,
+   "gain": 0.6
+  },
+  {
+   "type": "pop",
+   "t": 16.62,
+   "gain": 0.6
+  },
+  {
+   "type": "pop",
+   "t": 18.103,
+   "gain": 0.6
+  },
+  {
+   "type": "pop",
+   "t": 23.923,
+   "gain": 0.5
+  },
+  {
+   "type": "chisel",
+   "t": 35.47,
+   "gain": 0.75
+  },
+  {
+   "type": "chisel",
+   "t": 35.81,
+   "gain": 0.75
+  },
+  {
+   "type": "chisel",
+   "t": 36.15,
+   "gain": 0.75
+  },
+  {
+   "type": "chisel",
+   "t": 36.49,
+   "gain": 0.75
+  },
+  {
+   "type": "chisel",
+   "t": 36.83,
+   "gain": 0.75
+  },
+  {
+   "type": "chisel",
+   "t": 37.17,
+   "gain": 0.75
+  },
+  {
+   "type": "chisel",
+   "t": 37.51,
+   "gain": 0.75
+  },
+  {
+   "type": "chisel",
+   "t": 37.85,
+   "gain": 0.75
+  },
+  {
+   "type": "swell",
+   "t": 37.545,
+   "gain": 1
+  },
+  {
+   "type": "dip",
+   "t": 40.38,
+   "gain": 1
+  },
+  {
+   "type": "whoosh",
+   "t": 40.28,
+   "gain": 0.8
+  },
+  {
+   "type": "thud",
+   "t": 45.642,
+   "gain": 1
+  },
+  {
+   "type": "return",
+   "t": 46.98,
+   "gain": 1
+  },
+  {
+   "type": "pop",
+   "t": 50.289,
+   "gain": 0.5
+  },
+  {
+   "type": "pop",
+   "t": 50.989,
+   "gain": 0.5
+  },
+  {
+   "type": "pop",
+   "t": 51.689,
+   "gain": 0.5
+  },
+  {
+   "type": "pop",
+   "t": 47.88,
+   "gain": 0.5
+  },
+  {
+   "type": "paper",
+   "t": 10.98,
+   "gain": 0.8
+  },
+  {
+   "type": "paper",
+   "t": 20.35,
+   "gain": 0.8
+  },
+  {
+   "type": "paper",
+   "t": 46.86,
+   "gain": 0.8
+  },
+  {
+   "type": "paper",
+   "t": 52.63,
+   "gain": 0.8
+  },
+  {
+   "type": "paper",
+   "t": 54.76,
+   "gain": 0.7
+  },
+  {
+   "type": "paper",
+   "t": 55.18,
+   "gain": 0.7
+  },
+  {
+   "type": "paper",
+   "t": 55.6,
+   "gain": 0.7
+  },
+  {
+   "type": "paper",
+   "t": 56.02,
+   "gain": 0.7
+  },
+  {
+   "type": "paper",
+   "t": 58.33,
+   "gain": 0.7
+  },
+  {
+   "type": "paper",
+   "t": 58.78,
+   "gain": 0.7
+  },
+  {
+   "type": "paper",
+   "t": 59.23,
+   "gain": 0.7
+  },
+  {
+   "type": "paper",
+   "t": 59.68,
+   "gain": 0.7
+  },
+  {
+   "type": "pop",
+   "t": 60.24,
+   "gain": 0.6
+  },
+  {
+   "type": "pop",
+   "t": 62.465,
+   "gain": 0.6
+  },
+  {
+   "type": "paper",
+   "t": 64.16,
+   "gain": 0.6
+  }
+ ]
+}
