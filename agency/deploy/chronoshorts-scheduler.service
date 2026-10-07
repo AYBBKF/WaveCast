@@ -1,0 +1,17 @@
+[Unit]
+Description=ChronoShorts — production quotidienne automatique
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=simple
+User=chronoshorts
+WorkingDirectory=/opt/chronoshorts
+EnvironmentFile=/opt/chronoshorts/.env
+ExecStart=/opt/chronoshorts/.venv/bin/chronoshorts schedule
+Restart=always
+RestartSec=30
+Nice=10
+
+[Install]
+WantedBy=multi-user.target

@@ -1,0 +1,24 @@
+services:
+  bot:
+    build:
+      context: ..
+      dockerfile: deploy/Dockerfile
+    image: chronoshorts:latest
+    restart: unless-stopped
+    env_file: ../.env
+    volumes:
+      - chronoshorts-data:/data
+    command: ["bot"]
+
+  scheduler:
+    image: chronoshorts:latest
+    restart: unless-stopped
+    env_file: ../.env
+    volumes:
+      - chronoshorts-data:/data
+    command: ["schedule"]
+    depends_on:
+      - bot
+
+volumes:
+  chronoshorts-data:

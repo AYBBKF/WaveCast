@@ -1,0 +1,11 @@
+.env
+.venv/
+__pycache__/
+*.pyc
+*.egg-info/
+productions/
+assets/music/*
+assets/ambience/*
+assets/sfx/*
+!assets/**/.gitkeep
+.pytest_cache/

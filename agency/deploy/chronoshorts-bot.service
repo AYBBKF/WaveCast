@@ -1,0 +1,17 @@
+[Unit]
+Description=ChronoShorts — bot Telegram (agence IA de Shorts historiques)
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=simple
+User=chronoshorts
+WorkingDirectory=/opt/chronoshorts
+EnvironmentFile=/opt/chronoshorts/.env
+ExecStart=/opt/chronoshorts/.venv/bin/chronoshorts bot
+Restart=always
+RestartSec=10
+Nice=5
+
+[Install]
+WantedBy=multi-user.target
