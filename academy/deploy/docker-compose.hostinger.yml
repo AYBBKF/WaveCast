@@ -2,14 +2,36 @@
 # Projet isolé : son propre réseau, sa base PostgreSQL et ses volumes. Traefik (déjà installé)
 # route academy.fluxintelligent.com vers le conteneur web et gère le certificat Let's Encrypt.
 #
+# La clé secrète Django et le mot de passe PostgreSQL sont générés sur le serveur au premier
+# démarrage (service « secrets », volume academy-secrets) : ils ne sortent jamais du VPS.
+#
 # Variables (fichier .env du projet sur le serveur, jamais dans Git) :
 #   ACADEMY_GIT_REF            commit GitHub à déployer
-#   ACADEMY_SECRET_KEY         clé secrète Django
-#   POSTGRES_PASSWORD          mot de passe de la base
 #   ACADEMY_EMAIL_*            SMTP (facultatif ; sans SMTP, les e-mails vont dans les journaux)
 #   ACADEMY_BOOTSTRAP_ADMIN_*  création du premier administrateur (à retirer ensuite)
 
 services:
+  secrets:
+    image: python:3.12-slim
+    container_name: academy-secrets
+    restart: "no"
+    command:
+      - python
+      - -c
+      - |
+        import os, secrets
+        files = {"secret_key": lambda: secrets.token_urlsafe(50), "db_password": lambda: secrets.token_hex(24)}
+        for name, make in files.items():
+            path = "/secrets/" + name
+            if not os.path.exists(path):
+                with open(path, "w") as fh:
+                    fh.write(make())
+            os.chown(path, 1000, 70)
+            os.chmod(path, 0o440)
+        print("secrets ok")
+    volumes:
+      - academy-secrets:/secrets
+
   db:
     image: postgres:16-alpine
     container_name: academy-db
@@ -17,9 +39,13 @@ services:
     environment:
       POSTGRES_DB: academy
       POSTGRES_USER: academy
-      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:?POSTGRES_PASSWORD manquant}
+      POSTGRES_PASSWORD_FILE: /secrets/db_password
+    depends_on:
+      secrets:
+        condition: service_completed_successfully
     volumes:
       - academy-db:/var/lib/postgresql/data
+      - academy-secrets:/secrets:ro
     healthcheck:
       test: ["CMD-SHELL", "pg_isready -U academy -d academy"]
       interval: 10s
@@ -54,12 +80,10 @@ services:
         condition: service_healthy
     environment:
       ACADEMY_DEBUG: "0"
-      ACADEMY_SECRET_KEY: ${ACADEMY_SECRET_KEY:?ACADEMY_SECRET_KEY manquant}
       ACADEMY_BASE_URL: https://academy.fluxintelligent.com
       ACADEMY_ALLOWED_HOSTS: academy.fluxintelligent.com,localhost
       ACADEMY_CSRF_TRUSTED_ORIGINS: https://academy.fluxintelligent.com
       ACADEMY_HSTS_SECONDS: "31536000"
-      DATABASE_URL: postgres://academy:${POSTGRES_PASSWORD}@db:5432/academy
       ACADEMY_EMAIL_BACKEND: ${ACADEMY_EMAIL_BACKEND:-django.core.mail.backends.console.EmailBackend}
       ACADEMY_EMAIL_HOST: ${ACADEMY_EMAIL_HOST:-}
       ACADEMY_EMAIL_PORT: ${ACADEMY_EMAIL_PORT:-587}
@@ -74,6 +98,7 @@ services:
     volumes:
       - academy-media:/data/media
       - academy-private:/data/private
+      - academy-secrets:/secrets:ro
     labels:
       - "traefik.enable=true"
       - "traefik.http.routers.academy.rule=Host(`academy.fluxintelligent.com`)"
@@ -91,6 +116,7 @@ services:
       options: { max-size: "10m", max-file: "3" }
 
 volumes:
+  academy-secrets:
   academy-db:
   academy-media:
   academy-private:

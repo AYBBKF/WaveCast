@@ -465,3 +465,20 @@ class RecompenseClaudePro(Base):
         # Le bénéficiaire voit son lien
         self.login(owner)
         self.assertContains(self.client.get(reverse("reward_status", args=[claim.pk])), "https://claude.ai/gift/ABC123")
+
+
+class PremierAdministrateur(Base):
+    def test_promotion_d_un_compte_existant(self):
+        import os
+        from unittest import mock
+
+        user = self.make_user("chef@example.ma", "Chef")
+        with mock.patch.dict(os.environ, {"ACADEMY_BOOTSTRAP_ADMIN_EMAIL": "Chef@Example.ma"}):
+            call_command("bootstrap_admin", verbosity=0)
+        user.refresh_from_db()
+        self.assertTrue(user.is_staff and user.is_superuser)
+        self.assertTrue(user.check_password(PASSWORD), "le mot de passe n'est pas modifié")
+
+    def test_sans_variables_rien_ne_change(self):
+        call_command("bootstrap_admin", verbosity=0)
+        self.assertFalse(get_user_model().objects.filter(is_staff=True).exists())
