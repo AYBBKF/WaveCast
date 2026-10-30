@@ -150,6 +150,7 @@ if not DEBUG:
     CSRF_COOKIE_SECURE = True
     SECURE_PROXY_SSL_HEADER = ("HTTP_X_FORWARDED_PROTO", "https")
     SECURE_SSL_REDIRECT = env_bool("ACADEMY_SSL_REDIRECT", True)
+    SECURE_REDIRECT_EXEMPT = [r"^sante/$"]
     SECURE_HSTS_SECONDS = int(env("ACADEMY_HSTS_SECONDS", "0"))
 
 DEFAULT_AUTO_FIELD = "django.db.models.BigAutoField"

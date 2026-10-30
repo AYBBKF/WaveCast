@@ -1,0 +1,96 @@
+# Flux Intelligent Academy — déploiement sur le VPS Hostinger (Docker + Traefik existant).
+# Projet isolé : son propre réseau, sa base PostgreSQL et ses volumes. Traefik (déjà installé)
+# route academy.fluxintelligent.com vers le conteneur web et gère le certificat Let's Encrypt.
+#
+# Variables (fichier .env du projet sur le serveur, jamais dans Git) :
+#   ACADEMY_GIT_REF            commit GitHub à déployer
+#   ACADEMY_SECRET_KEY         clé secrète Django
+#   POSTGRES_PASSWORD          mot de passe de la base
+#   ACADEMY_EMAIL_*            SMTP (facultatif ; sans SMTP, les e-mails vont dans les journaux)
+#   ACADEMY_BOOTSTRAP_ADMIN_*  création du premier administrateur (à retirer ensuite)
+
+services:
+  db:
+    image: postgres:16-alpine
+    container_name: academy-db
+    restart: unless-stopped
+    environment:
+      POSTGRES_DB: academy
+      POSTGRES_USER: academy
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:?POSTGRES_PASSWORD manquant}
+    volumes:
+      - academy-db:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U academy -d academy"]
+      interval: 10s
+      timeout: 5s
+      retries: 10
+    logging:
+      driver: json-file
+      options: { max-size: "10m", max-file: "3" }
+
+  web:
+    image: academy-web:${ACADEMY_GIT_REF:?ACADEMY_GIT_REF manquant}
+    container_name: academy-web
+    build:
+      context: .
+      args:
+        REF: ${ACADEMY_GIT_REF}
+      dockerfile_inline: |
+        FROM python:3.12-slim
+        ARG REF
+        ENV PYTHONDONTWRITEBYTECODE=1 PYTHONUNBUFFERED=1 ACADEMY_MEDIA_ROOT=/data/media ACADEMY_PRIVATE_ROOT=/data/private
+        ADD https://raw.githubusercontent.com/AYBBKF/WaveCast/$${REF}/academy/deploy/fetch_source.py /tmp/fetch_source.py
+        RUN python /tmp/fetch_source.py "$${REF}" /app && rm /tmp/fetch_source.py
+        WORKDIR /app
+        RUN pip install --no-cache-dir -r requirements.txt
+        RUN useradd --uid 1000 --create-home app && mkdir -p /data/media /data/private && chown -R app:app /data /app && ACADEMY_SECRET_KEY=collectstatic-only python manage.py collectstatic --noinput
+        USER app
+        EXPOSE 8000
+        CMD ["sh", "/app/docker/entrypoint.sh"]
+    restart: unless-stopped
+    depends_on:
+      db:
+        condition: service_healthy
+    environment:
+      ACADEMY_DEBUG: "0"
+      ACADEMY_SECRET_KEY: ${ACADEMY_SECRET_KEY:?ACADEMY_SECRET_KEY manquant}
+      ACADEMY_BASE_URL: https://academy.fluxintelligent.com
+      ACADEMY_ALLOWED_HOSTS: academy.fluxintelligent.com,localhost
+      ACADEMY_CSRF_TRUSTED_ORIGINS: https://academy.fluxintelligent.com
+      ACADEMY_HSTS_SECONDS: "31536000"
+      DATABASE_URL: postgres://academy:${POSTGRES_PASSWORD}@db:5432/academy
+      ACADEMY_EMAIL_BACKEND: ${ACADEMY_EMAIL_BACKEND:-django.core.mail.backends.console.EmailBackend}
+      ACADEMY_EMAIL_HOST: ${ACADEMY_EMAIL_HOST:-}
+      ACADEMY_EMAIL_PORT: ${ACADEMY_EMAIL_PORT:-587}
+      ACADEMY_EMAIL_USER: ${ACADEMY_EMAIL_USER:-}
+      ACADEMY_EMAIL_PASSWORD: ${ACADEMY_EMAIL_PASSWORD:-}
+      ACADEMY_EMAIL_TLS: ${ACADEMY_EMAIL_TLS:-1}
+      ACADEMY_FROM_EMAIL: ${ACADEMY_FROM_EMAIL:-Flux Intelligent Academy <no-reply@fluxintelligent.com>}
+      ACADEMY_BOOTSTRAP_ADMIN_EMAIL: ${ACADEMY_BOOTSTRAP_ADMIN_EMAIL:-}
+      ACADEMY_BOOTSTRAP_ADMIN_PASSWORD: ${ACADEMY_BOOTSTRAP_ADMIN_PASSWORD:-}
+      ACADEMY_DISABLE_ACCOUNTS: ${ACADEMY_DISABLE_ACCOUNTS:-}
+      GUNICORN_WORKERS: "3"
+    volumes:
+      - academy-media:/data/media
+      - academy-private:/data/private
+    labels:
+      - "traefik.enable=true"
+      - "traefik.http.routers.academy.rule=Host(`academy.fluxintelligent.com`)"
+      - "traefik.http.routers.academy.entrypoints=websecure"
+      - "traefik.http.routers.academy.tls.certresolver=letsencrypt"
+      - "traefik.http.services.academy.loadbalancer.server.port=8000"
+    healthcheck:
+      test: ["CMD", "python", "-c", "import urllib.request as u; r=u.Request('http://127.0.0.1:8000/sante/', headers={'Host': 'localhost'}); u.urlopen(r, timeout=4)"]
+      interval: 30s
+      timeout: 5s
+      retries: 3
+      start_period: 40s
+    logging:
+      driver: json-file
+      options: { max-size: "10m", max-file: "3" }
+
+volumes:
+  academy-db:
+  academy-media:
+  academy-private:
