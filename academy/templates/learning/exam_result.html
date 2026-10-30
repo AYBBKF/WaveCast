@@ -1,0 +1,70 @@
+{% extends "base.html" %}
+{% block title %}Résultat — {{ course.title }}{% endblock %}
+{% block container %}narrow{% endblock %}
+{% block content %}
+<p class="small"><a href="{{ course.get_absolute_url }}">{{ course.title }}</a> › Résultat · tentative {{ attempt.number }} du {{ attempt.submitted_at|date:"j F Y à H:i" }}</p>
+
+{% if attempt.is_perfect and offer %}
+  <section class="congrats">
+    <h1>Félicitations ! Vous avez obtenu 20/20.</h1>
+    {% if claim %}
+      <p style="font-size:18px">Vous avez gagné votre certificat de réussite et {{ claim.duration_label }} de Claude Pro offert par {{ site.organization_name }}.</p>
+      <div class="btn-row" style="justify-content:center;margin-top:18px">
+        {% if certificate %}<a class="btn btn-primary" href="{% url 'certificate_download' certificate.number %}">Télécharger mon certificat</a>
+        {% else %}<a class="btn btn-primary" href="{% url 'certificate_claim' course.slug %}">Télécharger mon certificat</a>{% endif %}
+        {% if claim.status == "eligible" %}<a class="btn btn-secondary" href="{% url 'reward_claim' claim.pk %}">Réclamer mon abonnement Claude Pro</a>
+        {% else %}<a class="btn btn-secondary" href="{% url 'reward_status' claim.pk %}">Suivre ma récompense Claude Pro</a>{% endif %}
+      </div>
+    {% else %}
+      <p style="font-size:18px">Vous avez gagné votre certificat de réussite.</p>
+      {% if reward_missing %}<p>Pour recevoir {{ offer.duration_label }} de Claude Pro, il vous manque : {{ reward_missing|join:", " }}.
+        {% if "adresse e-mail vérifiée" in reward_missing %} <a style="color:#fff" href="{% url 'profile' %}">Vérifier mon e-mail</a>{% endif %}</p>{% endif %}
+      <div class="btn-row" style="justify-content:center;margin-top:18px">
+        {% if certificate %}<a class="btn btn-primary" href="{% url 'certificate_download' certificate.number %}">Télécharger mon certificat</a>
+        {% else %}<a class="btn btn-primary" href="{% url 'certificate_claim' course.slug %}">Télécharger mon certificat</a>{% endif %}
+      </div>
+    {% endif %}
+  </section>
+{% endif %}
+
+<section class="card" style="margin-top:18px">
+  <div class="score">
+    <div class="score-ring" style="--p:{{ attempt.percent|floatformat:0 }};--c:{% if attempt.passed %}var(--ok){% else %}var(--ko){% endif %}">
+      <div><span><b>{{ attempt.score20_display }}</b><br><small>sur 20</small></span></div>
+    </div>
+    <div>
+      <h1 class="{% if attempt.passed %}status-ok{% else %}status-ko{% endif %}" style="margin-bottom:6px">{% if attempt.passed %}Réussi{% else %}À retravailler{% endif %}</h1>
+      <p style="font-size:18px;margin-bottom:4px"><strong>{{ attempt.correct_answers }} bonne{{ attempt.correct_answers|pluralize }} réponse{{ attempt.correct_answers|pluralize }} sur {{ attempt.total_questions }}</strong> · {{ attempt.percent_display }} %</p>
+      <p class="muted small">Seuil de réussite : {{ attempt.threshold|floatformat:"-2" }} %. {% if not attempt.passed %}Il vous manque peu : revoyez les leçons indiquées ci-dessous puis retentez l'examen.{% endif %}</p>
+      <div class="btn-row">
+        {% if attempt.passed %}
+          {% if certificate %}<a class="btn btn-primary" href="{% url 'certificate_download' certificate.number %}">Télécharger mon certificat</a>
+          {% else %}<a class="btn btn-primary" href="{% url 'certificate_claim' course.slug %}">Obtenir mon certificat</a>{% endif %}
+        {% endif %}
+        {% if can_retry and not attempt.is_perfect %}<a class="btn btn-secondary" href="{% url 'exam_take' course.slug %}">{% if attempt.passed %}Retenter pour améliorer ma note{% else %}Refaire l'examen{% endif %}</a>{% endif %}
+        <a class="btn btn-secondary" href="{% url 'resume' course.slug %}">Revoir le cours</a>
+      </div>
+      {% if not can_retry and not attempt.passed %}<p class="msg info" style="margin-top:12px">{{ retry_reason }}</p>{% endif %}
+    </div>
+  </div>
+</section>
+
+{% if review_lessons %}
+<section class="section">
+  <h2>Leçons à revoir</h2>
+  <ul>{% for l in review_lessons %}<li><a href="{{ l.get_absolute_url }}">{{ l.module.title }} — {{ l.title }}</a></li>{% endfor %}</ul>
+</section>
+{% endif %}
+
+<section class="section correction">
+  <h2>Correction expliquée</h2>
+  {% for item in correction %}
+    <div class="item {% if not item.ok %}ko{% endif %}">
+      <p style="margin-bottom:6px"><strong>{{ forloop.counter }}. {{ item.question.text }}</strong> <span class="tag {% if item.ok %}ok{% else %}ko{% endif %}">{% if item.ok %}Correct{% else %}Incorrect{% endif %}</span></p>
+      <p class="ans">Votre réponse : <strong>{% if item.given %}{{ item.given.text }}{% else %}— sans réponse —{% endif %}</strong></p>
+      {% if not item.ok %}<p class="ans">Bonne réponse : <strong>{{ item.right.text }}</strong></p>{% endif %}
+      <div class="expl">{{ item.question.explanation|linebreaksbr }}{% if item.question.related_lesson %}<br><a class="small" href="{{ item.question.related_lesson.get_absolute_url }}">Revoir : {{ item.question.related_lesson.title }}</a>{% endif %}</div>
+    </div>
+  {% endfor %}
+</section>
+{% endblock %}

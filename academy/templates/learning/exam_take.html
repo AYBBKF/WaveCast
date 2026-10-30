@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+{% block title %}Examen — {{ course.title }}{% endblock %}
+{% block container %}narrow{% endblock %}
+{% block content %}
+<p class="small"><a href="{{ course.get_absolute_url }}">{{ course.title }}</a> › Examen final · tentative {{ attempt.number }}</p>
+<h1>Examen final</h1>
+<p class="muted">Une seule réponse par question. Réussite à partir de {{ course.pass_threshold|floatformat:"-2" }} % ({{ course.threshold_on_20|floatformat:"-2" }}/20).</p>
+<form method="post" id="exam-form" data-once>{% csrf_token %}
+  <input type="hidden" name="attempt" value="{{ attempt.pk }}">
+  {% for q in questions %}
+    <fieldset class="question">
+      <legend><span class="num">{{ forloop.counter }}.</span>{{ q.text|linebreaksbr }}</legend>
+      {% for c in q.choices %}
+        <label class="choice"><input type="radio" name="q{{ q.id }}" value="{{ c.id }}"><span>{{ c.text }}</span></label>
+      {% endfor %}
+    </fieldset>
+  {% endfor %}
+  <div class="exam-bar"><div class="wrap" style="width:auto">
+    <span class="muted">Réponses : <strong id="answered-count">0 / {{ questions|length }}</strong></span>
+    <button class="btn btn-primary" type="submit" data-loading="Correction en cours…">Valider mes réponses</button>
+  </div></div>
+</form>
+{% endblock %}

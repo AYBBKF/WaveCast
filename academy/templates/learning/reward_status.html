@@ -1,0 +1,31 @@
+{% extends "base.html" %}
+{% block title %}Ma récompense Claude Pro{% endblock %}
+{% block container %}narrow{% endblock %}
+{% block content %}
+<p class="small"><a href="{% url 'dashboard' %}">Mon espace</a> › Récompense Claude Pro</p>
+<h1>{{ claim.duration_label }} de Claude Pro offert par {{ site.organization_name }}</h1>
+{% if claim.status != "eligible" and claim.status != "delivered" %}<p class="msg success">Votre demande est enregistrée. Retrouvez son avancement dans votre espace personnel.</p>{% endif %}
+<div class="card">
+  <div class="steps" aria-label="Avancement">
+    {% for value, label in claim.Status.choices %}<span class="{% if value == claim.status %}on{% endif %}">{{ label }}</span>{% endfor %}
+  </div>
+  <ul class="facts" style="margin-top:12px">
+    <li><span class="muted">Statut</span><strong>{{ claim.get_status_display }}</strong></li>
+    <li><span class="muted">Formation</span><strong>{{ claim.course.title }}</strong></li>
+    <li><span class="muted">Éligible depuis le</span><strong>{{ claim.eligible_at|date:"j F Y" }}</strong></li>
+    {% if claim.requested_at %}<li><span class="muted">Demande enregistrée le</span><strong>{{ claim.requested_at|date:"j F Y à H:i" }}</strong></li>{% endif %}
+    <li><span class="muted">Délai de remise annoncé</span><strong>{{ claim.delivery_delay }}</strong></li>
+    {% if claim.email %}<li><span class="muted">Adresse de remise</span><strong>{{ claim.email }}</strong></li>{% endif %}
+  </ul>
+  {% if claim.status == "eligible" %}<p style="margin-top:14px"><a class="btn btn-primary" href="{% url 'reward_claim' claim.pk %}">Réclamer mon abonnement Claude Pro</a></p>{% endif %}
+  {% if claim.status == "delivered" %}
+    <div class="offer" style="margin-top:16px"><span class="ico" aria-hidden="true">✓</span><div>
+      <p><strong>Votre abonnement vous a été remis{% if claim.delivered_at %} le {{ claim.delivered_at|date:"j F Y" }}{% endif %}.</strong></p>
+      {% if claim.gift_link %}<p>Activez-le sur votre compte Claude avec votre lien personnel : <a href="{{ claim.gift_link }}" rel="noopener noreferrer" target="_blank">activer mon abonnement Claude Pro</a>. Aucun mot de passe ne vous sera demandé par {{ site.organization_name }}.</p>{% endif %}
+      {% if claim.delivery_method_used %}<p>{{ claim.delivery_method_used }}</p>{% endif %}
+    </div></div>
+  {% endif %}
+  <p class="small muted" style="margin-top:14px">{{ site.organization_name }} ne vous demandera jamais le mot de passe de votre compte Claude.</p>
+</div>
+{% if certificate %}<p style="margin-top:14px"><a class="btn btn-secondary" href="{% url 'certificate_download' certificate.number %}">Télécharger mon certificat</a></p>{% endif %}
+{% endblock %}

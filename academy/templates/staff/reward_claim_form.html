@@ -1,0 +1,22 @@
+{% extends "staff/base_staff.html" %}
+{% block title %}Récompense — {{ claim.user.email }}{% endblock %}
+{% block staff %}
+<p class="small"><a href="{% url 'staff_rewards' %}">Récompenses Claude Pro</a> › {{ claim.user.email }}</p>
+<h1>Traiter la récompense</h1>
+<div class="card" style="margin-bottom:16px">
+  <ul class="facts">
+    <li><span class="muted">Bénéficiaire</span><strong>{{ claim.full_name|default:claim.user.profile.full_name }} — {{ claim.email|default:claim.user.email }}</strong></li>
+    <li><span class="muted">Formation</span><strong>{{ claim.course.title }}</strong></li>
+    <li><span class="muted">Récompense</span><strong>{{ claim.duration_label }} de Claude Pro</strong></li>
+    <li><span class="muted">Tentative</span><strong>n° {{ claim.attempt.number }} — {{ claim.attempt.score20_display }}/20 le {{ claim.attempt.submitted_at|date:"j M Y H:i" }}</strong></li>
+    <li><span class="muted">Éligible le</span><strong>{{ claim.eligible_at|date:"j M Y H:i" }}</strong></li>
+    <li><span class="muted">Demande</span><strong>{{ claim.requested_at|date:"j M Y H:i"|default:"pas encore réclamée" }}</strong></li>
+    <li><span class="muted">Statut</span><strong>{{ claim.get_status_display }}{% if claim.delivered_at %} le {{ claim.delivered_at|date:"j M Y H:i" }}{% endif %}</strong></li>
+  </ul>
+</div>
+<form method="post" class="card form">{% csrf_token %}
+  {% include "partials/form.html" %}
+  <p class="small muted">Pour passer en « Remis », renseignez le lien cadeau officiel (activation sur claude.ai/gift/redeem) ou la modalité utilisée, ainsi qu'une référence de livraison. Ne demandez jamais le mot de passe Claude du bénéficiaire.</p>
+  <button class="btn btn-primary" type="submit">Enregistrer</button>
+</form>
+{% endblock %}

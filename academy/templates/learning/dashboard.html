@@ -1,0 +1,97 @@
+{% extends "base.html" %}
+{% block title %}Mon espace{% endblock %}
+{% block content %}
+<div style="display:flex;justify-content:space-between;align-items:flex-end;gap:12px;flex-wrap:wrap">
+  <div><span class="eyebrow">Mon espace</span><h1>Bonjour {{ user.profile.full_name }}</h1></div>
+  <a class="btn btn-secondary" href="{% url 'profile' %}">Mon profil</a>
+</div>
+{% if not user.profile.email_verified %}
+  <p class="msg info">Votre adresse e-mail n'est pas encore vérifiée. <a href="{% url 'profile' %}">Vérifier mon adresse</a></p>
+{% endif %}
+
+<section class="section">
+  <h2>Mes formations en cours</h2>
+  {% if in_progress %}
+  <div class="grid grid-2">
+    {% for row in in_progress %}
+    <div class="card">
+      <h3><a href="{{ row.course.get_absolute_url }}">{{ row.course.title }}</a></h3>
+      <div class="progress-label"><span>{{ row.progress.done }}/{{ row.progress.total }} leçons</span><span>{{ row.progress.percent }} %</span></div>
+      <div class="progress"><span style="width:{{ row.progress.percent }}%"></span></div>
+      <p class="small muted" style="margin-top:8px">{% if row.enrollment.last_lesson %}Dernière leçon consultée : {{ row.enrollment.last_lesson.title }}{% else %}Pas encore commencée{% endif %}</p>
+      <div class="btn-row">
+        <a class="btn btn-primary" href="{% url 'resume' row.course.slug %}">Reprendre ma formation</a>
+        {% if row.progress.total and row.progress.done == row.progress.total %}<a class="btn btn-secondary" href="{% url 'exam_intro' row.course.slug %}">Examen final</a>{% endif %}
+      </div>
+    </div>
+    {% endfor %}
+  </div>
+  {% else %}
+    <div class="empty">Aucune formation en cours. <a href="{% url 'home' %}">Découvrir les formations</a></div>
+  {% endif %}
+</section>
+
+<section class="section">
+  <h2>Mes formations terminées</h2>
+  {% if completed %}
+  <div class="grid grid-2">
+    {% for row in completed %}
+    <div class="card">
+      <h3>{{ row.course.title }}</h3>
+      <p><span class="tag ok">Réussie</span></p>
+      <div class="btn-row">
+        {% if row.certificate %}<a class="btn btn-primary" href="{% url 'certificate_download' row.certificate.number %}">Télécharger mon certificat</a>
+        {% else %}<a class="btn btn-primary" href="{% url 'certificate_claim' row.course.slug %}">Obtenir mon certificat</a>{% endif %}
+        <a class="btn btn-secondary" href="{% url 'resume' row.course.slug %}">Revoir le cours</a>
+      </div>
+    </div>
+    {% endfor %}
+  </div>
+  {% else %}<div class="empty">Vos formations réussies apparaîtront ici.</div>{% endif %}
+</section>
+
+{% if claims %}
+<section class="section">
+  <h2>Mes récompenses Claude Pro</h2>
+  {% for c in claims %}
+  <div class="card" style="margin-bottom:12px">
+    <h3>{{ c.duration_label }} de Claude Pro — {{ c.course.title }}</h3>
+    <div class="steps" aria-label="Avancement">
+      {% for value, label in c.Status.choices %}<span class="{% if value == c.status %}on{% endif %}">{{ label }}</span>{% endfor %}
+    </div>
+    <p class="small muted">Statut : <strong>{{ c.get_status_display }}</strong>{% if c.delivery_delay %} · délai annoncé : {{ c.delivery_delay }}{% endif %}</p>
+    {% if c.status == "eligible" %}<a class="btn btn-primary" href="{% url 'reward_claim' c.pk %}">Réclamer mon abonnement Claude Pro</a>
+    {% else %}<a class="btn btn-secondary" href="{% url 'reward_status' c.pk %}">Voir le détail</a>{% endif %}
+  </div>
+  {% endfor %}
+</section>
+{% endif %}
+
+<section class="section">
+  <h2>Mes certificats</h2>
+  {% if certificates %}
+  <div class="table-wrap"><table class="data">
+    <thead><tr><th>Formation</th><th>N°</th><th>Date</th><th>Note</th><th></th></tr></thead>
+    <tbody>{% for c in certificates %}
+      <tr><td>{{ c.course_title }}</td><td>{{ c.number }}</td><td>{{ c.issued_at|date:"j F Y" }}</td><td>{{ c.score20_display }}/20</td>
+      <td><a href="{% url 'certificate_download' c.number %}">Télécharger (PDF)</a> · <a href="{{ c.verify_url }}">Lien de vérification</a></td></tr>
+    {% endfor %}</tbody>
+  </table></div>
+  {% else %}<div class="empty">Vos certificats apparaîtront ici après la réussite d'un examen.</div>{% endif %}
+</section>
+
+<section class="section">
+  <h2>Mes résultats d'examen</h2>
+  {% if attempts %}
+  <div class="table-wrap"><table class="data">
+    <thead><tr><th>Formation</th><th>Tentative</th><th>Date</th><th>Note</th><th>Résultat</th><th></th></tr></thead>
+    <tbody>{% for a in attempts %}
+      <tr><td>{{ a.course.title }}</td><td>n° {{ a.number }}</td><td>{{ a.submitted_at|date:"j M Y, H:i" }}</td>
+      <td>{{ a.score20_display }}/20 ({{ a.percent_display }} %)</td>
+      <td>{% if a.passed %}<span class="tag ok">Réussi</span>{% else %}<span class="tag ko">À retravailler</span>{% endif %}</td>
+      <td><a href="{% url 'exam_result' a.course.slug a.number %}">Correction</a></td></tr>
+    {% endfor %}</tbody>
+  </table></div>
+  {% else %}<div class="empty">Aucun examen passé pour le moment.</div>{% endif %}
+</section>
+{% endblock %}

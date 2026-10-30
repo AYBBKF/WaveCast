@@ -1,0 +1,20 @@
+{% extends "staff/base_staff.html" %}
+{% block title %}Examen — {{ course.title }}{% endblock %}
+{% block staff %}
+<p class="small"><a href="{% url 'staff_courses' %}">Formations</a> › <a href="{% url 'staff_course_content' course.pk %}">{{ course.title }}</a> › Examen</p>
+<div style="display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;align-items:center"><h1>Examen final</h1><a class="btn btn-primary" href="{% url 'staff_question_new' course.pk %}">+ Nouvelle question</a></div>
+<p class="muted">Seuil : <strong>{{ course.pass_threshold|floatformat:"-2" }} %</strong> · tentatives : <strong>{% if course.max_attempts %}{{ course.max_attempts }}{% else %}illimitées{% endif %}</strong> — <a href="{% url 'staff_course_edit' course.pk %}">modifier</a></p>
+{% for q in questions %}
+<div class="card" style="margin-bottom:12px">
+  <div style="display:flex;justify-content:space-between;gap:10px;flex-wrap:wrap"><strong>{{ forloop.counter }}. {{ q.text }}</strong>
+    <span class="btn-row">
+      <form method="post" action="{% url 'staff_question_move' q.pk 'up' %}" class="inline">{% csrf_token %}<button class="icon-btn">↑</button></form>
+      <form method="post" action="{% url 'staff_question_move' q.pk 'down' %}" class="inline">{% csrf_token %}<button class="icon-btn">↓</button></form>
+      <a class="btn btn-secondary btn-sm" href="{% url 'staff_question_edit' course.pk q.pk %}">Modifier</a>
+      <form method="post" action="{% url 'staff_question_delete' q.pk %}" class="inline" onsubmit="return confirm('Supprimer cette question ?')">{% csrf_token %}<button class="icon-btn">✕</button></form>
+    </span></div>
+  <ul class="small">{% for c in q.choices.all %}<li>{% if c.is_correct %}<strong class="status-ok">✓ {{ c.text }}</strong>{% else %}{{ c.text }}{% endif %}</li>{% endfor %}</ul>
+  <p class="small muted">{{ q.get_kind_display }}{% if q.related_lesson %} · leçon liée : {{ q.related_lesson.title }}{% endif %}</p>
+</div>
+{% empty %}<div class="empty">Aucune question.</div>{% endfor %}
+{% endblock %}

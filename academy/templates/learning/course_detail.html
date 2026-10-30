@@ -1,0 +1,84 @@
+{% extends "base.html" %}
+{% block title %}{{ course.title }}{% endblock %}
+{% block description %}{{ course.summary|default:course.description|truncatechars:155 }}{% endblock %}
+{% block content %}
+<p class="small"><a href="{% url 'home' %}">Formations</a> › {{ course.title }}</p>
+{% if course.status != "published" %}<p class="msg info">Aperçu équipe : cette formation est « {{ course.get_status_display|lower }} » et n'est pas visible du public.</p>{% endif %}
+
+<div class="course-head">
+  <div>
+    {% if course.is_demo %}<span class="demo-flag">Formation de démonstration — modifiable ou remplaçable</span>{% endif %}
+    <h1>{{ course.title }}</h1>
+    <p class="muted" style="font-size:18px">{{ course.description|linebreaksbr }}</p>
+    {% if course.objectives_list %}
+      <h2>Ce que vous saurez faire</h2>
+      <ul class="objectives">{% for o in course.objectives_list %}<li>{{ o }}</li>{% endfor %}</ul>
+    {% endif %}
+    {% if offer %}
+      <div class="offer" style="margin-top:18px">
+        <span class="ico" aria-hidden="true">★</span>
+        <div>
+          <p><strong>Terminez la formation et obtenez 100 % à l'examen final pour recevoir {{ offer.duration_label }} de Claude Pro offert par {{ site.organization_name }}.</strong></p>
+          <p class="small muted">Récompense organisée et financée par {{ site.organization_name }}. Remise : {{ offer.delivery_delay }}. <a href="{% url 'offer_terms' course.slug %}">Conditions et modalités</a></p>
+        </div>
+      </div>
+    {% endif %}
+  </div>
+
+  <aside class="card">
+    {% if course.cover %}<img src="{{ course.cover.url }}" alt="" style="border-radius:10px;margin-bottom:14px">{% endif %}
+    <ul class="facts">
+      <li><span class="muted">Niveau</span><strong>{{ course.get_level_display }}</strong></li>
+      <li><span class="muted">Durée estimée</span><strong>{{ course.duration }}</strong></li>
+      <li><span class="muted">Programme</span><strong>{{ modules|length }} modules · {{ progress.total }} leçons</strong></li>
+      <li><span class="muted">Examen final</span><strong>{{ question_count }} questions</strong></li>
+      <li><span class="muted">Seuil de réussite</span><strong>{{ course.pass_threshold|floatformat:"-2" }} % ({{ course.threshold_on_20|floatformat:"-2" }}/20)</strong></li>
+      <li><span class="muted">Certificat</span><strong>PDF {{ site.organization_name }}</strong></li>
+    </ul>
+    <div style="margin-top:16px">
+      {% if certificate %}
+        <p class="tag ok">Formation réussie</p>
+        <div class="btn-row" style="margin-top:10px">
+          <a class="btn btn-primary" href="{% url 'certificate_download' certificate.number %}">Télécharger mon certificat</a>
+          <a class="btn btn-secondary" href="{% url 'resume' course.slug %}">Revoir le cours</a>
+        </div>
+      {% elif enrollment %}
+        <div class="progress-label"><span>Progression</span><span>{{ progress.done }}/{{ progress.total }} leçons · {{ progress.percent }} %</span></div>
+        <div class="progress"><span style="width:{{ progress.percent }}%"></span></div>
+        <div class="btn-row" style="margin-top:14px">
+          <a class="btn btn-primary" href="{% url 'resume' course.slug %}">Reprendre ma formation</a>
+          {% if progress.total and progress.done == progress.total %}<a class="btn btn-secondary" href="{% url 'exam_intro' course.slug %}">Examen final</a>{% endif %}
+        </div>
+      {% elif user.is_authenticated %}
+        <form method="post" action="{% url 'enroll' course.slug %}">{% csrf_token %}
+          <button class="btn btn-primary" type="submit" style="width:100%">Commencer la formation</button>
+        </form>
+      {% else %}
+        <a class="btn btn-primary" style="width:100%" href="{% url 'signup' %}?next={{ request.path|urlencode }}">Créer un compte pour commencer</a>
+        <p class="small center" style="margin-top:8px">Déjà inscrit ? <a href="{% url 'login' %}?next={{ request.path|urlencode }}">Se connecter</a></p>
+      {% endif %}
+    </div>
+  </aside>
+</div>
+
+<section class="program">
+  <h2>Programme</h2>
+  {% for m in modules %}
+    <details {% if forloop.first %}open{% endif %}>
+      <summary><span>Module {{ forloop.counter }} — {{ m.title }}</span><span class="muted small">{{ m.lessons.all|length }} leçons</span></summary>
+      <ol>
+        {% for l in m.lessons.all %}
+          <li class="{% if l.id in progress.completed_ids %}done{% endif %}">
+            {% if enrollment %}<a href="{{ l.get_absolute_url }}">{{ l.title }}</a>{% else %}{{ l.title }}{% endif %}
+            <span class="small muted">· {{ l.reading_minutes }} min</span>{% if l.id in progress.completed_ids %} <span class="small">✓ terminée</span>{% endif %}
+          </li>
+        {% endfor %}
+      </ol>
+    </details>
+  {% endfor %}
+  <details>
+    <summary><span>Examen final</span><span class="muted small">{{ question_count }} questions</span></summary>
+    <ol><li>QCM et vrai/faux. Note sur 20, réussite à partir de {{ course.pass_threshold|floatformat:"-2" }} %. Correction expliquée immédiate.</li></ol>
+  </details>
+</section>
+{% endblock %}

@@ -1,0 +1,15 @@
+{% extends "staff/base_staff.html" %}
+{% block title %}Question — {{ course.title }}{% endblock %}
+{% block staff %}
+<p class="small"><a href="{% url 'staff_questions' course.pk %}">Examen — {{ course.title }}</a> › {% if question %}Modifier{% else %}Nouvelle question{% endif %}</p>
+<h1>{% if question %}Modifier la question{% else %}Nouvelle question{% endif %}</h1>
+<form method="post" class="card form">{% csrf_token %}
+  {% if error %}<ul class="errorlist nonfield"><li>{{ error }}</li></ul>{% endif %}
+  {% include "partials/form.html" %}
+  <div class="field" id="mcq-choices"><label>Réponses proposées (cochez la bonne réponse)</label>
+    {% for cf in choice_forms %}<div class="btn-row" style="margin-bottom:8px;flex-wrap:nowrap"><input type="radio" name="correct" value="{{ forloop.counter0 }}" {% if correct_index == forloop.counter0 %}checked{% endif %} aria-label="Bonne réponse"> {{ cf.text }}</div>{% endfor %}
+    <div class="help">Pour « Vrai / Faux », les réponses sont créées automatiquement : cochez la 1re ligne pour « Vrai », la 2e pour « Faux ».</div>
+  </div>
+  <div class="btn-row"><button class="btn btn-primary" type="submit">Enregistrer</button><button class="btn btn-secondary" type="submit" name="add_another" value="1">Enregistrer et ajouter une autre</button></div>
+</form>
+{% endblock %}

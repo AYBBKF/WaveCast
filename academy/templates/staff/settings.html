@@ -1,0 +1,15 @@
+{% extends "staff/base_staff.html" %}
+{% block title %}Marque et certificat{% endblock %}
+{% block staff %}
+<h1>Marque et certificat</h1>
+<div class="card" style="margin-bottom:16px">
+  <p style="margin:0">Adresse publique utilisée pour les QR codes : <strong>{{ base_url }}</strong></p>
+  <p class="small muted" style="margin:6px 0 0">Elle se règle avec la variable d'environnement <code>ACADEMY_BASE_URL</code>. Les certificats déjà délivrés conservent leurs données d'origine.</p>
+  <p style="margin:12px 0 0"><a class="btn btn-secondary btn-sm" href="{% url 'staff_certificate_preview' %}" target="_blank" rel="noopener">Aperçu du certificat (PDF)</a></p>
+</div>
+<form method="post" enctype="multipart/form-data" class="card form">{% csrf_token %}
+  {% include "partials/form.html" %}
+  <p class="small muted">Variables du texte du certificat : {organisme}, {nom}, {formation}, {note}.</p>
+  <button class="btn btn-primary" type="submit">Enregistrer</button>
+</form>
+{% endblock %}

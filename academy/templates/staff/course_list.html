@@ -1,0 +1,18 @@
+{% extends "staff/base_staff.html" %}
+{% block title %}Formations{% endblock %}
+{% block staff %}
+<div style="display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap"><h1>Formations</h1><a class="btn btn-primary" href="{% url 'staff_course_new' %}">Nouvelle formation</a></div>
+<div class="table-wrap"><table class="data"><thead><tr><th>Formation</th><th>Statut</th><th>Contenu</th><th>Inscrits</th><th>Seuil</th><th>Actions</th></tr></thead><tbody>
+{% for c in courses %}<tr>
+  <td><strong>{{ c.title }}</strong>{% if c.is_demo %}<br><span class="demo-flag">Démonstration</span>{% endif %}</td>
+  <td><span class="tag {% if c.status == 'published' %}ok{% elif c.status == 'archived' %}grey{% else %}warn{% endif %}">{{ c.get_status_display }}</span></td>
+  <td>{{ c.n_modules }} modules · {{ c.n_questions }} questions</td><td>{{ c.n_enrolled }}</td><td>{{ c.pass_threshold|floatformat:"-2" }} %</td>
+  <td><a href="{% url 'staff_course_edit' c.pk %}">Fiche</a> · <a href="{% url 'staff_course_content' c.pk %}">Programme</a> · <a href="{% url 'staff_questions' c.pk %}">Examen</a> · <a href="{{ c.get_absolute_url }}">Voir</a>
+    <form method="post" action="{% url 'staff_course_status' c.pk %}" class="inline">{% csrf_token %}
+      {% if c.status != 'published' %}<button class="linklike" name="status" value="published">Publier</button>{% endif %}
+      {% if c.status != 'archived' %} · <button class="linklike" name="status" value="archived">Archiver</button>{% endif %}
+      {% if c.status != 'draft' %} · <button class="linklike" name="status" value="draft">Brouillon</button>{% endif %}
+    </form></td>
+</tr>{% empty %}<tr><td colspan="6" class="muted">Aucune formation.</td></tr>{% endfor %}
+</tbody></table></div>
+{% endblock %}

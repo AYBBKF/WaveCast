@@ -1,0 +1,19 @@
+{% extends "base.html" %}
+{% block title %}Certificat {{ cert.number }}{% endblock %}
+{% block container %}narrow{% endblock %}
+{% block content %}
+<section class="congrats">
+  <h1>Votre certificat est prêt</h1>
+  <p style="font-size:18px">« {{ cert.course_title }} » — {{ cert.full_name }} — {{ cert.score20_display }}/20</p>
+  <div class="btn-row" style="justify-content:center;margin-top:16px">
+    <a class="btn btn-primary" href="{% url 'certificate_download' cert.number %}">Télécharger mon certificat (PDF)</a>
+    <a class="btn btn-secondary" href="{% url 'certificate_download' cert.number %}?inline=1" target="_blank" rel="noopener">Ouvrir dans le navigateur</a>
+  </div>
+</section>
+<div class="card" style="margin-top:18px">
+  <p><strong>N° de certificat :</strong> {{ cert.number }}<br><strong>Délivré le :</strong> {{ cert.issued_at|date:"j F Y" }}</p>
+  <p class="small muted">Lien public de vérification (également accessible par le QR code du certificat) : <a href="{{ cert.verify_url }}">{{ cert.verify_url }}</a></p>
+  {% if claim and claim.status == "eligible" %}<a class="btn btn-primary" href="{% url 'reward_claim' claim.pk %}">Réclamer mon abonnement Claude Pro</a>{% endif %}
+  <a class="btn btn-secondary" href="{% url 'dashboard' %}">Mon espace</a>
+</div>
+{% endblock %}

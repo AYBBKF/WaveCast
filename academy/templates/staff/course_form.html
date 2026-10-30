@@ -1,0 +1,12 @@
+{% extends "staff/base_staff.html" %}
+{% block title %}{% if course %}{{ course.title }}{% else %}Nouvelle formation{% endif %}{% endblock %}
+{% block staff %}
+<p class="small"><a href="{% url 'staff_courses' %}">Formations</a> › {% if course %}{{ course.title }}{% else %}Nouvelle{% endif %}</p>
+<h1>{% if course %}Fiche de la formation{% else %}Nouvelle formation{% endif %}</h1>
+{% if course %}<div class="btn-row" style="margin-bottom:14px"><a class="btn btn-secondary btn-sm" href="{% url 'staff_course_content' course.pk %}">Programme (modules et leçons)</a><a class="btn btn-secondary btn-sm" href="{% url 'staff_questions' course.pk %}">Examen final</a></div>{% endif %}
+<form method="post" enctype="multipart/form-data" class="card form">{% csrf_token %}
+  {% include "partials/form.html" %}
+  <p class="small muted">Seuil de réussite : 70 % = 14/20. Tentatives : 0 = illimitées.</p>
+  <button class="btn btn-primary" type="submit">Enregistrer</button>
+</form>
+{% endblock %}

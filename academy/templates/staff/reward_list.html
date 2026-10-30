@@ -1,0 +1,30 @@
+{% extends "staff/base_staff.html" %}
+{% block title %}Récompenses Claude Pro{% endblock %}
+{% block staff %}
+<h1>Récompenses Claude Pro</h1>
+<p class="muted">Remise manuelle : ne demandez jamais le mot de passe Claude d'un participant. Les liens cadeaux ne sont visibles que par le bénéficiaire et l'administration.</p>
+<div style="display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap"><h2>Offres</h2><a class="btn btn-primary btn-sm" href="{% url 'staff_reward_offer_new' %}">+ Nouvelle offre</a></div>
+<div class="table-wrap"><table class="data"><thead><tr><th>Formation</th><th>Durée</th><th>Délai</th><th>Financement</th><th>Statut</th><th></th></tr></thead><tbody>
+{% for o in offers %}<tr><td>{{ o.course.title }}</td><td>{{ o.duration_label|default:"—" }}</td><td>{{ o.delivery_delay|default:"—" }}</td>
+  <td>{% if o.funding_confirmed %}<span class="tag ok">Confirmé</span>{% else %}<span class="tag warn">À confirmer</span>{% endif %}</td>
+  <td>{% if o.is_live %}<span class="tag ok">Active</span>{% else %}<span class="tag grey">Brouillon</span>{% endif %}</td>
+  <td><a href="{% url 'staff_reward_offer_edit' o.pk %}">Modifier</a></td></tr>
+{% empty %}<tr><td colspan="6" class="muted">Aucune offre.</td></tr>{% endfor %}
+</tbody></table></div>
+
+<h2 style="margin-top:28px">Bénéficiaires</h2>
+<div class="btn-row" style="margin-bottom:12px">
+  <a class="btn btn-sm {% if not current %}btn-primary{% else %}btn-secondary{% endif %}" href="{% url 'staff_rewards' %}">Toutes</a>
+  {% for value, label in statuses %}<a class="btn btn-sm {% if current == value %}btn-primary{% else %}btn-secondary{% endif %}" href="?status={{ value }}">{{ label }}</a>{% endfor %}
+</div>
+<div class="table-wrap"><table class="data"><thead><tr><th>Bénéficiaire</th><th>Formation</th><th>Éligible le</th><th>Demande</th><th>Statut</th><th>Remis le</th><th></th></tr></thead><tbody>
+{% for c in claims %}<tr>
+  <td>{{ c.full_name|default:c.user.profile.full_name }}<br><span class="small muted">{{ c.email|default:c.user.email }}</span></td>
+  <td>{{ c.course.title }}<br><span class="small muted">{{ c.duration_label }} · tentative n° {{ c.attempt.number }}</span></td>
+  <td>{{ c.eligible_at|date:"j M Y" }}</td><td>{{ c.requested_at|date:"j M Y H:i"|default:"—" }}</td>
+  <td><span class="tag {% if c.status == 'delivered' %}ok{% elif c.status == 'eligible' %}grey{% else %}warn{% endif %}">{{ c.get_status_display }}</span></td>
+  <td>{{ c.delivered_at|date:"j M Y"|default:"—" }}</td>
+  <td><a href="{% url 'staff_reward_claim' c.pk %}">Traiter</a></td>
+</tr>{% empty %}<tr><td colspan="7" class="muted">Aucun bénéficiaire.</td></tr>{% endfor %}
+</tbody></table></div>
+{% endblock %}

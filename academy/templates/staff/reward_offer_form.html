@@ -1,0 +1,11 @@
+{% extends "staff/base_staff.html" %}
+{% block title %}Offre Claude Pro{% endblock %}
+{% block staff %}
+<p class="small"><a href="{% url 'staff_rewards' %}">Récompenses Claude Pro</a> › Offre</p>
+<h1>{% if offer %}Offre Claude Pro — {{ offer.course.title }}{% else %}Nouvelle offre Claude Pro{% endif %}</h1>
+<div class="msg info">L'offre reste en <strong>brouillon</strong> tant que la durée, les modalités de remise, le délai et le financement ne sont pas renseignés. Elle n'est visible publiquement qu'une fois activée. Condition d'éligibilité : e-mail vérifié, toutes les leçons terminées et exactement 100 % à l'examen. Une seule récompense par bénéficiaire et par offre.</div>
+<form method="post" class="card form">{% csrf_token %}
+  {% include "partials/form.html" %}
+  <button class="btn btn-primary" type="submit">Enregistrer</button>
+</form>
+{% endblock %}

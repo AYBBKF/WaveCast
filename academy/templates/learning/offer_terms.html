@@ -1,0 +1,24 @@
+{% extends "base.html" %}
+{% block title %}Offre Claude Pro — {{ course.title }}{% endblock %}
+{% block container %}narrow{% endblock %}
+{% block content %}
+<p class="small"><a href="{{ course.get_absolute_url }}">{{ course.title }}</a> › Offre Claude Pro</p>
+{% if not offer.is_live %}<p class="msg info">Aperçu équipe : cette offre est en brouillon et n'est pas visible du public.</p>{% endif %}
+<h1>{{ offer.duration_label|default:"[durée à définir]" }} de Claude Pro offert par {{ site.organization_name }}</h1>
+<div class="card">
+  <h2>Conditions</h2>
+  <ul>
+    <li>Avoir un compte avec une adresse e-mail vérifiée.</li>
+    <li>Avoir terminé toutes les leçons de la formation « {{ course.title }} ».</li>
+    <li>Obtenir 100 % de bonnes réponses (20/20) à une tentative de l'examen final. Les nouvelles tentatives autorisées comptent.</li>
+    <li>Une seule récompense par participant pour cette offre.</li>
+  </ul>
+  <h2>Organisateur et financement</h2>
+  <p>La récompense est organisée et entièrement financée par {{ site.organization_name }}. Elle n'est pas proposée par Anthropic.</p>
+  <h2>Modalités de remise</h2>
+  <p>{{ offer.delivery_method|default:"[modalités à définir]"|linebreaksbr }}</p>
+  <p><strong>Délai annoncé :</strong> {{ offer.delivery_delay|default:"[délai à définir]" }}</p>
+  <p class="small muted">{{ site.organization_name }} ne vous demandera jamais le mot de passe de votre compte Claude.</p>
+</div>
+<p style="margin-top:16px"><a class="btn btn-primary" href="{{ course.get_absolute_url }}">Voir la formation</a></p>
+{% endblock %}

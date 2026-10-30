@@ -1,0 +1,17 @@
+{% extends "staff/base_staff.html" %}
+{% block title %}Apprenants{% endblock %}
+{% block staff %}
+<h1>Apprenants et progression</h1>
+<form method="get" class="btn-row" style="margin-bottom:14px"><input class="input" name="q" value="{{ query }}" placeholder="Nom, e-mail ou formation" style="max-width:340px"><button class="btn btn-secondary">Rechercher</button></form>
+<div class="table-wrap"><table class="data"><thead><tr><th>Apprenant</th><th>Formation</th><th>Progression</th><th>Dernière activité</th><th>Examens</th><th>Meilleure note</th><th>Certificat</th></tr></thead><tbody>
+{% for r in rows %}<tr>
+  <td>{{ r.e.user.profile.full_name|default:"—" }}<br><span class="small muted">{{ r.e.user.email }}</span>{% if r.e.user.profile.email_verified %} <span class="tag ok">vérifié</span>{% endif %}</td>
+  <td>{{ r.e.course.title }}</td>
+  <td style="min-width:140px"><div class="progress-label small"><span>{{ r.progress.done }}/{{ r.progress.total }}</span><span>{{ r.progress.percent }} %</span></div><div class="progress"><span style="width:{{ r.progress.percent }}%"></span></div></td>
+  <td>{{ r.e.last_activity_at|date:"j M Y H:i" }}</td>
+  <td>{{ r.attempts }}</td>
+  <td>{% if r.best %}{{ r.best.score20_display }}/20{% else %}—{% endif %}</td>
+  <td>{% if r.cert %}<a href="{% url 'certificate_download' r.cert.number %}">{{ r.cert.number }}</a>{% else %}—{% endif %}</td>
+</tr>{% empty %}<tr><td colspan="7" class="muted">Aucun apprenant inscrit.</td></tr>{% endfor %}
+</tbody></table></div>
+{% endblock %}

@@ -1,0 +1,53 @@
+{% load static %}<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{% block title %}{{ site.platform_name }}{% endblock %} — {{ site.platform_name }}</title>
+  <meta name="description" content="{% block description %}Formations en ligne de {{ site.organization_name }} : cours écrits, examen final et certificat de réussite.{% endblock %}">
+  <link rel="stylesheet" href="{% static 'academy/academy.css' %}">
+  <style>:root{--brand:{{ site.primary_color|default:"#673DE6" }};--ink:{{ site.accent_color|default:"#111014" }}}</style>
+  {% block head %}{% endblock %}
+</head>
+<body {% block body_attrs %}{% endblock %}>
+<a class="skip" href="#contenu">Aller au contenu</a>
+<header class="topbar">
+  <div class="wrap">
+    <a class="brand" href="{% url 'home' %}">
+      {% if site.logo %}<img src="{{ site.logo.url }}" alt="{{ site.organization_name }}">{% else %}<span class="dot" aria-hidden="true">FI</span>{% endif %}
+      <span>{{ site.platform_name }}</span>
+    </a>
+    <button class="menu-toggle" type="button" data-toggle="main-nav" aria-controls="main-nav" aria-expanded="false">Menu</button>
+    <nav class="nav" id="main-nav" aria-label="Navigation principale">
+      <a href="{% url 'home' %}">Formations</a>
+      {% if user.is_authenticated %}
+        <a href="{% url 'dashboard' %}">Mon espace</a>
+        {% if user.is_staff %}<a href="{% url 'staff_overview' %}">Administration</a>{% endif %}
+        <form method="post" action="{% url 'logout' %}">{% csrf_token %}<button class="link" type="submit">Se déconnecter</button></form>
+      {% else %}
+        <a href="{% url 'login' %}">Se connecter</a>
+        <a class="btn btn-primary btn-sm" href="{% url 'signup' %}">Créer un compte</a>
+      {% endif %}
+    </nav>
+  </div>
+</header>
+<main id="contenu">
+  <div class="{% block container %}wrap{% endblock %}">
+    {% if messages %}
+      <ul class="messages" role="status">
+        {% for m in messages %}<li class="msg {{ m.tags }}">{{ m }}</li>{% endfor %}
+      </ul>
+    {% endif %}
+    {% block content %}{% endblock %}
+  </div>
+</main>
+<footer class="footer">
+  <div class="wrap">
+    <span>© {% now "Y" %} {{ site.organization_name }} — {{ site.platform_name }}</span>
+    <span>{% if site.support_email %}Contact : <a href="mailto:{{ site.support_email }}">{{ site.support_email }}</a>{% endif %}</span>
+  </div>
+</footer>
+<script src="{% static 'academy/app.js' %}" defer></script>
+{% block scripts %}{% endblock %}
+</body>
+</html>

@@ -1,0 +1,26 @@
+{% extends "base.html" %}
+{% block title %}Mon profil{% endblock %}
+{% block content %}
+<p class="small"><a href="{% url 'dashboard' %}">Mon espace</a> › Profil</p>
+<div class="grid grid-2">
+  <div class="card">
+    <h1 style="font-size:28px">Mon profil</h1>
+    <form method="post" class="form">{% csrf_token %}
+      {% include "partials/form.html" %}
+      <button class="btn btn-primary" type="submit">Enregistrer</button>
+    </form>
+  </div>
+  <div class="card">
+    <h2>Adresse e-mail</h2>
+    {% if user.profile.email_verified %}
+      <p><span class="tag ok">Vérifiée</span> le {{ user.profile.email_verified_at|date:"j F Y" }}</p>
+    {% else %}
+      <p><span class="tag warn">Non vérifiée</span></p>
+      <p class="muted small">La vérification est nécessaire pour certaines récompenses. Ouvrez le lien reçu par e-mail.</p>
+      <form method="post" action="{% url 'resend_verification' %}">{% csrf_token %}<button class="btn btn-secondary" type="submit">Renvoyer le lien de confirmation</button></form>
+    {% endif %}
+    <h2 style="margin-top:22px">Sécurité</h2>
+    <a class="btn btn-secondary" href="{% url 'password_change' %}">Changer de mot de passe</a>
+  </div>
+</div>
+{% endblock %}

@@ -1,0 +1,42 @@
+{% extends "base.html" %}
+{% block title %}Formations{% endblock %}
+{% block content %}
+<section class="hero">
+  <span class="eyebrow">{{ site.organization_name }}</span>
+  <h1>Apprenez l'IA et l'automatisation, à votre rythme</h1>
+  <p>Des formations écrites, claires et concrètes. Suivez les leçons, passez l'examen final et obtenez votre certificat de réussite {{ site.organization_name }}.</p>
+  <div class="btn-row">
+    <a class="btn btn-primary" href="#formations">Voir les formations</a>
+    {% if not user.is_authenticated %}<a class="btn btn-secondary" href="{% url 'signup' %}">Créer un compte gratuit</a>{% endif %}
+  </div>
+</section>
+
+<h2 id="formations">Formations disponibles</h2>
+{% if cards %}
+<div class="grid grid-3">
+  {% for c in cards %}
+  <article class="card course-card">
+    <div class="cover">{% if c.course.cover %}<img src="{{ c.course.cover.url }}" alt="">{% else %}{{ c.course.title }}{% endif %}</div>
+    <div class="body">
+      {% if c.course.is_demo %}<span class="demo-flag">Formation de démonstration</span>{% endif %}
+      <h3><a href="{{ c.course.get_absolute_url }}">{{ c.course.title }}</a></h3>
+      <p class="muted small">{{ c.course.summary|default:c.course.description|truncatewords:30 }}</p>
+      <div class="meta">
+        <span class="tag grey">{{ c.course.get_level_display }}</span>
+        <span class="tag grey">{{ c.course.duration }}</span>
+        <span class="tag grey">{{ c.modules }} modules · {{ c.lessons }} leçons</span>
+      </div>
+      {% if c.offer %}<span class="tag">Claude Pro offert pour un 20/20</span>{% endif %}
+      {% if c.progress and c.progress.done %}
+        <div><div class="progress-label"><span>Votre progression</span><span>{{ c.progress.percent }} %</span></div>
+        <div class="progress"><span style="width:{{ c.progress.percent }}%"></span></div></div>
+      {% endif %}
+      <div class="foot"><a class="btn btn-primary" href="{{ c.course.get_absolute_url }}">Découvrir la formation</a></div>
+    </div>
+  </article>
+  {% endfor %}
+</div>
+{% else %}
+<div class="empty">Aucune formation n'est publiée pour le moment.</div>
+{% endif %}
+{% endblock %}

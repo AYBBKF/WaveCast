@@ -1,0 +1,16 @@
+{% extends "staff/base_staff.html" %}
+{% block title %}Résultats{% endblock %}
+{% block staff %}
+<h1>Résultats d'examen</h1>
+<div class="table-wrap"><table class="data"><thead><tr><th>Date</th><th>Apprenant</th><th>Formation</th><th>Tentative</th><th>Bonnes réponses</th><th>Note</th><th>Seuil</th><th>Résultat</th></tr></thead><tbody>
+{% for a in attempts %}<tr>
+  <td>{{ a.submitted_at|date:"j M Y H:i" }}</td>
+  <td>{{ a.user.profile.full_name }}<br><span class="small muted">{{ a.user.email }}</span></td>
+  <td>{{ a.course.title }}</td><td>n° {{ a.number }}</td>
+  <td>{{ a.correct_answers }}/{{ a.total_questions }}</td>
+  <td>{{ a.score20_display }}/20 ({{ a.percent_display }} %)</td>
+  <td>{{ a.threshold|floatformat:"-2" }} %</td>
+  <td>{% if a.passed %}<span class="tag ok">Réussi</span>{% else %}<span class="tag ko">Échec</span>{% endif %}{% if a.is_perfect %} <span class="tag warn">100 %</span>{% endif %}</td>
+</tr>{% empty %}<tr><td colspan="8" class="muted">Aucun résultat.</td></tr>{% endfor %}
+</tbody></table></div>
+{% endblock %}

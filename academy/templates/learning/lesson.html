@@ -1,0 +1,67 @@
+{% extends "base.html" %}
+{% block title %}{{ lesson.title }} — {{ course.title }}{% endblock %}
+{% block content %}
+<div class="lesson-head">
+  <p class="crumb"><a href="{{ course.get_absolute_url }}">{{ course.title }}</a> › {{ lesson.module.title }}</p>
+  <div class="progress-label"><span>Leçon {{ position }} sur {{ progress.total }}</span><span>{{ progress.done }}/{{ progress.total }} terminées · {{ progress.percent }} %</span></div>
+  <div class="progress" role="progressbar" aria-valuenow="{{ progress.percent }}" aria-valuemin="0" aria-valuemax="100" aria-label="Progression dans la formation"><span style="width:{{ progress.percent }}%"></span></div>
+  <button class="btn btn-secondary btn-sm toc-toggle" type="button" data-toggle="toc" aria-controls="toc" aria-expanded="false" style="margin-top:12px">Sommaire de la formation</button>
+</div>
+
+<div class="reader">
+  <nav class="toc" id="toc" aria-label="Sommaire">
+    <h2>Sommaire</h2>
+    {% for m in modules %}
+      <div class="mod">Module {{ forloop.counter }} · {{ m.title }}</div>
+      <ol>
+        {% for l in m.lessons.all %}
+          <li class="{% if l.id in progress.completed_ids %}done{% endif %}">
+            <a href="{{ l.get_absolute_url }}" class="{% if l.id == lesson.id %}current{% endif %}" {% if l.id == lesson.id %}aria-current="page"{% endif %}>
+              <span class="state" aria-hidden="true">{% if l.id in progress.completed_ids %}✓{% endif %}</span>
+              <span>{{ l.title }}{% if l.id in progress.completed_ids %}<span class="skip">(terminée)</span>{% endif %}</span>
+            </a>
+          </li>
+        {% endfor %}
+      </ol>
+    {% endfor %}
+    <div class="mod">Évaluation</div>
+    <ol><li><a href="{% url 'exam_intro' course.slug %}"><span class="state" aria-hidden="true"></span><span>Examen final{% if not exam_allowed %} 🔒{% endif %}</span></a></li></ol>
+  </nav>
+
+  <article>
+    <header style="margin-bottom:14px">
+      <span class="eyebrow">{{ lesson.module.title }}</span>
+      <h1>{{ lesson.title }}</h1>
+      <p class="muted small">Lecture : environ {{ lesson.reading_minutes }} min{% if is_done %} · <span class="tag ok">Terminée</span>{% endif %}</p>
+    </header>
+
+    <div class="prose">{{ lesson.content|safe }}</div>
+
+    {% if lesson.key_takeaway %}
+      <aside class="takeaway" aria-label="À retenir"><h2>À retenir</h2>{{ lesson.key_takeaway|safe }}</aside>
+    {% endif %}
+
+    <div class="lesson-actions">
+      {% if is_done %}
+        <form method="post" action="{% url 'lesson_complete' course.slug lesson.slug %}">{% csrf_token %}
+          <input type="hidden" name="undo" value="1">
+          <span class="tag ok">✓ Leçon terminée</span> <button class="linklike small" type="submit">Marquer comme non terminée</button>
+        </form>
+        {% if next_lesson %}<a class="btn btn-primary" href="{{ next_lesson.get_absolute_url }}">Leçon suivante →</a>
+        {% elif exam_allowed %}<a class="btn btn-primary" href="{% url 'exam_intro' course.slug %}">Passer l'examen final →</a>{% endif %}
+      {% else %}
+        <span class="muted small">Lu jusqu'ici ? Validez la leçon pour avancer.</span>
+        <form method="post" action="{% url 'lesson_complete' course.slug lesson.slug %}" data-once>{% csrf_token %}
+          <button class="btn btn-ok" type="submit">✓ Marquer comme terminée{% if next_lesson %} et continuer{% endif %}</button>
+        </form>
+      {% endif %}
+    </div>
+
+    <nav class="lesson-nav" aria-label="Navigation entre les leçons">
+      {% if prev_lesson %}<a class="prev" href="{{ prev_lesson.get_absolute_url }}"><small>← Précédent</small>{{ prev_lesson.title }}</a>{% else %}<span></span>{% endif %}
+      {% if next_lesson %}<a class="next" href="{{ next_lesson.get_absolute_url }}"><small>Suivant →</small>{{ next_lesson.title }}</a>
+      {% else %}<a class="next" href="{% url 'exam_intro' course.slug %}"><small>Ensuite →</small>Examen final</a>{% endif %}
+    </nav>
+  </article>
+</div>
+{% endblock %}

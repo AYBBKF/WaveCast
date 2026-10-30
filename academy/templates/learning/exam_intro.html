@@ -1,0 +1,29 @@
+{% extends "base.html" %}
+{% block title %}Examen final — {{ course.title }}{% endblock %}
+{% block container %}narrow{% endblock %}
+{% block content %}
+<p class="small"><a href="{{ course.get_absolute_url }}">{{ course.title }}</a> › Examen final</p>
+<h1>Examen final</h1>
+<div class="card">
+  <ul class="facts">
+    <li><span class="muted">Questions</span><strong>{{ question_count }} (QCM et vrai/faux)</strong></li>
+    <li><span class="muted">Barème</span><strong>Chaque question vaut le même nombre de points</strong></li>
+    <li><span class="muted">Seuil de réussite</span><strong>{{ course.pass_threshold|floatformat:"-2" }} %, soit {{ course.threshold_on_20|floatformat:"-2" }}/20</strong></li>
+    <li><span class="muted">Réponse fausse ou vide</span><strong>0 point, sans pénalité</strong></li>
+    <li><span class="muted">Tentatives</span><strong>{% if attempts_left is None %}Illimitées{% else %}{{ attempts_left }} restante{{ attempts_left|pluralize }}{% endif %} · {{ attempts_used }} utilisée{{ attempts_used|pluralize }}</strong></li>
+  </ul>
+  {% if offer %}<div class="offer" style="margin-top:16px"><span class="ico" aria-hidden="true">★</span><p>Un 20/20 vous fait gagner <strong>{{ offer.duration_label }} de Claude Pro</strong> offert par {{ site.organization_name }}.</p></div>{% endif %}
+  <div style="margin-top:18px">
+    {% if allowed %}
+      <p class="muted">Votre note et la correction expliquée s'affichent dès l'envoi de vos réponses.</p>
+      <a class="btn btn-primary" href="{% url 'exam_take' course.slug %}">Commencer l'examen</a>
+    {% else %}
+      <p class="msg info">{{ reason }}</p>
+      <div class="progress-label"><span>Leçons terminées</span><span>{{ progress.done }}/{{ progress.total }}</span></div>
+      <div class="progress"><span style="width:{{ progress.percent }}%"></span></div>
+      <p style="margin-top:14px"><a class="btn btn-secondary" href="{% url 'resume' course.slug %}">Reprendre ma formation</a></p>
+    {% endif %}
+  </div>
+</div>
+{% if last_attempt %}<p class="small muted" style="margin-top:14px">Dernière tentative : {{ last_attempt.score20_display }}/20 le {{ last_attempt.submitted_at|date:"j F Y à H:i" }} — <a href="{% url 'exam_result' course.slug last_attempt.number %}">voir le résultat</a></p>{% endif %}
+{% endblock %}

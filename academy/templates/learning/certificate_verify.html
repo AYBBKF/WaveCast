@@ -1,0 +1,30 @@
+{% extends "base.html" %}
+{% block title %}Vérification de certificat{% endblock %}
+{% block head %}<meta name="robots" content="noindex">{% endblock %}
+{% block content %}
+<div class="card verify">
+{% if cert and cert.status == "valid" %}
+  <div class="badge" aria-hidden="true">✓</div>
+  <h1>Certificat authentique</h1>
+  <p class="muted">Ce certificat a bien été délivré par {{ cert.issuer }}.</p>
+{% elif cert %}
+  <div class="badge ko" aria-hidden="true">!</div>
+  <h1>Certificat révoqué</h1>
+  <p class="muted">Ce certificat a été délivré par {{ cert.issuer }} mais n'est plus valide.</p>
+{% else %}
+  <div class="badge ko" aria-hidden="true">?</div>
+  <h1>Certificat introuvable</h1>
+  <p class="muted">Aucun certificat ne correspond à ce lien. Vérifiez l'adresse ou le QR code.</p>
+{% endif %}
+{% if cert %}
+  <dl>
+    <dt>Statut</dt><dd>{{ cert.get_status_display }}</dd>
+    <dt>Formation</dt><dd>{{ cert.course_title }}</dd>
+    <dt>Titulaire</dt><dd>{{ holder }}</dd>
+    <dt>Date de délivrance</dt><dd>{{ cert.issued_at|date:"j F Y" }}</dd>
+    <dt>Numéro</dt><dd>{{ cert.number }}</dd>
+    <dt>Émetteur</dt><dd>{{ cert.issuer }}</dd>
+  </dl>
+{% endif %}
+</div>
+{% endblock %}

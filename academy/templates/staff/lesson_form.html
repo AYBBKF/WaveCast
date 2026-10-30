@@ -1,0 +1,21 @@
+{% extends "staff/base_staff.html" %}
+{% load static %}
+{% block title %}{% if lesson %}{{ lesson.title }}{% else %}Nouvelle leçon{% endif %}{% endblock %}
+{% block body_attrs %}data-upload-url="{% url 'staff_editor_upload' %}"{% endblock %}
+{% block staff %}
+<p class="small"><a href="{% url 'staff_course_content' course.pk %}">{{ course.title }}</a> › {% if lesson %}{{ lesson.title }}{% else %}Nouvelle leçon{% endif %}</p>
+<h1>{% if lesson %}Modifier la leçon{% else %}Nouvelle leçon{% endif %}</h1>
+<form method="post" class="card form">{% csrf_token %}
+  {% if form.non_field_errors %}<ul class="errorlist nonfield">{% for e in form.non_field_errors %}<li>{{ e }}</li>{% endfor %}</ul>{% endif %}
+  <div class="grid grid-2">
+    <div class="field"><label for="{{ form.module.id_for_label }}">Module</label>{{ form.module }}{{ form.module.errors }}</div>
+    <div class="field"><label for="{{ form.reading_minutes.id_for_label }}">Temps de lecture (min)</label>{{ form.reading_minutes }}</div>
+  </div>
+  <div class="field"><label for="{{ form.title.id_for_label }}">Titre</label>{{ form.title }}{{ form.title.errors }}</div>
+  <div class="field"><label>Contenu de la leçon</label>{{ form.content }}<div class="help">Boutons « Exemple », « Astuce », « Attention » : encadrés mis en forme. Le HTML est nettoyé à l'enregistrement.</div></div>
+  <div class="field"><label>Encadré « À retenir »</label>{{ form.key_takeaway }}</div>
+  <div class="btn-row"><button class="btn btn-primary" type="submit">Enregistrer</button><button class="btn btn-secondary" type="submit" name="continue" value="1">Enregistrer et continuer</button>
+  {% if lesson %}<a class="btn btn-secondary" href="{{ lesson.get_absolute_url }}" target="_blank" rel="noopener">Voir la leçon</a>{% endif %}</div>
+</form>
+{% endblock %}
+{% block scripts %}<script src="{% static 'academy/editor.js' %}" defer></script>{% endblock %}

@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+{% block title %}Réclamer mon abonnement Claude Pro{% endblock %}
+{% block container %}narrow{% endblock %}
+{% block content %}
+<h1>Réclamer mon abonnement Claude Pro</h1>
+<div class="card">
+  <p>Vous avez gagné <strong>{{ claim.duration_label }} de Claude Pro</strong>, offert et financé par {{ site.organization_name }}, pour votre 20/20 à la formation « {{ claim.course.title }} ».</p>
+  <p class="small muted"><strong>Modalités :</strong> {{ offer.delivery_method|linebreaksbr }}<br><strong>Délai annoncé :</strong> {{ claim.delivery_delay }}</p>
+  <form method="post" class="form" data-once>{% csrf_token %}
+    {% include "partials/form.html" %}
+    <button class="btn btn-primary" type="submit" data-loading="Enregistrement…">Confirmer ma demande</button>
+  </form>
+</div>
+{% endblock %}

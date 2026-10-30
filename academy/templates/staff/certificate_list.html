@@ -1,0 +1,14 @@
+{% extends "staff/base_staff.html" %}
+{% block title %}Certificats{% endblock %}
+{% block staff %}
+<h1>Certificats délivrés</h1>
+<div class="table-wrap"><table class="data"><thead><tr><th>N°</th><th>Titulaire</th><th>Formation</th><th>Note</th><th>Date</th><th>Statut</th><th>Actions</th></tr></thead><tbody>
+{% for c in certs %}<tr>
+  <td>{{ c.number }}</td><td>{{ c.full_name }}<br><span class="small muted">{{ c.user.email }}</span></td><td>{{ c.course_title }}</td>
+  <td>{{ c.score20_display }}/20</td><td>{{ c.issued_at|date:"j M Y" }}</td>
+  <td>{% if c.status == 'valid' %}<span class="tag ok">Valide</span>{% else %}<span class="tag ko">Révoqué</span>{% endif %}</td>
+  <td><a href="{% url 'certificate_download' c.number %}">PDF</a> · <a href="{{ c.verify_url }}" target="_blank" rel="noopener">Vérification</a> ·
+    <form method="post" action="{% url 'staff_certificate_toggle' c.pk %}" class="inline" onsubmit="return confirm('Confirmer le changement de statut ?')">{% csrf_token %}<button class="linklike">{% if c.status == 'valid' %}Révoquer{% else %}Rétablir{% endif %}</button></form></td>
+</tr>{% empty %}<tr><td colspan="7" class="muted">Aucun certificat délivré.</td></tr>{% endfor %}
+</tbody></table></div>
+{% endblock %}

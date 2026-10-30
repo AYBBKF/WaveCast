@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+{% block title %}Créer un compte{% endblock %}
+{% block content %}
+<div class="card auth-card">
+  <h1>Créer un compte</h1>
+  <p class="muted">Gratuit. Votre progression, vos résultats et vos certificats sont enregistrés dans votre espace.</p>
+  <form method="post" class="form" data-once>{% csrf_token %}
+    <input type="hidden" name="next" value="{{ next }}">
+    {% include "partials/form.html" %}
+    <button class="btn btn-primary" type="submit" data-loading="Création…">Créer mon compte</button>
+  </form>
+  <p class="small center" style="margin-top:14px">Déjà inscrit ? <a href="{% url 'login' %}{% if next %}?next={{ next|urlencode }}{% endif %}">Se connecter</a></p>
+</div>
+{% endblock %}

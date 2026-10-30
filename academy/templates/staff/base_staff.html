@@ -1,0 +1,18 @@
+{% extends "base.html" %}
+{% block content %}
+<div class="staff-layout">
+  <nav class="staff-nav" aria-label="Administration">
+    <div class="label">Administration</div>
+    <a href="{% url 'staff_overview' %}">Vue d'ensemble</a>
+    <a href="{% url 'staff_courses' %}">Formations</a>
+    <a href="{% url 'staff_learners' %}">Apprenants</a>
+    <a href="{% url 'staff_results' %}">Résultats</a>
+    <a href="{% url 'staff_certificates' %}">Certificats</a>
+    <a href="{% url 'staff_rewards' %}">Récompenses Claude Pro</a>
+    <div class="label">Plateforme</div>
+    <a href="{% url 'staff_settings' %}">Marque et certificat</a>
+    {% if user.is_superuser %}<a href="/django-admin/">Administration technique</a>{% endif %}
+  </nav>
+  <div>{% block staff %}{% endblock %}</div>
+</div>
+{% endblock %}

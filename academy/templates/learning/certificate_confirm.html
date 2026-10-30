@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+{% block title %}Confirmer mon nom — certificat{% endblock %}
+{% block container %}narrow{% endblock %}
+{% block content %}
+<h1>Votre certificat est prêt à être émis</h1>
+<div class="card">
+  <p>Vérifiez l'orthographe de votre nom : il sera inscrit sur le certificat de la formation <strong>« {{ course.title }} »</strong> et ne pourra plus être modifié sur ce document.</p>
+  <form method="post" class="form" data-once>{% csrf_token %}
+    {% include "partials/form.html" %}
+    <button class="btn btn-primary" type="submit" data-loading="Génération du certificat…">Confirmer et générer mon certificat</button>
+  </form>
+</div>
+{% endblock %}

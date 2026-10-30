@@ -1,0 +1,39 @@
+{% extends "staff/base_staff.html" %}
+{% block title %}Programme — {{ course.title }}{% endblock %}
+{% block staff %}
+<p class="small"><a href="{% url 'staff_courses' %}">Formations</a> › {{ course.title }}</p>
+<div style="display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;align-items:center">
+  <h1>Programme</h1>
+  <div class="btn-row"><a class="btn btn-secondary btn-sm" href="{% url 'staff_course_edit' course.pk %}">Fiche</a><a class="btn btn-secondary btn-sm" href="{% url 'staff_questions' course.pk %}">Examen ({{ questions }} questions)</a><a class="btn btn-secondary btn-sm" href="{{ course.get_absolute_url }}">Voir la page</a></div>
+</div>
+<p><span class="tag {% if course.status == 'published' %}ok{% else %}warn{% endif %}">{{ course.get_status_display }}</span></p>
+{% for m in modules %}
+<div class="module-block">
+  <header>
+    <form method="post" action="{% url 'staff_module_edit' course.pk m.pk %}" class="btn-row">{% csrf_token %}
+      <strong>Module {{ forloop.counter }}</strong><input class="input" name="title" value="{{ m.title }}" style="min-width:240px;min-height:36px"><button class="btn btn-secondary btn-sm">Renommer</button>
+    </form>
+    <div class="btn-row">
+      <form method="post" action="{% url 'staff_module_move' m.pk 'up' %}" class="inline">{% csrf_token %}<button class="icon-btn" title="Monter">↑</button></form>
+      <form method="post" action="{% url 'staff_module_move' m.pk 'down' %}" class="inline">{% csrf_token %}<button class="icon-btn" title="Descendre">↓</button></form>
+      <form method="post" action="{% url 'staff_module_delete' m.pk %}" class="inline" onsubmit="return confirm('Supprimer ce module et ses leçons ?')">{% csrf_token %}<button class="icon-btn" title="Supprimer">✕</button></form>
+    </div>
+  </header>
+  <ol>
+    {% for l in m.lessons.all %}
+    <li><span>{{ forloop.counter }}. <a href="{% url 'staff_lesson_edit' course.pk l.pk %}">{{ l.title }}</a> <span class="small muted">· {{ l.reading_minutes }} min</span></span>
+      <span class="btn-row">
+        <form method="post" action="{% url 'staff_lesson_move' l.pk 'up' %}" class="inline">{% csrf_token %}<button class="icon-btn" title="Monter">↑</button></form>
+        <form method="post" action="{% url 'staff_lesson_move' l.pk 'down' %}" class="inline">{% csrf_token %}<button class="icon-btn" title="Descendre">↓</button></form>
+        <a class="btn btn-secondary btn-sm" href="{{ l.get_absolute_url }}">Voir</a>
+        <form method="post" action="{% url 'staff_lesson_delete' l.pk %}" class="inline" onsubmit="return confirm('Supprimer cette leçon ?')">{% csrf_token %}<button class="icon-btn" title="Supprimer">✕</button></form>
+      </span></li>
+    {% empty %}<li class="muted">Aucune leçon.</li>{% endfor %}
+  </ol>
+  <div style="padding:0 16px 14px"><a class="btn btn-primary btn-sm" href="{% url 'staff_lesson_new' course.pk %}?module={{ m.pk }}">+ Ajouter une leçon</a></div>
+</div>
+{% endfor %}
+<form method="post" action="{% url 'staff_module_new' course.pk %}" class="card btn-row">{% csrf_token %}
+  <input class="input" name="title" placeholder="Titre du nouveau module" required style="max-width:420px"><button class="btn btn-primary">+ Ajouter un module</button>
+</form>
+{% endblock %}
