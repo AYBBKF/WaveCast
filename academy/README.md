@@ -50,7 +50,24 @@ L'application a besoin d'un hébergement Python (VPS, Render, Railway, Fly.io, S
 
 > **Important : `ACADEMY_BASE_URL`** sert à construire le lien de vérification imprimé dans le QR code de chaque certificat. Réglez-la sur l'adresse définitive **avant** de délivrer les premiers certificats : un certificat déjà délivré conserve son lien.
 
+### Production actuelle : VPS Hostinger (Docker + Traefik)
+
+- Projet Docker Compose **`academy`** sur le VPS `srv928744` (148.230.113.129), fichier `deploy/docker-compose.hostinger.yml`.
+- Services : `academy-web` (Gunicorn), `academy-db` (PostgreSQL 16), `academy-secrets` (génère sur le serveur la clé Django et le mot de passe PostgreSQL au premier démarrage). Volumes persistants : `academy-db`, `academy-media`, `academy-private`, `academy-secrets`.
+- Traefik (déjà présent sur le VPS) route `academy.fluxintelligent.com` et obtient le certificat Let's Encrypt automatiquement dès que le DNS pointe vers le VPS.
+- Mise à jour : changer `ACADEMY_GIT_REF` (commit à déployer) dans les variables du projet (hPanel → VPS → Docker Manager → academy), puis redéployer.
+- E-mails : `ACADEMY_EMAIL_BACKEND=django.core.mail.backends.smtp.EmailBackend` et `ACADEMY_EMAIL_PASSWORD` (mot de passe de service@fluxintelligent.com), à saisir uniquement dans ces variables.
+- `restart: unless-stopped` : redémarrage automatique après un crash ou un reboot du VPS.
+
 ## 3. Créer le premier administrateur (procédure sûre)
+
+**Méthode recommandée en production (aucun mot de passe ne quitte votre navigateur) :**
+1. Créez votre compte normalement sur `https://academy.fluxintelligent.com/inscription/`.
+2. Dans hPanel → VPS → Docker Manager → projet `academy` → variables : `ACADEMY_BOOTSTRAP_ADMIN_EMAIL=votre@email`, puis redéployez.
+3. Connectez-vous : `/gestion/` est accessible. Videz ensuite la variable et redéployez.
+
+Autre méthode, depuis le terminal du VPS : `docker exec -it academy-web python manage.py createsuperuser`.
+
 
 Sur le serveur, en ligne de commande :
 
