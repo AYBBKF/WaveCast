@@ -7,7 +7,7 @@
 #
 # Variables (fichier .env du projet sur le serveur, jamais dans Git) :
 #   ACADEMY_GIT_REF            commit GitHub à déployer
-#   ACADEMY_EXTRA_HOST         adresse supplémentaire facultative (ex. srv928744.hstgr.cloud),
+#   ACADEMY_EXTRA_HOST         adresse supplémentaire facultative (ex. academy.srv928744.hstgr.cloud),
 #                              servie elle aussi en HTTPS ; les QR codes gardent l'adresse officielle
 #   ACADEMY_EMAIL_*            SMTP (facultatif ; sans SMTP, les e-mails vont dans les journaux)
 #   ACADEMY_BOOTSTRAP_ADMIN_*  création du premier administrateur (à retirer ensuite)
@@ -103,9 +103,15 @@ services:
       - academy-secrets:/secrets:ro
     labels:
       - "traefik.enable=true"
-      - "traefik.http.routers.academy.rule=Host(`academy.fluxintelligent.com`) || Host(`${ACADEMY_EXTRA_HOST:-academy.fluxintelligent.com}`)"
+      - "traefik.http.routers.academy.rule=Host(`academy.fluxintelligent.com`)"
       - "traefik.http.routers.academy.entrypoints=websecure"
       - "traefik.http.routers.academy.tls.certresolver=letsencrypt"
+      - "traefik.http.routers.academy.service=academy"
+      # Adresse supplémentaire : routeur séparé pour obtenir son propre certificat.
+      - "traefik.http.routers.academy-extra.rule=Host(`${ACADEMY_EXTRA_HOST:-academy.fluxintelligent.com}`)"
+      - "traefik.http.routers.academy-extra.entrypoints=websecure"
+      - "traefik.http.routers.academy-extra.tls.certresolver=letsencrypt"
+      - "traefik.http.routers.academy-extra.service=academy"
       - "traefik.http.services.academy.loadbalancer.server.port=8000"
     healthcheck:
       test: ["CMD", "python", "-c", "import urllib.request as u; r=u.Request('http://127.0.0.1:8000/sante/', headers={'Host': 'localhost'}); u.urlopen(r, timeout=4)"]
