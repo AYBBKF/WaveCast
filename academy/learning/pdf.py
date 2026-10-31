@@ -168,16 +168,17 @@ def build_pdf_bytes(cert, site):
         c.setFont("Helvetica", 8.5)
         c.drawCentredString(sig_x, base_y - 4.5 * mm, site.certificate_signatory_title or "")
 
-    qr = qrcode.QRCode(border=1, box_size=8, error_correction=qrcode.constants.ERROR_CORRECT_M)
+    # Marge de 4 modules (zone de silence exigée par la norme QR) pour une lecture fiable au téléphone.
+    qr = qrcode.QRCode(border=4, box_size=10, error_correction=qrcode.constants.ERROR_CORRECT_Q)
     qr.add_data(cert.verify_url)
     qr.make(fit=True)
     img = qr.make_image(fill_color="black", back_color="white")
     qbuf = io.BytesIO()
     img.save(qbuf, format="PNG")
     qbuf.seek(0)
-    qsize = 26 * mm
-    qx = width - 28 * mm - qsize
-    c.drawImage(ImageReader(qbuf), qx, base_y - 2 * mm, width=qsize, height=qsize)
+    qsize = 30 * mm
+    qx = width - 26 * mm - qsize
+    c.drawImage(ImageReader(qbuf), qx, base_y - 5 * mm, width=qsize, height=qsize)
     c.setFillColor(grey)
     c.setFont("Helvetica", 7.5)
     c.drawRightString(qx - 3 * mm, base_y + 12 * mm, "Vérifier ce certificat :")
