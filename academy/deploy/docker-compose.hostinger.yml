@@ -7,6 +7,8 @@
 #
 # Variables (fichier .env du projet sur le serveur, jamais dans Git) :
 #   ACADEMY_GIT_REF            commit GitHub à déployer
+#   ACADEMY_EXTRA_HOST         adresse supplémentaire facultative (ex. srv928744.hstgr.cloud),
+#                              servie elle aussi en HTTPS ; les QR codes gardent l'adresse officielle
 #   ACADEMY_EMAIL_*            SMTP (facultatif ; sans SMTP, les e-mails vont dans les journaux)
 #   ACADEMY_BOOTSTRAP_ADMIN_*  création du premier administrateur (à retirer ensuite)
 
@@ -81,8 +83,8 @@ services:
     environment:
       ACADEMY_DEBUG: "0"
       ACADEMY_BASE_URL: https://academy.fluxintelligent.com
-      ACADEMY_ALLOWED_HOSTS: academy.fluxintelligent.com,localhost
-      ACADEMY_CSRF_TRUSTED_ORIGINS: https://academy.fluxintelligent.com
+      ACADEMY_ALLOWED_HOSTS: academy.fluxintelligent.com,localhost,${ACADEMY_EXTRA_HOST:-academy.fluxintelligent.com}
+      ACADEMY_CSRF_TRUSTED_ORIGINS: https://academy.fluxintelligent.com,https://${ACADEMY_EXTRA_HOST:-academy.fluxintelligent.com}
       ACADEMY_HSTS_SECONDS: "31536000"
       ACADEMY_EMAIL_BACKEND: ${ACADEMY_EMAIL_BACKEND:-django.core.mail.backends.console.EmailBackend}
       ACADEMY_EMAIL_HOST: ${ACADEMY_EMAIL_HOST:-}
@@ -101,7 +103,7 @@ services:
       - academy-secrets:/secrets:ro
     labels:
       - "traefik.enable=true"
-      - "traefik.http.routers.academy.rule=Host(`academy.fluxintelligent.com`)"
+      - "traefik.http.routers.academy.rule=Host(`academy.fluxintelligent.com`) || Host(`${ACADEMY_EXTRA_HOST:-academy.fluxintelligent.com}`)"
       - "traefik.http.routers.academy.entrypoints=websecure"
       - "traefik.http.routers.academy.tls.certresolver=letsencrypt"
       - "traefik.http.services.academy.loadbalancer.server.port=8000"
