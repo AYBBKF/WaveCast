@@ -1,0 +1,33 @@
+{
+ "sujet": "E11 – Réécriture : agenda des audiences et délais, collecte et contrôle des pièces, information client validée par l'avocat, secret professionnel, loi 09-08",
+ "type": "enrichissement",
+ "wp_id": 3084,
+ "url_prevue": "https://fluxintelligent.com/agent-ia-avocat-maroc/",
+ "statut_wp": "publish inchangé (AUCUNE mise à jour WordPress : score Surfer non vérifiable)",
+ "date_prevue": null,
+ "requete": "logiciel avocat maroc",
+ "editeur_surfer": null,
+ "score_total": null,
+ "score_seo": null,
+ "score_ai_search": null,
+ "iterations": 0,
+ "media_id": null,
+ "image_locale": "img/agent-ia-avocat-maroc.webp",
+ "alt": "Avocat à lunettes assis à son bureau devant un ordinateur portable affichant un calendrier, une collaboratrice consultant un dossier derrière lui",
+ "categories": null,
+ "tags": null,
+ "excerpt": "Logiciel avocat au Maroc : un agent IA pour l'agenda des audiences, la collecte des pièces et l'information des clients, validées par l'avocat.",
+ "titre": "Logiciel avocat au Maroc : agenda des audiences, pièces et suivi client avec un agent IA (proposé, sans emoji)",
+ "nb_mots": 1710,
+ "liens_internes": [
+  "https://fluxintelligent.com/agent-ia-comptable-maroc/",
+  "https://fluxintelligent.com/chatbots-experience-client/prise-de-rendez-vous-ia/",
+  "https://fluxintelligent.com/automatisation-des-processus/workflows-integrations-api/",
+  "https://fluxintelligent.com/automatisation-des-processus/automatisation-administrative/",
+  "https://fluxintelligent.com/agents-ia/",
+  "https://fluxintelligent.com/agents-ia/agent-ia-support-client/",
+  "https://fluxintelligent.com/ia/devis/"
+ ],
+ "sources_externes": [],
+ "limites_ou_blocages": "content_editor__create refusé : « content_editor__create failed: quota_exceeded — Content Editor quota exceeded » (12:09 UTC). HTML réécrit prêt dans html/agent-ia-avocat-maroc.html. Retirés : emojis, gains inventés (« 3 à 5 h », « ~15 h »), faux cas « Cabinet à Casablanca », tableau d'outils de marque, image inline. featured_media = 0 : image générée NON téléversée (img/agent-ia-avocat-maroc.webp, 960 px, 28 Ko). À faire : éditeur Surfer, score 80-90, puis wp_update_post (titre, extrait, contenu + breadcrumb) et featured_media."
+}

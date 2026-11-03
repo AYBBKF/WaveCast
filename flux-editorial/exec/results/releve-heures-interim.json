@@ -1,0 +1,31 @@
+{
+ "sujet": "Agences d'intérim : feuilles d'heures (photo/formulaire), contrôle planning, validation client, exports paie et facture",
+ "type": "création",
+ "wp_id": 4500,
+ "url_prevue": "https://fluxintelligent.com/releve-heures-interim/",
+ "statut_wp": "draft",
+ "date_prevue": "2026-12-02T09:00:00 heure marocaine (NON programmé : score Surfer non vérifié ; à programmer avec date_gmt 2026-12-02T08:00:00 une fois le score obtenu)",
+ "requete": "relevé d'heures intérim",
+ "editeur_surfer": null,
+ "score_total": null,
+ "score_seo": null,
+ "iterations": 0,
+ "media_id": null,
+ "image_locale": "/tmp/claude-0/-home-user-WaveCast/b86cf213-b51d-5352-9e9d-fc596e43dfc1/scratchpad/exec/img/releve-heures-interim.webp",
+ "alt": "Deux employés en gilet jaune dans un entrepôt, l'un photographie un document au smartphone, l'autre tient une tablette, chariots élévateurs au fond",
+ "categories": [1],
+ "tags": [{"id": 10, "name": "automatisation IA PME"}, {"id": 11, "name": "PME Maroc"}, {"id": 36, "name": "Automatisation IA"}],
+ "excerpt": "Relevé d'heures intérim : feuilles d'heures en photo ou formulaire, contrôle du planning, validation client et exports paie et facture automatisés.",
+ "titre": "Relevé d'heures intérim : automatiser feuilles d'heures, validation client et paie",
+ "nb_mots": 1020,
+ "liens_internes": [
+  "https://fluxintelligent.com/automatisation-des-processus/workflows-integrations-api/",
+  "https://fluxintelligent.com/automatisation-des-processus/comptable-au-maroc-ai/",
+  "https://fluxintelligent.com/automatisation-des-processus/automatisation-administrative/",
+  "https://fluxintelligent.com/chatbots-experience-client/chatbot-whatsapp-maroc/",
+  "https://fluxintelligent.com/automatisation-ia-pme-maroc/",
+  "https://fluxintelligent.com/ia/devis/"
+ ],
+ "sources_externes": [],
+ "limites_ou_blocages": "SURFER BLOQUÉ : content_editor__create (workspace 1403832, « relevé d'heures intérim ») a renvoyé deux fois « content_editor__create failed: quota_exceeded — Content Editor quota exceeded » (12:09 et 12:17 UTC). Aucun éditeur existant pour cette requête. Article rédigé sans guidelines Surfer, enregistré en brouillon (draft). À faire : créer l'éditeur quand le quota est rétabli, soumettre html/releve-heures-interim.body.html, ajuster au score 80–90, puis passer en future avec date_gmt 2026-12-02T08:00:00. Image non téléversée (consigne). Code du travail, heures majorées et loi 09-08/CNDP cités de façon générale, sans taux ni article (aucune source externe vérifiée)."
+}

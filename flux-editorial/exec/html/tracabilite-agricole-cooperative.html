@@ -1,0 +1,152 @@
+<!-- wp:freeform -->
+<p><strong>En bref :</strong> dans une coopérative ou chez un exportateur, la traçabilité agricole repose encore souvent sur des carnets papier remplis en fin de semaine, des photos d'étiquettes et des fichiers Excel recopiés avant chaque audit. Ce guide montre comment mettre en place un carnet de traçabilité alimenté par des notes vocales en darija : l'agriculteur dit ce qu'il a fait sur quelle parcelle, l'IA structure l'information (parcelle, culture, produit, dose, date, lot), des contrôles simples signalent les incohérences, et la coopérative peut sortir à tout moment un historique par lot pour ses acheteurs et ses auditeurs. Il précise aussi ce qui reste sous la responsabilité du technicien et du responsable qualité.</p>
+
+<h2>Traçabilité agricole Maroc : ce que la coopérative doit pouvoir prouver</h2>
+<p>La traçabilité, c'est la capacité à retrouver l'histoire d'un produit : d'où vient un lot, sur quelle parcelle il a été récolté, quels intrants ont été appliqués, quand, par l'opérateur qui a fait le traitement, et à quel client il a été livré. Pour les produits alimentaires destinés à l'export, c'est une question posée à chaque audit et à chaque réclamation. Pour le marché local, elle devient aussi une attente des grandes surfaces, des transformateurs et des acheteurs institutionnels.</p>
+<p>Dans l'agriculture marocaine, ce besoin touche aussi bien les coopératives agricoles de petits producteurs que les exploitations agricoles orientées vers l'export, et les unités qui transforment des produits alimentaires. Les filières sont différentes (fruits et légumes, agrumes, huile d'olive, plantes aromatiques, produits du terroir), mais la logique est la même : relier la production de chaque parcelle à chaque lot vendu.</p>
+<p>Dans le secteur agricole, l'information à suivre se répartit sur toute la chaîne de production :</p>
+<ul>
+<li><strong>à la parcelle</strong> : culture, variété, date de plantation, irrigation, interventions ;</li>
+<li><strong>pour les intrants</strong> : produits phytosanitaires, engrais, semences, avec le numéro de lot du produit, la dose, la date et l'opérateur ;</li>
+<li><strong>à la récolte</strong> : date, parcelle d'origine, quantités, numéro de lot attribué ;</li>
+<li><strong>à la station de conditionnement</strong> : réception, tri, calibrage, emballage, lot de sortie ;</li>
+<li><strong>à l'expédition</strong> : client, date de livraison, documents remis.</li>
+</ul>
+<p>Les exigences précises dépendent de votre filière, de vos marchés et de vos clients. Certains acheteurs à l'export demandent une certification privée comme GLOBALG.A.P. ; les autorités sanitaires, au Maroc l'ONSSA, ont leurs propres obligations pour les produits alimentaires. Ce guide ne remplace pas l'avis de votre responsable qualité ou de votre organisme certificateur : il décrit comment collecter et ranger l'information pour que la traçabilité des produits soit tenue au quotidien, et pas reconstituée la veille d'un audit.</p>
+
+<h2>Où le carnet papier et le tableur coincent</h2>
+<p>La plupart des coopératives agricoles marocaines ont déjà une méthode. Le problème n'est pas l'absence de règles, mais l'écart entre ce qui se passe au champ et ce qui finit dans le registre :</p>
+<ul>
+<li>l'adhérent ou le chef d'équipe note le traitement le soir, ou plusieurs jours plus tard, de mémoire ;</li>
+<li>le nom du produit est écrit de plusieurs façons, le numéro de lot du produit est oublié ;</li>
+<li>la dose est notée « une bouteille dans la citerne » au lieu d'une quantité par hectare ;</li>
+<li>le technicien recopie les carnets dans un fichier Excel, comme dans les registres papier, avec des erreurs de saisie ;</li>
+<li>quand un client signale un problème sur un lot, il faut des heures pour retrouver les parcelles et les traitements concernés ;</li>
+<li>beaucoup d'agriculteurs écrivent peu, mais parlent volontiers : l'information existe, elle n'est simplement pas enregistrée.</li>
+</ul>
+<p>Un carnet de traçabilité vocal part de ce dernier constat. Au lieu de demander à chacun de remplir un formulaire, on lui permet d'envoyer une note vocale sur WhatsApp, juste après l'intervention, dans la langue qu'il utilise tous les jours.</p>
+
+<h2>Comment fonctionne un carnet de traçabilité vocal en darija</h2>
+<p>Le circuit est le même pour un traitement, une fertilisation, une irrigation ou une récolte : déclencheur, traitement, contrôle, enregistrement.</p>
+
+<h3>1. Le déclencheur : une note vocale ou un message après l'intervention</h3>
+<p>L'agriculteur, le chef d'équipe ou l'applicateur envoie un message au numéro WhatsApp de la coopérative. Par exemple : « Rach-na l'parcelle 4 dyal tomate lyoum, b [nom du produit], jouj litre f citerne dyal alf litre ». Il peut ajouter une photo de l'étiquette du produit ou du bidon. Le numéro de l'expéditeur identifie l'adhérent et ses parcelles enregistrées.</p>
+
+<h3>2. Le traitement : transcription et extraction des champs</h3>
+<p>Un modèle de reconnaissance vocale transcrit la note, en darija, en français ou en mélange des deux. Un modèle de langage en extrait ensuite les informations utiles : parcelle, culture, type d'intervention, produit, dose, volume de bouillie, date et heure, opérateur. Sur la photo de l'étiquette, l'IA lit le nom commercial et le numéro de lot du produit. Le résultat est un enregistrement structuré, comme une ligne de registre, sans ressaisie par le technicien.</p>
+
+<h3>3. La confirmation par l'agriculteur</h3>
+<p>Le système renvoie un récapitulatif court : « Parcelle 4, tomate, traitement avec [produit], 2 L pour 1 000 L de bouillie, aujourd'hui 10 h. C'est correct ? ». L'agriculteur répond « oui » ou corrige. Si une information manque (la parcelle, le produit, la dose), il reçoit une seule question précise au lieu d'un formulaire entier.</p>
+
+<h3>4. L'enregistrement et les contrôles</h3>
+<p>Une fois confirmée, l'intervention est enregistrée dans la base de traçabilité de la coopérative : Google Sheets, Airtable, une base de données, ou votre ERP si vous en avez un. Des règles simples s'appliquent alors automatiquement, comme décrit plus bas. Le technicien voit chaque jour la liste des interventions saisies, et en priorité celles qui ont déclenché une alerte.</p>
+
+<h2>Ce que fait l'IA et ce qui relève de l'automatisation classique</h2>
+<p>Il est utile de séparer les deux. Les règles sont fiables et vérifiables ; l'IA est utile pour comprendre une parole ou une photo, mais elle peut se tromper et doit être relue.</p>
+<table>
+<thead><tr><th>Étape</th><th>Automatisation classique (règles)</th><th>IA</th></tr></thead>
+<tbody>
+<tr><td>Réception du message</td><td>Identification de l'adhérent par son numéro, horodatage</td><td>Non</td></tr>
+<tr><td>Note vocale</td><td>Stockage du fichier audio d'origine</td><td>Transcription darija et français, extraction des champs</td></tr>
+<tr><td>Photo d'étiquette</td><td>Archivage de la photo avec l'intervention</td><td>Lecture du nom du produit et du numéro de lot</td></tr>
+<tr><td>Contrôles</td><td>Produit autorisé sur la culture selon votre liste, dose dans la plage définie, délai avant récolte</td><td>Signalement d'une formulation ambiguë</td></tr>
+<tr><td>Lot de récolte</td><td>Attribution d'un numéro de lot, lien avec les parcelles</td><td>Non</td></tr>
+<tr><td>Exports</td><td>Historique par lot, par parcelle, par produit</td><td>Résumé en langage clair pour un échange avec l'acheteur</td></tr>
+</tbody>
+</table>
+
+<h2>Contrôles automatiques des intrants et de la récolte</h2>
+<p>La valeur d'un système de traçabilité ne tient pas seulement à l'enregistrement. Elle tient aux erreurs repérées tôt. Les contrôles reposent sur des référentiels que la coopérative fournit et tient à jour, pas sur ce que l'IA « sait » :</p>
+<ul>
+<li><strong>liste des produits autorisés par culture</strong>, établie par votre technicien ou responsable qualité selon l'homologation en vigueur et les exigences de vos clients ;</li>
+<li><strong>plage de dose</strong> par produit et par culture, telle qu'indiquée sur l'étiquette ;</li>
+<li><strong>délai avant récolte</strong> : si une récolte est déclarée sur une parcelle traitée trop récemment, le lot est bloqué en attente de validation ;</li>
+<li><strong>stock des intrants</strong> : la quantité utilisée est déduite du magasin, ce qui permet de rapprocher le stock de produits phytosanitaires et les traitements déclarés ;</li>
+<li><strong>produit inconnu</strong> : un nom non reconnu ou un numéro de lot absent déclenche une question au déclarant et une alerte au technicien.</li>
+</ul>
+<p>Le système signale, il ne tranche pas. C'est le technicien qui décide si une alerte est une vraie anomalie, une erreur de saisie ou un cas particulier justifié.</p>
+
+<h2>Du lot de production à l'export : historique et rappel des produits</h2>
+<p>À la récolte, chaque caisse ou palette reçoit un numéro de lot lié à une ou plusieurs parcelles et à une date. À la station de conditionnement, le lot d'entrée est relié au lot de sortie après tri et emballage. On obtient ainsi une chaîne continue, de la parcelle au client.</p>
+<p>Cette chaîne permet de produire en quelques clics :</p>
+<ul>
+<li><strong>la fiche de traçabilité d'un lot</strong> : parcelles d'origine, interventions avec produits, doses et dates, récolte, conditionnement, expédition ;</li>
+<li><strong>le registre des traitements</strong> par parcelle et par période, au format attendu par votre auditeur ;</li>
+<li><strong>la liste des lots concernés</strong> en cas de doute sur un produit ou une parcelle, pour un retrait ou un rappel ciblé ;</li>
+<li><strong>un export par client</strong> (PDF ou Excel) avec uniquement les informations qu'il demande, à transmettre aux acheteurs et aux auditeurs.</li>
+</ul>
+<p>En cas de réclamation, la question « de quelles parcelles vient ce lot et qu'est-ce qui y a été appliqué ? » trouve une réponse documentée, avec les notes vocales et les photos d'origine en pièces jointes.</p>
+
+<h2>Gestion de la traçabilité en coopérative : plusieurs adhérents</h2>
+<p>Dans une coopérative, la gestion de la traçabilité se complique parce que les parcelles appartiennent à des adhérents différents, avec des niveaux d'équipement et d'aisance très variables. Quelques principes aident :</p>
+<ul>
+<li>chaque adhérent est enregistré avec son numéro de téléphone, ses parcelles et ses cultures ;</li>
+<li>un chef d'équipe peut déclarer pour plusieurs adhérents, à condition de nommer la parcelle ;</li>
+<li>les rappels sont automatiques : si aucune intervention n'est déclarée sur une parcelle en pleine saison, un message demande confirmation ;</li>
+<li>le tableau de suivi montre, par adhérent, les déclarations manquantes et les alertes ouvertes.</li>
+</ul>
+<p>Le même principe vaut pour un exportateur qui travaille avec des producteurs sous contrat : il obtient des données plus régulières sans multiplier les visites uniquement pour récupérer des carnets.</p>
+
+<h2>Intégrations et prérequis</h2>
+<p>La mise en place ne demande pas de remplacer vos outils. Il faut surtout clarifier vos référentiels.</p>
+<ul>
+<li><strong>Un numéro WhatsApp Business</strong> dédié, connecté via l'API officielle. Notre page sur le <a href="https://fluxintelligent.com/chatbots-experience-client/chatbot-whatsapp-maroc/">chatbot WhatsApp pour entreprises marocaines</a> détaille ce point.</li>
+<li><strong>La liste des parcelles</strong> avec un code simple et stable, connu des agriculteurs (« parcelle 4 », « serre B »).</li>
+<li><strong>La liste des produits utilisés</strong>, avec les doses et délais avant récolte, validée par le technicien.</li>
+<li><strong>Un outil de gestion des données</strong> : Google Sheets pour démarrer, une base de données ou votre ERP ensuite. Si vous utilisez déjà un logiciel de gestion agricole, le carnet vocal l'alimente au lieu de le remplacer. Les connexions se font par API, voir nos <a href="https://fluxintelligent.com/automatisation-des-processus/workflows-integrations-api/">workflows et intégrations API</a>.</li>
+<li><strong>Un outil d'orchestration</strong> comme n8n ou Make pour enchaîner réception, transcription, contrôles et enregistrement. Nous présentons ces outils sur la page <a href="https://fluxintelligent.com/automatisation-des-processus/automatisation-n8n-make/">automatisation n8n et Make</a>.</li>
+<li><strong>Une règle de nommage des lots</strong> partagée entre le champ, la station et l'expédition.</li>
+</ul>
+<p>Côté données personnelles, les numéros et les enregistrements vocaux des adhérents sont des données personnelles : informez-les de l'usage, limitez l'accès et la durée de conservation, et vérifiez vos obligations au titre de la loi 09-08 auprès de la CNDP.</p>
+
+<h2>Limites et ce qui reste humain</h2>
+<ul>
+<li>La transcription peut se tromper sur un nom de produit, un chiffre ou une parcelle, surtout avec du bruit de fond. La confirmation par l'agriculteur et la relecture des alertes restent indispensables.</li>
+<li>L'IA ne donne aucun conseil agronomique et ne décide pas si un produit est autorisé : elle applique la liste que vous lui fournissez.</li>
+<li>Le système ne garantit pas la conformité ni la certification. Il rend la preuve plus facile à produire, à condition que les déclarations soient faites.</li>
+<li>Sans réseau au champ, la note vocale part plus tard ; l'heure de l'intervention doit alors être précisée dans le message.</li>
+<li>La validation finale d'un lot, la gestion d'une non-conformité et la relation avec l'auditeur restent du ressort du responsable qualité.</li>
+</ul>
+
+<h2>Indicateurs à mesurer</h2>
+<p>Pour savoir si le dispositif fonctionne, suivez quelques indicateurs simples, mois par mois :</p>
+<ul>
+<li>délai moyen entre l'intervention et son enregistrement ;</li>
+<li>part des interventions déclarées complètes du premier coup (parcelle, produit, dose, lot) ;</li>
+<li>nombre d'alertes par type (dose, délai avant récolte, produit non listé) et part des alertes confirmées ;</li>
+<li>temps nécessaire pour produire l'historique complet d'un lot ;</li>
+<li>écart entre le stock théorique d'intrants et l'inventaire physique ;</li>
+<li>nombre d'adhérents qui déclarent régulièrement.</li>
+</ul>
+
+<h2>Par où commencer</h2>
+<p>Une mise en place progressive limite les risques :</p>
+<ol>
+<li><strong>Choisir une culture et quelques adhérents volontaires</strong> pour une saison test.</li>
+<li><strong>Fixer les référentiels</strong> : codes de parcelles, liste des produits, règle de lot.</li>
+<li><strong>Lancer la déclaration vocale</strong> pour les traitements uniquement, puis ajouter la fertilisation, l'irrigation et la récolte.</li>
+<li><strong>Brancher la station de conditionnement</strong> pour relier lots d'entrée et lots de sortie.</li>
+<li><strong>Préparer les exports</strong> attendus par vos acheteurs et votre auditeur, et faire un essai de traçabilité sur un lot réel.</li>
+</ol>
+<p>Si vous hésitez sur le processus à automatiser en premier, notre guide pour <a href="https://fluxintelligent.com/automatisation-ia-pme-maroc/">choisir son premier processus à automatiser</a> propose une méthode simple. Pour une vue d'ensemble de ce que nous mettons en place, voir notre offre d'<a href="https://fluxintelligent.com/automatisation-des-processus/">automatisation des processus</a>.</p>
+
+<h2>Questions fréquentes</h2>
+
+<h3>Un carnet vocal peut-il servir pour la traçabilité à l'export ?</h3>
+<p>Il sert à collecter l'information à la source et à la ranger de façon exploitable. Le format des registres et les éléments exigés dépendent de vos acheteurs et de votre référentiel de certification : l'export est paramétré pour correspondre à ce qu'ils demandent, et votre responsable qualité valide le résultat.</p>
+
+<h3>Faut-il une connexion Internet au champ ?</h3>
+<p>Non, pas au moment de l'intervention. WhatsApp garde le message et l'envoie dès que le téléphone retrouve du réseau. Il suffit de préciser l'heure ou le jour de l'intervention si l'envoi est différé.</p>
+
+<h3>Comment gérer une coopérative avec beaucoup d'adhérents ?</h3>
+<p>Chaque adhérent est identifié par son numéro et ses parcelles. Les chefs d'équipe peuvent déclarer pour plusieurs exploitations, et un tableau de suivi montre les déclarations manquantes et les alertes par adhérent.</p>
+
+<h3>Quels acteurs du secteur agricole sont concernés ?</h3>
+<p>Les coopératives agricoles, les stations de conditionnement, les exportateurs qui travaillent avec des producteurs sous contrat et les unités de transformation de produits alimentaires. Le principe s'applique aussi bien au plein champ que dans les serres.</p>
+
+<h3>Combien coûte la mise en place ?</h3>
+<p>Cela dépend du nombre de flux, des intégrations et de l'outil de stockage. À titre de repère, une automatisation complète avec intégration à un CRM ou un ERP se situe généralement entre 8 000 et 80 000 DH. Le plus simple est de décrire votre cas dans notre <a href="https://fluxintelligent.com/ia/devis/">devis IA instantané</a>.</p>
+
+<h2>Mettre en place votre carnet de traçabilité</h2>
+<p>Flux Intelligent conçoit et installe ce type de circuit pour les coopératives, les stations de conditionnement et les exportateurs : réception WhatsApp, transcription en darija, contrôles sur vos référentiels, base de traçabilité et exports. Découvrez notre offre d'<a href="https://fluxintelligent.com/automatisation-des-processus/automatisation-administrative/">automatisation administrative</a>, ou obtenez une première estimation avec le <a href="https://fluxintelligent.com/ia/devis/">devis IA instantané</a>.</p>
+<!-- /wp:freeform -->

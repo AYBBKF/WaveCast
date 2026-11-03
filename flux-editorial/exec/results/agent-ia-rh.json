@@ -1,0 +1,37 @@
+{
+ "sujet": "Page « Agent IA RH : présélection des candidats » : extraction des CV, critères obligatoires, préqualification WhatsApp, liste classée justifiée, décision humaine, consentement et conservation (loi 09-08), biais",
+ "type": "page",
+ "wp_id": 4520,
+ "url_prevue": "https://fluxintelligent.com/agents-ia/agent-ia-rh/",
+ "statut_wp": "draft",
+ "date_prevue": "non programmée (brouillon ; date cible de la fiche : 2026-11-16T09:00 heure Maroc, soit date_gmt 2026-11-16T08:00:00)",
+ "requete": "tri cv ia",
+ "editeur_surfer": null,
+ "score_total": null,
+ "score_seo": null,
+ "score_ai_search": null,
+ "iterations": 0,
+ "media_id": null,
+ "image_locale": "/tmp/claude-0/-home-user-WaveCast/b86cf213-b51d-5352-9e9d-fc596e43dfc1/scratchpad/exec/img/agent-ia-rh.webp",
+ "alt": "Femme en foulard et veste bleu marine relisant une feuille, stylo en main, devant un ordinateur portable, un collègue travaillant en arrière-plan",
+ "parent": 3773,
+ "categories": [],
+ "tags": [],
+ "excerpt": "Tri CV IA : notre agent IA RH extrait les CV, vérifie vos critères, préqualifie par WhatsApp et classe les candidats. La décision reste humaine.",
+ "titre": "Agent IA RH : présélection des candidats et tri de CV par IA",
+ "nb_mots": 1457,
+ "liens_internes": [
+  "https://fluxintelligent.com/chatbots-experience-client/chatbot-whatsapp-maroc/",
+  "https://fluxintelligent.com/systeme-agents-ia-gouverne-maroc/",
+  "https://fluxintelligent.com/agent-ia-whatsapp-business-pme-maroc/",
+  "https://fluxintelligent.com/automatisation-des-processus/workflows-integrations-api/",
+  "https://fluxintelligent.com/automatisation-des-processus/automatisation-n8n-make/",
+  "https://fluxintelligent.com/agents-ia/",
+  "https://fluxintelligent.com/ia/devis/",
+  "https://fluxintelligent.com/ia/contact/"
+ ],
+ "sources_externes": [
+  "https://www.cndp.ma/loi-09-08/ (intitulé exact de la loi 09-08 et principe de finalité vérifiés via la recherche Firecrawl limitée à cndp.ma)"
+ ],
+ "limites_ou_blocages": "PAS DE SCORE SURFER : content_editor__create a échoué 3 fois (12:10, ~12:24, ~12:28 UTC) avec « content_editor__create failed: quota_exceeded — Content Editor quota exceeded » ; aucun éditeur existant pour « tri cv ia ». Page donc créée en BROUILLON (status draft, parent 3773, sans catégorie ni tags), non programmée. À faire quand le quota Surfer le permet : créer l'éditeur (idempotency_key agent-ia-rh), charger html/agent-ia-rh.body.html, ajuster jusqu'à 80–90, puis wp_update_page id 4520 avec status future et date_gmt 2026-11-16T08:00:00. Texte rédigé sans les termes Surfer (longueur 1457 mots, à ajuster). Image non téléversée (featured_media = 0). Le seul tarif cité est la fourchette autorisée 8 000 à 80 000 DH. Rank Math non accessible."
+}

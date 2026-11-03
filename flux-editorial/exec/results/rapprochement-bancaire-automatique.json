@@ -1,0 +1,32 @@
+{
+ "sujet": "Rapprochement bancaire automatique pour cabinets comptables et PME : relevés PDF multi-banques, pièces, justificatifs manquants, export comptable",
+ "type": "création",
+ "wp_id": 4501,
+ "url_prevue": "https://fluxintelligent.com/rapprochement-bancaire-automatique/",
+ "statut_wp": "draft",
+ "date_prevue": "2026-11-11T09:00 heure marocaine prévue (non programmé : score Surfer non vérifié ; si validé, passer en future avec date_gmt 2026-11-11T08:00:00)",
+ "requete": "rapprochement bancaire automatique",
+ "editeur_surfer": null,
+ "score_total": null,
+ "score_seo": null,
+ "score_ai_search": null,
+ "iterations": 0,
+ "media_id": null,
+ "image_locale": "/tmp/claude-0/-home-user-WaveCast/b86cf213-b51d-5352-9e9d-fc596e43dfc1/scratchpad/exec/img/rapprochement-bancaire-automatique.webp",
+ "alt": "Comptable en foulard gris comparant un relevé imprimé à l'écran de son ordinateur portable dans un bureau lumineux, une collègue au fond",
+ "categories": [1],
+ "tags": [{"id": 61, "name": "Comptabilité (créé)"}, {"id": 36, "name": "Automatisation IA"}, {"id": 11, "name": "PME Maroc"}],
+ "excerpt": "Rapprochement bancaire automatique : lecture des relevés PDF, correspondance avec factures et pièces, relance des justificatifs et export comptable.",
+ "titre": "Rapprochement bancaire automatique : relevés, pièces et export comptable",
+ "nb_mots": 1527,
+ "liens_internes": [
+  "https://fluxintelligent.com/automatisation-des-processus/comptable-au-maroc-ai/",
+  "https://fluxintelligent.com/agent-ia-comptable-maroc/",
+  "https://fluxintelligent.com/automatisation-factures-ia-maroc/",
+  "https://fluxintelligent.com/automatisation-des-processus/workflows-integrations-api/",
+  "https://fluxintelligent.com/automatisation-des-processus/automatisation-administrative/",
+  "https://fluxintelligent.com/ia/devis/"
+ ],
+ "sources_externes": [],
+ "limites_ou_blocages": "BLOCAGE SURFER : content_editor__create a échoué 3 fois (12:09, 12:16, 12:19 UTC) avec « content_editor__create failed: quota_exceeded — Content Editor quota exceeded ». Aucun éditeur existant pour cette requête (vérifié via content_editor__list). Score non vérifiable : article enregistré en BROUILLON (draft), non programmé. Rédaction sans guidelines Surfer (pas de termes ni PAA ; FAQ rédigée à partir des questions métier). À faire : créer l'éditeur quand le quota est rétabli, importer html/rapprochement-bancaire-automatique.html, vérifier 80–90, puis passer en future (date_gmt 2026-11-11T08:00:00). Image non téléversée (featured_media 0). Rank Math non accessible."
+}

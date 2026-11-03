@@ -1,0 +1,31 @@
+{
+ "sujet": "Carnet de crédit client numérique pour épiceries et commerces de quartier (vocal en darija, reçu et rappel WhatsApp, réassort)",
+ "type": "création",
+ "wp_id": 4488,
+ "url_prevue": "https://fluxintelligent.com/gestion-epicerie-credit-clients/",
+ "statut_wp": "future",
+ "date_prevue": "2026-11-29T09:00:00 heure marocaine (date_gmt envoyée et renvoyée : 2026-11-29T08:00:00)",
+ "requete": "carnet de crédit client",
+ "editeur_surfer": 16973220,
+ "score_total": 89,
+ "score_seo": 89,
+ "score_ai_search": null,
+ "iterations": 1,
+ "media_id": null,
+ "image_locale": "/tmp/claude-0/-home-user-WaveCast/b86cf213-b51d-5352-9e9d-fc596e43dfc1/scratchpad/exec/img/gestion-epicerie-credit-clients.webp",
+ "alt": "Épicier barbu consultant son smartphone derrière un comptoir en bois, un grand carnet ouvert devant lui, étagères d'œufs et bocaux de légumineuses",
+ "categories": [1],
+ "tags": [{"id": 11, "name": "PME Maroc"}, {"id": 45, "name": "WhatsApp Business"}, {"id": 24, "name": "chatbot darija"}],
+ "excerpt": "Carnet de crédit client numérique pour épiceries au Maroc : crédit noté par vocal en darija, reçu WhatsApp, rappels courtois et aide au réassort.",
+ "titre": "Carnet de crédit client : passer du cahier papier à votre téléphone",
+ "nb_mots": 1104,
+ "liens_internes": [
+  "https://fluxintelligent.com/agent-ia-whatsapp-business-pme-maroc/",
+  "https://fluxintelligent.com/automatisation-des-processus/automatisation-n8n-make/",
+  "https://fluxintelligent.com/automatisation-ia-pme-maroc/",
+  "https://fluxintelligent.com/chatbots-experience-client/chatbot-whatsapp-maroc/",
+  "https://fluxintelligent.com/ia/devis/"
+ ],
+ "sources_externes": [],
+ "limites_ou_blocages": "Image non téléversée (consigne), featured_media = 0 : téléverser img/gestion-epicerie-credit-clients.webp avec l'alt ci-dessus puis wp_update_post 4488 featured_media. Première image régénérée (pseudo-texte sur un paquet). Rank Math non accessible : extrait = repli meta description. ai_search Surfer « unavailable ». Loi 09-08/CNDP citée sans détail. Word count 1104 pour une cible Surfer de 836 (contenu complet sans remplissage). Le texte soumis à Surfer contenait le titre en H1 ; le corps WordPress n'a pas de H1."
+}

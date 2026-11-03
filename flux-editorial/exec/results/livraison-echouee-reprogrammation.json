@@ -1,0 +1,49 @@
+{
+ "sujet": "Échec de livraison : message WhatsApp immédiat, reprogrammation, compréhension des réponses libres, motif enregistré",
+ "type": "création",
+ "wp_id": 4499,
+ "url_prevue": "https://fluxintelligent.com/livraison-echouee-reprogrammation/",
+ "statut_wp": "draft",
+ "date_prevue": "2026-11-22 (non programmé : brouillon)",
+ "requete": "échec de livraison colis",
+ "editeur_surfer": null,
+ "score_total": null,
+ "score_seo": null,
+ "score_ai_search": null,
+ "iterations": 0,
+ "media_id": null,
+ "image_locale": "/tmp/claude-0/-home-user-WaveCast/b86cf213-b51d-5352-9e9d-fc596e43dfc1/scratchpad/exec/img/livraison-echouee-reprogrammation.webp",
+ "alt": "Livreur en casquette et blouson bleu marine tenant un colis et regardant son téléphone devant une porte fermée, scooter garé à côté",
+ "categories": [
+  56
+ ],
+ "tags": [
+  {
+   "id": 37,
+   "name": "E-commerce Maroc"
+  },
+  {
+   "id": 45,
+   "name": "WhatsApp Business"
+  },
+  {
+   "id": 24,
+   "name": "chatbot darija"
+  }
+ ],
+ "excerpt": "Échec de livraison colis : message WhatsApp immédiat au client absent, nouveau créneau ou point relais, réponses en darija comprises et motif enregistré.",
+ "titre": "Échec de livraison colis : reprogrammer automatiquement par WhatsApp",
+ "nb_mots": 1689,
+ "liens_internes": [
+  "https://fluxintelligent.com/agent-ia-whatsapp-business-pme-maroc/",
+  "https://fluxintelligent.com/chatbot-ia-whatsapp-maroc/",
+  "https://fluxintelligent.com/chatbots-experience-client/chatbots-multilingues-service-client-maroc/",
+  "https://fluxintelligent.com/automatisation-des-processus/workflows-integrations-api/",
+  "https://fluxintelligent.com/ecommerce-automatise-ia/",
+  "https://fluxintelligent.com/chatbots-experience-client/agent-vocal-ia/",
+  "https://fluxintelligent.com/chatbots-experience-client/chatbot-whatsapp-maroc/",
+  "https://fluxintelligent.com/ia/devis/"
+ ],
+ "sources_externes": [],
+ "limites_ou_blocages": "Surfer : content_editor__create a échoué avec l'erreur exacte « content_editor__create failed: quota_exceeded — Content Editor quota exceeded » (2 essais, 12:09 et 12:12 UTC). Aucun éditeur existant pour cette requête. Score non vérifiable : article créé en brouillon (draft), non programmé. À faire : créer l'éditeur quand le quota le permet, faire la boucle de score sur html/livraison-echouee-reprogrammation.html, puis passer en future avec date_gmt 2026-11-22T08:00:00. Loi 09-08/CNDP citée de façon générale, sans source externe. Image non téléversée (consigne) : featured_media = 0, fichier optimisé à téléverser séparément. Rank Math non accessible : extrait = repli de la meta description."
+}

@@ -1,0 +1,47 @@
+{
+ "sujet": "Cabinets comptables et fiduciaires au Maroc : automatiser la collecte des pièces clients (WhatsApp, e-mail), les relances des pièces manquantes et le tableau de suivi des dossiers autour du logiciel du cabinet",
+ "type": "création",
+ "wp_id": 4508,
+ "url_prevue": "https://fluxintelligent.com/automatisation-cabinet-comptable-maroc/",
+ "statut_wp": "future",
+ "date_prevue": "2026-11-18T09:00:00 heure marocaine (date_gmt envoyée 2026-11-18T08:00:00 ; WordPress renvoie date = date_gmt = 08:00)",
+ "requete": "logiciel cabinet comptable maroc",
+ "editeur_surfer": 16972325,
+ "score_total": 85,
+ "score_seo": 85,
+ "score_ai_search": null,
+ "iterations": 2,
+ "media_id": null,
+ "image_locale": "/tmp/claude-0/-home-user-WaveCast/b86cf213-b51d-5352-9e9d-fc596e43dfc1/scratchpad/exec/img/automatisation-cabinet-comptable-maroc.webp",
+ "alt": "Comptable en hijab et blazer bleu marine triant des factures papier entre deux ordinateurs portables, classeurs sur des étagères derrière elle",
+ "categories": [
+  1
+ ],
+ "tags": [
+  {
+   "id": 61,
+   "name": "Comptabilité"
+  },
+  {
+   "id": 10,
+   "name": "automatisation IA PME"
+  },
+  {
+   "id": 45,
+   "name": "WhatsApp Business"
+  }
+ ],
+ "excerpt": "Logiciel cabinet comptable Maroc : automatisez la collecte des pièces clients par WhatsApp et e-mail, les relances et le suivi de chaque dossier.",
+ "titre": "Logiciel cabinet comptable au Maroc : automatiser la collecte des pièces et le suivi des dossiers",
+ "limites_ou_blocages": "Image non téléversée (consigne) : featured_media = 0, à rattacher à l'article 4508 avant le 18/11. Rank Math non accessible. Surfer : 73 au premier passage, 85 après ajout de termes (critères de choix, DGI, mises à jour, temps réel) ; ai_search « unavailable ». Lien vers l'article rapprochement bancaire (#8, programmé) volontairement absent car non publié. Aucun éditeur ni prix de logiciel cité ; seule la fourchette autorisée 8 000–80 000 DH est reprise. DGI/CNSS et loi 09-08 mentionnées de façon générale, sans source externe. Tag 61 « Comptabilité » réutilisé (créé par un autre agent).",
+ "nb_mots": 2187,
+ "liens_internes": [
+  "https://fluxintelligent.com/automatisation-factures-ia-maroc/",
+  "https://fluxintelligent.com/automatisation-des-processus/automatisation-n8n-make/",
+  "https://fluxintelligent.com/agent-ia-comptable-maroc/",
+  "https://fluxintelligent.com/automatisation-des-processus/comptable-au-maroc-ai/",
+  "https://fluxintelligent.com/automatisation-ia-pme-maroc/",
+  "https://fluxintelligent.com/ia/devis/"
+ ],
+ "sources_externes": []
+}

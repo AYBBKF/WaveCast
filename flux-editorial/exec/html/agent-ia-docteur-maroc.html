@@ -1,0 +1,103 @@
+<!-- wp:freeform -->
+<p><strong>En bref :</strong> dans un cabinet médical, la secrétaire passe une grande partie de sa journée au téléphone et sur WhatsApp : prendre un rendez-vous, le déplacer, rappeler la veille, répondre aux mêmes questions sur les horaires ou les documents à apporter. Un secrétariat IA prend en charge ces échanges répétitifs, sur WhatsApp et au téléphone, en se connectant à l'agenda ou au logiciel du cabinet. Il ne donne aucun conseil médical, il transmet tout ce qui relève du soin à l'équipe, et il doit respecter les règles de protection des données de santé. Ce guide détaille le fonctionnement, les prérequis, les limites et les indicateurs à suivre.</p>
+
+<h2>Secrétariat médical au Maroc : ce qui sature au quotidien</h2>
+<p>Qu'il s'agisse d'un médecin généraliste, d'un spécialiste ou d'un petit centre médical, les mêmes difficultés reviennent :</p>
+<ul>
+<li>le téléphone sonne pendant que la secrétaire accueille un patient, et les appels manqués ne sont pas toujours rappelés ;</li>
+<li>les demandes arrivent sur WhatsApp à toute heure, y compris le soir et le week-end, et s'accumulent jusqu'au matin ;</li>
+<li>les patients oublient leur rendez-vous, ce qui laisse des créneaux vides alors que d'autres attendent une place ;</li>
+<li>les questions sont souvent les mêmes : horaires, adresse, tarif de la consultation, documents à apporter, prise en charge par la mutuelle ;</li>
+<li>l'agenda est tenu dans un cahier, un tableur ou un logiciel de cabinet, et chaque modification se fait à la main.</li>
+</ul>
+<p>Le but d'un secrétariat IA n'est pas de remplacer la secrétaire. Il s'agit de lui retirer les échanges simples et répétitifs pour qu'elle se consacre à l'accueil, aux cas particuliers et à l'organisation du cabinet.</p>
+
+<h2>Comment fonctionne un secrétariat IA pour cabinet médical</h2>
+<p>Chaque fonction suit la même logique : un déclencheur, un traitement, un résultat visible dans l'agenda du cabinet.</p>
+
+<h3>1. Prise de rendez-vous sur WhatsApp</h3>
+<p><strong>Déclencheur :</strong> un patient écrit au numéro WhatsApp Business du cabinet, en français, en arabe ou en darija (« bghit nakhod rendez-vous m3a tbib had simana »). <strong>Traitement :</strong> l'assistant comprend la demande, consulte les créneaux libres selon les règles que vous fixez (durée d'une consultation, jours de contrôle, créneaux réservés aux urgences), et propose deux ou trois horaires. Il demande le nom et le numéro du patient, puis le motif administratif (première consultation, contrôle, résultat d'analyses), sans poser de question médicale. <strong>Résultat :</strong> le rendez-vous est inscrit dans l'agenda, et le patient reçoit une confirmation avec l'adresse et les documents à apporter.</p>
+
+<h3>2. Accueil téléphonique par agent vocal</h3>
+<p>Beaucoup de patients préfèrent appeler. Un <a href="https://fluxintelligent.com/chatbots-experience-client/agent-vocal-ia/">agent vocal IA</a> peut répondre quand la ligne est occupée ou en dehors des heures d'ouverture : il donne les horaires, prend ou déplace un rendez-vous, et enregistre les demandes de rappel. Si l'appelant décrit une situation urgente, l'agent ne l'évalue pas : il donne la consigne définie par le médecin (par exemple appeler les services d'urgence) et signale l'appel au cabinet.</p>
+
+<h3>3. Rappels automatiques et confirmations</h3>
+<p>La veille ou le matin du rendez-vous, le patient reçoit un rappel WhatsApp avec trois choix : confirmer, déplacer ou annuler. Les réponses mettent l'agenda à jour sans intervention. Un patient qui ne répond pas peut être signalé à la secrétaire pour un appel. Ces rappels utilisent des modèles de messages validés au préalable par Meta, conformément aux règles de WhatsApp Business.</p>
+
+<h3>4. Liste d'attente et créneaux libérés</h3>
+<p>Quand un patient annule, le créneau est proposé automatiquement aux patients inscrits sur la liste d'attente, dans l'ordre que vous définissez. Le premier qui accepte obtient la place ; les autres sont informés que le créneau est pris. La secrétaire n'a plus à rappeler cinq personnes pour remplir un trou dans la matinée.</p>
+
+<h3>5. Réponses aux questions pratiques</h3>
+<p>L'assistant répond aux questions administratives à partir d'une base de réponses validée par le médecin : horaires, adresse et accès, tarifs affichés, modes de paiement, documents pour la mutuelle, délais de remise d'un compte rendu. S'il ne trouve pas la réponse dans cette base, il ne l'invente pas : il transmet la question à la secrétaire.</p>
+
+<h2>Connexion au logiciel de cabinet existant</h2>
+<p>Un secrétariat IA ne vous oblige pas à changer de logiciel de gestion de cabinet. Trois situations se présentent :</p>
+<table>
+<thead><tr><th>Votre outil actuel</th><th>Connexion possible</th><th>Point d'attention</th></tr></thead>
+<tbody>
+<tr><td>Logiciel de cabinet avec API ou agenda synchronisable</td><td>Lecture des créneaux et écriture des rendez-vous en direct</td><td>Vérifier avec l'éditeur les droits d'accès et ce que l'API expose</td></tr>
+<tr><td>Agenda en ligne (Google Agenda ou équivalent)</td><td>Connexion directe, simple à mettre en place</td><td>Ne pas y stocker d'informations médicales, seulement le rendez-vous</td></tr>
+<tr><td>Cahier ou tableur</td><td>Passage à un agenda partagé comme base de départ</td><td>Prévoir une courte période de double tenue pour fiabiliser</td></tr>
+</tbody>
+</table>
+<p>Le dossier médical reste dans votre logiciel métier. L'assistant n'a besoin que de l'agenda et des coordonnées nécessaires à la prise de rendez-vous. Ce principe de séparation limite les risques et simplifie la conformité.</p>
+
+<h2>Ce que fait l'IA, ce qui relève de l'automatisation classique</h2>
+<ul>
+<li><strong>L'IA</strong> comprend les messages libres et les appels, en plusieurs langues et en darija, identifie l'intention (prendre, déplacer, annuler, question pratique) et formule une réponse naturelle à partir de vos règles.</li>
+<li><strong>L'automatisation classique</strong> gère tout le reste : vérifier les créneaux, écrire dans l'agenda, envoyer les rappels à heure fixe, faire tourner la liste d'attente, produire le récapitulatif du jour.</li>
+</ul>
+<p>Cette répartition rend le système prévisible : les décisions qui touchent l'agenda suivent des règles, et l'IA ne sert qu'à comprendre et à rédiger.</p>
+
+<h2>Limites : ce que le secrétariat IA ne fait jamais</h2>
+<ul>
+<li><strong>Aucun conseil médical.</strong> L'assistant ne pose pas de diagnostic, ne commente pas un symptôme ou un résultat, ne recommande ni médicament ni posologie. Toute question de ce type est transmise au médecin ou à la secrétaire.</li>
+<li><strong>Pas de tri des urgences.</strong> Il applique une consigne fixe décidée par le médecin et alerte le cabinet ; il ne juge pas de la gravité.</li>
+<li><strong>Pas d'accès au dossier médical</strong> au-delà de ce que vous décidez de lui ouvrir, c'est-à-dire en pratique l'agenda.</li>
+<li><strong>Une secrétaire toujours joignable.</strong> Le patient peut demander à parler à une personne à tout moment, et l'assistant doit le lui proposer clairement.</li>
+</ul>
+
+<h2>Données de santé : CNDP et loi 09-08</h2>
+<p>Les données de santé figurent parmi les données les plus sensibles. Leur traitement au Maroc relève de la loi 09-08 relative à la protection des personnes physiques à l'égard du traitement des données à caractère personnel, sous le contrôle de la <a href="https://www.cndp.ma/" target="_blank" rel="noopener">CNDP</a>. Avant le lancement, il faut vérifier les formalités applicables à votre traitement, informer les patients (par exemple dans le premier message WhatsApp et sur votre site), limiter les données collectées au strict nécessaire pour le rendez-vous, et documenter où elles sont hébergées et qui y accède. Le motif de consultation détaillé ne doit pas transiter par l'assistant : un motif administratif suffit.</p>
+
+<h2>Intégrations et prérequis</h2>
+<ul>
+<li>un numéro WhatsApp Business (API officielle) dédié au cabinet ;</li>
+<li>un agenda accessible par connexion : logiciel de cabinet, agenda en ligne ou agenda partagé ;</li>
+<li>des règles écrites : durées de consultation, créneaux réservés, délai d'annulation, consigne en cas d'urgence ;</li>
+<li>une base de réponses validée par le médecin pour les questions pratiques ;</li>
+<li>pour la voix, une ligne téléphonique pouvant être redirigée vers l'agent vocal.</li>
+</ul>
+<p>Le même fonctionnement est décrit pour d'autres professions de santé dans nos guides sur l'<a href="https://fluxintelligent.com/agent-ia-cabinet-dentaire-maroc/">agent IA pour cabinet dentaire</a>, l'<a href="https://fluxintelligent.com/agent-ia-kinesitherapie-maroc/">agent IA en kinésithérapie</a> et l'<a href="https://fluxintelligent.com/agent-ia-pharmacie-maroc/">assistant IA pour officines</a>, avec à chaque fois la même règle : l'IA ne touche jamais au soin.</p>
+
+<h2>Indicateurs à suivre</h2>
+<p>Mesurez avant et après la mise en place, sur les chiffres de votre cabinet :</p>
+<ul>
+<li>le nombre de rendez-vous non honorés par semaine ;</li>
+<li>la part des rendez-vous pris ou déplacés sans intervention de la secrétaire ;</li>
+<li>le nombre d'appels manqués et de messages restés sans réponse le lendemain ;</li>
+<li>le délai moyen de réponse à une demande WhatsApp ;</li>
+<li>le nombre de créneaux libérés puis reprogrammés grâce à la liste d'attente.</li>
+</ul>
+
+<h2>Questions fréquentes</h2>
+
+<h3>Un secrétariat IA remplace-t-il la secrétaire médicale ?</h3>
+<p>Non. Il traite les demandes simples et répétitives, surtout en dehors des heures d'ouverture. La secrétaire garde l'accueil, les cas particuliers, la relation avec les patients et la gestion du cabinet.</p>
+
+<h3>L'assistant peut-il répondre en darija ?</h3>
+<p>Oui. Les modèles de langage actuels comprennent la darija écrite en lettres latines ou arabes, ainsi que le français et l'arabe. Les réponses peuvent être rédigées dans la langue du patient, à partir de votre base de réponses validée.</p>
+
+<h3>Faut-il changer de logiciel de cabinet ?</h3>
+<p>Pas forcément. L'assistant se connecte à l'agenda existant quand c'est possible. Si votre outil n'offre aucune connexion, un agenda partagé peut servir de pont, sans toucher au dossier médical.</p>
+
+<h3>Que se passe-t-il si un patient décrit une urgence ?</h3>
+<p>L'assistant n'évalue pas la situation. Il envoie la consigne fixée par le médecin, par exemple contacter les services d'urgence, et alerte immédiatement le cabinet.</p>
+
+<h2>Mettre en place votre secrétariat IA</h2>
+<p>Le plus simple est de commencer par la prise de rendez-vous et les rappels sur WhatsApp, puis d'ajouter l'agent vocal et la liste d'attente. Notre service de <a href="https://fluxintelligent.com/chatbots-experience-client/prise-de-rendez-vous-ia/">prise de rendez-vous par IA</a> couvre ce déploiement, dans le pôle <a href="https://fluxintelligent.com/chatbots-experience-client/">chatbots et expérience client</a>. Pour une estimation adaptée à votre cabinet, utilisez notre <a href="https://fluxintelligent.com/ia/devis/">devis IA instantané</a>.</p>
+<!-- /wp:freeform -->
+
+<!-- wp:html -->
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Accueil","item":"https://fluxintelligent.com/"},{"@type":"ListItem","position":2,"name":"Blog","item":"https://fluxintelligent.com/ia/blog/"},{"@type":"ListItem","position":3,"name":"Secrétariat médical au Maroc : un assistant IA pour le cabinet","item":"https://fluxintelligent.com/agent-ia-docteur-maroc/"}]}</script>
+<!-- /wp:html -->

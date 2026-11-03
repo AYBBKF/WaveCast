@@ -1,0 +1,47 @@
+{
+ "sujet": "Riads et hôtels au Maroc : réservations directes sur WhatsApp (multilingue, disponibilité via channel manager, confirmation et acompte, messages avant/après séjour, demande d'avis, confiance anti-arnaque)",
+ "type": "création",
+ "wp_id": 4517,
+ "url_prevue": "https://fluxintelligent.com/reservation-directe-whatsapp-riad/",
+ "statut_wp": "future",
+ "date_prevue": "2026-11-19T09:00:00 heure marocaine (date_gmt envoyée 2026-11-19T08:00:00 ; WordPress renvoie date = date_gmt = 08:00)",
+ "requete": "réservation hôtel whatsapp",
+ "editeur_surfer": 16972333,
+ "score_total": 86,
+ "score_seo": 86,
+ "score_ai_search": null,
+ "iterations": 2,
+ "media_id": null,
+ "image_locale": "/tmp/claude-0/-home-user-WaveCast/b86cf213-b51d-5352-9e9d-fc596e43dfc1/scratchpad/exec/img/reservation-directe-whatsapp-riad.webp",
+ "alt": "Homme en chemise bleu marine consultant son smartphone à un pupitre en bois dans le patio d'un riad, avec fontaines, zelliges et arcs sculptés",
+ "categories": [
+  56
+ ],
+ "tags": [
+  {
+   "id": 41,
+   "name": "Hôtellerie Maroc"
+  },
+  {
+   "id": 45,
+   "name": "WhatsApp Business"
+  },
+  {
+   "id": 12,
+   "name": "chatbot WhatsApp Maroc"
+  }
+ ],
+ "excerpt": "Réservation hôtel WhatsApp : recevez des réservations directes pour votre riad ou hôtel au Maroc, en plusieurs langues, avec confirmation et acompte.",
+ "titre": "Réservation hôtel WhatsApp : recevoir des réservations directes pour votre riad ou hôtel au Maroc",
+ "limites_ou_blocages": "Image non téléversée (consigne) : featured_media = 0, à rattacher à l'article 4517 avant le 19/11. Rank Math non accessible. Surfer : 92 au premier passage (au-dessus de 90 : requête exacte en H1 et H2, max SERP = 1), ramené à 86 en retirant la requête du H2 et deux répétitions de « numéro de » ; ai_search « unavailable ». Aucun taux de commission des plateformes cité (consigne). Fenêtre de 24 h et modèles Meta formulés de façon générale ; loi 09-08 citée sans source externe. Demande d'avis rédigée pour respecter les règles des plateformes (même invitation à tous les clients, pas de filtrage).",
+ "nb_mots": 1611,
+ "liens_internes": [
+  "https://fluxintelligent.com/chatbots-experience-client/chatbots-multilingues-service-client-maroc/",
+  "https://fluxintelligent.com/automatisation-ia-hotel-fiabilite-technique-experience-client/",
+  "https://fluxintelligent.com/agent-ia-whatsapp-business-pme-maroc/",
+  "https://fluxintelligent.com/automatisation-des-processus/workflows-integrations-api/",
+  "https://fluxintelligent.com/chatbots-experience-client/chatbot-whatsapp-maroc/",
+  "https://fluxintelligent.com/ia/devis/"
+ ],
+ "sources_externes": []
+}

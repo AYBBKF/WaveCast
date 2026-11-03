@@ -1,0 +1,32 @@
+{
+ "sujet": "Page commerciale : agent IA et automatisation pour agences immobilières et promoteurs au Maroc",
+ "type": "page",
+ "wp_id": 4489,
+ "url_prevue": "https://fluxintelligent.com/agence-ia-immobilier-maroc/",
+ "statut_wp": "future",
+ "date_prevue": "2026-11-04T08:00:00 GMT (09:00 heure marocaine réelle ; date et date_gmt renvoyées : 2026-11-04T08:00:00)",
+ "requete": "ia immobilier maroc (mot-clé de l'éditeur : « ia immobilier »)",
+ "editeur_surfer": 16966992,
+ "score_total": 81,
+ "score_seo": 81,
+ "score_ai_search": null,
+ "iterations": 1,
+ "media_id": null,
+ "image_locale": "/tmp/claude-0/-home-user-WaveCast/b86cf213-b51d-5352-9e9d-fc596e43dfc1/scratchpad/exec/img/agence-ia-immobilier-maroc.webp",
+ "alt": "Bureau d'agence face à des immeubles blancs : ordinateur portable ouvert, clés, et une main posée sur un plan imprimé près de la fenêtre",
+ "categories": [],
+ "tags": [],
+ "excerpt": "IA immobilier Maroc : un agent IA répond aux leads WhatsApp, qualifie budget et quartier, planifie les visites et relance les vendeurs dans votre CRM.",
+ "titre": "IA immobilier au Maroc : agent IA et automatisation pour agences et promoteurs",
+ "nb_mots": 1584,
+ "liens_internes": [
+  "https://fluxintelligent.com/ia-pour-immobilier-au-maroc-automatiser-la-gestion-des-leads-et-des-visites-en-2026/",
+  "https://fluxintelligent.com/crm-ventes-marketing-ia/relances-commerciales-automatisees/",
+  "https://fluxintelligent.com/agent-ia-whatsapp-business-pme-maroc/",
+  "https://fluxintelligent.com/crm-ventes-marketing-ia/crm-automation-maroc/",
+  "https://fluxintelligent.com/crm-ventes-marketing-ia/qualification-scoring-leads-ia/",
+  "https://fluxintelligent.com/ia/devis/"
+ ],
+ "sources_externes": [],
+ "limites_ou_blocages": "Image non téléversée (consigne) : featured_media = 0, fichier local à téléverser puis à lier à la page 4489. L'éditeur Surfer imposé 16966992 est en device desktop (et non mobile) avec mot-clé « ia immobilier » ; score mesuré avec le titre en H1 dans le document Surfer. Rank Math non accessible (extrait = repli meta description). Page sans parent. ai_search Surfer « unavailable ». Loi 09-08/CNDP citée de façon générale, sans source externe."
+}

@@ -1,0 +1,48 @@
+{
+ "sujet": "Architectes, bureaux d'études, BTP : enregistrement de la réunion de chantier, transcription français/darija, brouillon de compte rendu (décisions, réserves, tâches), rappels ; consentement",
+ "type": "création",
+ "wp_id": 4515,
+ "url_prevue": "https://fluxintelligent.com/compte-rendu-chantier-ia/",
+ "statut_wp": "draft",
+ "date_prevue": "non programmé (brouillon) ; date cible 2026-11-28 09:00",
+ "requete": "compte rendu de chantier",
+ "editeur_surfer": null,
+ "score_total": null,
+ "score_seo": null,
+ "score_ai_search": null,
+ "iterations": 0,
+ "media_id": null,
+ "image_locale": "/tmp/claude-0/-home-user-WaveCast/b86cf213-b51d-5352-9e9d-fc596e43dfc1/scratchpad/exec/img/compte-rendu-chantier-ia.webp",
+ "alt": "Architecte en casque orange et trois ouvriers en gilets de sécurité autour d'une table de plans sur un chantier en béton",
+ "categories": [
+  1
+ ],
+ "tags": [
+  {
+   "id": 68,
+   "name": "compte rendu de chantier"
+  },
+  {
+   "id": 60,
+   "name": "BTP Maroc"
+  },
+  {
+   "id": 36,
+   "name": "Automatisation IA"
+  }
+ ],
+ "excerpt": "Compte rendu de chantier : enregistrez la réunion, obtenez une transcription français-darija et un brouillon avec décisions, réserves et tâches à suivre.",
+ "titre": "Compte rendu de chantier : enregistrer la réunion et obtenir un brouillon structuré avec l'IA",
+ "nb_mots": 1376,
+ "liens_internes": [
+  "https://fluxintelligent.com/automatisation-des-processus/workflows-integrations-api/",
+  "https://fluxintelligent.com/automatisation-des-processus/automatisation-n8n-make/",
+  "https://fluxintelligent.com/suivi-relance-devis-sans-double-saisie/",
+  "https://fluxintelligent.com/automatisation-ia-pme-maroc/",
+  "https://fluxintelligent.com/ia-transformation-fabrication-mecanique/",
+  "https://fluxintelligent.com/automatisation-des-processus/",
+  "https://fluxintelligent.com/ia/devis/"
+ ],
+ "sources_externes": [],
+ "limites_ou_blocages": "Quota Surfer épuisé : content_editor__create a renvoyé « content_editor__create failed: quota_exceeded — Content Editor quota exceeded » (3 essais, 12:09, 12:19 et 12:24 UTC) ; aucun éditeur existant pour cette requête (vérifié via content_editor__list). Score non vérifiable : article créé en brouillon (draft), non programmé. À faire : créer l'éditeur quand le quota le permet, coller html/compte-rendu-chantier-ia.body.html (+ H1), viser 80–90, puis passer en future avec date_gmt 2026-11-28T08:00:00. Longueur (1376 mots) non calée sur Surfer faute de guidelines. FAQ rédigée sans PAA Surfer. IMAGE NON TÉLÉVERSÉE (consigne), featured_media = 0 : téléverser img/compte-rendu-chantier-ia.webp avec l'alt ci-dessus puis wp_update_post featured_media. Rank Math non accessible (extrait = repli meta description). ai_search Surfer « unavailable »."
+}

@@ -1,0 +1,47 @@
+{
+ "sujet": "Confirmation automatique des commandes COD par WhatsApp pour boutiques en ligne marocaines (Shopify, YouCan, WooCommerce)",
+ "type": "création",
+ "wp_id": 4486,
+ "url_prevue": "https://fluxintelligent.com/confirmation-commande-cod-whatsapp-maroc/",
+ "statut_wp": "future",
+ "date_prevue": "2026-11-05T09:00:00 (date_gmt renvoyée : 2026-11-05T09:00:00)",
+ "requete": "confirmation commande e-commerce maroc",
+ "editeur_surfer": 16972303,
+ "score_total": 82,
+ "score_seo": 82,
+ "score_ai_search": null,
+ "iterations": 1,
+ "media_id": null,
+ "alt": "Employée en hijab et chemise en jean consultant son smartphone à un bureau entouré de colis, devant des étagères de cartons dans un entrepôt",
+ "categories": [
+  56
+ ],
+ "tags": [
+  {
+   "id": 37,
+   "name": "E-commerce Maroc"
+  },
+  {
+   "id": 45,
+   "name": "WhatsApp Business"
+  },
+  {
+   "id": 24,
+   "name": "chatbot darija"
+  }
+ ],
+ "excerpt": "Confirmation commande e-commerce Maroc : automatisez la vérification des commandes COD par WhatsApp, relances et réponses en darija, avant l'expédition.",
+ "titre": "Confirmation de commande e-commerce au Maroc : automatiser le COD par WhatsApp",
+ "nb_mots": 2405,
+ "liens_internes": [
+  "https://fluxintelligent.com/agent-ia-whatsapp-business-pme-maroc/",
+  "https://fluxintelligent.com/chatbots-experience-client/agent-vocal-ia/",
+  "https://fluxintelligent.com/automatisation-des-processus/workflows-integrations-api/",
+  "https://fluxintelligent.com/chatbots-experience-client/chatbots-multilingues-service-client-maroc/",
+  "https://fluxintelligent.com/ecommerce-automatise-ia/",
+  "https://fluxintelligent.com/chatbots-experience-client/chatbot-whatsapp-maroc/",
+  "https://fluxintelligent.com/ia/devis/"
+ ],
+ "sources_externes": [],
+ "limites_ou_blocages": "IMAGE NON TÉLÉVERSÉE, featured_media = 0. (1) wp_upload_media exige le fichier en base64 inline : 42 736 caractères pour le webp de 32 Ko, impossible à recopier de façon fiable dans un appel d'outil (environ 77 000 tokens). (2) Deux essais avec l'URL signée Replicate de l'image source (1344x768, 46 914 octets, identique à img/test.webp ; valable 24 h depuis le 2026-11-03 11:49 UTC), via le paramètre url puis via file=URL : le MCP renvoie un résultat malformé (erreur de schéma, message d'erreur WordPress masqué). Aucun média créé (vérifié via /wp-json/wp/v2/media). Le MCP hyperlinks-seo-vps upload_media exige aussi du base64. Le fichier wp_jwt du scratchpad n'a pas été utilisé : cette voie n'est pas prévue par le cahier des charges. À faire avant le 5/11 09:00 : téléverser img/confirmation-commande-cod-whatsapp.webp (title confirmation-commande-cod-whatsapp-maroc, alt ci-dessus), puis wp_update_post id 4486 featured_media. Autres points : Rank Math non accessible (extrait = repli meta description) ; date_gmt identique à date (09:00), à vérifier vu le fuseau Africa/Casablanca ; ai_search Surfer « unavailable » ; aucune source externe citée (fenêtre de 24 h et modèles Meta formulés de façon générale, loi 09-08/CNDP citée sans détail)."
+}

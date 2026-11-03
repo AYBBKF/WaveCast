@@ -1,0 +1,157 @@
+<!-- wp:freeform -->
+<p><strong>En bref :</strong> au Maroc, la plupart des boutiques en ligne vendent en paiement à la livraison (COD). Avant d'envoyer un colis au transporteur, il faut s'assurer que le client existe, qu'il veut toujours le produit et que l'adresse est exploitable. Ce guide explique comment remplacer une partie des appels manuels par un message WhatsApp de récapitulatif, des relances programmées et une lecture des réponses par l'IA, avec mise à jour automatique du statut dans votre boutique Shopify, YouCan ou WooCommerce. Il précise aussi quand garder un appel humain et quels indicateurs suivre.</p>
+
+<h2>Confirmation commande e-commerce Maroc : pourquoi l'appel manuel ne suit plus</h2>
+<p>En paiement à la livraison, le client ne paie rien au moment de la commande. Un clic par erreur, une commande passée sous le coup de l'impulsion, un numéro mal saisi ou une adresse incomplète suffisent pour qu'un colis parte pour rien. Le colis est alors refusé ou introuvable, il revient au stock, et vous avez payé l'emballage, l'expédition et souvent le retour. C'est pour cela que la confirmation de commandes est devenue une étape à part entière du e-commerce au Maroc.</p>
+<p>Aujourd'hui, beaucoup de boutiques confirment encore par téléphone. Une personne ouvre la liste des commandes du jour, appelle chaque client, note le résultat dans un tableur ou dans le back-office, puis prépare les bons de livraison. Ce mode de travail a ses qualités : l'appel rassure, il permet de corriger une adresse et de lever un doute. Mais il montre vite ses limites :</p>
+<ul>
+<li>les commandes arrivent souvent le soir et le week-end, alors que l'équipe appelle en journée ;</li>
+<li>un client sur messagerie ou occupé doit être rappelé plusieurs fois, et ces relances se perdent ;</li>
+<li>le résultat de l'appel est saisi à la main, avec des oublis et des doubles saisies ;</li>
+<li>quand le volume augmente, il faut recruter des agents de confirmation ou passer par un centre d'appel.</li>
+</ul>
+<p>L'objectif n'est pas de supprimer le contact humain. Il s'agit de confirmer automatiquement les commandes simples par WhatsApp, et de réserver le temps de l'équipe aux cas qui demandent vraiment une conversation.</p>
+
+<h2>Comment fonctionne la confirmation des commandes COD par WhatsApp</h2>
+<p>Le principe est le même quelle que soit votre plateforme. Chaque commande suit un circuit en quatre temps : déclencheur, message, lecture de la réponse, mise à jour.</p>
+
+<h3>1. Le déclencheur : une nouvelle commande dans votre boutique</h3>
+<p>Dès qu'une commande en paiement à la livraison est créée sur Shopify, YouCan ou WooCommerce, la boutique envoie une notification (webhook) à l'outil d'automatisation. Celui-ci récupère le nom du client, son numéro, l'adresse, la ville, les produits, les variantes (taille, couleur) et le montant à payer à la livraison. Un premier contrôle simple écarte les cas évidents : numéro incomplet, doublon de commande, ville non desservie par votre transporteur.</p>
+
+<h3>2. Le message de récapitulatif sur WhatsApp</h3>
+<p>Le client reçoit dans les minutes qui suivent un message WhatsApp qui reprend sa commande : produit, quantité, prix total, adresse et délai de livraison estimé. Le message lui demande de confirmer, de modifier ou d'annuler. Il peut contenir des boutons de réponse rapide pour que le client réponde en un geste.</p>
+<p>Point important : WhatsApp Business distingue deux situations. Si le client vous a écrit dans les dernières 24 heures, vous pouvez lui répondre librement. En dehors de cette fenêtre de 24 h, ce qui est le cas d'un premier message de confirmation après une commande sur le site, vous devez utiliser un modèle de message (template) validé au préalable par Meta. Les modèles de confirmation et de relance sont donc à préparer et à faire approuver avant le lancement. Les questions de compte, de numéro et de tarification Meta sont détaillées dans notre article sur <a href="https://fluxintelligent.com/agent-ia-whatsapp-business-pme-maroc/">l'agent IA WhatsApp Business pour PME</a>.</p>
+
+<h3>3. La lecture des réponses par l'IA</h3>
+<p>Beaucoup de clients ne cliquent pas sur les boutons. Ils écrivent « oui c'est bon », « wakha », « ana f Rabat machi Casa », « bghit lon lkhal », ou envoient une note vocale. C'est là que l'IA est utile. Un modèle de langage lit la réponse libre, en darija, en français ou en mélange des deux, et la classe dans une catégorie : commande confirmée, demande de modification, annulation, question, réponse incompréhensible. Il extrait aussi les informations utiles, par exemple une nouvelle adresse ou une autre couleur.</p>
+<p>Si le client pose une question (« wach kayn l'échange ? »), l'IA peut répondre à partir de vos règles écrites : délai, frais de livraison, politique d'échange. Si la réponse est ambiguë, elle ne devine pas : elle transmet la conversation à un membre de l'équipe.</p>
+
+<h3>4. La mise à jour du statut et la transmission au transporteur</h3>
+<p>Selon la réponse, l'automatisation met à jour la commande dans votre boutique : ajout d'une étiquette ou d'un statut, modification de l'adresse, annulation. Une commande confirmée peut être envoyée automatiquement au transporteur (création de l'envoi via son API ou export au format attendu), ou placée dans la file de préparation. Votre équipe ne voit plus une liste brute à appeler, mais une liste de commandes déjà triées.</p>
+
+<h2>Ce que fait l'IA et ce qui relève de l'automatisation classique</h2>
+<p>Il est utile de bien séparer les deux. Cela permet de savoir ce qui est fiable à cent pour cent et ce qui demande une surveillance.</p>
+<table>
+<thead><tr><th>Étape</th><th>Automatisation classique (règles)</th><th>IA (modèle de langage)</th></tr></thead>
+<tbody>
+<tr><td>Réception de la commande</td><td>Webhook de la boutique, contrôle du numéro et des doublons</td><td>Non nécessaire</td></tr>
+<tr><td>Envoi du récapitulatif</td><td>Modèle WhatsApp rempli avec les données de la commande</td><td>Non nécessaire</td></tr>
+<tr><td>Relances</td><td>Envoi programmé si sans réponse après un délai fixé</td><td>Non nécessaire</td></tr>
+<tr><td>Réponse par bouton</td><td>Lecture directe du bouton choisi</td><td>Non nécessaire</td></tr>
+<tr><td>Réponse libre ou note vocale</td><td>Ne sait pas l'interpréter</td><td>Comprend la darija et le français, classe et extrait les informations</td></tr>
+<tr><td>Questions du client</td><td>Réponses figées</td><td>Réponse à partir de vos règles, transfert si doute</td></tr>
+<tr><td>Mise à jour et transporteur</td><td>Changement de statut, création de l'envoi</td><td>Non nécessaire</td></tr>
+</tbody>
+</table>
+<p>Autrement dit, l'IA ne décide que d'une chose : ce que le client a voulu dire. Tout le reste suit des règles que vous fixez et que vous pouvez vérifier.</p>
+
+<h2>Modèles de messages WhatsApp pour confirmer les commandes</h2>
+<p>Voici des exemples de textes à adapter à votre ton et à faire valider comme modèles par Meta. Les éléments entre accolades sont remplis automatiquement à partir de la commande.</p>
+
+<h3>Récapitulatif en français</h3>
+<p><em>Bonjour {prénom}, merci pour votre commande sur {boutique}. Récapitulatif : {produit} ({variante}) x {quantité}, total {montant} DH à payer à la livraison. Adresse : {adresse}, {ville}. Livraison prévue sous {délai}. Merci de confirmer pour que nous préparions le colis.</em><br>Boutons : « Je confirme » / « Modifier » / « Annuler ».</p>
+
+<h3>Récapitulatif en darija</h3>
+<p><em>Salam {prénom}, chokran 3la la commande dyalek f {boutique}. {produit} ({variante}) x {quantité}, lmajmou3 {montant} DH, tkhalesh mli twasslek. L'adresse : {adresse}, {ville}. Twasslek f {délai}. 3afak akked lina bach nwejjdou lik le colis.</em><br>Boutons : « Akked » / « Bddel » / « Lghi ».</p>
+
+<h3>Relance sans réponse</h3>
+<p><em>Bonjour {prénom}, nous n'avons pas encore reçu votre confirmation pour la commande {numéro}. Sans réponse de votre part, elle ne pourra pas être expédiée. Répondez simplement « oui » pour confirmer.</em></p>
+<p>En darija : <em>Salam {prénom}, mazal ma wslatna confirmation dyal la commande {numéro}. Ila ma jawbtich, ma ghadich nsiftouha. Kteb « ah » bach t'akked.</em></p>
+
+<h3>Demande de complément d'adresse</h3>
+<p><em>Merci {prénom}. Pour que le livreur vous trouve facilement, pouvez-vous nous envoyer un repère (quartier, rue, immeuble) ou votre localisation WhatsApp ?</em></p>
+
+<h3>Récapitulatif après modification</h3>
+<p><em>C'est noté : {nouvelle variante}, livraison à {nouvelle adresse}. Total {montant} DH à la livraison. Merci de confirmer une dernière fois.</em></p>
+<p>Gardez des messages courts, sans pression commerciale. Le but est que le client reconnaisse sa commande et réponde vite.</p>
+
+<h2>Relancer les clients sans réponse</h2>
+<p>Une partie des clients ne répond pas au premier message. Plutôt que de laisser la commande en attente ou de rappeler au hasard, définissez une séquence fixe, par exemple :</p>
+<ol>
+<li>premier message dès la création de la commande ;</li>
+<li>relance WhatsApp quelques heures plus tard, à un moment où le client est plus disponible ;</li>
+<li>dernière relance le lendemain ;</li>
+<li>si toujours sans réponse : appel par un agent de confirmation, ou annulation selon votre règle.</li>
+</ol>
+<p>Le nombre de relances et les délais dépendent de votre produit et de vos clients. L'essentiel est que chaque commande ait un statut clair et une prochaine action datée, pour qu'aucune relance ne se perde. Si vous préférez déléguer les appels de la dernière étape à une machine, un <a href="https://fluxintelligent.com/chatbots-experience-client/agent-vocal-ia/">agent vocal IA</a> peut aussi passer l'appel, avec les mêmes règles de transfert vers un humain.</p>
+
+<h2>Quels statuts utiliser pour vos commandes</h2>
+<p>Des statuts simples et partagés évitent les malentendus entre la confirmation, la préparation et la livraison. Voici une base à adapter dans votre boutique, sous forme de statuts ou d'étiquettes :</p>
+<table>
+<thead><tr><th>Statut</th><th>Signification</th><th>Action suivante</th></tr></thead>
+<tbody>
+<tr><td>Nouvelle</td><td>Commande reçue, message pas encore envoyé</td><td>Envoi du récapitulatif</td></tr>
+<tr><td>En attente de confirmation</td><td>Message envoyé, pas de réponse</td><td>Relances programmées</td></tr>
+<tr><td>Commande confirmée</td><td>Le client a validé produit, prix et adresse</td><td>Préparation et envoi au transporteur</td></tr>
+<tr><td>À modifier</td><td>Changement d'adresse, de variante ou de quantité</td><td>Mise à jour puis nouvelle confirmation</td></tr>
+<tr><td>À rappeler</td><td>Réponse ambiguë, question complexe ou client sans réponse après relances</td><td>Appel par un agent</td></tr>
+<tr><td>Annulée</td><td>Le client ne veut plus le produit</td><td>Remise en stock, motif enregistré</td></tr>
+<tr><td>Injoignable</td><td>Numéro invalide ou aucune réponse au terme de la séquence</td><td>Annulation selon votre règle</td></tr>
+</tbody>
+</table>
+<p>Enregistrez aussi le motif d'annulation quand le client le donne : prix, délai, commande en double, produit commandé ailleurs. Ces motifs servent ensuite à améliorer vos fiches produits et vos publicités.</p>
+
+<h2>Quand garder un appel humain</h2>
+<p>La confirmation par WhatsApp ne remplace pas tous les appels. Gardez une personne dans la boucle dans ces situations :</p>
+<ul>
+<li>commande d'un montant élevé ou produit fragile, pour lequel un refus à la livraison coûte cher ;</li>
+<li>client qui hésite, pose plusieurs questions ou exprime une réclamation ;</li>
+<li>réponse que l'IA n'a pas su classer avec assez de certitude ;</li>
+<li>client qui ne lit pas WhatsApp ou préfère être appelé ;</li>
+<li>signes de commande suspecte : plusieurs commandes du même numéro, adresse incohérente.</li>
+</ul>
+<p>Dans ces cas, l'automatisation fait déjà le travail de préparation : l'agent reçoit la commande, l'historique de la conversation et la raison du transfert. Son appel est plus court et mieux ciblé. Une commande confirmée ne garantit pas que le colis sera accepté à la porte, mais elle réduit les envois partis sans aucune vérification.</p>
+
+<h2>Intégrations et prérequis</h2>
+<p>Pour mettre en place ce circuit dans votre boutique, il faut réunir quelques éléments :</p>
+<ul>
+<li><strong>Un compte WhatsApp Business Platform</strong> (API) avec un numéro dédié, rattaché à votre entreprise, et des modèles de messages approuvés par Meta.</li>
+<li><strong>Un accès à votre boutique en ligne</strong> : application ou clé API sur Shopify, WooCommerce ou YouCan, pour recevoir les commandes et mettre à jour leur statut.</li>
+<li><strong>Un accès au transporteur</strong> : API, export de fichier ou plateforme du livreur, selon ce qu'il propose.</li>
+<li><strong>Un outil d'orchestration</strong> (n8n, Make ou développement sur mesure) pour relier les briques. Notre page sur les <a href="https://fluxintelligent.com/automatisation-des-processus/workflows-integrations-api/">workflows et intégrations API</a> détaille cette partie.</li>
+<li><strong>Des règles écrites</strong> : délais de relance, cas à transférer, réponses aux questions fréquentes, politique d'échange.</li>
+</ul>
+<p>Côté données, vous traitez des noms, numéros et adresses de clients. Informez-les de l'usage de leurs coordonnées pour la confirmation et la livraison, limitez l'accès aux personnes qui en ont besoin et renseignez-vous sur vos obligations auprès de la CNDP au titre de la loi 09-08.</p>
+<p>Si vos clients écrivent aussi en arabe ou dans d'autres langues, les <a href="https://fluxintelligent.com/chatbots-experience-client/chatbots-multilingues-service-client-maroc/">chatbots multilingues pour le service client</a> couvrent ce besoin sur le même canal.</p>
+
+<h2>Limites à connaître</h2>
+<ul>
+<li>L'IA peut se tromper sur une réponse très courte ou ironique. D'où l'importance d'un seuil de doute qui envoie la conversation à un humain.</li>
+<li>Les modèles WhatsApp doivent être validés par Meta, et un modèle refusé retarde le lancement. Prévoyez du temps pour cette étape.</li>
+<li>Les messages envoyés par l'API WhatsApp sont facturés par Meta selon leur catégorie. Ce coût s'ajoute à celui de l'outil.</li>
+<li>Un client qui ne veut pas recevoir de messages doit pouvoir s'y opposer simplement.</li>
+<li>Si votre boutique ou votre transporteur n'ont pas d'API, une partie de la mise à jour reste manuelle ou passe par des exports.</li>
+</ul>
+
+<h2>Indicateurs à suivre</h2>
+<p>Mesurez la situation avant de lancer l'automatisation, puis comparez sur la même période. Les indicateurs utiles :</p>
+<ul>
+<li><strong>Taux de confirmation</strong> : commandes confirmées sur commandes reçues.</li>
+<li><strong>Taux de livraison</strong> : colis livrés et payés sur colis expédiés. C'est le chiffre qui compte vraiment pour votre trésorerie.</li>
+<li><strong>Taux de retour</strong> : colis refusés ou revenus sur colis expédiés.</li>
+<li><strong>Délai de confirmation</strong> : temps entre la commande et le statut confirmé.</li>
+<li><strong>Part des commandes transférées à un humain</strong>, et motifs de transfert.</li>
+<li><strong>Motifs d'annulation</strong>, par produit et par source de trafic.</li>
+</ul>
+<p>Suivez ces chiffres par produit et par campagne publicitaire. Un produit avec beaucoup de commandes mais peu de livraisons signale souvent un problème d'annonce ou de prix, pas de confirmation.</p>
+
+<h2>Par où commencer</h2>
+<p>Commencez petit : un modèle de récapitulatif, une relance, trois réponses reconnues (confirmer, modifier, annuler) et un transfert vers l'équipe pour tout le reste. Une fois le circuit stable, ajoutez la lecture des notes vocales, l'envoi automatique au transporteur et le suivi après expédition. Pour une vue d'ensemble des autres tâches à automatiser dans une boutique, consultez notre guide du <a href="https://fluxintelligent.com/ecommerce-automatise-ia/">e-commerce automatisé par l'IA</a>.</p>
+
+<h2>Questions fréquentes</h2>
+
+<h3>C'est quoi la confirmation de commande ?</h3>
+<p>C'est l'étape où le vendeur vérifie avec le client, avant l'expédition, qu'il veut bien le produit commandé, au prix indiqué et à l'adresse donnée. En paiement à la livraison, elle évite d'envoyer des colis qui seront refusés ou impossibles à livrer.</p>
+
+<h3>Comment le client sait-il que sa commande est validée ?</h3>
+<p>Il reçoit un message WhatsApp qui confirme la prise en compte de sa réponse, avec le récapitulatif final et le délai de livraison. Dans la boutique, la commande passe au statut « confirmée » et peut être transmise au transporteur.</p>
+
+<h3>WhatsApp suffit-il pour confirmer une commande ?</h3>
+<p>Pour une grande partie des commandes simples, oui. Gardez toutefois un appel humain pour les montants élevés, les clients qui hésitent, les réponses ambiguës et les clients qui ne répondent pas aux relances.</p>
+
+<h3>Que faire si le client ne répond pas ?</h3>
+<p>Appliquez une séquence de relances fixe, puis un appel ou une annulation selon votre règle. L'important est que chaque commande sans réponse ait un statut et une prochaine action datée.</p>
+
+<h2>Passer à la confirmation automatique</h2>
+<p>Flux Intelligent conçoit et installe des circuits de confirmation COD reliés à votre boutique, à WhatsApp et à votre transporteur, avec les règles de transfert vers votre équipe. Découvrez notre offre de <a href="https://fluxintelligent.com/chatbots-experience-client/chatbot-whatsapp-maroc/">chatbot WhatsApp au Maroc</a>, ou obtenez une estimation de votre projet en quelques minutes avec le <a href="https://fluxintelligent.com/ia/devis/">devis IA instantané</a>.</p>
+<!-- /wp:freeform -->

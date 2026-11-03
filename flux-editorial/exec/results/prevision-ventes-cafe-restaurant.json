@@ -1,0 +1,47 @@
+{
+ "sujet": "Cafés et restaurants au Maroc : prévision de production et d'achats à partir des ventes de caisse et du calendrier (ramadan, fêtes, matchs), prérequis d'historique, invendus, limites ; exemple de calcul annoncé comme illustratif",
+ "type": "création",
+ "wp_id": 4519,
+ "url_prevue": "https://fluxintelligent.com/prevision-ventes-cafe-restaurant/",
+ "statut_wp": "future",
+ "date_prevue": "2026-11-20T09:00:00 heure marocaine (date_gmt envoyée 2026-11-20T08:00:00 ; WordPress renvoie date = date_gmt = 08:00)",
+ "requete": "prévision des ventes restaurant",
+ "editeur_surfer": 16973231,
+ "score_total": 81,
+ "score_seo": 81,
+ "score_ai_search": null,
+ "iterations": 1,
+ "media_id": null,
+ "image_locale": "/tmp/claude-0/-home-user-WaveCast/b86cf213-b51d-5352-9e9d-fc596e43dfc1/scratchpad/exec/img/prevision-ventes-cafe-restaurant.webp",
+ "alt": "Boulanger en tablier bleu marine disposant des croissants dans une vitrine pendant qu'un gérant consulte une tablette dans un café",
+ "categories": [
+  1
+ ],
+ "tags": [
+  {
+   "id": 58,
+   "name": "Restauration"
+  },
+  {
+   "id": 10,
+   "name": "automatisation IA PME"
+  },
+  {
+   "id": 11,
+   "name": "PME Maroc"
+  }
+ ],
+ "excerpt": "Prévision des ventes restaurant : une méthode simple à partir de la caisse et du calendrier pour décider la production et les achats de votre café.",
+ "titre": "Prévision des ventes restaurant : produire et acheter au plus juste dans un café ou un restaurant au Maroc",
+ "limites_ou_blocages": "Image non téléversée (consigne) : featured_media = 0, à rattacher à l'article 4519 avant le 20/11 (une petite étiquette illisible apparaît sur la vitrine, sans texte lisible). Rank Math non accessible. Surfer : 81 dès le premier passage (dans la fourchette, proche du bas) ; ai_search « unavailable ». Éditeur Surfer créé (16973231) ; il a proposé une meta description en arabe, non utilisée. L'article food cost (#6, programmé au 9/11) n'est pas lié car non publié : lien à ajouter après sa publication. PAA « 5 phases de vente » écartée (hors sujet). Exemple chiffré explicitement illustratif ; aucun gain promis.",
+ "nb_mots": 1752,
+ "liens_internes": [
+  "https://fluxintelligent.com/automatisation-factures-ia-maroc/",
+  "https://fluxintelligent.com/automatisation-ia-cafes-maroc-2025/",
+  "https://fluxintelligent.com/automatisation-des-processus/workflows-integrations-api/",
+  "https://fluxintelligent.com/automatisation-ia-pme-maroc/",
+  "https://fluxintelligent.com/automatisation-des-processus/",
+  "https://fluxintelligent.com/ia/devis/"
+ ],
+ "sources_externes": []
+}

@@ -1,0 +1,83 @@
+<!-- wp:freeform -->
+<p><strong>En bref :</strong> dans beaucoup d'épiceries et de commerces de quartier au Maroc, le crédit client se note encore dans un cahier. Ce guide explique comment passer à un carnet de crédit client numérique piloté depuis votre téléphone : vous dictez une note vocale en darija, l'outil met à jour le compte du client, envoie un reçu sur WhatsApp et prépare des rappels courtois. Les mêmes données servent ensuite à préparer le réassort. Vous verrez aussi ce qui reste entre vos mains, les prérequis et les indicateurs à suivre.</p>
+
+<h2>Le carnet de crédit client papier : ce que l'épicier perd sans le voir</h2>
+<p>Le crédit fait partie de la relation avec les clients du quartier. On fait confiance, on note, le client paie à la fin du mois ou à la paie. Le cahier papier a pourtant des limites connues :</p>
+<ul>
+<li>une ligne mal écrite ou oubliée pendant le rush du soir, et le montant est perdu ;</li>
+<li>le solde de chaque client n'est jamais à jour : il faut tout additionner à la main ;</li>
+<li>quand le client conteste (« j'ai déjà payé la semaine dernière »), il n'y a pas de trace partagée ;</li>
+<li>le cahier peut être abîmé, perdu, ou tenu par un seul membre de la famille ;</li>
+<li>personne ne sait vraiment combien d'argent dort hors de la caisse.</li>
+</ul>
+<p>Le crédit n'est pas le problème. Le problème, c'est le suivi : qui doit quoi, depuis quand, et quand relancer sans gêner le client.</p>
+
+<h2>Comment fonctionne un carnet de crédit numérique sur votre téléphone</h2>
+<p>Le principe suit toujours le même circuit : un déclencheur, un traitement, un résultat.</p>
+
+<h3>1. Le déclencheur : une note vocale ou un message</h3>
+<p>Au moment de la vente, vous envoyez un vocal sur WhatsApp à votre propre assistant : « Si Ahmed, 85 dirhams, lait, pain et huile ». Vous pouvez aussi taper un message court ou utiliser un petit formulaire. Pas besoin d'ouvrir l'application d'un logiciel de caisse ni de remplir un tableau.</p>
+
+<h3>2. Le traitement : l'IA comprend, l'automatisation enregistre</h3>
+<p>L'IA transcrit le vocal (darija, français ou mélange des deux), repère le nom du client, le montant et, si vous le dites, les produits. Elle cherche le client dans votre liste. S'il y a deux « Ahmed », elle vous demande lequel au lieu de deviner. Ensuite, l'automatisation ajoute la ligne au compte du client et recalcule le solde total.</p>
+
+<h3>3. Le résultat : un reçu et un solde à jour</h3>
+<p>Le client reçoit, s'il a donné son accord et son numéro de téléphone, un reçu sur WhatsApp : date, montant du jour, reste à payer. Quand il paie, vous dictez « Si Ahmed a payé 200 » et le solde baisse. Chaque mouvement de crédit ou de paiement reste visible, ce qui évite les discussions sur la dette.</p>
+
+<h3>4. Le rappel courtois</h3>
+<p>Vous fixez vos règles : par exemple un rappel quand le solde dépasse un plafond que vous choisissez, ou après un certain nombre de jours sans paiement. Le message reste poli et personnel (« Salam, pour info, votre solde chez nous est de… »). Vous pouvez valider chaque rappel avant l'envoi. Pour les clients fidèles, vous pouvez désactiver les rappels.</p>
+
+<h2>Du crédit au réassort : utiliser les mêmes données</h2>
+<p>Si vous notez aussi les ventes du jour (ou si votre caisse les exporte), l'outil peut repérer les produits qui partent vite et préparer une liste de réassort avant le passage du fournisseur. C'est une aide à la décision : vous gardez le dernier mot sur les quantités, selon la saison, le ramadan ou la trésorerie du moment.</p>
+
+<h2>Ce que fait l'IA et ce qui relève de l'automatisation classique</h2>
+<table>
+<thead><tr><th>Étape</th><th>Automatisation classique</th><th>IA</th></tr></thead>
+<tbody>
+<tr><td>Saisie du crédit</td><td>Formulaire, ajout de la ligne au compte</td><td>Transcription du vocal en darija, extraction du nom et du montant</td></tr>
+<tr><td>Calcul du solde</td><td>Addition des crédits, déduction des paiements</td><td>Aucune : le calcul doit être exact, donc fait par des règles</td></tr>
+<tr><td>Reçu au client</td><td>Envoi WhatsApp selon un modèle</td><td>Aucune ou reformulation simple</td></tr>
+<tr><td>Rappel</td><td>Déclenchement selon vos règles</td><td>Lecture des réponses du client (« nkhalsek lkhmis »)</td></tr>
+<tr><td>Réassort</td><td>Liste des ventes par produit</td><td>Suggestion de quantités à valider</td></tr>
+</tbody>
+</table>
+
+<h2>Intégrations et prérequis</h2>
+<ul>
+<li>Un numéro WhatsApp Business dédié au commerce. Les messages envoyés hors conversation récente passent par des modèles validés par Meta : voir notre article sur <a href="https://fluxintelligent.com/agent-ia-whatsapp-business-pme-maroc/">WhatsApp Business et ses règles pour les PME</a>.</li>
+<li>Une liste de clients (nom, quartier, numéro) et leur accord pour recevoir des messages.</li>
+<li>Un stockage simple : Google Sheets ou une petite base, reliés par un outil comme n8n ou Make (voir <a href="https://fluxintelligent.com/automatisation-des-processus/automatisation-n8n-make/">nos automatisations n8n et Make</a>).</li>
+<li>Optionnel : l'export des ventes de la caisse pour le réassort.</li>
+</ul>
+<p>Le carnet ne doit pas forcément être gratuit pour être rentable, ni coûteux pour être fiable. Pour savoir par quoi commencer, lisez <a href="https://fluxintelligent.com/automatisation-ia-pme-maroc/">comment choisir son premier processus à automatiser</a>.</p>
+
+<h2>Limites et ce qui reste humain</h2>
+<ul>
+<li>La décision d'accorder du crédit, et à qui, reste la vôtre.</li>
+<li>Un vocal pris dans le bruit peut être mal compris : l'outil vous renvoie un récapitulatif à confirmer en un geste.</li>
+<li>Un client en difficulté mérite une discussion, pas un rappel automatique.</li>
+<li>Vos données clients sont personnelles : nom, numéro de téléphone, montant dû. La loi 09-08 encadre leur traitement au Maroc ; limitez les informations au nécessaire, protégez l'accès et renseignez-vous auprès de la CNDP sur vos obligations.</li>
+</ul>
+
+<h2>Indicateurs à suivre</h2>
+<ul>
+<li>Total du crédit en cours et son évolution par semaine.</li>
+<li>Nombre de clients avec un solde au-delà de votre plafond.</li>
+<li>Délai moyen entre le crédit et le paiement.</li>
+<li>Part des rappels suivis d'un paiement.</li>
+<li>Nombre de corrections de saisie (qualité de la transcription).</li>
+</ul>
+
+<h2>Questions fréquentes</h2>
+<h3>Est-ce que je perds mes données si je perds mon téléphone ?</h3>
+<p>Non, si le carnet est stocké en ligne et non sur le téléphone. Il suffit de reconnecter votre numéro WhatsApp sur un nouvel appareil.</p>
+<h3>Mes clients doivent-ils installer quoi que ce soit ?</h3>
+<p>Non. Ils reçoivent un message WhatsApp classique. Ceux qui ne veulent pas de messages restent suivis sans envoi.</p>
+<h3>Puis-je garder le cahier en parallèle ?</h3>
+<p>Oui, pendant quelques semaines. C'est même conseillé pour vérifier que les soldes concordent avant de ranger le cahier.</p>
+<h3>Comment le système comprend-il la darija ?</h3>
+<p>Les modèles de transcription récents gèrent bien la darija courante. Les noms propres et les chiffres sont toujours renvoyés pour confirmation.</p>
+
+<h2>Passer au carnet numérique avec Flux Intelligent</h2>
+<p>Nous mettons en place des <a href="https://fluxintelligent.com/chatbots-experience-client/chatbot-whatsapp-maroc/">assistants WhatsApp pour commerces au Maroc</a>, en darija et en français, adaptés à votre façon de travailler. Décrivez votre commerce et obtenez une estimation avec notre <a href="https://fluxintelligent.com/ia/devis/">devis IA instantané</a>.</p>
+<!-- /wp:freeform -->

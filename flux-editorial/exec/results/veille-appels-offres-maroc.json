@@ -1,0 +1,49 @@
+{
+ "sujet": "PME B2B : veille quotidienne des appels d'offres, résumé RC/CPS, liste des pièces, rétroplanning, pièces administratives expirées",
+ "type": "création",
+ "wp_id": 4518,
+ "url_prevue": "https://fluxintelligent.com/veille-appels-offres-maroc/",
+ "statut_wp": "future",
+ "date_prevue": "2026-11-15T09:00:00 heure Maroc (date_gmt envoyée et renvoyée : 2026-11-15T08:00:00)",
+ "requete": "veille appels d'offres maroc",
+ "editeur_surfer": 16973222,
+ "score_total": 85,
+ "score_seo": 85,
+ "score_ai_search": null,
+ "iterations": 2,
+ "media_id": null,
+ "image_locale": "/tmp/claude-0/-home-user-WaveCast/b86cf213-b51d-5352-9e9d-fc596e43dfc1/scratchpad/exec/img/veille-appels-offres-maroc.webp",
+ "alt": "Homme à lunettes annotant un épais dossier à onglets colorés sur un bureau en bois, une collègue en veste bleue désignant une page",
+ "categories": [
+  1
+ ],
+ "tags": [
+  {
+   "id": 10,
+   "name": "automatisation IA PME"
+  },
+  {
+   "id": 11,
+   "name": "PME Maroc"
+  },
+  {
+   "id": 36,
+   "name": "Automatisation IA"
+  }
+ ],
+ "excerpt": "Veille appels d'offres Maroc : repérez chaque jour les avis utiles, résumez RC et CPS, listez les pièces et suivez les délais grâce à l'automatisation.",
+ "titre": "Veille appels d'offres au Maroc : automatiser le repérage et la préparation des dossiers",
+ "nb_mots": 1575,
+ "liens_internes": [
+  "https://fluxintelligent.com/automatisation-des-processus/automatisation-administrative/",
+  "https://fluxintelligent.com/automatisation-des-processus/automatisation-n8n-make/",
+  "https://fluxintelligent.com/automatisation-des-processus/workflows-integrations-api/",
+  "https://fluxintelligent.com/agents-ia/",
+  "https://fluxintelligent.com/comparer-devis-automatisation-ia-maroc/",
+  "https://fluxintelligent.com/ia/devis/"
+ ],
+ "sources_externes": [
+  "https://www.marchespublics.gov.ma/"
+ ],
+ "limites_ou_blocages": "Éditeur Surfer créé (16973222) : le premier appel content_editor__create a expiré à 60 s, éditeur retrouvé via content_editor__list. Score 74 puis 85. URL du portail vérifiée par recherche Firecrawl (1er résultat, domaine officiel .gov.ma) ; chargement direct impossible (firecrawl_scrape : timeout 60 s ; curl : « Recv failure: Connection reset by peer », proxy ws_closed_mid_exchange). Conditions d'utilisation du portail NON lues : l'article invite seulement à les vérifier avant tout accès automatisé, sans affirmer ce qu'elles permettent. Aucun numéro de décret ni seuil cité. Image non téléversée (featured_media = 0). Rank Math non accessible. ai_search « unavailable »."
+}

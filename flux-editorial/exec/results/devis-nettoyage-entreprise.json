@@ -1,0 +1,47 @@
+{
+ "sujet": "Entreprises de nettoyage : devis de nettoyage de bureaux à partir de photos et de la grille de l'entreprise, contrôle qualité par checklist photo, rapports clients",
+ "type": "création",
+ "wp_id": 4510,
+ "url_prevue": "https://fluxintelligent.com/devis-nettoyage-entreprise/",
+ "statut_wp": "future",
+ "date_prevue": "2026-11-26T09:00:00 heure marocaine (date_gmt envoyée et renvoyée : 2026-11-26T08:00:00)",
+ "requete": "devis nettoyage bureaux",
+ "editeur_surfer": 16973229,
+ "score_total": 83,
+ "score_seo": 83,
+ "score_ai_search": null,
+ "iterations": 1,
+ "media_id": null,
+ "image_locale": "/tmp/claude-0/-home-user-WaveCast/b86cf213-b51d-5352-9e9d-fc596e43dfc1/scratchpad/exec/img/devis-nettoyage-entreprise.webp",
+ "alt": "Agente d'entretien en tenue bleu marine photographiant avec son smartphone un open space vide et propre, un collègue au fond",
+ "categories": [
+  57
+ ],
+ "tags": [
+  {
+   "id": 64,
+   "name": "entreprise de nettoyage"
+  },
+  {
+   "id": 13,
+   "name": "CRM automatisé"
+  },
+  {
+   "id": 45,
+   "name": "WhatsApp Business"
+  }
+ ],
+ "excerpt": "Devis nettoyage bureaux : automatisez le chiffrage à partir de photos et de votre grille, le contrôle qualité par checklist photo et les rapports clients.",
+ "titre": "Devis nettoyage bureaux : automatiser le chiffrage, le contrôle qualité et les rapports clients",
+ "nb_mots": 1688,
+ "liens_internes": [
+  "https://fluxintelligent.com/suivi-relance-devis-sans-double-saisie/",
+  "https://fluxintelligent.com/chatbots-experience-client/chatbot-whatsapp-maroc/",
+  "https://fluxintelligent.com/crm-ventes-marketing-ia/crm-automation-maroc/",
+  "https://fluxintelligent.com/automatisation-des-processus/workflows-integrations-api/",
+  "https://fluxintelligent.com/crm-ventes-marketing-ia/",
+  "https://fluxintelligent.com/ia/devis/"
+ ],
+ "sources_externes": [],
+ "limites_ou_blocages": "La SERP de la requête est orientée clients finaux (prix au m², tarifs Casablanca) ; l'article cible les entreprises de nettoyage et ne donne volontairement aucun prix de marché. IMAGE NON TÉLÉVERSÉE (consigne), featured_media = 0 : téléverser img/devis-nettoyage-entreprise.webp avec l'alt ci-dessus puis wp_update_post featured_media. Rank Math non accessible (extrait = repli meta description). ai_search Surfer « unavailable »."
+}

@@ -1,0 +1,35 @@
+{
+ "sujet": "Réduire les retours COD au Maroc + automatisations e-commerce utiles",
+ "type": "enrichissement",
+ "wp_id": 3293,
+ "url_prevue": "https://fluxintelligent.com/ecommerce-automatise-ia/",
+ "statut_wp": "publish (inchangé, non mis à jour)",
+ "date_prevue": null,
+ "requete": "retours cod maroc",
+ "editeur_surfer": null,
+ "score_total": null,
+ "score_seo": null,
+ "score_ai_search": null,
+ "iterations": 0,
+ "media_id": null,
+ "image_locale": "img/ecommerce-automatise-ia.webp",
+ "alt": "Jeune homme en t-shirt bleu-vert préparant des colis en carton sur une table, près d'un ordinateur portable, dans une réserve remplie de cartons",
+ "categories": [
+  57
+ ],
+ "tags": [],
+ "excerpt": "Retours COD Maroc : réduisez les colis refusés avec confirmation WhatsApp, contrôle des commandes, suivi de livraison et analyse des motifs de retour.",
+ "titre": "Réduire les retours COD au Maroc : automatisations e-commerce utiles",
+ "nb_mots": 1382,
+ "liens_internes": [
+  "https://fluxintelligent.com/agent-ia-whatsapp-business-pme-maroc/",
+  "https://fluxintelligent.com/automatisation-des-processus/workflows-integrations-api/",
+  "https://fluxintelligent.com/chatbots-experience-client/agent-vocal-ia/",
+  "https://fluxintelligent.com/chatbots-experience-client/chatbot-whatsapp-maroc/",
+  "https://fluxintelligent.com/crm-ventes-marketing-ia/",
+  "https://fluxintelligent.com/crm-ventes-marketing-ia/crm-automation-maroc/",
+  "https://fluxintelligent.com/ia/devis/"
+ ],
+ "sources_externes": [],
+ "limites_ou_blocages": "Surfer content_editor__create refusé : « content_editor__create failed: quota_exceeded — Content Editor quota exceeded » (deux essais, 12:10 et 12:16 UTC). Aucun score vérifiable, donc AUCUNE écriture WordPress (règle 80–90). HTML prêt dans html/ecommerce-automatise-ia.html. Lien vers l'article de confirmation de commande (4486, programmé le 2026-11-05) NON ajouté : à insérer après sa publication (section « 2. Confirmation de commande par WhatsApp »). Retirés : mise en page inline fi-aeo-post, « audit IA gratuit » (offre non vérifiée), JSON-LD Article/Service/FAQ obsolète (breadcrumb conservé). Image générée non téléversée (règle §5), featured_media reste 0. Sauvegarde : backup/3293.json."
+}

@@ -1,0 +1,114 @@
+<!-- wp:freeform -->
+<p><strong>En bref :</strong> chez beaucoup de grossistes et distributeurs marocains, la prise de commande se fait déjà sur WhatsApp : messages libres, photos de produits, notes vocales en darija, « comme la dernière fois ». Le problème n'est pas le canal, c'est la ressaisie. Ce guide explique comment un agent IA lit ces commandes, les transforme en bon de commande dans votre ERP ou votre Google Sheets, contrôle le stock et le prix propre à chaque client, renvoie un récapitulatif à confirmer et traite les commandes arrivées hors horaires. Il précise ce que fait l'IA, ce qui reste à votre équipe et les indicateurs à suivre.</p>
+
+<h2>Prise de commande WhatsApp : ce qui se passe aujourd'hui chez un grossiste</h2>
+<p>Un épicier, un café, une pharmacie ou un revendeur envoie sa commande sur le numéro du commercial ou du dépôt. Elle ressemble rarement à un bon de commande :</p>
+<ul>
+<li>« Salam, 10 cartons d'huile 5 L, 20 sacs farine, et le sucre comme d'habitude » ;</li>
+<li>une note vocale de quarante secondes enregistrée dans la boutique ;</li>
+<li>une photo d'étagère vide, ou d'une ancienne facture entourée au stylo ;</li>
+<li>« Nfs l commande dyal semana li fatet » (la même commande que la semaine dernière).</li>
+</ul>
+<p>Quelqu'un doit ensuite lire, écouter, retrouver le client, retrouver les références, vérifier le stock, appliquer le bon tarif, saisir la commande dans l'ERP ou le tableur, puis rappeler le client en cas de rupture. Les erreurs sont connues : mauvaise référence, quantité mal comprise, tarif d'un autre client, commande oubliée dans une conversation, commande du soir traitée seulement le lendemain midi.</p>
+<p>L'objectif d'une automatisation de la prise de commande n'est pas de forcer vos clients à utiliser une application. Ils continuent d'écrire sur WhatsApp comme avant ; c'est le traitement derrière qui change.</p>
+
+<h2>Comment fonctionne la prise de commande automatisée sur WhatsApp</h2>
+
+<h3>1. Le déclencheur : un message du client</h3>
+<p>Le client écrit sur le numéro WhatsApp Business de l'entreprise (texte, vocal, photo ou PDF). L'automatisation identifie le client par son numéro de téléphone et charge sa fiche : tarif applicable, conditions de paiement, adresse de livraison, jours de tournée, historique des commandes.</p>
+
+<h3>2. La lecture de la commande par l'IA</h3>
+<p>Un modèle de langage lit le message et en extrait une liste de lignes : produit, quantité, unité (carton, sac, pièce, palette). Les notes vocales sont d'abord transcrites, y compris en darija. Les noms approximatifs (« zit 5 litres », « l'huile la grande ») sont rapprochés de votre catalogue à partir des désignations, des synonymes que vous fournissez et de l'historique du client.</p>
+<p>« Comme la dernière fois » devient la dernière commande du client, proposée telle quelle ou ajustée (« pareil mais sans le sucre »). Quand l'IA hésite entre deux références ou ne comprend pas une quantité, elle ne choisit pas au hasard : elle pose la question au client ou marque la ligne pour l'équipe.</p>
+
+<h3>3. Les contrôles : stock et prix client</h3>
+<p>Chaque ligne est vérifiée avec des règles classiques, sans IA :</p>
+<ul>
+<li><strong>stock disponible</strong> dans l'ERP ou le fichier de stock ; en cas de rupture, proposition d'un produit de remplacement défini par vous, ou d'une livraison partielle ;</li>
+<li><strong>prix du client</strong> selon sa grille (détaillant, demi-gros, remise négociée) ;</li>
+<li><strong>minimum de commande</strong>, conditionnement (multiples de carton) ;</li>
+<li><strong>encours client</strong> : si le plafond de crédit est dépassé ou si des factures sont en retard, la commande passe en validation par le responsable.</li>
+</ul>
+
+<h3>4. Le récapitulatif à confirmer</h3>
+<p>Le client reçoit sur WhatsApp un récapitulatif clair : lignes, quantités, prix unitaires, total, date de livraison prévue. Il répond « oui » pour valider, ou corrige (« mets 15 cartons au lieu de 10 »). La commande n'est enregistrée comme ferme qu'après cette confirmation. Ce point est essentiel : il évite les litiges à la livraison.</p>
+
+<h3>5. La création du bon de commande</h3>
+<p>Une fois confirmée, la commande est créée dans votre ERP par son API, ou ajoutée comme lignes dans un Google Sheets partagé si c'est votre outil. Le dépôt reçoit la liste de préparation, et le commercial voit la commande dans son tableau de bord. Les connexions possibles sont décrites dans notre page sur les <a href="https://fluxintelligent.com/automatisation-des-processus/workflows-integrations-api/">workflows et intégrations API</a>.</p>
+
+<h3>6. Les commandes hors horaires</h3>
+<p>Beaucoup de commerçants passent commande le soir, après la fermeture. L'agent répond tout de suite, enregistre la commande, envoie le récapitulatif et indique clairement qu'elle sera préparée le jour ouvré suivant. Le matin, l'équipe trouve des commandes déjà structurées, au lieu de remonter des dizaines de conversations.</p>
+
+<h2>Ce que fait l'IA et ce qui relève de l'automatisation classique</h2>
+<table>
+<thead><tr><th>Étape</th><th>Automatisation classique (règles)</th><th>IA (modèle de langage)</th></tr></thead>
+<tbody>
+<tr><td>Identification du client</td><td>Numéro de téléphone rapproché de la fiche client</td><td>Non nécessaire</td></tr>
+<tr><td>Lecture de la commande</td><td>Formulaire ou boutons pour les clients qui les utilisent</td><td>Texte libre, notes vocales, photos, « comme la dernière fois »</td></tr>
+<tr><td>Correspondance des produits</td><td>Table de synonymes et références</td><td>Rapprochement d'une désignation approximative avec le catalogue</td></tr>
+<tr><td>Stock, prix, encours</td><td>Lecture de l'ERP ou du fichier, grilles tarifaires</td><td>Non nécessaire</td></tr>
+<tr><td>Récapitulatif et confirmation</td><td>Modèle de message, statut de la commande</td><td>Compréhension d'une correction formulée librement</td></tr>
+<tr><td>Bon de commande</td><td>Création dans l'ERP ou Sheets, liste de préparation</td><td>Non nécessaire</td></tr>
+</tbody>
+</table>
+<p>Pour bien distinguer un chatbot à menus d'un agent IA qui comprend les messages libres, voir notre article <a href="https://fluxintelligent.com/chatbot-ia-whatsapp-maroc/">chatbot ou agent IA sur WhatsApp</a>.</p>
+
+<h2>Exemple illustratif de conversation</h2>
+<p>L'exemple suivant est illustratif : les produits et les quantités sont inventés pour montrer le déroulé.</p>
+<ul>
+<li><strong>Client (21 h 40, note vocale en darija)</strong> : la même commande que la semaine dernière, mais ajoute 5 cartons de lait.</li>
+<li><strong>Agent</strong> : récapitulatif de la dernière commande avec la ligne lait ajoutée, prix de sa grille, total, livraison prévue le lendemain sur sa tournée habituelle. « Vous confirmez ? »</li>
+<li><strong>Client</strong> : « Wakha, mais l'huile 8 cartons seulement. »</li>
+<li><strong>Agent</strong> : récapitulatif corrigé, puis confirmation. La commande est créée dans l'ERP avec le statut « confirmée par le client ».</li>
+<li><strong>Le lendemain matin</strong> : le dépôt imprime la liste de préparation ; une ligne en rupture est signalée au commercial, qui appelle le client.</li>
+</ul>
+
+<h2>Intégrations et prérequis</h2>
+<ul>
+<li><strong>WhatsApp Business API</strong> sur le numéro de commande de l'entreprise (et non un numéro personnel), avec des modèles de messages validés par Meta pour les relances. Les questions de compte et de tarification Meta sont traitées dans notre article sur <a href="https://fluxintelligent.com/agent-ia-whatsapp-business-pme-maroc/">l'agent IA WhatsApp Business pour PME</a>.</li>
+<li><strong>Un catalogue propre</strong> : références, désignations, unités, conditionnements, et une liste de noms courants utilisés par vos clients.</li>
+<li><strong>Les grilles de prix par client ou par catégorie</strong>, à jour.</li>
+<li><strong>Un accès au stock</strong> : API de l'ERP, export régulier ou fichier partagé.</li>
+<li><strong>Vos règles</strong> : minimums, remplacements autorisés, plafonds d'encours, horaires de préparation.</li>
+</ul>
+
+<h2>Limites et part humaine</h2>
+<ul>
+<li>L'agent ne négocie pas les prix et n'accorde pas de remise : il transmet la demande au commercial.</li>
+<li>Une commande ambiguë n'est jamais validée sans confirmation du client.</li>
+<li>Si le stock de l'ERP n'est pas à jour, les promesses de disponibilité seront fausses. La tenue du stock reste un travail humain.</li>
+<li>Les clients habitués à parler à leur commercial gardent ce lien : l'agent prend la commande, le commercial garde la relation et les cas particuliers.</li>
+<li>Les numéros et historiques de commande sont des données personnelles ou commerciales : accès limités et respect de la loi 09-08 pour les personnes physiques.</li>
+</ul>
+
+<h2>Indicateurs à suivre</h2>
+<p>Mesurez la situation de départ, puis comparez sur une période équivalente :</p>
+<ul>
+<li>délai entre le message du client et la commande enregistrée ;</li>
+<li>part des commandes traitées sans ressaisie manuelle ;</li>
+<li>nombre d'erreurs de préparation ou de litiges à la livraison ;</li>
+<li>part des commandes reçues hors horaires ;</li>
+<li>part des conversations transférées à un humain, et motifs ;</li>
+<li>temps passé par les commerciaux sur la saisie.</li>
+</ul>
+
+<h2>Par où commencer</h2>
+<p>Commencez par un groupe de clients réguliers et une gamme limitée, avec récapitulatif obligatoire et transfert vers l'équipe pour tout le reste. Ajoutez ensuite les notes vocales, la gestion des ruptures et l'encours client. Un agent orienté ventes peut aussi proposer, à la confirmation, un produit complémentaire défini par vous : voir notre <a href="https://fluxintelligent.com/agents-ia/agent-ia-commercial/">agent IA commercial</a>.</p>
+
+<h2>Questions fréquentes</h2>
+
+<h3>Peut-on prendre des commandes sur WhatsApp sans application supplémentaire ?</h3>
+<p>Oui. Vos clients écrivent sur votre numéro WhatsApp Business comme d'habitude. L'automatisation fonctionne derrière ce numéro, reliée à votre ERP ou à votre tableur.</p>
+
+<h3>L'IA comprend-elle les notes vocales en darija ?</h3>
+<p>Elle les transcrit puis en extrait les produits et les quantités. La qualité dépend du bruit et de la clarté ; c'est pour cela qu'un récapitulatif écrit est toujours renvoyé au client avant validation.</p>
+
+<h3>Faut-il un ERP pour automatiser la prise de commande ?</h3>
+<p>Non. Un Google Sheets bien structuré (catalogue, clients, prix, stock, commandes) suffit pour démarrer. Avec un ERP, la commande est créée directement dans l'outil par son API.</p>
+
+<h3>Que se passe-t-il si un produit est en rupture ?</h3>
+<p>Le client est prévenu dans le récapitulatif, avec la proposition de remplacement ou de livraison partielle que vous avez définie. S'il ne répond pas, la ligne reste en attente et le commercial est alerté.</p>
+
+<h2>Automatiser votre prise de commande</h2>
+<p>Flux Intelligent conçoit des agents WhatsApp de prise de commande pour grossistes et distributeurs, reliés à votre catalogue, à vos prix et à votre stock, avec une validation humaine là où elle compte. Découvrez notre offre de <a href="https://fluxintelligent.com/chatbots-experience-client/chatbot-whatsapp-maroc/">chatbot WhatsApp au Maroc</a>, ou estimez votre projet avec le <a href="https://fluxintelligent.com/ia/devis/">devis IA instantané</a>.</p>
+<!-- /wp:freeform -->

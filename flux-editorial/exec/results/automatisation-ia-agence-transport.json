@@ -1,0 +1,36 @@
+{
+ "sujet": "Logiciel transport marchandises : documents de transport (BL, lettres de voiture) vers facturation, suivi des envois, preuves de livraison",
+ "type": "enrichissement",
+ "wp_id": 3162,
+ "url_prevue": "https://fluxintelligent.com/automatisation-ia-agence-transport/",
+ "statut_wp": "publish (mis à jour)",
+ "date_prevue": "mis en ligne immédiatement le 2026-11-03 12:14:40 (modified_gmt WordPress ; 13:14 heure marocaine réelle)",
+ "requete": "logiciel transport marchandises",
+ "editeur_surfer": 16973227,
+ "score_total": 86,
+ "score_seo": 86,
+ "score_ai_search": null,
+ "iterations": 1,
+ "media_id": null,
+ "image_locale": "img/automatisation-ia-agence-transport.webp",
+ "alt": "Chauffeur souriant en veste bleu marine tenant un bon de livraison devant un camion chargé de cartons, un client lui tend un colis",
+ "categories": [
+  1
+ ],
+ "tags": [],
+ "excerpt": "Logiciel transport marchandises : automatisez BL signés, lettres de voiture, suivi des envois et facturation, connectés à votre TMS ou à vos tableurs.",
+ "titre": "Logiciel transport marchandises : automatiser BL, suivi et facturation",
+ "nb_mots": 2256,
+ "liens_internes": [
+  "https://fluxintelligent.com/automatisation-des-processus/",
+  "https://fluxintelligent.com/automatisation-des-processus/automatisation-administrative/",
+  "https://fluxintelligent.com/automatisation-des-processus/automatisation-n8n-make/",
+  "https://fluxintelligent.com/automatisation-des-processus/workflows-integrations-api/",
+  "https://fluxintelligent.com/automatisation-factures-ia-maroc/",
+  "https://fluxintelligent.com/automatisation-ia-pme-maroc/",
+  "https://fluxintelligent.com/chatbots-experience-client/chatbot-whatsapp-maroc/",
+  "https://fluxintelligent.com/ia/devis/"
+ ],
+ "sources_externes": [],
+ "limites_ou_blocages": "Emojis, chiffre non prouvé (« jusqu'à 30 % »), image dans le corps et ancien titre retirés. Breadcrumb JSON-LD conservé dans un bloc wp:html séparé (nom mis à jour). Image générée non téléversée (règle §5), featured_media reste 0. Tags inchangés (aucun). Rank Math non accessible : extrait = repli meta description. Loi 09-08/CNDP citée de façon générale, sans source externe. Sauvegarde : backup/3162.json. Vérification publique à 12:17 UTC : la balise <title> affiche encore « Automatisation IA pour agences de transport » (titre SEO Rank Math ou cache), à corriger dans Rank Math."
+}

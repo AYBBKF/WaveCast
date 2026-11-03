@@ -1,0 +1,36 @@
+{
+ "sujet": "E1 – Piloter un café avec ses données de caisse : rapport du soir WhatsApp, anomalies de caisse, assistant du gérant, stock et commandes fournisseurs",
+ "type": "enrichissement",
+ "wp_id": 3208,
+ "url_prevue": "https://fluxintelligent.com/automatisation-ia-cafes-maroc-2025/",
+ "statut_wp": "publish",
+ "date_prevue": "mis en ligne immédiatement le 2026-11-03 à 12:24:17 GMT (13:24 heure marocaine) ; date de publication d'origine 2025-11-15 conservée",
+ "requete": "gestion café maroc",
+ "editeur_surfer": 16973230,
+ "score_total": 80,
+ "score_seo": 80,
+ "score_ai_search": null,
+ "iterations": 2,
+ "media_id": null,
+ "image_locale": "img/automatisation-ia-cafes-maroc-2025.webp",
+ "alt": "Gérant d'un café marocain consultant une tablette derrière le comptoir, à côté d'une machine à espresso, de tasses et de verres de thé à la menthe",
+ "categories": [
+  56
+ ],
+ "tags": [],
+ "excerpt": "Gestion café Maroc : rapport du soir sur WhatsApp, anomalies de caisse, assistant du gérant, stock et commandes fournisseurs, à partir de votre caisse.",
+ "titre": "Gestion d'un café au Maroc : piloter avec ses données de caisse",
+ "nb_mots": 2039,
+ "liens_internes": [
+  "https://fluxintelligent.com/agents-ia/",
+  "https://fluxintelligent.com/automatisation-des-processus/",
+  "https://fluxintelligent.com/automatisation-des-processus/workflows-integrations-api/",
+  "https://fluxintelligent.com/automatisation-factures-ia-maroc/",
+  "https://fluxintelligent.com/automatisation-ia-pme-maroc/",
+  "https://fluxintelligent.com/chatbots-experience-client/chatbot-whatsapp-maroc/",
+  "https://fluxintelligent.com/chatbots-experience-client/prise-de-rendez-vous-ia/",
+  "https://fluxintelligent.com/ia/devis/"
+ ],
+ "sources_externes": [],
+ "limites_ou_blocages": "Sauvegarde : backup/3208.json (view). Retirés : « N°1 au Maroc », « leader », « 2025 » du titre, exemples chiffrés non prouvés (35 %, 40 %, 18 %), analyse caméras, liste de mots-clés plaquée. Conservés : lien vers prise de rendez-vous IA et schéma BreadcrumbList (nom mis à jour, bloc wp:html séparé). Liens vers les articles food cost (9/11) et prévision des ventes (20/11) NON ajoutés : non publiés, à ajouter après publication. Score 62 puis 80 (limite basse de la plage). Image générée une 2e fois (1re : verres ambrés évoquant de l'alcool). Image non téléversée, featured_media toujours 0. Catégorie existante 56 et tags vides non modifiés. Rank Math non accessible."
+}

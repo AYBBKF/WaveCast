@@ -1,0 +1,48 @@
+{
+ "sujet": "Fidélisation des abonnés de salles de sport : détection des départs par la fréquentation, relance par le coach sur WhatsApp, renouvellements et paiements échus",
+ "type": "création",
+ "wp_id": 4505,
+ "url_prevue": "https://fluxintelligent.com/fidelisation-salle-de-sport/",
+ "statut_wp": "future",
+ "date_prevue": "2026-11-25T09:00:00 heure marocaine (date_gmt envoyée et renvoyée : 2026-11-25T08:00:00)",
+ "requete": "fidélisation salle de sport",
+ "editeur_surfer": 16973224,
+ "score_total": 90,
+ "score_seo": 90,
+ "score_ai_search": null,
+ "iterations": 4,
+ "media_id": null,
+ "image_locale": "/tmp/claude-0/-home-user-WaveCast/b86cf213-b51d-5352-9e9d-fc596e43dfc1/scratchpad/exec/img/fidelisation-salle-de-sport.webp",
+ "alt": "Coach sportif en t-shirt bleu marine consultant son smartphone dans une salle de sport, une adhérente s'étire près des tapis de course",
+ "categories": [
+  57
+ ],
+ "tags": [
+  {
+   "id": 63,
+   "name": "salle de sport"
+  },
+  {
+   "id": 8,
+   "name": "automatisation CRM Maroc"
+  },
+  {
+   "id": 45,
+   "name": "WhatsApp Business"
+  }
+ ],
+ "excerpt": "Fidélisation salle de sport : repérez les abonnés qui décrochent, relancez-les via le coach sur WhatsApp et automatisez renouvellements et paiements échus.",
+ "titre": "Fidélisation salle de sport : repérer les abonnés sur le départ et automatiser les relances",
+ "nb_mots": 2043,
+ "liens_internes": [
+  "https://fluxintelligent.com/agent-ia-whatsapp-business-pme-maroc/",
+  "https://fluxintelligent.com/crm-ventes-marketing-ia/crm-automation-maroc/",
+  "https://fluxintelligent.com/automatisation-des-processus/automatisation-n8n-make/",
+  "https://fluxintelligent.com/automatisation-ia-pme-maroc/",
+  "https://fluxintelligent.com/crm-ventes-marketing-ia/relances-commerciales-automatisees/",
+  "https://fluxintelligent.com/crm-ventes-marketing-ia/",
+  "https://fluxintelligent.com/ia/devis/"
+ ],
+ "sources_externes": [],
+ "limites_ou_blocages": "Scores successifs 75 → 92 → 92 → 90 (retenu, borne haute incluse). Première image régénérée (logo de marque visible sur un ordinateur portable). Article 3234 (coaching individuel) non lié : son URL ne figure pas dans la liste §3. PAA « obligations d'une salle de sport » et « 4 types de fidélisation » non traitées (non pertinentes ou risque d'affirmation non vérifiée). IMAGE NON TÉLÉVERSÉE (consigne), featured_media = 0 : téléverser img/fidelisation-salle-de-sport.webp avec l'alt ci-dessus puis wp_update_post featured_media. Rank Math non accessible (extrait = repli meta description). ai_search Surfer « unavailable »."
+}

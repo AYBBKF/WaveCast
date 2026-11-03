@@ -1,0 +1,41 @@
+{
+ "sujet": "E10 – Ajout : devis atelier dicté par le mécanicien, rappels d'entretien par kilométrage, logiciel garage existant, indicateurs",
+ "type": "enrichissement",
+ "wp_id": 3857,
+ "url_prevue": "https://fluxintelligent.com/agent-ia-garage-automobile-maroc/",
+ "statut_wp": "publish inchangé (AUCUNE mise à jour WordPress : score Surfer non vérifiable)",
+ "date_prevue": null,
+ "requete": "logiciel garage automobile maroc",
+ "editeur_surfer": null,
+ "score_total": null,
+ "score_seo": null,
+ "score_ai_search": null,
+ "iterations": 0,
+ "media_id": 3858,
+ "image_locale": null,
+ "alt": null,
+ "categories": null,
+ "tags": null,
+ "excerpt": "Logiciel garage automobile au Maroc : agent IA pour les rendez-vous WhatsApp, le devis dicté par le mécanicien et les rappels d'entretien au kilométrage.",
+ "titre": "Logiciel garage automobile au Maroc : agent IA pour l'accueil, les devis et les rappels d'entretien (proposé ; titre actuel conservé tant que non publié)",
+ "nb_mots": 2791,
+ "liens_internes": [
+  "https://fluxintelligent.com/agents-ia/",
+  "https://fluxintelligent.com/chatbot-whatsapp-pour-verifier-la-compatibilite-des-pieces-auto-au-maroc-guide-pour-boutiques-en-ligne/",
+  "https://fluxintelligent.com/chatbots-experience-client/chatbot-whatsapp-maroc/",
+  "https://fluxintelligent.com/agent-ia-pharmacie-maroc/",
+  "https://fluxintelligent.com/agent-ia-whatsapp-business-pme-maroc/",
+  "https://fluxintelligent.com/automatisation-des-processus/workflows-integrations-api/",
+  "https://fluxintelligent.com/ia/devis/",
+  "https://fluxintelligent.com/ia/propos-de-nous/",
+  "https://fluxintelligent.com/ia/contact/"
+ ],
+ "sources_externes": [
+  "https://www.leguideauto.ma/le-mag/l-actualite/marche-automobile-maroc-avril-2026-22-617-vehicules-vendus-et-17-pourcent-des-vp-electrifies/WKkWZ2qywn",
+  "https://www.tojned.net/journals/tojned/articles/v14i01/v14i01-03.pdf",
+  "https://cabinetavocat.ma/loi-0908-conformite-des-entreprises-maroc",
+  "https://www.village-justice.com/articles/cadre-leadership-africain-cndp-comme-architecte-modele-marocain-gouvernance-des,55421.html",
+  "https://www.spryng.be/fr/reduire-les-taux-dabsenteisme-grace-aux-rappels-de-rendez-vous-un-guide"
+ ],
+ "limites_ou_blocages": "content_editor__create refusé deux fois : « content_editor__create failed: quota_exceeded — Content Editor quota exceeded » (12:09 et 12:18 UTC). Aucun éditeur existant pour cette requête. HTML enrichi prêt dans html/agent-ia-garage-automobile-maroc.html (contenu existant conservé intégralement, 3 sections + indicateurs ajoutées avant « Cas d'usage opérationnels », tirets cadratins remplacés, date « Mis à jour le » passée au 3 novembre 2026). À faire : créer l'éditeur quand le quota le permet, vérifier 80-90, puis wp_update_post. Liens existants conservés hors liste §3 : /ia/propos-de-nous/ (x2, HTTP 200), /ia/contact/ est dans §3 ; sources externes existantes conservées (AIVAM via leguideauto.ma, cabinetavocat.ma, village-justice, tojned, spryng ; non revérifiées)."
+}

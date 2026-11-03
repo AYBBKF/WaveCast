@@ -1,0 +1,104 @@
+<!-- wp:freeform -->
+<p><strong>En bref :</strong> le rapprochement bancaire consiste à vérifier que chaque opération du relevé bancaire correspond à une écriture comptable et à une pièce justificative. Dans un cabinet comptable ou une PME au Maroc, il se fait encore souvent à la main, à partir de relevés PDF de banques différentes. Un rapprochement bancaire automatique lit ces relevés, propose les correspondances avec les factures et les pièces, renvoie au client la liste des opérations sans justificatif, puis prépare un export pour le logiciel comptable. Le comptable garde la validation. Ce guide explique le fonctionnement, les prérequis et les limites.</p>
+
+<h2>Qu'est-ce que le rapprochement bancaire et pourquoi il prend autant de temps</h2>
+<p>Le rapprochement bancaire compare deux sources : le relevé de la banque et le compte banque tenu en comptabilité (le journal de banque). Les écarts viennent des opérations non encore enregistrées, des frais et agios, des chèques émis mais pas encore encaissés, des virements reçus sans référence, ou d'erreurs de saisie. L'état de rapprochement explique l'écart entre le solde bancaire et le solde comptable à une date donnée.</p>
+<p>Le principe est simple. Ce qui prend du temps, c'est le volume et la forme des données :</p>
+<ul>
+<li>chaque banque a son format de relevé, et beaucoup de clients transmettent des PDF ou des scans ;</li>
+<li>les libellés sont courts et peu parlants (« VIR RECU 0012 », « PRLV », « RET DAB ») ;</li>
+<li>un même virement peut régler plusieurs factures, ou une facture être payée en plusieurs fois ;</li>
+<li>les pièces arrivent tard, par WhatsApp, par e-mail ou en papier ;</li>
+<li>le collaborateur du cabinet doit relancer le client pour chaque opération non justifiée, souvent une par une.</li>
+</ul>
+<p>Pour un cabinet qui suit des dizaines de dossiers, ce travail se concentre en fin de mois et en période de clôture.</p>
+
+<h2>Comment fonctionne un rapprochement bancaire automatique</h2>
+<p>Le circuit suit quatre étapes : collecte, lecture, rapprochement, sortie. Il s'applique aussi bien à une PME qui tient sa comptabilité en interne qu'à un cabinet qui traite les comptes de ses clients.</p>
+
+<h3>1. Déclencheur : le relevé bancaire arrive</h3>
+<p>Le relevé est déposé dans un dossier partagé, envoyé par e-mail à une adresse dédiée, ou transmis par le client sur WhatsApp. Lorsque la banque propose un export structuré (CSV, Excel ou format bancaire normalisé), on le privilégie. Sinon, le PDF est traité tel quel.</p>
+
+<h3>2. Lecture : extraction des opérations</h3>
+<p>Pour un fichier structuré, une simple lecture suffit. Pour un PDF ou un scan, l'IA extrait chaque ligne : date d'opération, date de valeur, libellé, débit, crédit. Elle reconnaît la mise en page de chaque banque sans qu'il faille écrire une règle par format. Un contrôle classique vérifie ensuite que le solde de départ, plus les mouvements, donne bien le solde de fin indiqué sur le relevé. Si ce n'est pas le cas, le relevé est signalé avant d'aller plus loin.</p>
+
+<h3>3. Rapprochement : opérations, factures et pièces</h3>
+<p>Chaque opération est comparée aux écritures et aux pièces disponibles :</p>
+<ul>
+<li><strong>règles exactes</strong> : même montant, date proche, référence de facture ou nom du tiers dans le libellé ;</li>
+<li><strong>règles récurrentes</strong> : loyers, abonnements, salaires, cotisations, frais bancaires, qui reviennent chaque mois avec le même libellé ;</li>
+<li><strong>proposition par l'IA</strong> : pour les cas flous, l'IA compare le libellé, le montant et les pièces reçues (factures fournisseurs, factures clients, reçus) et propose une correspondance avec un niveau de confiance. Elle gère aussi les paiements groupés et les règlements partiels.</li>
+</ul>
+<p>Chaque proposition est marquée : rapprochée automatiquement, proposée à valider, ou sans correspondance.</p>
+
+<h3>4. Sortie : liste des opérations sans justificatif et export comptable</h3>
+<p>Les opérations sans pièce sont regroupées par client dans un message clair : date, montant, libellé, et ce qui est attendu (« facture du fournisseur », « justificatif de retrait », « nature de ce virement reçu »). Le message part par e-mail ou WhatsApp, et le client peut répondre en envoyant directement une photo de la pièce, qui repasse dans le circuit. Les relances suivent un calendrier fixé par le cabinet.</p>
+<p>Une fois le comptable d'accord, les écritures validées sont exportées au format d'import du logiciel comptable, avec l'état de rapprochement de la période.</p>
+
+<h2>Ce que fait l'IA et ce qui relève de l'automatisation classique</h2>
+<table>
+<thead><tr><th>Étape</th><th>Automatisation classique (règles)</th><th>IA</th></tr></thead>
+<tbody>
+<tr><td>Collecte des relevés et des pièces</td><td>Dossiers, e-mails, WhatsApp, renommage</td><td>Non nécessaire</td></tr>
+<tr><td>Lecture d'un export CSV ou Excel</td><td>Lecture directe</td><td>Non nécessaire</td></tr>
+<tr><td>Lecture d'un relevé PDF ou scanné</td><td>Limitée à des modèles fixes</td><td>Extrait les lignes, quelle que soit la banque</td></tr>
+<tr><td>Contrôle des soldes</td><td>Calcul</td><td>Non nécessaire</td></tr>
+<tr><td>Rapprochement exact ou récurrent</td><td>Règles montant, date, référence</td><td>Non nécessaire</td></tr>
+<tr><td>Cas flous, paiements groupés ou partiels</td><td>Ne sait pas trancher</td><td>Propose une correspondance avec un niveau de confiance</td></tr>
+<tr><td>Demande de justificatifs au client</td><td>Envoi et relances programmées</td><td>Rédige une demande lisible et lit les réponses libres</td></tr>
+<tr><td>Export vers le logiciel comptable</td><td>Format d'import</td><td>Non nécessaire</td></tr>
+</tbody>
+</table>
+<p>L'IA ne passe aucune écriture définitive. Elle lit et propose ; les règles et le comptable décident.</p>
+
+<h2>Pour un cabinet comptable ou pour une PME</h2>
+<h3>Côté cabinet comptable ou fiduciaire</h3>
+<p>Le gain principal est l'organisation : un tableau par dossier montre les relevés reçus, les opérations rapprochées, celles à valider et celles qui attendent une pièce. Les collaborateurs se concentrent sur les cas qui demandent un jugement. Notre page <a href="https://fluxintelligent.com/automatisation-des-processus/comptable-au-maroc-ai/">automatisation comptable au Maroc</a> présente l'ensemble des tâches qu'un cabinet peut automatiser autour de ce circuit.</p>
+<h3>Côté PME</h3>
+<p>Pour une PME, le même circuit sert à préparer un dossier propre pour le comptable : relevés lus, pièces associées, opérations à expliquer listées. Le dirigeant voit plus tôt les paiements clients reçus et les dépenses sans justificatif. Nous décrivons ce rôle côté entreprise dans notre article sur <a href="https://fluxintelligent.com/agent-ia-comptable-maroc/">l'agent IA comptable</a>. La collecte et la lecture des factures fournisseurs, en amont, sont détaillées dans notre guide sur <a href="https://fluxintelligent.com/automatisation-factures-ia-maroc/">l'automatisation des factures</a>.</p>
+
+<h2>Intégrations et prérequis</h2>
+<ul>
+<li><strong>Les relevés bancaires</strong> de chaque compte, de préférence en export structuré quand la banque le permet.</li>
+<li><strong>Le plan de comptes et les règles d'affectation</strong> du cabinet ou de l'entreprise (comptes de tiers, comptes de charges récurrentes).</li>
+<li><strong>Les pièces</strong> : factures de vente et d'achat, reçus, contrats, déjà classées ou envoyées au fil de l'eau.</li>
+<li><strong>Le format d'import</strong> du logiciel comptable utilisé. Si le logiciel propose une API, l'échange peut être direct ; sinon, un fichier d'import suffit.</li>
+<li><strong>Un canal pour les clients</strong> : e-mail ou WhatsApp Business, avec un modèle de demande de justificatifs.</li>
+<li><strong>Un outil d'orchestration</strong> pour relier ces éléments. Nous utilisons des <a href="https://fluxintelligent.com/automatisation-des-processus/workflows-integrations-api/">workflows et intégrations API</a> adaptés à vos outils.</li>
+</ul>
+<p>Les relevés bancaires contiennent des données personnelles et financières. Leur stockage, leur accès et leur durée de conservation doivent être définis dès le départ, dans le respect de la loi 09-08 et du secret professionnel du cabinet.</p>
+
+<h2>Limites et ce qui reste humain</h2>
+<ul>
+<li>Le comptable valide les rapprochements proposés et reste responsable des écritures. L'automatisation ne remplace pas son jugement.</li>
+<li>Un scan de mauvaise qualité ou un relevé incomplet peut être mal lu. Le contrôle des soldes permet de le détecter, mais il faut alors récupérer un meilleur document.</li>
+<li>Certaines opérations ne peuvent être comprises qu'avec le client : un virement entre associés, un retrait d'espèces, une avance. L'IA pose la question ; elle ne devine pas.</li>
+<li>Les règles d'affectation doivent être maintenues. Un nouveau fournisseur ou un nouveau compte bancaire demande un ajustement.</li>
+<li>L'accès direct aux comptes bancaires dépend de ce que chaque banque propose. Sans export ou accès prévu par la banque, on travaille à partir des relevés transmis.</li>
+</ul>
+
+<h2>Indicateurs à suivre</h2>
+<ul>
+<li>Part des opérations rapprochées automatiquement, par banque et par dossier.</li>
+<li>Part des propositions de l'IA validées sans correction.</li>
+<li>Nombre d'opérations sans justificatif en fin de mois, et leur ancienneté.</li>
+<li>Délai de réponse des clients aux demandes de pièces.</li>
+<li>Délai entre la réception du relevé et l'état de rapprochement validé.</li>
+<li>Temps passé par dossier sur le rapprochement, avant et après.</li>
+</ul>
+
+<h2>Questions fréquentes</h2>
+<h3>Le rapprochement bancaire automatique fonctionne-t-il avec des relevés PDF ?</h3>
+<p>Oui. L'IA lit les relevés PDF et les scans, quelle que soit la banque. Un export structuré reste plus fiable lorsqu'il est disponible, et le contrôle des soldes signale tout relevé mal lu.</p>
+<h3>Faut-il changer de logiciel comptable ?</h3>
+<p>Non. Le circuit prépare les écritures validées au format d'import de votre logiciel, ou les envoie par API si le logiciel le permet.</p>
+<h3>Qui valide les rapprochements ?</h3>
+<p>Le comptable. Les correspondances exactes peuvent être acceptées par règle, les autres sont proposées avec un niveau de confiance et attendent une validation.</p>
+<h3>Comment sont traitées les opérations sans justificatif ?</h3>
+<p>Elles sont listées par client et envoyées dans un message unique, avec des relances programmées. Le client répond en envoyant la pièce, qui est rattachée automatiquement à l'opération.</p>
+<h3>Mes données bancaires sont-elles en sécurité ?</h3>
+<p>Les accès, le lieu de stockage et la durée de conservation sont définis avec vous avant le lancement. Les principes de la loi 09-08 et le secret professionnel s'appliquent comme pour le reste du dossier.</p>
+
+<h2>Mettre en place le rapprochement bancaire automatique</h2>
+<p>Si vos collaborateurs passent la fin du mois à pointer des relevés et à relancer les clients pour des pièces, nous pouvons construire ce circuit autour de vos outils actuels, en commençant par quelques dossiers pilotes. Découvrez notre offre d'<a href="https://fluxintelligent.com/automatisation-des-processus/automatisation-administrative/">automatisation administrative</a>, ou obtenez une première estimation avec notre <a href="https://fluxintelligent.com/ia/devis/">devis IA instantané</a>.</p>
+<!-- /wp:freeform -->

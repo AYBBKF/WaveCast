@@ -1,0 +1,99 @@
+<!-- wp:freeform -->
+<p><strong>En bref :</strong> rédiger une fiche produit prend du temps, surtout quand une boutique marocaine doit la publier en français et en arabe. Une fiche produit IA part des photos et des informations du fournisseur, propose un titre, une description, des caractéristiques et des textes SEO dans les deux langues, puis crée le produit en brouillon dans Shopify, WooCommerce ou YouCan. Rien n'est publié sans relecture humaine. Ce guide décrit le circuit, ce que fait réellement l'IA, les prérequis, les limites et les indicateurs à suivre.</p>
+
+<h2>Pourquoi les fiches produits bloquent la mise en ligne</h2>
+<p>Dans beaucoup de boutiques, l'arrivage est prêt mais les produits restent hors ligne plusieurs jours. Les raisons sont connues :</p>
+<ul>
+<li>chaque fiche demande un titre, une description, des variantes, des dimensions, une matière, un prix et des images ;</li>
+<li>la boutique vise une clientèle francophone et arabophone, donc tout doit être écrit deux fois ;</li>
+<li>les informations du fournisseur arrivent en vrac : photos sur WhatsApp, fichier Excel incomplet, étiquette en anglais ou en chinois ;</li>
+<li>les fiches copiées chez le fournisseur sont identiques à celles des concurrents, ce qui n'aide ni le client ni le référencement.</li>
+</ul>
+<p>Le résultat : des descriptions trop courtes, des caractéristiques manquantes et des questions répétées sur WhatsApp (« chno lmatière ? », « wach kayn la taille 42 ? »).</p>
+
+<h2>Comment fonctionne une fiche produit IA, étape par étape</h2>
+
+<h3>1. Le déclencheur : des photos et une ligne de données</h3>
+<p>Vous déposez les photos du produit dans un dossier partagé, ou vous les envoyez sur un numéro WhatsApp interne. Vous ajoutez une ligne dans un tableau : référence, prix, variantes, stock et les informations connues (matière, dimensions, poids, origine). L'ajout de la ligne déclenche le traitement.</p>
+
+<h3>2. Le traitement : l'IA rédige à partir de faits fournis</h3>
+<p>Un modèle de langage capable de lire des images analyse les photos (couleur, forme, usage visible) et croise avec les données du tableau. Il produit, selon un modèle que vous avez défini :</p>
+<ul>
+<li>un titre clair, avec le type de produit et l'attribut principal ;</li>
+<li>une description courte orientée usage, puis une description détaillée ;</li>
+<li>une liste de caractéristiques reprise uniquement des données fournies ;</li>
+<li>la version arabe, rédigée pour un lecteur marocain et non traduite mot à mot ;</li>
+<li>un titre SEO, une meta description et un texte alternatif pour chaque image.</li>
+</ul>
+<p>Règle essentielle : l'IA n'invente aucune caractéristique. Si la matière ou la taille manque, le champ reste vide et la fiche est marquée « à compléter ».</p>
+
+<h3>3. Le résultat : un produit en brouillon dans la boutique</h3>
+<p>L'automatisation crée le produit en statut brouillon via l'API de la boutique (Shopify, WooCommerce) ou par import de fichier quand l'API n'est pas disponible. Les images sont attachées, les variantes créées, la catégorie proposée. Un message avertit la personne chargée de la relecture.</p>
+
+<h3>4. La relecture humaine, obligatoire</h3>
+<p>Le relecteur vérifie le prix, les variantes, les affirmations du texte et la version arabe, corrige si besoin, puis publie. Ce passage n'est pas optionnel : c'est lui qui engage la boutique vis-à-vis du client.</p>
+
+<h2>Ce que fait l'IA et ce qui relève de l'automatisation classique</h2>
+<table>
+<thead><tr><th>Étape</th><th>Automatisation classique</th><th>IA</th></tr></thead>
+<tbody>
+<tr><td>Réception des photos et données</td><td>Surveillance du dossier ou du tableau, contrôle des champs obligatoires</td><td>Aucune</td></tr>
+<tr><td>Analyse des photos</td><td>Redimensionnement, compression, renommage</td><td>Description de ce qui est visible, suggestion de catégorie</td></tr>
+<tr><td>Rédaction FR et AR</td><td>Application du modèle de fiche</td><td>Titre, descriptions, textes SEO, alt</td></tr>
+<tr><td>Création du produit</td><td>Appel API ou import, statut brouillon</td><td>Aucune</td></tr>
+<tr><td>Contrôle</td><td>Vérification des doublons de référence, prix non nul</td><td>Signalement des champs manquants ou incohérents</td></tr>
+</tbody>
+</table>
+
+<h2>Bien rédiger une fiche produit en français et en arabe</h2>
+<p>Le modèle de fiche est votre meilleur levier. Il fixe la structure, le ton et la longueur pour toute la boutique. Quelques règles utiles :</p>
+<ul>
+<li>commencer par le bénéfice concret, puis les caractéristiques ;</li>
+<li>garder les mêmes unités partout (cm, kg, ml) ;</li>
+<li>pour l'arabe, choisir entre arabe standard et formulations proches de la darija, et s'y tenir ;</li>
+<li>éviter les superlatifs et les promesses (« le meilleur », « qualité garantie ») sans preuve ;</li>
+<li>pour les cosmétiques, compléments ou produits pour enfants, ne laisser passer aucune allégation de santé non vérifiée.</li>
+</ul>
+<p>Une fiche complète réduit aussi les questions avant achat. Les questions restantes peuvent être prises en charge par un <a href="https://fluxintelligent.com/chatbots-experience-client/chatbots-multilingues-service-client-maroc/">assistant multilingue de service client</a> qui s'appuie sur les mêmes données produit.</p>
+
+<h2>Intégrations et prérequis</h2>
+<ul>
+<li>Un accès API à la boutique (Shopify, WooCommerce) ou un format d'import accepté (CSV pour YouCan et d'autres plateformes, selon leurs options).</li>
+<li>Un tableau produit tenu à jour : c'est la source de vérité, pas l'IA.</li>
+<li>Des photos nettes, sur fond simple, sous plusieurs angles.</li>
+<li>Un modèle de fiche validé par vous, avec un ou deux exemples rédigés à la main.</li>
+<li>Un outil d'orchestration comme n8n ou Make pour relier le tout : voir nos <a href="https://fluxintelligent.com/automatisation-des-processus/workflows-integrations-api/">workflows et intégrations API</a>.</li>
+</ul>
+<p>Pour la suite du parcours (confirmation des commandes, suivi, retours), consultez notre guide sur <a href="https://fluxintelligent.com/ecommerce-automatise-ia/">l'e-commerce automatisé avec l'IA</a>.</p>
+
+<h2>Limites et ce qui reste humain</h2>
+<ul>
+<li>L'IA peut se tromper sur une couleur ou une matière à partir d'une photo. Toute information technique doit venir du fournisseur ou de votre mesure.</li>
+<li>Les textes générés peuvent se ressembler d'un produit à l'autre si le modèle de fiche est trop rigide. Variez les exemples de référence.</li>
+<li>Le prix, les promotions et le stock ne doivent jamais être modifiés par l'IA.</li>
+<li>Les photos de marques tierces et les droits d'image restent de votre responsabilité.</li>
+<li>La décision de publier reste humaine.</li>
+</ul>
+
+<h2>Indicateurs à suivre</h2>
+<ul>
+<li>Délai entre la réception d'un produit et sa mise en ligne.</li>
+<li>Nombre de fiches créées par semaine.</li>
+<li>Part des fiches publiées sans correction et type des corrections apportées.</li>
+<li>Questions avant achat reçues sur WhatsApp par produit.</li>
+<li>Taux de conversion et retours motivés par « produit non conforme à la description ».</li>
+</ul>
+
+<h2>Questions fréquentes</h2>
+<h3>Une fiche produit générée par IA est-elle pénalisée par Google ?</h3>
+<p>Google évalue l'utilité du contenu, pas l'outil qui l'a produit. Une fiche exacte, complète et relue a sa place ; une fiche vague et copiée en série n'en a pas.</p>
+<h3>Faut-il des photos professionnelles ?</h3>
+<p>Non, mais des photos nettes et bien éclairées améliorent à la fois la fiche et l'analyse par l'IA.</p>
+<h3>L'arabe est-il aussi fiable que le français ?</h3>
+<p>Les modèles récents rédigent correctement en arabe. La relecture par une personne arabophone reste nécessaire, notamment pour le vocabulaire propre à votre marché.</p>
+<h3>Peut-on traiter un catalogue existant ?</h3>
+<p>Oui. Le même circuit peut reprendre les fiches existantes par lots, en brouillon, pour les compléter ou ajouter la version arabe.</p>
+
+<h2>Mettre en place vos fiches produits avec Flux Intelligent</h2>
+<p>Nous connectons votre boutique, votre tableau produit et un modèle de rédaction adapté à votre marque, dans le cadre de nos <a href="https://fluxintelligent.com/automatisation-des-processus/">services d'automatisation des processus</a>. Pour comparer les offres que vous recevez, lisez <a href="https://fluxintelligent.com/comparer-devis-automatisation-ia-maroc/">comment comparer des devis d'automatisation IA</a>, puis décrivez votre besoin dans notre <a href="https://fluxintelligent.com/ia/devis/">devis IA instantané</a>.</p>
+<!-- /wp:freeform -->

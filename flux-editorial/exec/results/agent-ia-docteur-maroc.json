@@ -1,0 +1,37 @@
+{
+ "sujet": "Secrétariat IA pour cabinet médical : rendez-vous WhatsApp et vocal, rappels, liste d'attente, connexion au logiciel de cabinet, limites (aucun conseil médical), CNDP",
+ "type": "enrichissement",
+ "wp_id": 3049,
+ "url_prevue": "https://fluxintelligent.com/agent-ia-docteur-maroc/",
+ "statut_wp": "publish (inchangé, non mis à jour)",
+ "date_prevue": null,
+ "requete": "secrétariat médical maroc",
+ "editeur_surfer": null,
+ "score_total": null,
+ "score_seo": null,
+ "score_ai_search": null,
+ "iterations": 0,
+ "media_id": null,
+ "image_locale": "img/agent-ia-docteur-maroc.webp",
+ "alt": "Secrétaire médicale en chemisier blanc consultant un agenda sur un écran d'ordinateur, smartphone en main, à l'accueil d'un cabinet",
+ "categories": [
+  55
+ ],
+ "tags": [],
+ "excerpt": "Secrétariat médical Maroc : un assistant IA gère rendez-vous WhatsApp et appels, rappels et liste d'attente, connecté à votre agenda, sans conseil médical.",
+ "titre": "Secrétariat médical au Maroc : un assistant IA pour le cabinet",
+ "nb_mots": 1537,
+ "liens_internes": [
+  "https://fluxintelligent.com/agent-ia-cabinet-dentaire-maroc/",
+  "https://fluxintelligent.com/agent-ia-kinesitherapie-maroc/",
+  "https://fluxintelligent.com/agent-ia-pharmacie-maroc/",
+  "https://fluxintelligent.com/chatbots-experience-client/",
+  "https://fluxintelligent.com/chatbots-experience-client/agent-vocal-ia/",
+  "https://fluxintelligent.com/chatbots-experience-client/prise-de-rendez-vous-ia/",
+  "https://fluxintelligent.com/ia/devis/"
+ ],
+ "sources_externes": [
+  "https://www.cndp.ma/ (lien institutionnel, sans affirmation détaillée)"
+ ],
+ "limites_ou_blocages": "Surfer content_editor__create refusé : « content_editor__create failed: quota_exceeded — Content Editor quota exceeded » (deux essais, 12:10 et 12:16 UTC). Aucun score vérifiable, donc AUCUNE écriture WordPress (règle 80–90). HTML prêt dans html/agent-ia-docteur-maroc.html (corps seul : html/agent-ia-docteur-maroc.body.html) ; longueur fixée sans repère Surfer. Retirés : exemple « Dr. Karim » et ses chiffres inventés, tableau d'outils (BotoraTech, etc.), mention « Doctolib Maroc » non vérifiée, emojis. Un éditeur Surfer existant non attribué porte sur une requête voisine (16972316 « logiciel gestion cabinet médical maroc ») : non utilisé car différent de la requête de la fiche ; à décider par l'appelant. Image générée non téléversée (règle §5), featured_media reste 0. Sauvegarde : backup/3049.json."
+}

@@ -1,0 +1,48 @@
+{
+ "sujet": "Auto-écoles : planning des cours et examens, rappels aux candidats, relance des paiements échelonnés, FAQ inscription WhatsApp",
+ "type": "création",
+ "wp_id": 4492,
+ "url_prevue": "https://fluxintelligent.com/logiciel-gestion-auto-ecole-maroc/",
+ "statut_wp": "future",
+ "date_prevue": "2026-11-13T09:00:00 heure Maroc (date_gmt envoyée et renvoyée : 2026-11-13T08:00:00)",
+ "requete": "logiciel gestion auto école maroc",
+ "editeur_surfer": 16972342,
+ "score_total": 86,
+ "score_seo": 86,
+ "score_ai_search": null,
+ "iterations": 2,
+ "media_id": null,
+ "image_locale": "/tmp/claude-0/-home-user-WaveCast/b86cf213-b51d-5352-9e9d-fc596e43dfc1/scratchpad/exec/img/logiciel-gestion-auto-ecole-maroc.webp",
+ "alt": "Employée en hijab tenant une feuille et une tablette face à un jeune homme, avec une voiture d'auto-école blanche garée dans la rue derrière la vitre",
+ "categories": [
+  56
+ ],
+ "tags": [
+  {
+   "id": 12,
+   "name": "chatbot WhatsApp Maroc"
+  },
+  {
+   "id": 32,
+   "name": "automatisation Maroc"
+  },
+  {
+   "id": 11,
+   "name": "PME Maroc"
+  }
+ ],
+ "excerpt": "Logiciel gestion auto école Maroc : automatisez rappels de leçons et d'examens, relance des paiements échelonnés et inscriptions sur WhatsApp.",
+ "titre": "Logiciel de gestion d'auto-école au Maroc : automatiser rappels, paiements et WhatsApp",
+ "nb_mots": 1439,
+ "liens_internes": [
+  "https://fluxintelligent.com/chatbots-experience-client/chatbot-whatsapp-maroc/",
+  "https://fluxintelligent.com/chatbots-experience-client/prise-de-rendez-vous-ia/",
+  "https://fluxintelligent.com/automatisation-des-processus/automatisation-administrative/",
+  "https://fluxintelligent.com/agent-ia-whatsapp-business-pme-maroc/",
+  "https://fluxintelligent.com/automatisation-des-processus/automatisation-n8n-make/",
+  "https://fluxintelligent.com/automatisation-ia-pme-maroc/",
+  "https://fluxintelligent.com/ia/devis/"
+ ],
+ "sources_externes": [],
+ "limites_ou_blocages": "Image non téléversée (consigne) : featured_media = 0, fichier local à téléverser puis wp_update_post id 4492 featured_media. Score 79 au 1er passage, 86 après ajout de termes (auto-écoles, gestion des, leurs, email, nous, d'une). Texte plus long (1439 mots) que la cible Surfer (618) pour couvrir tous les points obligatoires du cahier des charges. Rank Math non accessible (extrait = repli meta). ai_search Surfer « unavailable ». Loi 09-08/CNDP citée de façon générale, sans source externe. Aucune règle d'examen (NARSA) affirmée."
+}

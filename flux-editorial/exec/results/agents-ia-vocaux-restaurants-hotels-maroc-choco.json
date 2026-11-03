@@ -1,0 +1,36 @@
+{
+ "sujet": "E9 – Réservation restaurant WhatsApp et agent vocal : circuit, no shows, modèles de messages, intégrations (reprise du signal Choco)",
+ "type": "enrichissement",
+ "wp_id": 3566,
+ "url_prevue": "https://fluxintelligent.com/agents-ia-vocaux-restaurants-hotels-maroc-choco/",
+ "statut_wp": "publish (mis en ligne immédiatement le 2026-11-03 à 12:20:24, heure du site / GMT)",
+ "date_prevue": null,
+ "requete": "réservation restaurant whatsapp",
+ "editeur_surfer": 16972405,
+ "score_total": 89,
+ "score_seo": 89,
+ "score_ai_search": null,
+ "iterations": 1,
+ "media_id": null,
+ "image_locale": "img/agents-ia-vocaux-restaurants-hotels-maroc-choco.webp",
+ "alt": "Hôtesse en tenue sombre consultant un smartphone et un carnet dans une salle de restaurant aux murs en zellige, tables dressées en arrière-plan",
+ "categories": [
+  55
+ ],
+ "tags": [],
+ "excerpt": "Réservation restaurant WhatsApp et par téléphone : agent IA, confirmations, rappels contre les no shows et modèles de messages pour restaurants au Maroc.",
+ "titre": "Réservation restaurant WhatsApp et agent vocal IA : guide pour restaurants et hôtels au Maroc",
+ "nb_mots": 2188,
+ "liens_internes": [
+  "https://fluxintelligent.com/agent-ia-whatsapp-business-pme-maroc/",
+  "https://fluxintelligent.com/chatbots-experience-client/agent-vocal-ia/",
+  "https://fluxintelligent.com/automatisation-ia-cafes-maroc-2025/",
+  "https://fluxintelligent.com/automatisation-ia-hotel-fiabilite-technique-experience-client/",
+  "https://fluxintelligent.com/chatbots-experience-client/prise-de-rendez-vous-ia/",
+  "https://fluxintelligent.com/ia/devis/"
+ ],
+ "sources_externes": [
+  "https://openai.com/index/choco/"
+ ],
+ "limites_ou_blocages": "featured_media reste 0 : image générée (img/agents-ia-vocaux-restaurants-hotels-maroc-choco.webp, 960 px, 39 Ko ; source -src.webp) NON téléversée, à téléverser puis wp_update_post featured_media. Chiffres Choco vérifiés sur openai.com/index/choco/ (8,8 M+ commandes/an, 24/7) ; retirés car non vérifiés : « 50 % de saisie », « 200 milliards de tokens », « x2 productivité ». Retirés : paragraphe « Objectif SEO », « plan en 10 jours », « 30 demandes / 20 cas ». Catégorie actuelle 55 et aucun tag laissés inchangés. Breadcrumb JSON-LD dans un bloc wp:html séparé. Slug contient encore « choco » (conservé comme demandé). Rank Math non accessible."
+}

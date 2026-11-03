@@ -1,0 +1,110 @@
+<!-- wp:freeform -->
+<p><strong>En bref :</strong> le food cost est la part du prix de vente HT qui part dans les matières premières. Le calcul food cost restaurant est simple sur le papier, mais il devient vite faux quand les prix d'achat changent chaque semaine et que les fiches techniques ne sont pas à jour. Ce guide explique la formule, la différence entre food cost théorique et food cost réel, puis montre comment automatiser le suivi des prix d'achat à partir des factures fournisseurs, avec une alerte de marge par plat pour les cafés et restaurants au Maroc.</p>
+
+<h2>Qu'est-ce que le food cost d'un restaurant ?</h2>
+<p>Le food cost, ou coût matière, mesure ce que coûtent les ingrédients d'un plat ou de l'ensemble de la cuisine, rapporté à ce que ces plats rapportent. Il s'exprime en pourcentage. Un food cost de 30 % veut dire que, sur 100 DH de ventes HT, 30 DH ont servi à acheter la nourriture.</p>
+<p>C'est l'un des premiers indicateurs de la rentabilité de votre restaurant, avec le coût du personnel. Il ne dit pas tout : un plat avec un food cost élevé peut rester intéressant s'il se vend beaucoup et rapporte une marge en dirhams correcte. Mais un food cost qui dérive sans que personne ne le voie finit toujours par peser sur le résultat.</p>
+<p>Il n'existe pas de valeur unique qui serait « le bon food cost ». Il dépend du type de cuisine, du positionnement, du poids des boissons dans les ventes et du prix de vente. Le plus utile est de fixer votre propre objectif par catégorie de plats, puis de suivre l'écart.</p>
+
+<h2>Comment calculer le food cost : la formule</h2>
+<h3>Le food cost d'un plat</h3>
+<p>Pour un plat, la formule est la suivante :</p>
+<p><strong>Food cost d'un plat (%) = coût des ingrédients de la portion ÷ prix de vente HT × 100</strong></p>
+<p>Le coût des ingrédients se lit dans la fiche technique : chaque ingrédient, sa quantité par portion, son prix d'achat au kilo ou à l'unité, et le rendement (la part réellement utilisable après épluchage, parage ou cuisson). Le prix de vente se prend hors taxes, sinon le calcul est faussé par la TVA.</p>
+
+<h3>Le food cost global de votre restaurant</h3>
+<p>Sur une période (semaine ou mois), on calcule le food cost réel ainsi :</p>
+<p><strong>Food cost réel (%) = (stock initial + achats de la période − stock final) ÷ chiffre d'affaires nourriture HT × 100</strong></p>
+<p>Ce calcul du food cost intègre tout ce que les fiches techniques ne voient pas : les pertes, la casse, le sur-portionnage, les repas du personnel, les erreurs de saisie et les vols. Il suppose un inventaire fiable en début et en fin de période.</p>
+
+<h3>Food cost théorique et food cost réel</h3>
+<p>Le food cost théorique est celui que vous devriez obtenir si chaque plat vendu respectait exactement sa fiche technique. On le calcule à partir des ventes de caisse (nombre de chaque plat vendu) et du coût matière de chaque plat. L'écart entre le food cost théorique et le food cost réel est l'information la plus utile : il montre ce qui se perd entre l'achat et l'assiette.</p>
+
+<h3>Exemple de calcul</h3>
+<p>L'exemple suivant est illustratif, avec des chiffres choisis pour la lisibilité. Un tajine de poulet est vendu 80 DH HT. Sa fiche technique donne 24 DH d'ingrédients par portion. Le food cost du plat est de 24 ÷ 80 × 100 = 30 %. Si le prix du poulet augmente et que le coût de la portion passe à 28 DH sans changer le prix de vente, le food cost passe à 28 ÷ 80 × 100 = 35 %, et la marge brute du plat descend de 56 DH à 52 DH.</p>
+<p>Pour revenir à un objectif de 30 %, le prix de vente HT devrait être de 28 ÷ 0,30, soit environ 93 DH. C'est aussi la logique du coefficient multiplicateur : prix de vente HT = coût matière × coefficient.</p>
+
+<h2>Pourquoi le calcul du food cost devient faux</h2>
+<p>La plupart des restaurants savent calculer le food cost. Le problème est de le tenir à jour. Les causes reviennent souvent :</p>
+<ul>
+<li>les fiches techniques sont faites à l'ouverture, puis jamais mises à jour ;</li>
+<li>les prix des fournisseurs (légumes, viande, volaille, poisson, produits laitiers) bougent d'une livraison à l'autre ;</li>
+<li>les factures fournisseurs restent en papier dans un classeur, ou en photo dans le téléphone du gérant ;</li>
+<li>personne ne compare le dernier prix payé au prix précédent ;</li>
+<li>les pertes et le sur-portionnage ne sont pas mesurés ;</li>
+<li>le calcul se fait dans un tableur Excel que seule une personne sait utiliser.</li>
+</ul>
+<p>Résultat : le prix de vente est fixé sur un coût qui n'existe plus. On découvre la dérive à la fin du mois, ou quand le comptable arrête les comptes.</p>
+
+<h2>Automatiser le suivi des prix d'achat et du coût matière</h2>
+<p>L'automatisation ne remplace pas le chef ni le gérant. Elle supprime la saisie et rend l'écart visible au moment où il apparaît. Le circuit suit quatre étapes.</p>
+
+<h3>1. Déclencheur : la facture ou le bon de livraison</h3>
+<p>Le réceptionnaire prend en photo la facture ou le bon de livraison et l'envoie sur un numéro WhatsApp dédié, ou le fournisseur l'envoie en PDF par e-mail. Les deux arrivent dans le même circuit. Le parcours complet de traitement des factures (lecture, contrôle, archivage, envoi au comptable) est détaillé dans notre article sur <a href="https://fluxintelligent.com/automatisation-factures-ia-maroc/">l'automatisation des factures fournisseurs</a> ; ici, on se concentre sur les prix.</p>
+
+<h3>2. Traitement : lecture des lignes et comparaison au dernier prix</h3>
+<p>L'IA lit chaque ligne : produit, quantité, unité, prix unitaire HT. Elle rapproche le libellé du fournisseur (« Tomate ronde cat. 1 », « TOM R ») de l'ingrédient de votre base. Une règle classique compare ensuite le prix au dernier prix payé et au prix retenu dans les fiches techniques.</p>
+
+<h3>3. Mise à jour des fiches techniques</h3>
+<p>Le nouveau prix est enregistré dans l'historique des prix. Le coût de chaque fiche technique qui utilise l'ingrédient est recalculé, puis le food cost d'un plat est mis à jour à partir de son prix de vente HT. Vous voyez en même temps le coût des matières premières et la marge en dirhams.</p>
+
+<h3>4. Résultat : alerte de marge par plat</h3>
+<p>Si un plat dépasse le seuil que vous avez fixé, le gérant reçoit un message court : quel plat, quel ingrédient, ancien et nouveau prix, food cost avant et après. Il décide : ajuster le prix, changer de fournisseur, modifier la portion ou ne rien faire. Un récapitulatif hebdomadaire liste les hausses les plus fortes et les plats les plus touchés.</p>
+
+<h2>Ce que fait l'IA et ce qui reste de l'automatisation classique</h2>
+<table>
+<thead><tr><th>Étape</th><th>Automatisation classique</th><th>IA</th></tr></thead>
+<tbody>
+<tr><td>Réception des factures (WhatsApp, e-mail)</td><td>Collecte et classement des fichiers</td><td>Non nécessaire</td></tr>
+<tr><td>Lecture des lignes d'une photo ou d'un PDF</td><td>Limitée aux formats fixes</td><td>Extrait produits, quantités et prix, même sur une photo imparfaite</td></tr>
+<tr><td>Correspondance libellé fournisseur / ingrédient</td><td>Table de correspondance une fois validée</td><td>Propose une correspondance pour les nouveaux libellés</td></tr>
+<tr><td>Comparaison au dernier prix</td><td>Règle de calcul</td><td>Non nécessaire</td></tr>
+<tr><td>Recalcul des fiches techniques et du food cost</td><td>Formules</td><td>Non nécessaire</td></tr>
+<tr><td>Alertes et synthèse</td><td>Envoi selon des seuils</td><td>Rédige une synthèse lisible si vous le souhaitez</td></tr>
+</tbody>
+</table>
+<p>L'IA sert surtout à lire et à rapprocher. Tous les calculs suivent des formules que vous pouvez vérifier. Un outil comme n8n ou Make relie les étapes ; nous présentons cette approche sur la page <a href="https://fluxintelligent.com/automatisation-des-processus/automatisation-n8n-make/">automatisation avec n8n et Make</a>.</p>
+
+<h2>Intégrations et prérequis</h2>
+<ul>
+<li><strong>Une liste d'ingrédients propre</strong>, avec une unité de référence (kg, litre, pièce) et un rendement pour les produits bruts.</li>
+<li><strong>Des fiches techniques</strong> pour les plats principaux. On peut commencer par les plats les plus vendus et compléter ensuite.</li>
+<li><strong>Les prix de vente HT</strong> de la carte, à jour.</li>
+<li><strong>Un support de stockage</strong> : Google Sheets, Airtable ou la base de votre logiciel de gestion, si elle est accessible par API.</li>
+<li><strong>Les ventes de caisse</strong> (export ou API) si vous voulez le food cost théorique sur la période. Le branchement à la caisse se fait au cas par cas, via les <a href="https://fluxintelligent.com/automatisation-des-processus/workflows-integrations-api/">workflows et intégrations API</a>.</li>
+<li><strong>Un inventaire régulier</strong> pour calculer le food cost réel. L'automatisation ne le remplace pas.</li>
+</ul>
+
+<h2>Limites et ce qui reste humain</h2>
+<ul>
+<li>Une photo floue ou une facture manuscrite peut être mal lue. Les lignes douteuses sont signalées pour vérification, pas enregistrées en silence.</li>
+<li>Le rendement réel d'un produit (perte à l'épluchage, à la cuisson) se mesure en cuisine. L'outil utilise la valeur que vous lui donnez.</li>
+<li>Les pertes, la casse et le sur-portionnage n'apparaissent que dans l'écart entre food cost théorique et réel. Il faut ensuite aller voir en cuisine.</li>
+<li>La décision de changer un prix de vente, une recette ou un fournisseur reste au gérant et au chef.</li>
+<li>La qualité des données de départ compte : des fiches techniques fausses donnent un calcul faux, même automatisé.</li>
+</ul>
+
+<h2>Indicateurs à suivre</h2>
+<ul>
+<li>Food cost par plat et par catégorie (entrées, plats, desserts, boissons chaudes).</li>
+<li>Écart entre food cost théorique et food cost réel sur la période.</li>
+<li>Évolution des prix des ingrédients les plus achetés, par fournisseur.</li>
+<li>Nombre de plats au-dessus de votre seuil d'alerte.</li>
+<li>Délai entre la réception d'une facture et la mise à jour du coût dans les fiches.</li>
+<li>Part des lignes de factures lues sans correction manuelle.</li>
+</ul>
+<p>Ces indicateurs servent à décider. Ils complètent le pilotage quotidien d'un café ou d'un restaurant que nous décrivons dans notre article sur <a href="https://fluxintelligent.com/automatisation-ia-cafes-maroc-2025/">l'automatisation pour les cafés au Maroc</a>.</p>
+
+<h2>Questions fréquentes</h2>
+<h3>Comment calculer un food cost ?</h3>
+<p>Pour un plat, divisez le coût des ingrédients d'une portion par le prix de vente HT, puis multipliez par 100. Pour l'ensemble du restaurant, prenez stock initial + achats − stock final, divisez par le chiffre d'affaires nourriture HT de la même période et multipliez par 100.</p>
+<h3>Comment calculer le coût de la nourriture d'un plat ?</h3>
+<p>Listez chaque ingrédient de la fiche technique avec sa quantité par portion, appliquez le rendement, puis multipliez par le dernier prix d'achat. La somme donne le coût matière de la portion. Sans prix à jour, le résultat est faux.</p>
+<h3>Comment se calcule le prix de vente d'un plat au restaurant ?</h3>
+<p>À partir d'un food cost cible : prix de vente HT = coût matière ÷ food cost cible. Par exemple, avec un coût de 28 DH et un objectif de 30 %, le prix HT est d'environ 93 DH. Il faut ensuite tenir compte du marché, des prix pratiqués autour de vous et du coût du personnel.</p>
+<h3>Faut-il un logiciel pour suivre son food cost ?</h3>
+<p>Un tableur suffit pour démarrer si les prix sont saisis à chaque livraison. L'automatisation devient utile quand les factures sont nombreuses, que plusieurs personnes reçoivent les livraisons ou que vous avez plusieurs points de vente.</p>
+
+<h2>Passer à un suivi automatique de votre coût matière</h2>
+<p>Si vos factures fournisseurs arrivent en photo et que vos fiches techniques ne suivent plus les prix, nous pouvons mettre en place ce circuit : lecture des factures, historique des prix, recalcul des fiches techniques et alertes de marge, connectés à vos outils actuels. Découvrez notre offre d'<a href="https://fluxintelligent.com/automatisation-des-processus/">automatisation des processus</a>, ou obtenez une estimation en quelques minutes avec notre <a href="https://fluxintelligent.com/ia/devis/">devis IA instantané</a>.</p>
+<!-- /wp:freeform -->

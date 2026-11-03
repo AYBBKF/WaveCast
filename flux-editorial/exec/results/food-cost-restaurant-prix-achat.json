@@ -1,0 +1,32 @@
+{
+ "sujet": "Calcul du food cost et suivi automatique des prix d'achat pour cafés et restaurants au Maroc",
+ "type": "création",
+ "wp_id": 4490,
+ "url_prevue": "https://fluxintelligent.com/food-cost-restaurant-prix-achat/",
+ "statut_wp": "future",
+ "date_prevue": "2026-11-09T09:00 heure marocaine (date_gmt envoyée et renvoyée : 2026-11-09T08:00:00)",
+ "requete": "calcul food cost restaurant",
+ "editeur_surfer": 16973221,
+ "score_total": 86,
+ "score_seo": 86,
+ "score_ai_search": null,
+ "iterations": 1,
+ "media_id": null,
+ "image_locale": "/tmp/claude-0/-home-user-WaveCast/b86cf213-b51d-5352-9e9d-fc596e43dfc1/scratchpad/exec/img/food-cost-restaurant-prix-achat.webp",
+ "alt": "Gérant de restaurant en chemise bleu marine tenant une facture et un smartphone dans une cuisine professionnelle, un cuisinier en arrière-plan",
+ "categories": [1],
+ "tags": [{"id": 58, "name": "Restauration (créé)"}, {"id": 36, "name": "Automatisation IA"}, {"id": 11, "name": "PME Maroc"}],
+ "excerpt": "Calcul food cost restaurant : la formule, l'écart entre food cost théorique et réel, et le suivi automatique des prix d'achat depuis vos factures.",
+ "titre": "Calcul food cost restaurant : méthode et suivi automatique des prix d'achat",
+ "nb_mots": 1828,
+ "liens_internes": [
+  "https://fluxintelligent.com/automatisation-factures-ia-maroc/",
+  "https://fluxintelligent.com/automatisation-des-processus/automatisation-n8n-make/",
+  "https://fluxintelligent.com/automatisation-des-processus/workflows-integrations-api/",
+  "https://fluxintelligent.com/automatisation-ia-cafes-maroc-2025/",
+  "https://fluxintelligent.com/automatisation-des-processus/",
+  "https://fluxintelligent.com/ia/devis/"
+ ],
+ "sources_externes": [],
+ "limites_ou_blocages": "Image non téléversée (consigne) : featured_media = 0, à téléverser puis lier à 4490 avant le 9/11. Rank Math non accessible (extrait = repli meta description). ai_search Surfer « unavailable ». Pas de benchmark de food cost cité (aucune source vérifiée) ; exemple chiffré annoncé comme illustratif. Le lien vers /automatisation-ia-cafes-maroc-2025/ pointe vers l'article en cours d'enrichissement (E1) ; prévision des ventes (fiche 17) non liée car non publiée. Nombre de mots (1828) au-dessus de la cible Surfer (1386) à cause des sections obligatoires du cahier des charges."
+}

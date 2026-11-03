@@ -1,0 +1,112 @@
+<!-- wp:freeform -->
+<p><strong>En bref :</strong> la prévision des ventes d'un restaurant ou d'un café consiste à estimer, jour par jour, ce que vous allez vendre, pour décider combien produire et quoi acheter. Au Maroc, le calendrier pèse lourd : ramadan, fêtes, vacances, grands matchs, saison touristique. Cet article explique une méthode simple à partir de vos données de caisse, ce qu'une automatisation peut faire chaque soir pour proposer une quantité de production et une liste d'achats, les prérequis d'historique, le suivi des invendus et les limites de l'exercice.</p>
+
+<h2>Prévision des ventes restaurant : pourquoi « au feeling » coûte cher</h2>
+<p>Dans beaucoup de cafés et de restaurants, la production du lendemain se décide de mémoire. Le chef ou le gérant regarde la vitrine, se souvient du dernier samedi, et lance la pâte, les viennoiseries, les plats du jour. Les achats suivent la même logique : on commande « comme d'habitude » et on ajuste au téléphone quand il manque quelque chose.</p>
+<p>Cette méthode marche tant que l'activité est stable. Elle montre ses limites dès que la demande varie :</p>
+<ul>
+<li>trop de production : invendus, pertes de matières premières, coût matière qui grimpe ;</li>
+<li>pas assez : ruptures en plein service, clients déçus, ventes perdues ;</li>
+<li>achats en urgence chez un fournisseur plus cher ;</li>
+<li>équipe mal dimensionnée pour le nombre de clients réel ;</li>
+<li>flux de trésorerie tendus, car le stock immobilise de l'argent.</li>
+</ul>
+<p>Une prévision n'a pas besoin d'être parfaite pour être utile. Elle doit être un peu meilleure que l'intuition, chaque jour, et s'améliorer avec le temps.</p>
+
+<h2>Les données de base pour établir des prévisions</h2>
+<p>La matière première d'une prévision des ventes, ce sont vos ventes passées. La plupart des caisses enregistreuses récentes permettent d'exporter l'historique par jour et par produit. Vous devez disposer au minimum de :</p>
+<ul>
+<li>les ventes par produit et par jour (quantités, pas seulement chiffre d'affaires) ;</li>
+<li>si possible, les ventes par créneau horaire (petit-déjeuner, déjeuner, après-midi, soir) ;</li>
+<li>le nombre de tickets ou de couverts par jour ;</li>
+<li>les jours de fermeture et les événements exceptionnels (travaux, coupure, privatisation).</li>
+</ul>
+<p>Combien d'historique faut-il ? Pour une prévision de base au jour de la semaine, quelques semaines suffisent à démarrer. Pour tenir compte des saisons, du ramadan ou des fêtes, il faut idéalement au moins une année complète, puisque ces périodes ne reviennent qu'une fois par an. Sans cet historique, la première année se fait avec des ajustements manuels, que le système apprend ensuite.</p>
+<p>D'autres données aident à affiner : le calendrier des fêtes et des vacances scolaires, les dates des matchs importants, la météo si votre terrasse compte beaucoup, et les réservations déjà enregistrées pour un restaurant.</p>
+
+<h2>Méthode de calcul : une prévision des ventes simple et transparente</h2>
+<p>Inutile de commencer avec un modèle complexe. Une méthode éprouvée pour les restaurants se fait en trois temps.</p>
+
+<h3>1. La base : la moyenne des mêmes jours</h3>
+<p>Pour chaque produit, on calcule la moyenne des ventes des quatre derniers jours identiques (les quatre derniers mardis pour prévoir un mardi, par exemple). Les ventes d'un samedi ne ressemblent pas à celles d'un lundi : comparer les mêmes jours de la semaine évite cette erreur.</p>
+
+<h3>2. L'ajustement : le calendrier et les tendances</h3>
+<p>On corrige ensuite la base en fonction des événements à venir. Si l'historique montre que les jours de fête ou les soirs de match vos ventes s'écartent de la normale, on applique le coefficient observé sur ces jours passés. Pendant le ramadan, les horaires et les produits changent : on utilise plutôt l'historique du ramadan précédent, aligné jour par jour. On tient aussi compte des tendances récentes (un nouveau produit qui démarre, un plat qui s'essouffle).</p>
+
+<h3>3. La décision : production et achats</h3>
+<p>La prévision devient une quantité à produire, avec une petite marge de sécurité que vous fixez selon le produit : plus faible pour un produit frais qui ne se garde pas, plus forte pour un produit qui se conserve. Les fiches techniques transforment ensuite ces quantités en besoins de matières premières, comparés au stock pour obtenir la liste d'achats.</p>
+
+<h3>Exemple de calcul</h3>
+<p><em>L'exemple suivant est illustratif, avec des chiffres choisis pour la démonstration.</em> Un café vend 80, 90, 85 et 95 croissants les quatre derniers samedis. La base est (80 + 90 + 85 + 95) / 4 = 87,5, arrondie à 88. Le samedi à prévoir tombe un jour de fête où, d'après l'historique de ce café, les ventes de croissants étaient à environ 80 % d'un samedi normal. La prévision devient 88 × 0,8 ≈ 70. Avec une marge de sécurité de 5 %, la production proposée est de 74 croissants. Le lendemain, on compare avec les ventes réelles et les invendus, et on ajuste.</p>
+<table>
+<thead>
+<tr><th>Étape</th><th>Calcul</th><th>Résultat</th></tr>
+</thead>
+<tbody>
+<tr><td>Base (4 derniers samedis)</td><td>(80 + 90 + 85 + 95) / 4</td><td>88</td></tr>
+<tr><td>Ajustement jour de fête</td><td>88 × 0,8</td><td>70</td></tr>
+<tr><td>Marge de sécurité 5 %</td><td>70 × 1,05</td><td>74 à produire</td></tr>
+</tbody>
+</table>
+<p>Cette méthode a un avantage : tout le monde la comprend. Le chef peut contester un chiffre et savoir d'où il vient. Des modèles statistiques plus avancés peuvent venir ensuite, quand l'historique est suffisant, mais ils doivent rester explicables.</p>
+
+<h2>Ce qu'une automatisation fait chaque soir</h2>
+<p>Faire ce calcul à la main pour trente produits n'est pas réaliste. C'est là que l'automatisation aide à passer de la méthode à l'usage quotidien.</p>
+<ol>
+<li><strong>Déclencheur :</strong> à la fermeture, l'export des ventes du jour est récupéré depuis la caisse (API, export automatique ou fichier déposé).</li>
+<li><strong>Traitement :</strong> les ventes sont ajoutées à l'historique, la prévision du lendemain et des jours suivants est recalculée par produit, le calendrier des événements est appliqué, les fiches techniques transforment les quantités en matières premières, et le stock déclaré est déduit.</li>
+<li><strong>Résultat :</strong> le gérant reçoit sur WhatsApp ou par e-mail une proposition de production par produit et une liste d'achats par fournisseur, à valider ou à corriger avant l'envoi des commandes.</li>
+</ol>
+<p>Le système suit aussi les écarts : ventes prévues, ventes réelles, invendus déclarés en fin de journée. Ces écarts permettent de mesurer la qualité des prévisions et de repérer les produits mal estimés. Grâce à ce suivi, la marge de sécurité peut être réduite progressivement sur les produits bien prévus.</p>
+<p>Pour la partie achats et factures fournisseurs, voir notre article sur <a href="https://fluxintelligent.com/automatisation-factures-ia-maroc/">l'automatisation des factures avec l'IA</a>. Pour une vue d'ensemble du pilotage d'un café, lisez notre article sur <a href="https://fluxintelligent.com/automatisation-ia-cafes-maroc-2025/">l'automatisation dans les cafés au Maroc</a>.</p>
+
+<h3>Ce que fait l'IA, ce que fait le calcul</h3>
+<p>La prévision elle-même repose sur des règles et des calculs : moyennes, coefficients, marges. L'IA intervient sur d'autres points : comprendre un message du chef (« demain on a un groupe de 30 à midi »), lire une liste d'invendus envoyée en photo ou en vocal en darija, résumer les écarts de la semaine en quelques phrases, ou signaler une anomalie (un produit qui ne se vend plus depuis dix jours). Elle ne remplace pas la décision du gérant.</p>
+
+<h2>Intégrations et prérequis</h2>
+<ul>
+<li><strong>La caisse</strong> : un export des ventes par produit et par jour, idéalement automatique. C'est le prérequis principal.</li>
+<li><strong>Les fiches techniques</strong> : quantités de matières premières par produit, pour passer des ventes aux achats.</li>
+<li><strong>Le stock</strong> : un inventaire, même simple, déclaré régulièrement par l'équipe.</li>
+<li><strong>Le calendrier</strong> : fêtes, vacances, ramadan, matchs, événements locaux, tenu à jour par le gérant.</li>
+<li><strong>Un outil d'orchestration</strong> pour relier caisse, tableur ou base de données et messagerie. Voir notre page <a href="https://fluxintelligent.com/automatisation-des-processus/workflows-integrations-api/">workflows et intégrations API</a>.</li>
+</ul>
+
+<h2>Limites de la prévision des ventes</h2>
+<ul>
+<li><strong>Pas d'historique, pas de prévision fiable.</strong> Un établissement qui ouvre doit d'abord accumuler des données.</li>
+<li><strong>Les événements imprévus</strong> (coupure, intempéries, fermeture d'une rue, événement non annoncé) ne sont pas dans les données.</li>
+<li><strong>Les ventes ne mesurent pas la demande perdue.</strong> Un produit en rupture à 11 heures a vendu ce qu'il avait, pas ce qu'il aurait pu vendre. Noter les ruptures aide à corriger ce biais.</li>
+<li><strong>La qualité des données</strong> : si les invendus ou le stock ne sont pas déclarés, le système ne peut pas apprendre.</li>
+<li><strong>La décision reste humaine</strong> : le chef connaît son quartier, ses clients et ses contraintes de production.</li>
+</ul>
+
+<h2>Les indicateurs à suivre</h2>
+<p>Mesurez sur votre établissement, en comparant avant et après la mise en place :</p>
+<ul>
+<li>l'écart moyen entre ventes prévues et ventes réelles, par produit ;</li>
+<li>le taux d'invendus par produit ;</li>
+<li>le nombre de ruptures en cours de service ;</li>
+<li>le coût matière par rapport au chiffre d'affaires ;</li>
+<li>le nombre d'achats en urgence par semaine ;</li>
+<li>le temps passé chaque jour à décider la production et les commandes.</li>
+</ul>
+
+<h2>Par où commencer</h2>
+<p>Commencez par les cinq à dix produits qui pèsent le plus dans vos ventes ou dans vos pertes : viennoiseries, pain, plats du jour, jus frais. Mettez en place l'export de caisse, la prévision de base au jour de la semaine et la déclaration des invendus. Ajoutez le calendrier des événements, puis les fiches techniques et la liste d'achats. Notre guide pour <a href="https://fluxintelligent.com/automatisation-ia-pme-maroc/">choisir son premier processus à automatiser</a> explique cette démarche.</p>
+
+<h2>Questions fréquentes</h2>
+<h3>Comment faire des prévisions de ventes pour un restaurant ?</h3>
+<p>Partez de l'historique de caisse par produit et par jour, calculez la moyenne des mêmes jours de la semaine, ajustez en fonction des événements à venir, puis comparez chaque jour la prévision aux ventes réelles pour corriger.</p>
+<h3>Quelle est la méthode pour calculer la prévision des ventes ?</h3>
+<p>La méthode la plus simple est la moyenne des quatre derniers jours identiques, corrigée par un coefficient pour les jours particuliers (fête, match, ramadan) tiré de votre propre historique. On y ajoute une marge de sécurité selon le produit.</p>
+<h3>Combien d'historique faut-il pour une prévision fiable ?</h3>
+<p>Quelques semaines pour une prévision par jour de la semaine, et au moins une année pour tenir compte des saisons et des fêtes, qui ne reviennent qu'une fois par an.</p>
+<h3>Quel est le meilleur logiciel de prévision des ventes ?</h3>
+<p>Celui qui se connecte à votre caisse et que votre équipe utilise vraiment. Pour un café ou un restaurant indépendant, une automatisation simple reliée à la caisse et à WhatsApp suffit souvent pour commencer.</p>
+<h3>La prévision remplace-t-elle l'expérience du chef ?</h3>
+<p>Non. Elle lui donne un chiffre de départ et un suivi des écarts. Le chef garde la décision finale.</p>
+
+<h2>Passer à l'action</h2>
+<p>Vous gérez un café ou un restaurant et vous voulez produire et acheter au plus juste à partir de vos ventes réelles ? Découvrez notre offre d'<a href="https://fluxintelligent.com/automatisation-des-processus/">automatisation des processus</a>, ou décrivez votre établissement en quelques minutes pour obtenir un <a href="https://fluxintelligent.com/ia/devis/">devis IA instantané</a>.</p>
+<!-- /wp:freeform -->

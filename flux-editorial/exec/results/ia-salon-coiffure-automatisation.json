@@ -1,0 +1,36 @@
+{
+ "sujet": "E2 – Guide logiciel salon de coiffure : rendez-vous WhatsApp, acompte et politique d'absence, rappels, réactivation des clientes inactives",
+ "type": "enrichissement",
+ "wp_id": 3299,
+ "url_prevue": "https://fluxintelligent.com/ia-salon-coiffure-automatisation/",
+ "statut_wp": "publish (inchangé, aucune écriture)",
+ "date_prevue": "non mis en ligne (score non vérifié)",
+ "requete": "logiciel salon de coiffure",
+ "editeur_surfer": null,
+ "score_total": null,
+ "score_seo": null,
+ "score_ai_search": null,
+ "iterations": 0,
+ "media_id": null,
+ "image_locale": "img/ia-salon-coiffure-automatisation.webp",
+ "alt": "Coiffeuse en foulard et tablier noir consultant son smartphone au comptoir d'accueil d'un salon de coiffure moderne aux fauteuils gris",
+ "categories": [
+  56
+ ],
+ "tags": [],
+ "excerpt": "Logiciel salon de coiffure : rendez-vous WhatsApp, acompte et politique d'absence, rappels et relance des clientes inactives pour salons au Maroc.",
+ "titre": "Logiciel pour salon de coiffure au Maroc : rendez-vous, acompte, rappels et fidélisation",
+ "nb_mots": 1735,
+ "liens_internes": [
+  "https://fluxintelligent.com/agent-ia-institut-beaute-maroc/",
+  "https://fluxintelligent.com/agent-ia-whatsapp-business-pme-maroc/",
+  "https://fluxintelligent.com/automatisation-des-processus/automatisation-n8n-make/",
+  "https://fluxintelligent.com/automatisation-ia-pme-maroc/",
+  "https://fluxintelligent.com/chatbots-experience-client/chatbot-whatsapp-maroc/",
+  "https://fluxintelligent.com/chatbots-experience-client/prise-de-rendez-vous-ia/",
+  "https://fluxintelligent.com/crm-ventes-marketing-ia/relances-commerciales-automatisees/",
+  "https://fluxintelligent.com/ia/devis/"
+ ],
+ "sources_externes": [],
+ "limites_ou_blocages": "BLOQUÉ : content_editor__create a échoué 3 fois avec « content_editor__create failed: quota_exceeded — Content Editor quota exceeded » (12:10, 12:21, 12:23 UTC) ; aucun éditeur existant pour cette requête. Sans score 80–90 vérifié, rien n'a été écrit dans WordPress. HTML prêt dans html/ia-salon-coiffure-automatisation.html (emojis et gains non prouvés « -50 % », « +20 à +40 % », « 0 rendez-vous perdu » retirés ; breadcrumb conservé). À faire quand le quota Surfer est rétabli : créer l'éditeur, scorer, ajuster, puis wp_update_post 3299 (title/content/excerpt en raw). Sauvegarde : backup/3299.json. Image non téléversée."
+}

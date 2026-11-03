@@ -1,0 +1,134 @@
+<!-- wp:freeform -->
+<p><strong>En bref :</strong> la plupart des cafés au Maroc ont déjà un logiciel de caisse. Le problème, c'est que ses données restent dans la caisse : le gérant voit un chiffre d'affaires, rarement ce qui s'est vraiment passé dans la journée. Ce guide explique comment piloter un café à partir de ses données de caisse : un rapport du soir envoyé sur WhatsApp, la détection des anomalies (annulations, remises, écarts de caisse), un assistant qui répond aux questions du gérant, le suivi du stock et la préparation des commandes fournisseurs. Il précise ce que l'IA fait, ce qui reste des règles simples, et ce qui reste au gérant.</p>
+
+<h2>Gestion café Maroc : pourquoi le logiciel de caisse ne suffit pas à piloter</h2>
+<p>Un café, un snack ou un salon de thé vit de petits tickets, nombreux, sur des horaires longs. Le gérant n'est pas toujours là, les équipes tournent entre le matin et le soir, et les décisions se prennent souvent au ressenti : « on a bien travaillé aujourd'hui », « le lait part plus vite que d'habitude ».</p>
+<p>Le logiciel de caisse enregistre pourtant presque tout : chaque vente, chaque produit, chaque serveur, chaque mode de paiement, chaque annulation. Dans un café équipé d'une caisse moderne, vous avez souvent un tableau de bord dans le back-office. Mais dans les faits :</p>
+<ul>
+<li>le gérant n'a pas le temps d'ouvrir le back-office tous les soirs ;</li>
+<li>les rapports standard donnent des totaux, pas des explications ;</li>
+<li>les écarts de caisse et les annulations inhabituelles passent inaperçus ;</li>
+<li>le stock est suivi dans un cahier ou pas du tout, sans lien avec les ventes ;</li>
+<li>les commandes fournisseurs se font de tête, avec des ruptures ou des surplus.</li>
+</ul>
+<p>Pour les cafés et snacks, le marché propose de nombreuses solutions : logiciel de caisse pour cafés, logiciel de gestion pour restaurants et cafés avec plan de salle, gestion des stocks, tableau de bord, parfois avec un essai gratuit. Ces outils sont utiles, et vous en avez peut-être déjà un. Mais un logiciel de gestion, même complet, ne vous dit pas ce qu'il faut regarder ce soir, ni ce qui a changé depuis la semaine dernière.</p>
+<p>L'objectif n'est donc pas de changer de logiciel de caisse. Il s'agit de relier les données que vous avez déjà à quelques automatisations utiles pour la gestion de votre établissement, et de vous envoyer l'information là où vous êtes : sur votre téléphone.</p>
+
+<h2>Cafés et snacks, restaurants et salons de thé : à qui s'adresse ce pilotage</h2>
+<p>Ce type de pilotage convient à un café de quartier comme à un coffee shop, un snack ou un salon de thé. Il s'adapte aussi à la restauration rapide et aux petits restaurants. Si vous avez une salle et une terrasse, le plan de salle de votre caisse permet de suivre les ventes par zone. Si vous avez plusieurs points de vente, vous recevez une vue par établissement et une vue globale de votre activité. Le principe reste le même : partir de vos données et de vos besoins, pas d'un modèle unique.</p>
+
+<h2>Le rapport du soir : votre journée en un message</h2>
+<p>C'est souvent la première automatisation à mettre en place, parce qu'elle est simple et utile dès le premier jour.</p>
+<h3>Comment ça fonctionne</h3>
+<ol>
+<li><strong>Déclencheur</strong> : à la clôture de la caisse, ou à une heure fixe (par exemple 23 h 30), un workflow récupère les ventes du jour depuis la caisse, par API ou par export automatique.</li>
+<li><strong>Traitement</strong> : les chiffres sont calculés par des règles simples : chiffre d'affaires, nombre de tickets, ticket moyen, répartition par service (matin, midi, soir), par serveur, par mode de paiement, produits les plus vendus. Ils sont comparés au même jour de la semaine précédente.</li>
+<li><strong>Résultat</strong> : le gérant reçoit un message WhatsApp court, rédigé en langage clair par l'IA, avec les chiffres clés et deux ou trois points d'attention. Par exemple : « Ventes en baisse sur le service du soir par rapport à mardi dernier ; trois annulations après encaissement sur la même caisse ; jus d'orange en forte hausse. »</li>
+</ol>
+<p>Le message reste court. Le détail est disponible dans un tableau Google Sheets ou dans le back-office de la caisse, pour ceux qui veulent creuser.</p>
+
+<h2>Détecter les anomalies de caisse</h2>
+<p>Dans un café, les pertes ne viennent pas seulement du stock. Elles viennent aussi d'erreurs d'encaissement, de remises non justifiées ou, parfois, de fraude. Une automatisation peut surveiller chaque jour quelques signaux, définis avec vous :</p>
+<ul>
+<li>annulations de tickets après encaissement, surtout en fin de service ;</li>
+<li>remises ou offerts au-delà d'un seuil que vous fixez ;</li>
+<li>écart entre le fond de caisse déclaré à la clôture et le montant attendu ;</li>
+<li>ventes en espèces anormalement basses sur un service par rapport aux habitudes ;</li>
+<li>produits vendus à un prix différent du tarif enregistré.</li>
+</ul>
+<p>Ces contrôles sont des règles, pas de l'IA : ils sont fiables et faciles à expliquer à l'équipe. L'IA intervient seulement pour résumer les alertes et repérer une répétition (même serveur, même créneau, plusieurs jours de suite). Une alerte n'est pas une accusation : c'est une question à poser. Le gérant vérifie, et décide.</p>
+
+<h2>Un assistant de pilotage et un tableau de bord en temps réel</h2>
+<p>Une fois les données de caisse rangées dans un tableau propre, le gérant peut poser des questions simples sur WhatsApp, en français ou en darija :</p>
+<ul>
+<li>« Combien de cafés crème on a vendu cette semaine par rapport à la semaine dernière ? »</li>
+<li>« Quel est le meilleur créneau du samedi ? »</li>
+<li>« Quels produits se vendent le moins depuis un mois ? »</li>
+<li>« Quel serveur a fait le plus d'annulations ce mois ? »</li>
+</ul>
+<p>Si votre caisse envoie ses ventes au fil de l'eau, le tableau de bord se met à jour en temps réel ; sinon, il est actualisé à chaque export. Vous pouvez donc suivre les ventes pendant le service, depuis le café ou ailleurs.</p>
+<p>L'assistant traduit la question en requête sur vos données et répond avec le chiffre et sa source. Il ne doit pas inventer : s'il n'a pas la donnée, il le dit. C'est un usage typique d'un <a href="https://fluxintelligent.com/agents-ia/">agent IA</a> branché sur vos propres données, sans accès en écriture à la caisse.</p>
+
+<h2>Gestion des stocks et commandes fournisseurs</h2>
+<p>Le stock d'un café tient en quelques familles de produits : café en grains, lait, sucre, thé et menthe, jus et fruits, viennoiseries, boissons fraîches, consommables (gobelets, serviettes). Le lien entre ventes et stock est assez direct, ce qui le rend facile à automatiser.</p>
+<h3>Suivre le stock et valider une commande en un clic</h3>
+<ul>
+<li><strong>Consommation théorique</strong> : à partir de fiches simples (un café crème = une dose de café + une quantité de lait), chaque vente déduit les quantités du stock.</li>
+<li><strong>Inventaire rapide</strong> : une fois par semaine, l'équipe envoie les quantités restantes par message ou formulaire. L'écart entre stock théorique et stock réel est calculé.</li>
+<li><strong>Seuils de commande</strong> : quand un produit passe sous le seuil que vous avez fixé, une proposition de commande est préparée.</li>
+<li><strong>Commande fournisseur</strong> : la proposition est envoyée au gérant, qui la valide en un clic sur WhatsApp ; elle est ensuite transmise au fournisseur par WhatsApp ou e-mail.</li>
+</ul>
+<h3>Factures fournisseurs</h3>
+<p>Les factures et bons de livraison des fournisseurs peuvent être photographiés et lus automatiquement pour mettre à jour les prix d'achat et rapprocher livraisons et commandes. Ce parcours est détaillé dans notre article sur l'<a href="https://fluxintelligent.com/automatisation-factures-ia-maroc/">automatisation des factures fournisseurs</a>.</p>
+
+<h2>Commandes, plateformes de livraison et clients</h2>
+<p>Beaucoup de cafés reçoivent aussi des commandes à emporter par WhatsApp, et certains travaillent avec des plateformes de livraison. Vos clients écrivent à toute heure. Quelques automatisations aident à gérer les commandes sans changer votre organisation :</p>
+<ul>
+<li>prise de commande à emporter sur WhatsApp avec récapitulatif et heure de retrait, transmise au comptoir ;</li>
+<li>regroupement des ventes des plateformes de livraison avec celles de la caisse dans le rapport du soir, pour avoir une vue complète du chiffre d'affaires ;</li>
+<li>réponses automatiques aux questions fréquentes (horaires, menu, réservation d'une table pour un groupe) ;</li>
+<li>pour un café qui accueille des groupes, réservations gérées par un assistant, voir notre service de <a href="https://fluxintelligent.com/chatbots-experience-client/prise-de-rendez-vous-ia/">prise de rendez-vous et réservations par IA</a>.</li>
+</ul>
+<p>Pour le canal WhatsApp lui-même, notre page sur le <a href="https://fluxintelligent.com/chatbots-experience-client/chatbot-whatsapp-maroc/">chatbot WhatsApp pour entreprises au Maroc</a> explique le fonctionnement et les prérequis.</p>
+
+<h2>Ce que fait l'IA et ce qui relève de règles simples</h2>
+<table>
+<thead><tr><th>Besoin</th><th>Règles et automatisation classique</th><th>IA</th></tr></thead>
+<tbody>
+<tr><td>Rapport du soir</td><td>Calcul des chiffres, comparaison à la semaine précédente</td><td>Rédaction du résumé et des points d'attention</td></tr>
+<tr><td>Anomalies de caisse</td><td>Seuils d'annulations, remises, écarts</td><td>Synthèse et repérage de répétitions</td></tr>
+<tr><td>Questions du gérant</td><td>Accès en lecture aux données</td><td>Compréhension de la question en français ou darija</td></tr>
+<tr><td>Stock</td><td>Consommation théorique, seuils, propositions de commande</td><td>Lecture des factures et bons de livraison</td></tr>
+<tr><td>Commandes WhatsApp</td><td>Transmission au comptoir, horaires</td><td>Compréhension des messages libres</td></tr>
+</tbody>
+</table>
+
+<h2>Prérequis et intégrations</h2>
+<ul>
+<li><strong>Un logiciel de caisse qui exporte ses données</strong> : par API, par export automatique (CSV, e-mail) ou, à défaut, par un export manuel quotidien. C'est le point à vérifier en premier.</li>
+<li><strong>Un catalogue propre</strong> : mêmes noms de produits, prix à jour, catégories cohérentes.</li>
+<li><strong>Des fiches de consommation simples</strong> pour les produits suivis en stock.</li>
+<li><strong>Un tableau central</strong> (Google Sheets ou base de données) et un outil d'orchestration comme n8n ou Make. Voir nos <a href="https://fluxintelligent.com/automatisation-des-processus/workflows-integrations-api/">workflows et intégrations API</a>.</li>
+<li><strong>Un numéro WhatsApp Business</strong> pour les messages au gérant et aux clients.</li>
+</ul>
+
+<h2>Limites et ce qui reste au gérant</h2>
+<ul>
+<li>Les chiffres ne valent que ce que vaut la saisie en caisse : un produit tapé sur la mauvaise touche fausse le stock.</li>
+<li>Une alerte d'anomalie demande toujours une vérification humaine avant toute conclusion sur un membre de l'équipe.</li>
+<li>Le stock théorique s'éloigne du réel avec les pertes, la casse et les consommations du personnel : l'inventaire régulier reste nécessaire.</li>
+<li>Les décisions de prix, de carte et de recrutement restent celles du gérant. L'assistant aide à voir, il ne décide pas.</li>
+</ul>
+
+<h2>Indicateurs à suivre</h2>
+<ul>
+<li>chiffre d'affaires et ticket moyen par service et par jour de la semaine ;</li>
+<li>nombre et montant des annulations et remises ;</li>
+<li>écarts de caisse à la clôture ;</li>
+<li>écart entre stock théorique et inventaire ;</li>
+<li>nombre de ruptures sur les produits clés ;</li>
+<li>temps passé chaque semaine sur les commandes fournisseurs.</li>
+</ul>
+
+<h2>Par où commencer</h2>
+<p>Commencez par le rapport du soir : il demande seulement l'accès aux données de caisse et apporte une vue claire dès la première semaine. Ajoutez ensuite les alertes d'anomalies, puis le stock et les commandes fournisseurs. Si vous voulez une méthode pour choisir, notre guide pour <a href="https://fluxintelligent.com/automatisation-ia-pme-maroc/">choisir son premier processus à automatiser</a> s'applique aussi à un café.</p>
+
+<h2>Questions fréquentes</h2>
+<h3>Faut-il changer de logiciel de gestion ou de caisse ?</h3>
+<p>Non, dans la plupart des cas. Si vous avez déjà une solution de caisse pour votre café, on s'appuie dessus. Il faut que votre caisse permette d'exporter les ventes, idéalement automatiquement. Si ce n'est pas possible, un export manuel quotidien suffit pour démarrer.</p>
+<h3>Est-ce adapté à un petit café de quartier ?</h3>
+<p>Oui. Un petit café peut se limiter au rapport du soir et au suivi de quelques produits en stock. Les automatisations s'ajoutent selon vos besoins, une par une.</p>
+<h3>Quelles données de caisse faut-il pour démarrer ?</h3>
+<p>Le détail des ventes par ticket (date, heure, produits, quantités, prix, mode de paiement, serveur) suffit pour le rapport du soir et les alertes. Pour le stock, il faut en plus des fiches de consommation simples pour les produits que vous voulez suivre.</p>
+<h3>Le gérant peut-il poser ses questions en darija ?</h3>
+<p>Oui. L'assistant comprend le français, la darija et le mélange des deux, et répond à partir de vos données uniquement.</p>
+<h3>Combien coûte ce type de mise en place ?</h3>
+<p>Le coût dépend des intégrations et du nombre d'automatisations. Une automatisation complète avec intégration se situe généralement entre 8 000 et 80 000 DH. Pour une estimation adaptée à votre café, utilisez notre <a href="https://fluxintelligent.com/ia/devis/">devis IA instantané</a>.</p>
+
+<h2>Piloter votre café avec vos propres données</h2>
+<p>Flux Intelligent relie votre caisse, votre stock et WhatsApp pour vous donner une vue claire de votre activité, sans changer vos outils. Découvrez notre offre d'<a href="https://fluxintelligent.com/automatisation-des-processus/">automatisation des processus</a> ou décrivez votre café dans le <a href="https://fluxintelligent.com/ia/devis/">devis IA instantané</a>.</p>
+<!-- /wp:freeform -->
+
+<!-- wp:html -->
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Accueil","item":"https://fluxintelligent.com/"},{"@type":"ListItem","position":2,"name":"Blog","item":"https://fluxintelligent.com/ia/blog/"},{"@type":"ListItem","position":3,"name":"Gestion d'un café au Maroc","item":"https://fluxintelligent.com/automatisation-ia-cafes-maroc-2025/"}]}</script>
+<!-- /wp:html -->

@@ -1,0 +1,44 @@
+{
+ "sujet": "E8 – Enrichissement automatisation hôtel (reprise des cas d'usage de 3288 : réservation, pré-séjour, check in, conciergerie multilingue, tâches, avis ; PMS, KPI, FAQ PAA)",
+ "type": "enrichissement",
+ "wp_id": 3828,
+ "url_prevue": "https://fluxintelligent.com/automatisation-ia-hotel-fiabilite-technique-experience-client/",
+ "statut_wp": "publish (mis en ligne immédiatement le 2026-11-03 à 12:17:01, heure du site / GMT)",
+ "date_prevue": null,
+ "requete": "automatisation hôtel",
+ "editeur_surfer": 16973226,
+ "score_total": 83,
+ "score_seo": 83,
+ "score_ai_search": null,
+ "iterations": 1,
+ "media_id": 3829,
+ "image_locale": null,
+ "alt": null,
+ "categories": [
+  56
+ ],
+ "tags": [
+  36,
+  42,
+  41,
+  11,
+  43
+ ],
+ "excerpt": "Automatisation hôtel au Maroc : réservation, pré-séjour, check in, conciergerie multilingue, avis, et la checklist Wi-Fi à vérifier en chambre.",
+ "titre": "Automatisation hôtel au Maroc : cas d'usage IA et fiabilité technique en chambre",
+ "nb_mots": 2862,
+ "liens_internes": [
+  "https://fluxintelligent.com/agents-ia-vocaux-restaurants-hotels-maroc-choco/",
+  "https://fluxintelligent.com/chatbots-experience-client/chatbots-multilingues-service-client-maroc/",
+  "https://fluxintelligent.com/automatisation-des-processus/workflows-integrations-api/",
+  "https://fluxintelligent.com/ia/automatisation-ia-marrakech/",
+  "https://fluxintelligent.com/chatbots-experience-client/prise-de-rendez-vous-ia/",
+  "https://fluxintelligent.com/chatbots-experience-client/chatbot-whatsapp-maroc/",
+  "https://fluxintelligent.com/chatbots-experience-client/",
+  "https://fluxintelligent.com/ia/devis/"
+ ],
+ "sources_externes": [
+  "https://xtremehd.fr/iptv-qui-coupe-ou-freeze-diagnostic-solutions/"
+ ],
+ "limites_ou_blocages": "Image existante conservée (featured_media 3829), aucune nouvelle image. Retirés car non sourcés : paragraphe « 60 à 75 % des demandes », « 8-12 min à 2-3 min », « 25-30 % d'énergie », « 17,5 millions de touristes / Maroc Digital 2030 », « plus de 4 000 riads ». Conservées telles quelles (déjà publiées, attribuées à leurs sources mais non revérifiées par moi) : stats Deloitte/LoungeUp, EHL, J.D. Power, Nomadix, Planet. Lien externe xtremehd.fr conservé (lien existant). Deux images inline du corps retirées (règle « pas d'image dans le corps »). Breadcrumb JSON-LD conservé dans un bloc wp:html séparé après le bloc freeform (titre mis à jour). 3288 non modifié, toujours publié (redirection 301 non faisable). Surfer : H1 inclus dans le contenu soumis ; ai_search unavailable. Rank Math non accessible."
+}

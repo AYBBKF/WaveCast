@@ -1,0 +1,89 @@
+<!-- wp:freeform -->
+<p><strong>En bref :</strong> dans une agence d'intérim, chaque fin de période commence par la même course : récupérer les relevés d'heures des intérimaires, les comparer au planning, obtenir la validation de l'entreprise cliente, puis ressaisir les heures pour la paie et la facturation. Ce guide décrit un circuit automatisé du relevé d'heures intérim : feuille d'heures envoyée en photo ou par formulaire, contrôle par rapport au planning, validation du client en un clic, exports vers la paie et la facture. Il précise ce que fait l'IA, ce qui reste à l'agence et les indicateurs à suivre.</p>
+
+<h2>Le relevé d'heures intérim, point de friction entre trois acteurs</h2>
+<p>Le relevé d'heures relie l'intérimaire, l'entreprise utilisatrice et l'agence. Chacun a ses contraintes :</p>
+<ul>
+<li>l'intérimaire remplit une feuille papier, parfois tardivement, et l'envoie en photo sur WhatsApp ;</li>
+<li>le responsable de site chez le client doit signer, mais il est sur le terrain et répond tard ;</li>
+<li>l'agence ressaisit les heures dans son logiciel de paie puis dans la facture, avec des risques d'erreur à chaque étape ;</li>
+<li>les écarts (heure de nuit, jour férié, absence, poste différent) sont découverts au moment de la paie, quand il est trop tard pour discuter sereinement.</li>
+</ul>
+<p>Une erreur de relevé se répercute deux fois : sur la paie de l'intérimaire et sur la facture du client. C'est pour cela que le contrôle doit se faire tôt, ligne par ligne.</p>
+
+<h2>Comment fonctionne un circuit automatisé des feuilles d'heures</h2>
+
+<h3>1. Le déclencheur : la feuille d'heures arrive</h3>
+<p>L'intérimaire envoie sa feuille d'heures de deux façons possibles : une photo de la feuille papier sur un numéro WhatsApp de l'agence, ou un formulaire mobile simple (date, heure d'arrivée, heure de départ, pause, site). Un rappel automatique part la veille de la date limite à ceux qui n'ont rien envoyé.</p>
+
+<h3>2. Lecture et rattachement</h3>
+<p>Pour une photo, l'IA lit la feuille (y compris l'écriture manuscrite lisible), extrait les dates et les horaires et les rattache à la bonne mission grâce au numéro de l'intérimaire. Une feuille floue ou incomplète est renvoyée avec une demande précise : « La ligne du mardi est illisible, pouvez-vous la renvoyer ? »</p>
+
+<h3>3. Contrôle par rapport au planning</h3>
+<p>L'automatisation compare chaque ligne au planning de la mission et aux règles que vous avez paramétrées :</p>
+<ul>
+<li>jours travaillés hors planning ;</li>
+<li>dépassement de la durée prévue, heures de nuit, dimanche ou jour férié ;</li>
+<li>pause absente ou trop courte selon vos règles ;</li>
+<li>doublon entre deux missions le même jour.</li>
+</ul>
+<p>Les lignes conformes passent. Les écarts sont signalés au chargé de recrutement avec la raison.</p>
+
+<h3>4. Validation par l'entreprise cliente</h3>
+<p>Le responsable de site reçoit un récapitulatif par intérimaire et par semaine, par e-mail ou WhatsApp, avec un bouton de validation et un champ de commentaire. Sa validation est horodatée et conservée. Sans réponse, une relance part selon le délai convenu dans le contrat.</p>
+
+<h3>5. Exports vers la paie et la facturation</h3>
+<p>Une fois validées, les heures sont exportées au format attendu par votre logiciel de paie et par votre outil de facturation : heures normales, heures majorées par type, indemnités prévues dans la mission. Le gestionnaire paie contrôle et lance le traitement.</p>
+
+<h2>Ce que fait l'IA et ce qui relève de l'automatisation classique</h2>
+<table>
+<thead><tr><th>Étape</th><th>Automatisation classique</th><th>IA</th></tr></thead>
+<tbody>
+<tr><td>Collecte des feuilles</td><td>Formulaire, rappels avant échéance</td><td>Aucune</td></tr>
+<tr><td>Lecture d'une photo</td><td>Rattachement à la mission par numéro</td><td>Lecture de la feuille manuscrite, extraction des horaires</td></tr>
+<tr><td>Contrôle</td><td>Comparaison au planning, règles de calcul</td><td>Signalement des incohérences et des lignes douteuses</td></tr>
+<tr><td>Validation client</td><td>Envoi du récapitulatif, horodatage, relance</td><td>Lecture des commentaires libres du client</td></tr>
+<tr><td>Paie et facture</td><td>Export au format attendu</td><td>Aucune : les calculs suivent des règles fixes</td></tr>
+</tbody>
+</table>
+
+<h2>Intégrations et prérequis</h2>
+<ul>
+<li>Un planning des missions accessible (logiciel métier, tableur partagé ou base de données).</li>
+<li>Vos règles de calcul écrites : seuils d'heures majorées, nuit, jours fériés, pauses, telles que définies par le Code du travail, les contrats et vos accords avec chaque client. Faites-les valider par votre responsable paie.</li>
+<li>Le format d'import de votre logiciel de paie et de votre outil de facturation.</li>
+<li>Un numéro WhatsApp Business pour la collecte, si vous choisissez la photo.</li>
+<li>Un outil d'orchestration pour relier les briques : voir nos <a href="https://fluxintelligent.com/automatisation-des-processus/workflows-integrations-api/">workflows et intégrations API</a>.</li>
+</ul>
+<p>Si votre cabinet comptable tient la paie, le même export peut lui être envoyé directement ; voir notre page sur l'<a href="https://fluxintelligent.com/automatisation-des-processus/comptable-au-maroc-ai/">automatisation comptable au Maroc</a>.</p>
+
+<h2>Limites et ce qui reste humain</h2>
+<ul>
+<li>Les règles de calcul et leur conformité restent sous la responsabilité de l'agence. L'outil applique ce que vous avez paramétré.</li>
+<li>Une écriture manuscrite très difficile ou une feuille raturée doit être vérifiée par une personne.</li>
+<li>Un désaccord entre l'intérimaire et le client sur les heures se règle par un échange humain, pas par l'outil.</li>
+<li>Les données traitées sont personnelles (identité, horaires, site). Leur traitement relève de la loi 09-08 : limitez l'accès, fixez une durée de conservation et renseignez-vous auprès de la CNDP sur vos obligations.</li>
+</ul>
+
+<h2>Indicateurs à suivre</h2>
+<ul>
+<li>Part des relevés reçus avant la date limite.</li>
+<li>Délai moyen de validation par l'entreprise cliente.</li>
+<li>Nombre d'écarts détectés avant la paie, par type.</li>
+<li>Corrections de paie et avoirs de facturation après coup.</li>
+<li>Temps passé par l'équipe sur la clôture de chaque période.</li>
+</ul>
+
+<h2>Questions fréquentes</h2>
+<h3>L'intérimaire doit-il installer une application ?</h3>
+<p>Non. Une photo envoyée sur WhatsApp ou un formulaire ouvert depuis un lien suffit.</p>
+<h3>Peut-on garder la feuille papier signée ?</h3>
+<p>Oui. La photo de la feuille signée est conservée avec la validation numérique du client, ce qui garde une trace des deux.</p>
+<h3>Le système calcule-t-il les heures supplémentaires ?</h3>
+<p>Il applique les règles que vous lui donnez. Le paramétrage initial et sa vérification se font avec votre responsable paie.</p>
+<h3>Faut-il changer de logiciel de paie ?</h3>
+<p>Non. L'automatisation produit un fichier au format que votre logiciel sait importer.</p>
+
+<h2>Automatiser vos relevés d'heures avec Flux Intelligent</h2>
+<p>Nous mettons en place ce type de circuit dans le cadre de nos services d'<a href="https://fluxintelligent.com/automatisation-des-processus/automatisation-administrative/">automatisation administrative</a>, avec collecte par <a href="https://fluxintelligent.com/chatbots-experience-client/chatbot-whatsapp-maroc/">chatbot WhatsApp</a> si vos intérimaires l'utilisent déjà. Pour choisir par où commencer, lisez <a href="https://fluxintelligent.com/automatisation-ia-pme-maroc/">comment choisir son premier processus à automatiser</a>, puis décrivez votre organisation dans notre <a href="https://fluxintelligent.com/ia/devis/">devis IA instantané</a>.</p>
+<!-- /wp:freeform -->

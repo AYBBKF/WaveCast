@@ -1,0 +1,114 @@
+<!-- wp:freeform -->
+<p><strong>En bref :</strong> un salon de coiffure perd du temps et du chiffre sur des choses simples : des appels manqués pendant une coupe, des messages WhatsApp lus trop tard, des clientes qui oublient leur rendez-vous, d'autres qui ne reviennent plus sans que personne ne s'en rende compte. Ce guide explique ce qu'un logiciel de salon de coiffure doit gérer et ce qu'on peut automatiser autour : prise de rendez-vous sur WhatsApp, acompte de réservation et politique d'absence, rappels, et réactivation des clientes inactives. Il précise ce que fait l'IA, ce qui reste des règles simples et ce qui reste au salon.</p>
+
+<h2>Logiciel salon de coiffure : ce qu'il doit gérer au quotidien</h2>
+<p>Qu'il s'agisse d'un salon femmes, d'un salon hommes ou d'un barbershop, les besoins de base sont les mêmes :</p>
+<ul>
+<li><strong>l'agenda</strong> : les créneaux de chaque coiffeur ou coiffeuse, la durée de chaque prestation (une coupe homme ne prend pas le temps d'une couleur ou d'un lissage), les pauses et les jours de fermeture ;</li>
+<li><strong>le fichier clients</strong> : nom, téléphone, historique des prestations, notes utiles (couleur utilisée, préférences) ;</li>
+<li><strong>la caisse</strong> : encaissement des prestations et des produits vendus ;</li>
+<li><strong>la communication</strong> : confirmations, rappels, messages de relance.</li>
+</ul>
+<p>Beaucoup de salons au Maroc gèrent encore l'agenda sur un cahier ou sur le téléphone du gérant, et les clients sur WhatsApp. D'autres utilisent déjà un logiciel de réservation ou de caisse. Dans les deux cas, ce qui manque le plus souvent, c'est le lien entre les messages des clientes et l'agenda : la conversation a lieu sur WhatsApp, mais quelqu'un doit la recopier à la main.</p>
+
+<h2>Prise de rendez-vous sur WhatsApp</h2>
+<p>Au Maroc, une grande partie des demandes arrive par WhatsApp, souvent en darija, à toute heure : « kayn chi blassa ghedda l'après-midi l brushing ? ». Un assistant de prise de rendez-vous peut répondre à la place de l'équipe quand elle est occupée.</p>
+<h3>Comment ça fonctionne</h3>
+<ol>
+<li><strong>Déclencheur</strong> : une cliente écrit au numéro WhatsApp du salon, par message ou par note vocale.</li>
+<li><strong>Compréhension</strong> : l'IA identifie la prestation demandée, le jour et le moment souhaités, et éventuellement le coiffeur préféré.</li>
+<li><strong>Disponibilités</strong> : l'automatisation lit l'agenda (Google Agenda, ou celui de votre logiciel s'il a une API) en tenant compte de la durée de la prestation, et propose deux ou trois créneaux libres.</li>
+<li><strong>Réservation</strong> : la cliente choisit, le rendez-vous est inscrit dans l'agenda, et elle reçoit une confirmation avec l'adresse, l'heure et les conditions du salon.</li>
+</ol>
+<p>Si la demande sort du cadre (prestation inconnue, mariage, groupe, demande de devis pour un forfait mariée), l'assistant ne devine pas : il transmet la conversation à l'équipe. Notre service de <a href="https://fluxintelligent.com/chatbots-experience-client/prise-de-rendez-vous-ia/">prise de rendez-vous par IA</a> décrit ce fonctionnement en détail.</p>
+
+<h3>Répondre aux questions fréquentes</h3>
+<p>Une bonne partie des messages reçus sont des questions simples : horaires, adresse, tarif d'une prestation, disponibilité d'un soin. L'assistant répond à partir de votre grille et de vos règles écrites, en français, en darija ou en arabe. Il n'invente pas un prix : si une prestation dépend de la longueur des cheveux ou d'un diagnostic, il le dit et propose un rendez-vous ou un échange avec le salon. Pour aller plus loin sur ce canal, voir notre page sur le <a href="https://fluxintelligent.com/chatbots-experience-client/chatbot-whatsapp-maroc/">chatbot WhatsApp au Maroc</a>.</p>
+
+<h2>Acompte de réservation et politique d'absence</h2>
+<p>Les rendez-vous non honorés coûtent cher à un salon : un créneau long bloqué pour une couleur ou un lissage, puis personne. Deux outils aident, à condition d'être annoncés clairement et appliqués avec bon sens.</p>
+<h3>L'acompte pour les prestations longues</h3>
+<p>Le salon peut demander un acompte pour certaines prestations seulement (couleur, mèches, lissage, coiffure de mariée), ou pour les nouvelles clientes. Le message de confirmation indique le montant que vous avez fixé, le moyen de paiement (lien de paiement en ligne, virement, ou passage au salon) et le délai pour le régler. Tant que l'acompte n'est pas reçu, le créneau reste « en attente » et l'équipe le voit dans l'agenda. Le montant, les prestations concernées et les moyens de paiement sont des choix du salon ; l'automatisation applique simplement la règle.</p>
+<h3>Une politique d'absence écrite</h3>
+<p>Une règle simple, rappelée dans chaque confirmation, évite les discussions : délai pour annuler ou déplacer sans frais, ce qui se passe en cas d'absence sans prévenir (acompte conservé, acompte demandé pour la prochaine réservation). L'automatisation enregistre les absences dans la fiche cliente. Après une ou deux absences, selon votre règle, l'assistant demande un acompte pour la réservation suivante. La décision d'appliquer ou non la règle à une fidèle de longue date reste au gérant.</p>
+
+<h2>Rappels de rendez-vous</h2>
+<p>Le rappel est l'automatisation la plus simple et souvent la plus utile :</p>
+<ul>
+<li>un rappel la veille, avec l'heure, la prestation et un bouton pour confirmer, déplacer ou annuler ;</li>
+<li>un second rappel quelques heures avant pour les prestations longues ;</li>
+<li>si la cliente annule, le créneau est libéré dans l'agenda et peut être proposé aux clientes en liste d'attente.</li>
+</ul>
+<p>Sur WhatsApp, un message envoyé à l'initiative du salon en dehors de la fenêtre de 24 heures après le dernier message de la cliente doit utiliser un modèle validé par Meta. Les modèles de confirmation et de rappel sont donc à préparer avant le lancement. Les questions de compte et de tarification sont expliquées dans notre article sur l'<a href="https://fluxintelligent.com/agent-ia-whatsapp-business-pme-maroc/">agent IA WhatsApp Business pour PME</a>.</p>
+
+<h2>Réactiver les clientes inactives</h2>
+<p>Dans un salon, la fidélité se perd en silence. Une cliente qui venait toutes les six semaines ne vient plus depuis trois mois, et personne ne le remarque. Avec un fichier clients à jour, on peut le repérer automatiquement.</p>
+<h3>Comment ça fonctionne</h3>
+<ul>
+<li><strong>Rythme habituel</strong> : pour chaque cliente, l'automatisation calcule l'intervalle habituel entre deux visites à partir de l'historique.</li>
+<li><strong>Détection</strong> : quand ce délai est largement dépassé, la cliente passe dans une liste « à relancer ».</li>
+<li><strong>Message personnalisé</strong> : l'IA rédige un message court qui reprend sa dernière prestation (« votre dernière couleur date de… ») et propose des créneaux. Le ton reste simple, sans pression.</li>
+<li><strong>Respect du choix</strong> : une cliente qui répond « non merci » ou « stop » n'est plus relancée.</li>
+</ul>
+<p>Le même mécanisme sert à rappeler un entretien de couleur ou un soin à refaire, si la cliente l'a accepté. Pour une approche plus large des relances, voir notre service de <a href="https://fluxintelligent.com/crm-ventes-marketing-ia/relances-commerciales-automatisees/">relances automatisées</a>.</p>
+
+<h2>Ce que fait l'IA et ce qui relève de règles simples</h2>
+<table>
+<thead><tr><th>Besoin</th><th>Règles et automatisation classique</th><th>IA</th></tr></thead>
+<tbody>
+<tr><td>Prise de rendez-vous</td><td>Lecture de l'agenda, durée des prestations, inscription du créneau</td><td>Compréhension des messages libres et des notes vocales</td></tr>
+<tr><td>Questions fréquentes</td><td>Grille tarifaire et règles écrites du salon</td><td>Formulation de la réponse dans la langue de la cliente</td></tr>
+<tr><td>Acompte</td><td>Prestations concernées, montant, statut « en attente »</td><td>Non</td></tr>
+<tr><td>Rappels</td><td>Envoi la veille et le jour même, libération du créneau</td><td>Lecture des réponses libres (« je serai en retard »)</td></tr>
+<tr><td>Réactivation</td><td>Calcul du rythme de visite, liste à relancer</td><td>Rédaction d'un message personnalisé</td></tr>
+</tbody>
+</table>
+
+<h2>Intégrations et prérequis</h2>
+<ul>
+<li><strong>Un numéro WhatsApp Business</strong> connecté via l'API officielle.</li>
+<li><strong>Un agenda accessible</strong> : Google Agenda, ou votre logiciel de réservation s'il propose une API.</li>
+<li><strong>La liste des prestations</strong> avec leur durée, leur prix ou leur fourchette, et le coiffeur qui les réalise.</li>
+<li><strong>Vos règles écrites</strong> : acompte, annulation, absence, horaires.</li>
+<li><strong>Un fichier clients</strong> (même un simple tableau au départ) avec l'historique des visites.</li>
+<li><strong>Un outil d'orchestration</strong> comme n8n ou Make pour relier le tout, voir notre page sur l'<a href="https://fluxintelligent.com/automatisation-des-processus/automatisation-n8n-make/">automatisation n8n et Make</a>.</li>
+</ul>
+<p>Les numéros et l'historique des clientes sont des données personnelles : informez-les de l'usage, ne les relancez que si elles ne s'y sont pas opposées, et vérifiez vos obligations au titre de la loi 09-08 auprès de la CNDP.</p>
+
+<h2>Limites et ce qui reste au salon</h2>
+<ul>
+<li>L'assistant ne fait pas de diagnostic capillaire et ne promet pas un résultat de couleur : ces échanges restent avec le coiffeur.</li>
+<li>L'agenda doit être tenu à jour : un rendez-vous pris par téléphone et non saisi crée un risque de double réservation.</li>
+<li>L'IA peut mal comprendre une demande ambiguë ; dans ce cas, elle doit transmettre plutôt que réserver au hasard.</li>
+<li>L'application de la politique d'absence, les gestes commerciaux et les cas particuliers restent des décisions du gérant.</li>
+</ul>
+
+<h2>Indicateurs à suivre</h2>
+<ul>
+<li>nombre de rendez-vous pris par WhatsApp, et part prise en dehors des heures d'ouverture ;</li>
+<li>taux d'absence, avant et après la mise en place des rappels et de l'acompte ;</li>
+<li>délai moyen de réponse aux messages ;</li>
+<li>taux de remplissage de l'agenda par coiffeur et par jour ;</li>
+<li>nombre de clientes inactives relancées et part qui reprend rendez-vous.</li>
+</ul>
+
+<h2>Par où commencer</h2>
+<p>Commencez par les rappels de rendez-vous : ils demandent seulement un agenda à jour et des modèles de messages. Ajoutez ensuite la prise de rendez-vous sur WhatsApp, puis l'acompte pour les prestations longues, et enfin la réactivation des clientes inactives quand votre fichier clients est en place. Notre guide pour <a href="https://fluxintelligent.com/automatisation-ia-pme-maroc/">choisir son premier processus à automatiser</a> peut vous aider à décider. Les instituts qui proposent aussi des soins trouveront des exemples proches dans notre article sur l'<a href="https://fluxintelligent.com/agent-ia-institut-beaute-maroc/">agent IA pour institut de beauté</a>.</p>
+
+<h2>Questions fréquentes</h2>
+<h3>Faut-il remplacer mon logiciel de salon de coiffure ?</h3>
+<p>Non, si votre logiciel permet de lire et d'écrire les rendez-vous (par API ou synchronisation avec Google Agenda). Sinon, on peut partir d'un Google Agenda partagé et d'un fichier clients simple.</p>
+<h3>L'assistant comprend-il la darija et les notes vocales ?</h3>
+<p>Oui. Il comprend le français, la darija et l'arabe, y compris en mélange, et peut transcrire les notes vocales. Quand une demande n'est pas claire, il pose une question ou passe la main à l'équipe.</p>
+<h3>Peut-on demander un acompte par WhatsApp ?</h3>
+<p>Oui, le message de confirmation peut contenir un lien de paiement ou des instructions de virement. Le salon fixe les prestations concernées et le montant ; le créneau reste en attente jusqu'à réception.</p>
+<h3>Combien coûte ce type d'automatisation ?</h3>
+<p>Un chatbot de qualification de base démarre autour de 3 000 DH d'installation ; une automatisation complète avec intégration se situe généralement entre 8 000 et 80 000 DH. Pour une estimation adaptée à votre salon, utilisez le <a href="https://fluxintelligent.com/ia/devis/">devis IA instantané</a>.</p>
+
+<h2>Automatiser les rendez-vous de votre salon</h2>
+<p>Flux Intelligent met en place la prise de rendez-vous sur WhatsApp, les rappels, l'acompte et la relance des clientes inactives, en s'appuyant sur vos outils actuels. Découvrez notre service de <a href="https://fluxintelligent.com/chatbots-experience-client/prise-de-rendez-vous-ia/">prise de rendez-vous par IA</a> ou obtenez une estimation avec le <a href="https://fluxintelligent.com/ia/devis/">devis IA instantané</a>.</p>
+<!-- /wp:freeform -->
+
+<!-- wp:html -->
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Accueil","item":"https://fluxintelligent.com/"},{"@type":"ListItem","position":2,"name":"Blog","item":"https://fluxintelligent.com/ia/blog/"},{"@type":"ListItem","position":3,"name":"Logiciel pour salon de coiffure au Maroc","item":"https://fluxintelligent.com/ia-salon-coiffure-automatisation/"}]}</script>
+<!-- /wp:html -->

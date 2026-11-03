@@ -1,0 +1,48 @@
+{
+ "sujet": "Automatiser une agence de location de voitures au Maroc autour de son logiciel : vérification des documents, contrat pré-rempli, état des lieux photo, échéances de flotte et amendes",
+ "type": "création",
+ "wp_id": 4494,
+ "url_prevue": "https://fluxintelligent.com/logiciel-location-voiture-maroc/",
+ "statut_wp": "future",
+ "date_prevue": "2026-11-17T09:00:00 heure marocaine (date_gmt envoyée 2026-11-17T08:00:00 ; WordPress renvoie date = date_gmt = 08:00)",
+ "requete": "logiciel location voiture maroc",
+ "editeur_surfer": 16973219,
+ "score_total": 85,
+ "score_seo": 85,
+ "score_ai_search": null,
+ "iterations": 2,
+ "media_id": null,
+ "image_locale": "/tmp/claude-0/-home-user-WaveCast/b86cf213-b51d-5352-9e9d-fc596e43dfc1/scratchpad/exec/img/logiciel-location-voiture-maroc.webp",
+ "alt": "Homme barbu en polo bleu marine photographiant une citadine blanche avec son smartphone sur un parking bordé de palmiers",
+ "categories": [
+  1
+ ],
+ "tags": [
+  {
+   "id": 59,
+   "name": "location de voiture (créé)"
+  },
+  {
+   "id": 10,
+   "name": "automatisation IA PME"
+  },
+  {
+   "id": 45,
+   "name": "WhatsApp Business"
+  }
+ ],
+ "excerpt": "Logiciel location voiture Maroc : automatisez la vérification des documents, le contrat, l'état des lieux photo et les échéances de votre flotte.",
+ "titre": "Logiciel de location de voiture au Maroc : automatiser documents, contrats et états des lieux",
+ "limites_ou_blocages": "Image non téléversée (consigne) : featured_media = 0, à téléverser puis rattacher à l'article 4494 avant le 17/11. Rank Math non accessible (extrait = repli meta description). Surfer : premier passage 76, puis 85 après ajout d'une section « fonctionnalités d'un logiciel de gestion » et de termes ; ai_search « unavailable ». Le contenu Surfer contenait le H1 (titre), le corps WordPress non. Longueur 2,5 k mots, au-dessus de la cible Surfer (~1 975). Loi 09-08/CNDP citée de façon générale, sans source externe. Aucun éditeur de logiciel cité.",
+ "nb_mots": 2621,
+ "liens_internes": [
+  "https://fluxintelligent.com/chatbot-ia-whatsapp-maroc/",
+  "https://fluxintelligent.com/automatisation-des-processus/automatisation-administrative/",
+  "https://fluxintelligent.com/agent-ia-whatsapp-business-pme-maroc/",
+  "https://fluxintelligent.com/automatisation-des-processus/workflows-integrations-api/",
+  "https://fluxintelligent.com/automatisation-ia-pme-maroc/",
+  "https://fluxintelligent.com/automatisation-des-processus/",
+  "https://fluxintelligent.com/ia/devis/"
+ ],
+ "sources_externes": []
+}

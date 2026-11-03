@@ -1,0 +1,112 @@
+<!-- wp:freeform -->
+<p><strong>En bref :</strong> un échec de livraison coûte deux fois : un passage de livreur pour rien, puis un nouveau passage ou un retour au dépôt. Au Maroc, une bonne partie de ces échecs vient de situations simples : client absent, téléphone éteint, adresse imprécise, créneau qui ne convient pas. Ce guide explique comment déclencher un message WhatsApp dès que le livreur signale l'échec, proposer un nouveau créneau ou un point relais, comprendre les réponses libres du client (en darija ou en français) et enregistrer le motif réel de l'échec. Il s'adresse aux sociétés de livraison comme aux boutiques en ligne qui gèrent leurs propres livreurs ou travaillent avec un transporteur.</p>
+
+<h2>Échec de livraison colis : ce qui se passe vraiment après un client absent</h2>
+<p>Dans beaucoup d'organisations, le circuit après un échec est le suivant. Le livreur appelle le client une ou deux fois, sans réponse. Il note « absent » ou « injoignable » dans son application ou sur sa feuille de route. Le colis revient au dépôt. Le lendemain, quelqu'un rappelle le client, s'il a le temps. Si personne ne rappelle, le colis reste en attente puis repart en retour vers l'expéditeur.</p>
+<p>Ce circuit pose plusieurs problèmes :</p>
+<ul>
+<li>le client ne sait pas toujours que le livreur est passé, ni comment reprogrammer ;</li>
+<li>le motif enregistré (« absent ») cache des causes différentes : adresse fausse, client au travail, refus, numéro erroné ;</li>
+<li>les rappels dépendent de la disponibilité du service client, souvent saturé en fin de journée ;</li>
+<li>pour une commande en paiement à la livraison, chaque jour de retard augmente le risque que le client change d'avis.</li>
+</ul>
+<p>L'objectif n'est pas de supprimer les appels. Il s'agit de contacter le client tout de suite, par le canal qu'il lit le plus, et de lui donner une solution simple à choisir.</p>
+
+<h2>Le circuit automatisé : déclencheur, message, réponse, nouveau passage</h2>
+
+<h3>1. Le déclencheur : le livreur signale l'échec</h3>
+<p>Le livreur marque la tentative comme échouée dans son application, ou le transporteur change le statut du colis. Ce changement de statut envoie un signal (webhook ou lecture régulière de l'API du transporteur) à l'outil d'automatisation. Celui-ci récupère le numéro du colis, le nom et le téléphone du client, l'adresse, la ville, le montant à payer s'il s'agit d'un envoi COD, et le motif saisi par le livreur.</p>
+
+<h3>2. Le message WhatsApp immédiat</h3>
+<p>Dans les minutes qui suivent, le client reçoit un message : « Notre livreur est passé pour votre colis et n'a pas pu vous le remettre. Choisissez une solution : nouveau passage demain matin, demain après-midi, autre adresse, ou retrait en point relais. » Le message reprend le nom de la boutique, le contenu ou la référence du colis et, si besoin, le montant à préparer.</p>
+<p>Comme le client n'a souvent pas écrit à l'entreprise dans les dernières 24 heures, ce premier message doit utiliser un modèle (template) approuvé au préalable par Meta dans WhatsApp Business. Les questions de compte, de numéro et de tarification sont détaillées dans notre article sur <a href="https://fluxintelligent.com/agent-ia-whatsapp-business-pme-maroc/">l'agent IA WhatsApp Business pour PME</a>.</p>
+
+<h3>3. La compréhension des réponses libres</h3>
+<p>Beaucoup de clients ne cliquent pas sur les boutons. Ils répondent « ghda f l3chiya », « je suis au bureau jusqu'à 18 h », « sifto l Maarif machi Ain Sebaa », « mabghitch », ou envoient une note vocale. L'IA lit ces réponses et les classe :</p>
+<ul>
+<li>nouveau créneau demandé (avec le jour et la plage horaire extraits) ;</li>
+<li>changement d'adresse ou de ville ;</li>
+<li>retrait en point relais ou au dépôt ;</li>
+<li>refus ou annulation ;</li>
+<li>question (montant, contenu du colis, identité de l'expéditeur) ;</li>
+<li>réponse ambiguë, transmise à un agent.</li>
+</ul>
+<p>Si la réponse est claire, la demande est enregistrée et le client reçoit une confirmation. Si elle ne l'est pas, l'IA ne devine pas : elle pose une question courte ou passe la conversation à une personne.</p>
+
+<h3>4. La reprogrammation et le motif d'échec enregistré</h3>
+<p>La nouvelle date, la nouvelle adresse ou le point relais choisi sont envoyés au système de gestion des tournées ou au transporteur, par API ou par export. Le motif réel de l'échec est enregistré à côté du motif saisi par le livreur : client absent mais disponible demain, adresse incomplète, mauvais numéro, refus. La veille ou le matin du nouveau passage, un rappel est envoyé au client.</p>
+<p>Si le client ne répond pas, des relances sont programmées à des heures différentes. Sans réponse après le délai que vous fixez, le colis suit votre règle habituelle : dernier appel humain, mise en attente ou retour.</p>
+
+<h2>Ce que fait l'IA et ce qui relève de l'automatisation classique</h2>
+<table>
+<thead><tr><th>Étape</th><th>Automatisation classique (règles)</th><th>IA (modèle de langage)</th></tr></thead>
+<tbody>
+<tr><td>Détection de l'échec</td><td>Changement de statut du colis</td><td>Non nécessaire</td></tr>
+<tr><td>Envoi du message</td><td>Modèle WhatsApp rempli avec les données du colis</td><td>Non nécessaire</td></tr>
+<tr><td>Réponse par bouton</td><td>Lecture directe du choix</td><td>Non nécessaire</td></tr>
+<tr><td>Réponse libre ou note vocale</td><td>Ne sait pas l'interpréter</td><td>Comprend la darija et le français, extrait date, créneau, adresse</td></tr>
+<tr><td>Questions du client</td><td>Réponses figées</td><td>Réponse à partir de vos règles, transfert si doute</td></tr>
+<tr><td>Reprogrammation et rappel</td><td>Mise à jour de la tournée, envoi programmé</td><td>Non nécessaire</td></tr>
+<tr><td>Motif d'échec</td><td>Motif saisi par le livreur</td><td>Motif déduit de la conversation, à valider</td></tr>
+</tbody>
+</table>
+<p>L'IA intervient sur un point précis : comprendre ce que le client a voulu dire. Les envois, les relances et les mises à jour suivent des règles que vous fixez. Pour comprendre la différence entre un simple chatbot et un agent qui agit dans vos outils, voir notre article <a href="https://fluxintelligent.com/chatbot-ia-whatsapp-maroc/">chatbot ou agent IA sur WhatsApp</a>.</p>
+
+<h2>Exemples de messages après un échec de livraison</h2>
+<p>Les messages doivent être courts, polis et donner un choix clair. Exemples à adapter :</p>
+<ul>
+<li><strong>Après l'échec</strong> : « Bonjour [prénom], notre livreur est passé aujourd'hui pour votre colis [référence] sans pouvoir vous le remettre. Quand souhaitez-vous être livré ? Répondez simplement ici. »</li>
+<li><strong>Confirmation</strong> : « C'est noté : nouveau passage demain entre 14 h et 18 h à [adresse]. Montant à préparer : [montant] DH. »</li>
+<li><strong>Relance sans réponse</strong> : « Votre colis [référence] est toujours en attente. Sans réponse de votre part, il sera retourné à l'expéditeur. Souhaitez-vous une nouvelle livraison ? »</li>
+<li><strong>Rappel le jour du passage</strong> : « Votre colis arrive aujourd'hui. Le livreur vous appellera avant de passer. »</li>
+</ul>
+<p>Ces messages peuvent être proposés en français, en darija ou en arabe selon la langue du client. Notre page sur les <a href="https://fluxintelligent.com/chatbots-experience-client/chatbots-multilingues-service-client-maroc/">chatbots multilingues pour le service client</a> détaille cette partie.</p>
+
+<h2>Intégrations et prérequis</h2>
+<ul>
+<li><strong>Statuts des colis</strong> : accès à l'application des livreurs, au logiciel de gestion des tournées ou à l'API du transporteur.</li>
+<li><strong>WhatsApp Business Platform</strong> : un numéro dédié, un compte vérifié et des modèles de messages approuvés.</li>
+<li><strong>Règles écrites</strong> : créneaux disponibles par ville, nombre maximum de tentatives, délai avant retour, liste des points relais.</li>
+<li><strong>Un outil d'orchestration</strong> : n8n, Make ou un développement sur mesure pour relier les statuts, WhatsApp et la planification. Voir notre page sur <a href="https://fluxintelligent.com/automatisation-des-processus/workflows-integrations-api/">les workflows et intégrations API</a>.</li>
+<li><strong>Côté boutique</strong> : la mise à jour du statut de la commande, pour que le service client voie la même information.</li>
+</ul>
+<p>Pour une boutique en ligne, ce circuit complète la confirmation avant expédition : la confirmation réduit les commandes douteuses, la reprogrammation récupère une partie des colis déjà en route. Notre guide sur <a href="https://fluxintelligent.com/ecommerce-automatise-ia/">l'e-commerce automatisé avec l'IA</a> présente l'ensemble.</p>
+
+<h2>Limites et ce qui reste humain</h2>
+<ul>
+<li>Un numéro faux ou éteint ne peut pas être joint par WhatsApp. Ces colis restent traités par appel ou retournés selon vos règles.</li>
+<li>Les clients qui ne lisent pas WhatsApp existent. Un appel humain ou un <a href="https://fluxintelligent.com/chatbots-experience-client/agent-vocal-ia/">agent vocal</a> peut prendre le relais pour ceux qui ne répondent pas.</li>
+<li>La compréhension des adresses dictées reste imparfaite. Une nouvelle adresse doit être confirmée au client avant d'être envoyée au livreur.</li>
+<li>Un refus clair n'est pas à « convaincre » : il est enregistré et le retour est déclenché.</li>
+<li>Les messages doivent rester liés à la livraison. Les données de contact sont des données personnelles : leur usage est encadré au Maroc par la loi 09-08 et le contrôle de la CNDP. Ne les utilisez pas pour de la prospection sans base légale.</li>
+<li>La décision sur les cas particuliers (client difficile, colis de valeur, réclamation) reste humaine.</li>
+</ul>
+
+<h2>Indicateurs à suivre</h2>
+<ul>
+<li>part des échecs de livraison suivis d'une reprogrammation ;</li>
+<li>part des colis livrés au deuxième passage ;</li>
+<li>délai entre l'échec et la réponse du client ;</li>
+<li>répartition des motifs réels d'échec (absent, adresse, numéro, refus) ;</li>
+<li>part des conversations transférées à un agent ;</li>
+<li>nombre de colis retournés après échec.</li>
+</ul>
+<p>Ces indicateurs servent à comparer avant et après la mise en place, sur vos propres données. Aucune valeur n'est garantie à l'avance.</p>
+
+<h2>Questions fréquentes</h2>
+
+<h3>Que faire après un échec de livraison de colis ?</h3>
+<p>Côté client, il suffit de répondre au message de la société de livraison ou de la boutique en indiquant un créneau, une autre adresse ou un point de retrait. Côté entreprise, l'enjeu est de contacter le client rapidement et de lui proposer un choix simple.</p>
+
+<h3>Combien de tentatives de livraison prévoir ?</h3>
+<p>Cela dépend de votre contrat avec le transporteur ou de votre politique interne. Le nombre de tentatives, le délai avant retour et les éventuels frais doivent être écrits clairement, car l'automatisation les applique tels quels.</p>
+
+<h3>Le client peut-il répondre en darija ou par note vocale ?</h3>
+<p>Oui. L'IA comprend les réponses écrites en darija, en français ou en mélange, ainsi que les notes vocales transcrites. En cas de doute, elle pose une question ou transmet à un agent.</p>
+
+<h3>Faut-il changer de transporteur ou de logiciel de tournées ?</h3>
+<p>Non. Le circuit se branche sur les statuts que vous avez déjà, par API ou par export. Plus l'accès aux statuts est rapide, plus le message part tôt.</p>
+
+<h2>Mettre en place la reprogrammation automatique des livraisons</h2>
+<p>Si vos livreurs reviennent chaque jour avec des colis non remis, nous pouvons étudier vos statuts, vos motifs d'échec et vos règles de reprogrammation, puis construire le circuit WhatsApp adapté. Découvrez notre offre de <a href="https://fluxintelligent.com/chatbots-experience-client/chatbot-whatsapp-maroc/">chatbot WhatsApp au Maroc</a>, ou obtenez une première estimation avec notre <a href="https://fluxintelligent.com/ia/devis/">devis IA instantané</a>.</p>
+<!-- /wp:freeform -->

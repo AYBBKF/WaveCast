@@ -1,0 +1,52 @@
+{
+ "sujet": "Carnet de traçabilité agricole vocal en darija pour coopératives et exportateurs (parcelle, intrants, doses, lots, exports acheteurs et auditeurs)",
+ "type": "création",
+ "wp_id": 4503,
+ "url_prevue": "https://fluxintelligent.com/tracabilite-agricole-cooperative/",
+ "statut_wp": "future",
+ "date_prevue": "2026-12-03T09:00 heure marocaine (date_gmt envoyée et renvoyée : 2026-12-03T08:00:00 ; WordPress affiche 08:00)",
+ "requete": "traçabilité agricole maroc",
+ "editeur_surfer": 16973225,
+ "score_total": 85,
+ "score_seo": 85,
+ "score_ai_search": null,
+ "iterations": 2,
+ "media_id": null,
+ "image_locale": "img/tracabilite-agricole-cooperative.webp",
+ "alt": "Agriculteur marocain en casquette dans une serre de tomates, consultant son smartphone, avec un pulvérisateur et des caisses au sol",
+ "categories": [
+  1
+ ],
+ "tags": [
+  {
+   "id": 62,
+   "name": "Agriculture (créé)"
+  },
+  {
+   "id": 10,
+   "name": "automatisation IA PME"
+  },
+  {
+   "id": 45,
+   "name": "WhatsApp Business"
+  },
+  {
+   "id": 24,
+   "name": "chatbot darija"
+  }
+ ],
+ "excerpt": "Traçabilité agricole Maroc : un carnet vocal en darija sur WhatsApp pour suivre parcelles, intrants et lots, et sortir l'historique pour vos acheteurs.",
+ "titre": "Traçabilité agricole au Maroc : un carnet vocal en darija pour coopératives et exportateurs",
+ "nb_mots": 2431,
+ "liens_internes": [
+  "https://fluxintelligent.com/automatisation-des-processus/",
+  "https://fluxintelligent.com/automatisation-des-processus/automatisation-administrative/",
+  "https://fluxintelligent.com/automatisation-des-processus/automatisation-n8n-make/",
+  "https://fluxintelligent.com/automatisation-des-processus/workflows-integrations-api/",
+  "https://fluxintelligent.com/automatisation-ia-pme-maroc/",
+  "https://fluxintelligent.com/chatbots-experience-client/chatbot-whatsapp-maroc/",
+  "https://fluxintelligent.com/ia/devis/"
+ ],
+ "sources_externes": [],
+ "limites_ou_blocages": "Image non téléversée (consigne) : featured_media 0, à téléverser avant le 3/12 09:00 puis wp_update_post id 4503 featured_media. Score 1re itération 71 (requête exacte absente, termes sous-utilisés), 85 après ajout naturel des termes. ONSSA et GLOBALG.A.P. cités de façon générale sans affirmation réglementaire ; loi 09-08/CNDP formulation générale ; aucune source externe vérifiée citée. Rank Math non accessible (extrait = repli meta description). ai_search Surfer « unavailable ». Les fichiers intermédiaires .body.html du dossier html/ ont été supprimés pendant la session (probablement par un autre agent) ; HTML final conservé dans html/tracabilite-agricole-cooperative.html."
+}

@@ -1,0 +1,31 @@
+{
+ "sujet": "Notaires et avocats : listes de pièces par type d'acte, contrôle des documents reçus, relances, agenda des audiences et délais ; confidentialité et secret professionnel",
+ "type": "création",
+ "wp_id": 4496,
+ "url_prevue": "https://fluxintelligent.com/collecte-pieces-notaire-avocat/",
+ "statut_wp": "draft",
+ "date_prevue": "2026-12-01T09:00:00 heure marocaine (NON programmé : score Surfer non vérifié ; à programmer avec date_gmt 2026-12-01T08:00:00 une fois le score obtenu)",
+ "requete": "logiciel notaire maroc",
+ "editeur_surfer": null,
+ "score_total": null,
+ "score_seo": null,
+ "iterations": 0,
+ "media_id": null,
+ "image_locale": "/tmp/claude-0/-home-user-WaveCast/b86cf213-b51d-5352-9e9d-fc596e43dfc1/scratchpad/exec/img/collecte-pieces-notaire-avocat.webp",
+ "alt": "Main en manche bleu marine posant des documents sur une pile de chemises colorées, bureau en bois, classeurs bleus et armoire sculptée au fond",
+ "categories": [55],
+ "tags": [{"id": 9, "name": "agent IA Maroc"}, {"id": 36, "name": "Automatisation IA"}],
+ "excerpt": "Logiciel notaire Maroc : automatisez la collecte des pièces par type d'acte, le contrôle des documents, les relances et l'agenda des audiences.",
+ "titre": "Logiciel notaire au Maroc : automatiser la collecte des pièces et le suivi des dossiers",
+ "nb_mots": 1171,
+ "liens_internes": [
+  "https://fluxintelligent.com/agent-ia-avocat-maroc/",
+  "https://fluxintelligent.com/automatisation-des-processus/workflows-integrations-api/",
+  "https://fluxintelligent.com/chatbots-experience-client/prise-de-rendez-vous-ia/",
+  "https://fluxintelligent.com/agents-ia/",
+  "https://fluxintelligent.com/automatisation-des-processus/automatisation-administrative/",
+  "https://fluxintelligent.com/ia/devis/"
+ ],
+ "sources_externes": [],
+ "limites_ou_blocages": "SURFER BLOQUÉ : content_editor__create (workspace 1403832, « logiciel notaire maroc ») a renvoyé deux fois « content_editor__create failed: quota_exceeded — Content Editor quota exceeded » (12:09 et 12:15 UTC). Aucun éditeur existant pour cette requête. Article rédigé sans guidelines Surfer, enregistré en brouillon (draft). À faire : créer l'éditeur quand le quota est rétabli, soumettre html/collecte-pieces-notaire-avocat.body.html, ajuster au score 80–90, puis passer en future avec date_gmt 2026-12-01T08:00:00. Première image régénérée (logo de marque visible sur l'ordinateur portable, bras déformé au premier plan) ; image retenue sans visage complet (main et dossiers). Image non téléversée (consigne). Loi 09-08/CNDP et déontologie citées de façon générale, sans source externe ; aucune liste légale de pièces affirmée (listes définies par l'étude). Seulement 2 tags (pas de tag notaire/avocat existant, aucun créé)."
+}

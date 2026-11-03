@@ -1,0 +1,49 @@
+{
+ "sujet": "Répondre aux avis Google : classement par thème, brouillon multilingue validé par le gérant, synthèse mensuelle",
+ "type": "création",
+ "wp_id": 4502,
+ "url_prevue": "https://fluxintelligent.com/repondre-avis-google-entreprise/",
+ "statut_wp": "draft",
+ "date_prevue": "2026-11-23 (non programmé : brouillon)",
+ "requete": "répondre aux avis google",
+ "editeur_surfer": null,
+ "score_total": null,
+ "score_seo": null,
+ "score_ai_search": null,
+ "iterations": 0,
+ "media_id": null,
+ "image_locale": "/tmp/claude-0/-home-user-WaveCast/b86cf213-b51d-5352-9e9d-fc596e43dfc1/scratchpad/exec/img/repondre-avis-google-entreprise.webp",
+ "alt": "Homme aux cheveux gris lisant une tablette à une table d'un restaurant vide aux murs carrelés, une tasse et un verre de thé devant lui",
+ "categories": [
+  56
+ ],
+ "tags": [
+  {
+   "id": 42,
+   "name": "Expérience client"
+  },
+  {
+   "id": 38,
+   "name": "Service client"
+  },
+  {
+   "id": 58,
+   "name": "Restauration"
+  }
+ ],
+ "excerpt": "Répondre aux avis Google : avis classés par thème, brouillon de réponse multilingue validé par le gérant et synthèse mensuelle, sans faux avis.",
+ "titre": "Répondre aux avis Google : classer, rédiger et valider les réponses avec l'IA",
+ "nb_mots": 1640,
+ "liens_internes": [
+  "https://fluxintelligent.com/chatbots-experience-client/chatbots-multilingues-service-client-maroc/",
+  "https://fluxintelligent.com/automatisation-ia-hotel-fiabilite-technique-experience-client/",
+  "https://fluxintelligent.com/agent-ia-garage-automobile-maroc/",
+  "https://fluxintelligent.com/automatisation-ia-cafes-maroc-2025/",
+  "https://fluxintelligent.com/chatbots-experience-client/",
+  "https://fluxintelligent.com/ia/devis/"
+ ],
+ "sources_externes": [
+  "https://support.google.com/contributionpolicy/answer/7400114?hl=fr (vérifié via Firecrawl le 2026-11-03 : engagement artificiel, avis incités, sollicitation sélective interdits)"
+ ],
+ "limites_ou_blocages": "Surfer : content_editor__create a échoué avec l'erreur exacte « content_editor__create failed: quota_exceeded — Content Editor quota exceeded » (2 essais, 12:09 et 12:12 UTC). Aucun éditeur existant pour cette requête. Score non vérifiable : article créé en brouillon (draft), non programmé. À faire : créer l'éditeur quand le quota le permet, faire la boucle de score sur html/repondre-avis-google-entreprise.html, puis passer en future avec date_gmt 2026-11-23T08:00:00. Les conditions d'accès à l'API Google Business Profile n'ont pas été vérifiées : formulation générale (« dépend des conditions de Google »). Image non téléversée (consigne) : featured_media = 0, fichier optimisé à téléverser séparément. Rank Math non accessible : extrait = repli de la meta description."
+}

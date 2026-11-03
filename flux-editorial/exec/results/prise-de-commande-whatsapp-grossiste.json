@@ -1,0 +1,32 @@
+{
+ "sujet": "Prise de commande WhatsApp pour grossistes et distributeurs : messages libres et vocaux vers bon de commande ERP/Sheets, contrôle stock et prix client, récapitulatif à confirmer, commandes hors horaires",
+ "type": "création",
+ "wp_id": 4516,
+ "url_prevue": "https://fluxintelligent.com/prise-de-commande-whatsapp-grossiste/",
+ "statut_wp": "draft",
+ "date_prevue": "2026-11-07T08:00:00 GMT prévue mais NON programmée (brouillon, date WordPress = date de création 2026-11-03T12:26:32)",
+ "requete": "prise de commande whatsapp",
+ "editeur_surfer": null,
+ "score_total": null,
+ "score_seo": null,
+ "score_ai_search": null,
+ "iterations": 0,
+ "media_id": null,
+ "image_locale": "/tmp/claude-0/-home-user-WaveCast/b86cf213-b51d-5352-9e9d-fc596e43dfc1/scratchpad/exec/img/prise-de-commande-whatsapp-grossiste.webp",
+ "alt": "Responsable d'entrepôt en gilet orange consultant son smartphone entre des rayonnages de cartons et de bouteilles, un manutentionnaire au fond",
+ "categories": [56],
+ "tags": [{"id": 45, "name": "WhatsApp Business"}, {"id": 24, "name": "chatbot darija"}, {"id": 11, "name": "PME Maroc"}],
+ "excerpt": "Prise de commande WhatsApp pour grossistes : messages libres et vocaux transformés en bon de commande, contrôle du stock et du prix client, récapitulatif.",
+ "titre": "Prise de commande WhatsApp : automatiser les commandes des grossistes et distributeurs",
+ "nb_mots": 1574,
+ "liens_internes": [
+  "https://fluxintelligent.com/automatisation-des-processus/workflows-integrations-api/",
+  "https://fluxintelligent.com/chatbot-ia-whatsapp-maroc/",
+  "https://fluxintelligent.com/agent-ia-whatsapp-business-pme-maroc/",
+  "https://fluxintelligent.com/agents-ia/agent-ia-commercial/",
+  "https://fluxintelligent.com/chatbots-experience-client/chatbot-whatsapp-maroc/",
+  "https://fluxintelligent.com/ia/devis/"
+ ],
+ "sources_externes": [],
+ "limites_ou_blocages": "BLOQUÉ SURFER : content_editor__create a échoué 4 fois (12:09, 12:10, 12:21, 12:25 UTC) avec « content_editor__create failed: quota_exceeded — Content Editor quota exceeded ». Aucun éditeur, aucun score : article enregistré en BROUILLON (non programmé), conformément au §6. À faire : quand un crédit Surfer sera disponible, créer l'éditeur (mot-clé « prise de commande whatsapp », Morocco, mobile, idempotency_key prise-de-commande-whatsapp-grossiste), coller html/prise-de-commande-whatsapp-grossiste.html (sans wrapper), ajuster jusqu'à 80–90, puis wp_update_post 4516 status future + date_gmt 2026-11-07T08:00:00. Rédigé sans guidelines Surfer (pas de PAA). Image : 2e génération rejetée (pseudo-texte sur les sacs), 1re conservée (elle montre des bouteilles sombres ambiguës, à vérifier). Exemple de conversation annoncé comme illustratif. Image non téléversée (consigne)."
+}

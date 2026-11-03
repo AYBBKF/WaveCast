@@ -1,0 +1,46 @@
+{
+ "sujet": "Suivi des mandats vendeurs : comptes rendus de visite dictés, points réguliers, alertes de fin de mandat, renouvellement",
+ "type": "création",
+ "wp_id": 4507,
+ "url_prevue": "https://fluxintelligent.com/suivi-mandats-immobiliers/",
+ "statut_wp": "draft",
+ "date_prevue": "2026-11-24 (non programmé : brouillon)",
+ "requete": "suivi des mandats immobiliers",
+ "editeur_surfer": null,
+ "score_total": null,
+ "score_seo": null,
+ "score_ai_search": null,
+ "iterations": 0,
+ "media_id": null,
+ "image_locale": "/tmp/claude-0/-home-user-WaveCast/b86cf213-b51d-5352-9e9d-fc596e43dfc1/scratchpad/exec/img/suivi-mandats-immobiliers.webp",
+ "alt": "Agent immobilier en blazer tenant un dossier et un téléphone face à deux femmes dans le salon lumineux d'un appartement",
+ "categories": [
+  30
+ ],
+ "tags": [
+  {
+   "id": 31,
+   "name": "IA immobilier"
+  },
+  {
+   "id": 13,
+   "name": "CRM automatisé"
+  },
+  {
+   "id": 8,
+   "name": "automatisation CRM Maroc"
+  }
+ ],
+ "excerpt": "Suivi des mandats immobiliers : comptes rendus de visite envoyés au vendeur, relances, alertes avant la fin du mandat et bilan pour le renouvellement.",
+ "titre": "Suivi des mandats immobiliers : informer les vendeurs et préparer les renouvellements",
+ "nb_mots": 1523,
+ "liens_internes": [
+  "https://fluxintelligent.com/crm-ventes-marketing-ia/crm-automation-maroc/",
+  "https://fluxintelligent.com/chatbots-experience-client/prise-de-rendez-vous-ia/",
+  "https://fluxintelligent.com/ia-pour-immobilier-au-maroc-automatiser-la-gestion-des-leads-et-des-visites-en-2026/",
+  "https://fluxintelligent.com/crm-ventes-marketing-ia/",
+  "https://fluxintelligent.com/ia/devis/"
+ ],
+ "sources_externes": [],
+ "limites_ou_blocages": "Surfer : content_editor__create a échoué avec l'erreur exacte « content_editor__create failed: quota_exceeded — Content Editor quota exceeded » (2 essais, 12:09 et 12:12 UTC). Aucun éditeur existant pour cette requête. Score non vérifiable : article créé en brouillon (draft), non programmé. À faire : créer l'éditeur quand le quota le permet, faire la boucle de score sur html/suivi-mandats-immobiliers.html, puis passer en future avec date_gmt 2026-11-24T08:00:00. Seulement 5 liens internes (minimum 4 respecté). Lien vers l'article leads acheteurs (/ia-pour-immobilier-au-maroc-...), supposé être 3815. Aucune règle juridique sur les mandats affirmée ; loi 09-08/CNDP citée de façon générale. Image non téléversée (consigne) : featured_media = 0, fichier optimisé à téléverser séparément. Rank Math non accessible : extrait = repli de la meta description."
+}

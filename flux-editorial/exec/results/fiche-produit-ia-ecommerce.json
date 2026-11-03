@@ -1,0 +1,31 @@
+{
+ "sujet": "Fiches produits bilingues FR/AR générées par IA à partir de photos, import en brouillon, relecture humaine obligatoire",
+ "type": "création",
+ "wp_id": 4493,
+ "url_prevue": "https://fluxintelligent.com/fiche-produit-ia-ecommerce/",
+ "statut_wp": "draft",
+ "date_prevue": "2026-11-30T09:00:00 heure marocaine (NON programmé : score Surfer non vérifié ; à programmer avec date_gmt 2026-11-30T08:00:00 une fois le score obtenu)",
+ "requete": "fiche produit ia",
+ "editeur_surfer": null,
+ "score_total": null,
+ "score_seo": null,
+ "iterations": 0,
+ "media_id": null,
+ "image_locale": "/tmp/claude-0/-home-user-WaveCast/b86cf213-b51d-5352-9e9d-fc596e43dfc1/scratchpad/exec/img/fiche-produit-ia-ecommerce.webp",
+ "alt": "Jeune femme photographiant un sac en cuir et une poterie avec un smartphone sur trépied, ordinateur portable et paniers tressés autour d'elle",
+ "categories": [1],
+ "tags": [{"id": 37, "name": "E-commerce Maroc"}, {"id": 36, "name": "Automatisation IA"}, {"id": 11, "name": "PME Maroc"}],
+ "excerpt": "Fiche produit IA pour boutiques au Maroc : descriptions FR et AR générées à partir des photos, import en brouillon et relecture humaine avant publication.",
+ "titre": "Fiche produit IA : créer des fiches bilingues FR/AR à partir de vos photos",
+ "nb_mots": 1158,
+ "liens_internes": [
+  "https://fluxintelligent.com/chatbots-experience-client/chatbots-multilingues-service-client-maroc/",
+  "https://fluxintelligent.com/automatisation-des-processus/workflows-integrations-api/",
+  "https://fluxintelligent.com/ecommerce-automatise-ia/",
+  "https://fluxintelligent.com/automatisation-des-processus/",
+  "https://fluxintelligent.com/comparer-devis-automatisation-ia-maroc/",
+  "https://fluxintelligent.com/ia/devis/"
+ ],
+ "sources_externes": [],
+ "limites_ou_blocages": "SURFER BLOQUÉ : content_editor__create (workspace 1403832, « fiche produit ia ») a renvoyé deux fois « content_editor__create failed: quota_exceeded — Content Editor quota exceeded » (12:09 et 12:13 UTC). Aucun éditeur existant pour cette requête (content_editor__list vérifié). Article rédigé sans guidelines Surfer, enregistré en brouillon WordPress (draft) conformément au SPEC. À faire : créer l'éditeur quand le quota est rétabli, soumettre html/fiche-produit-ia-ecommerce.body.html, ajuster au score 80–90, puis passer en future avec date_gmt 2026-11-30T08:00:00. Image non téléversée (consigne). Rank Math non accessible. Mention YouCan CSV formulée « selon leurs options » (non vérifiée)."
+}

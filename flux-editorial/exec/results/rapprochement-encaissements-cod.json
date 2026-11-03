@@ -1,0 +1,48 @@
+{
+ "sujet": "Rapprocher les virements COD du transporteur commande par commande (écarts, réclamation)",
+ "type": "création",
+ "wp_id": 4498,
+ "url_prevue": "https://fluxintelligent.com/rapprochement-encaissements-cod/",
+ "statut_wp": "future",
+ "date_prevue": "2026-11-21T09:00:00 heure du Maroc (date_gmt envoyée 2026-11-21T08:00:00)",
+ "requete": "encaissement cod maroc",
+ "editeur_surfer": 16973223,
+ "score_total": 80,
+ "score_seo": 80,
+ "score_ai_search": null,
+ "iterations": 2,
+ "media_id": null,
+ "image_locale": "/tmp/claude-0/-home-user-WaveCast/b86cf213-b51d-5352-9e9d-fc596e43dfc1/scratchpad/exec/img/rapprochement-encaissements-cod.webp",
+ "alt": "Jeune femme en hijab et lunettes travaillant sur un ordinateur portable dans une réserve, devant des étagères chargées de cartons",
+ "categories": [
+  1
+ ],
+ "tags": [
+  {
+   "id": 37,
+   "name": "E-commerce Maroc"
+  },
+  {
+   "id": 32,
+   "name": "automatisation Maroc"
+  },
+  {
+   "id": 36,
+   "name": "Automatisation IA"
+  }
+ ],
+ "excerpt": "Encaissement COD Maroc : rapprochez chaque virement du transporteur avec vos commandes, détectez les colis livrés non payés et préparez la réclamation.",
+ "titre": "Encaissement COD au Maroc : rapprocher les virements du transporteur commande par commande",
+ "nb_mots": 2271,
+ "liens_internes": [
+  "https://fluxintelligent.com/automatisation-des-processus/automatisation-n8n-make/",
+  "https://fluxintelligent.com/automatisation-des-processus/workflows-integrations-api/",
+  "https://fluxintelligent.com/agent-ia-comptable-maroc/",
+  "https://fluxintelligent.com/automatisation-factures-ia-maroc/",
+  "https://fluxintelligent.com/ecommerce-automatise-ia/",
+  "https://fluxintelligent.com/automatisation-des-processus/",
+  "https://fluxintelligent.com/ia/devis/"
+ ],
+ "sources_externes": [],
+ "limites_ou_blocages": "Score Surfer 62 à la 1re itération, 80 à la 2e (après ajout des termes manquants : définition du COD, COD et paiement en ligne, étape de confirmation, titres). ai_search « unavailable ». Article plus long que la cible Surfer (environ 2270 mots pour 1561 conseillés). Première image régénérée (pseudo-texte lisible « Excomnet » sur un document). Exemple chiffré annoncé comme illustratif. L'article de confirmation COD (4486, programmé) n'est pas lié. date_gmt renvoyée 2026-11-21T08:00:00 (WordPress affiche aussi date 08:00). Image non téléversée (consigne) : featured_media = 0, fichier optimisé à téléverser séparément. Rank Math non accessible : extrait = repli de la meta description."
+}

@@ -1,0 +1,140 @@
+<!-- wp:freeform -->
+<p><strong>En bref :</strong> en paiement à la livraison, l'argent ne vous arrive pas au moment de la vente. Le livreur encaisse le client, puis le transporteur vous reverse un montant global, après déduction de ses frais, avec un relevé plus ou moins détaillé. Entre les commandes livrées, les retours, les frais et les virements groupés, il devient vite difficile de savoir ce qui a vraiment été payé. Ce guide explique comment rapprocher automatiquement chaque virement du transporteur avec vos commandes, une par une, repérer les écarts (livré non payé, retour non reçu, frais incohérents) et préparer la réclamation. Il précise aussi ce que fait l'IA, ce qui reste une règle simple, et ce que votre équipe garde en main.</p>
+
+<h2>Encaissement COD Maroc : où se perd l'argent entre le colis livré et le virement</h2>
+<p>Le COD (cash on delivery, ou paiement à la livraison) reste très répandu dans l'e-commerce au Maroc. Il rassure le client, qui paie seulement quand il a le colis en main. Pour le marchand, il crée en revanche un décalage : la vente est faite, mais le montant transite par le livreur, puis par la société de livraison, avant d'arriver sur votre compte.</p>
+<h2>Qu'est-ce que le COD et pourquoi l'encaissement n'est pas immédiat</h2>
+<p>Le cash on delivery (COD) est un mode de paiement où le client règle sa commande au moment de la livraison, le plus souvent en espèces. Pour l'e-commerce au Maroc, le COD est souvent la condition de la vente : beaucoup d'acheteurs veulent voir le produit avant de payer. De nombreuses boutiques en ligne au Maroc proposent donc les deux : paiement à la livraison et paiement en ligne par carte.</p>
+<p>Mais le COD n'est pas un encaissement immédiat. Avec le paiement en ligne, chaque transaction arrive avec sa propre référence. Avec la livraison COD au Maroc, le cash passe par le livreur puis par la société de livraison avant d'arriver sur votre compte. Le chiffre d'affaires affiché sur votre boutique n'est donc pas votre trésorerie : entre les deux, il y a des colis en cours, des retours et des frais. Pour le marchand, le COD est un mode de paiement simple côté client, mais exigeant côté suivi.</p>
+<h2>Les écarts qui passent inaperçus quand on vend en COD</h2>
+<p>Tant que le volume est faible, on vérifie à la main. Au-delà de quelques dizaines de commandes par semaine, le contrôle devient approximatif. On regarde si le virement « a l'air correct », sans le comparer commande par commande. Les problèmes typiques :</p>
+<ul>
+<li>un colis marqué livré dans le suivi, mais absent du relevé de paiement ;</li>
+<li>un colis retourné facturé comme livraison, ou un retour annoncé mais jamais reçu au dépôt ;</li>
+<li>des frais de livraison ou de retour qui ne correspondent pas à la grille de votre contrat ;</li>
+<li>un montant encaissé différent du montant de la commande (remise accordée au livreur, erreur de saisie, changement de produit) ;</li>
+<li>plusieurs transporteurs, chacun avec son format de relevé, ses délais de reversement et ses références.</li>
+</ul>
+<p>Chacun de ces écarts est petit. Le problème est qu'ils s'accumulent sans que personne ne les voie, et que plus on attend, plus la réclamation est difficile à faire aboutir.</p>
+
+<h2>Comment fonctionne le paiement à la livraison en e-commerce, côté trésorerie</h2>
+<p>Le circuit varie selon le transporteur et votre contrat, mais il suit en général les mêmes étapes :</p>
+<ol>
+<li><strong>La commande est créée</strong> dans votre boutique (Shopify, YouCan, WooCommerce ou autre), puis confirmée et transmise au transporteur.</li>
+<li><strong>Le livreur remet le colis</strong> et collecte le montant au moment de la livraison. Si le client refuse ou reste injoignable, la livraison est marquée en échec et le colis passe en retour.</li>
+<li><strong>Le transporteur regroupe le cash collecté</strong> sur une période et vous verse un montant net : total encaissé moins les frais de livraison, de retour et éventuellement d'autres frais prévus au contrat pour les envois COD.</li>
+<li><strong>Vous recevez un relevé</strong> (fichier Excel, PDF ou export depuis l'espace client) et un virement bancaire, parfois à des dates différentes.</li>
+</ol>
+<p>Le point délicat est l'étape 4. Un seul virement couvre des dizaines ou des centaines de commandes COD. Pour savoir si le compte est juste, il faut reconstituer, pour chaque commande, le montant attendu et le comparer au montant reversé.</p>
+
+<h2>Les écarts à détecter commande par commande</h2>
+<p>Voici les situations que le rapprochement doit faire ressortir, avec l'action qui suit.</p>
+<table>
+<thead><tr><th>Écart</th><th>Comment on le repère</th><th>Action</th></tr></thead>
+<tbody>
+<tr><td>Livré non payé</td><td>Statut « livré » chez le transporteur, absent du relevé de paiement après le délai habituel</td><td>Ajout à la réclamation avec la date de livraison</td></tr>
+<tr><td>Montant différent</td><td>Montant encaissé inférieur au montant de la commande</td><td>Vérification de la commande (remise, modification), puis réclamation si besoin</td></tr>
+<tr><td>Retour non reçu</td><td>Statut « retourné » chez le transporteur, colis non enregistré à votre réception</td><td>Demande de localisation du colis</td></tr>
+<tr><td>Retour payé comme livré, ou l'inverse</td><td>Statut du relevé contraire au suivi</td><td>Correction demandée au transporteur</td></tr>
+<tr><td>Frais incohérents</td><td>Frais différents de la grille du contrat pour la ville ou le type d'envoi</td><td>Contestation ligne par ligne</td></tr>
+<tr><td>Doublon</td><td>Même commande présente deux fois, ou deux colis pour une commande</td><td>Vérification avant tout paiement ou réclamation</td></tr>
+<tr><td>Virement manquant</td><td>Relevé reçu sans virement correspondant sur le compte bancaire</td><td>Relance du transporteur</td></tr>
+</tbody>
+</table>
+
+<h2>Le rapprochement automatique des encaissements COD : déclencheur, traitement, résultat</h2>
+
+<h3>1. Le déclencheur : un relevé ou un virement arrive</h3>
+<p>Le transporteur envoie son relevé par e-mail, le dépose dans son espace client ou le met à disposition par API. L'automatisation récupère le fichier dès son arrivée : lecture de la boîte e-mail dédiée, téléchargement planifié depuis l'espace client quand c'est possible, ou appel à l'API. De la même façon, les mouvements du compte bancaire sont importés (export du relevé bancaire ou fichier transmis par la banque).</p>
+
+<h3>2. La lecture du relevé</h3>
+<p>Si le relevé est un fichier structuré (Excel ou CSV), il est lu directement. S'il s'agit d'un PDF ou d'un format qui change d'un transporteur à l'autre, l'IA extrait les lignes : référence du colis, numéro de commande, ville, statut, montant collecté, frais. Chaque ligne est ramenée dans un format commun, quel que soit le transporteur.</p>
+
+<h3>3. Le rapprochement avec le fichier des commandes</h3>
+<p>Chaque ligne est associée à une commande de votre boutique, par le numéro de suivi ou la référence. Si le client a payé un montant différent, ou si une commande COD apparaît deux fois, la ligne est marquée. Le système compare ensuite le montant attendu de la commande, le montant collecté, les frais appliqués et le statut. Il calcule le montant net attendu pour la période et le compare au virement bancaire reçu.</p>
+
+<h3>4. Le résultat : un état clair et une réclamation prête</h3>
+<p>Chaque commande reçoit un statut : payée et conforme, payée avec écart, livrée non payée, retour à recevoir, retour reçu. Les écarts sont regroupés dans une réclamation prête à envoyer au transporteur, avec les références, les dates et les montants. Votre équipe relit, complète si besoin et envoie. Le statut de paiement peut aussi être mis à jour dans la boutique ou dans votre fichier de suivi.</p>
+
+<h2>Ce que fait l'IA et ce qui relève de l'automatisation classique</h2>
+<table>
+<thead><tr><th>Tâche</th><th>Automatisation classique (règles)</th><th>IA</th></tr></thead>
+<tbody>
+<tr><td>Récupérer les relevés et l'export bancaire</td><td>Oui</td><td>Non nécessaire</td></tr>
+<tr><td>Lire un fichier Excel ou CSV stable</td><td>Oui</td><td>Non nécessaire</td></tr>
+<tr><td>Lire un PDF ou un format qui change</td><td>Difficile</td><td>Extrait les lignes et les champs</td></tr>
+<tr><td>Associer un colis à une commande</td><td>Oui, par référence exacte</td><td>Aide quand la référence est incomplète ou mal saisie, avec validation</td></tr>
+<tr><td>Comparer montants, frais et statuts</td><td>Oui</td><td>Non nécessaire</td></tr>
+<tr><td>Rédiger la réclamation</td><td>Modèle rempli</td><td>Formulation claire, adaptée au transporteur</td></tr>
+<tr><td>Décider de réclamer ou d'accepter un écart</td><td>Non</td><td>Non : décision humaine</td></tr>
+</tbody>
+</table>
+<p>L'essentiel du rapprochement est du calcul : il doit être exact et vérifiable. L'IA sert surtout à lire des documents hétérogènes et à rédiger, pas à décider à votre place.</p>
+
+<h2>Exemple de rapprochement d'un virement</h2>
+<p>L'exemple suivant est illustratif. Les montants sont choisis pour rendre le calcul lisible, ils ne viennent pas d'un client.</p>
+<p>Un relevé couvre 5 commandes de 300 DH chacune. Hypothèse de contrat : 30 DH de frais par colis livré, 20 DH par retour.</p>
+<ul>
+<li>4 colis sont marqués livrés dans le suivi, 1 est en retour.</li>
+<li>Le relevé ne mentionne que 3 colis livrés payés et le retour.</li>
+<li>Montant net attendu : 4 × (300 − 30) − 20 = 1 060 DH.</li>
+<li>Montant net reversé : 3 × (300 − 30) − 20 = 790 DH.</li>
+<li>Écart : 270 DH, qui correspond exactement à la quatrième commande livrée non payée.</li>
+</ul>
+<p>Sans rapprochement ligne par ligne, on voit un virement de 790 DH et on passe à autre chose. Avec le rapprochement, la commande manquante est identifiée, avec sa date de livraison, et ajoutée à la réclamation.</p>
+
+<h2>Intégrations et prérequis</h2>
+<ul>
+<li><strong>Boutique</strong> : accès aux commandes (API Shopify, YouCan, WooCommerce) ou export régulier.</li>
+<li><strong>Transporteurs</strong> : relevés de paiement et statuts de suivi, par API, export ou e-mail. Plus le format est stable, plus le rapprochement est simple.</li>
+<li><strong>Banque</strong> : export des mouvements du compte qui reçoit les virements.</li>
+<li><strong>Grille tarifaire</strong> : les frais prévus par votre contrat, par ville ou par type d'envoi, pour contrôler les frais facturés.</li>
+<li><strong>Une référence commune</strong> : le numéro de suivi ou de commande doit être transmis au transporteur à chaque envoi.</li>
+<li><strong>Un outil d'orchestration</strong> : n8n ou Make relie ces sources et stocke les résultats dans un Google Sheets, une base de données ou votre outil de gestion. Voir notre page sur <a href="https://fluxintelligent.com/automatisation-des-processus/automatisation-n8n-make/">l'automatisation avec n8n et Make</a> et celle sur <a href="https://fluxintelligent.com/automatisation-des-processus/workflows-integrations-api/">les workflows et intégrations API</a>.</li>
+</ul>
+<p>Le rapprochement peut ensuite alimenter la comptabilité : encaissements par période, frais de livraison à comptabiliser. Notre article sur <a href="https://fluxintelligent.com/agent-ia-comptable-maroc/">l'agent IA comptable pour PME</a> détaille cette partie, et celui sur <a href="https://fluxintelligent.com/automatisation-factures-ia-maroc/">l'automatisation des factures fournisseurs</a> explique comment traiter les factures du transporteur.</p>
+
+<h2>Les limites et la part qui reste humaine</h2>
+<ul>
+<li>Le rapprochement dépend de la qualité des données du transporteur. Un statut de suivi erroné reste erroné : le système le signale, il ne le corrige pas seul.</li>
+<li>Une commande modifiée au moment de la livraison (remise, échange, produit refusé en partie) doit être enregistrée dans la boutique, sinon elle apparaîtra comme un écart.</li>
+<li>Certains transporteurs n'offrent ni API ni export stable. Il faut alors récupérer les fichiers manuellement, l'automatisation prend le relais ensuite.</li>
+<li>La décision de réclamer, d'accepter un écart ou de changer de transporteur reste celle du gérant.</li>
+<li>Le rapprochement ne remplace pas la comptabilité : il prépare des données propres pour votre comptable.</li>
+</ul>
+<h2>Avant de rapprocher : l'étape de confirmation et le suivi des colis</h2>
+<p>Le rapprochement est beaucoup plus simple quand les données de départ sont propres. Une commande COD confirmée avec le client, avec une adresse vérifiée et un numéro de suivi transmis au transporteur, se rapproche sans difficulté. À l'inverse, des commandes non confirmées produisent des retours, des frais et des lignes difficiles à expliquer sur le relevé.</p>
+<p>Le rapprochement est donc la dernière étape d'un circuit COD : message de confirmation, expédition, suivi des colis, encaissement. La confirmation et la réduction des retours sont présentées dans notre guide sur <a href="https://fluxintelligent.com/ecommerce-automatise-ia/">l'e-commerce automatisé avec l'IA</a>.</p>
+
+<h2>Indicateurs à suivre : taux de livraison, taux de retour et tableau de bord</h2>
+<ul>
+<li>montant livré non encore payé, par transporteur et par ancienneté ;</li>
+<li>délai moyen entre la livraison et le reversement ;</li>
+<li>nombre et montant des écarts par relevé ;</li>
+<li>le taux de livraison réel (colis livrés et payés par rapport aux colis expédiés) et le taux de retour, calculés sur les statuts rapprochés plutôt que sur le suivi seul ;</li>
+<li>le taux de confirmation des commandes, pour relier les retours à l'étape de confirmation ;</li>
+<li>frais de livraison et de retour réels, comparés à la grille ;</li>
+<li>montant récupéré grâce aux réclamations, et délai de traitement.</li>
+</ul>
+<p>Ces chiffres dépendent de votre activité. L'objectif est de les rendre visibles chaque semaine, pas d'atteindre une valeur fixée à l'avance.</p>
+
+<h2>Questions fréquentes</h2>
+
+<h3>Qu'est-ce que le COD et comment se passe l'encaissement ?</h3>
+<p>Le COD est le paiement à la livraison : le livreur collecte le montant de la commande auprès du client, puis le transporteur reverse ce montant au marchand, en général après déduction de ses frais et de façon groupée.</p>
+
+<h3>Le transporteur paie-t-il chaque commande séparément ?</h3>
+<p>Rarement. Le plus souvent, un virement couvre une période et plusieurs commandes, accompagné d'un relevé. C'est pour cela qu'il faut rapprocher le relevé avec les commandes, puis le virement avec le relevé.</p>
+
+<h3>Quels sont les modes de paiement au Maroc, et faut-il proposer les deux ?</h3>
+<p>Les boutiques combinent en général le paiement à la livraison, le paiement en ligne par carte et le virement. Proposer les deux modes laisse le choix au client. Le rapprochement décrit ici concerne surtout le COD, mais le même tableau de bord peut suivre le paiement en ligne pour avoir une vue complète des encaissements.</p>
+
+<h3>Faut-il changer de logiciel pour automatiser le rapprochement ?</h3>
+<p>Non. L'automatisation se connecte à votre boutique, à vos transporteurs et à votre banque, et produit un tableau de suivi. Vous gardez vos outils actuels.</p>
+
+<h3>Combien de transporteurs peut-on suivre ?</h3>
+<p>Autant que nécessaire. Chaque transporteur demande un connecteur ou un modèle de lecture de son relevé ; ensuite, toutes les lignes sont ramenées au même format.</p>
+
+<h2>Mettre en place le rapprochement de vos encaissements COD</h2>
+<p>Si vous vendez en paiement à la livraison avec un ou plusieurs transporteurs, nous pouvons étudier vos relevés actuels, vérifier ce qui peut être récupéré automatiquement et construire le rapprochement avec votre boutique. Découvrez notre offre d'<a href="https://fluxintelligent.com/automatisation-des-processus/">automatisation des processus</a>, ou obtenez une première estimation avec notre <a href="https://fluxintelligent.com/ia/devis/">devis IA instantané</a>.</p>
+<!-- /wp:freeform -->

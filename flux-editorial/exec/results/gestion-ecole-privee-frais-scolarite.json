@@ -1,0 +1,48 @@
+{
+ "sujet": "Écoles privées : recouvrement des frais de scolarité, reçus automatiques, notifications d'absence, communication WhatsApp avec les parents, connexion au logiciel scolaire existant",
+ "type": "création",
+ "wp_id": 4509,
+ "url_prevue": "https://fluxintelligent.com/gestion-ecole-privee-frais-scolarite/",
+ "statut_wp": "future",
+ "date_prevue": "2026-11-14T09:00:00 heure Maroc (date_gmt envoyée et renvoyée : 2026-11-14T08:00:00)",
+ "requete": "logiciel gestion école privée maroc",
+ "editeur_surfer": 16972321,
+ "score_total": 85,
+ "score_seo": 85,
+ "score_ai_search": null,
+ "iterations": 2,
+ "media_id": null,
+ "image_locale": "/tmp/claude-0/-home-user-WaveCast/b86cf213-b51d-5352-9e9d-fc596e43dfc1/scratchpad/exec/img/gestion-ecole-privee-frais-scolarite.webp",
+ "alt": "Femme en foulard brun consultant son smartphone devant un ordinateur portable entre des piles de cahiers, élèves avec sacs à dos dans le couloir",
+ "categories": [
+  1
+ ],
+ "tags": [
+  {
+   "id": 32,
+   "name": "automatisation Maroc"
+  },
+  {
+   "id": 45,
+   "name": "WhatsApp Business"
+  },
+  {
+   "id": 11,
+   "name": "PME Maroc"
+  }
+ ],
+ "excerpt": "Logiciel gestion école privée Maroc : automatisez la relance des frais de scolarité, les reçus, les absences et la communication avec les parents.",
+ "titre": "Logiciel de gestion d'école privée au Maroc : automatiser frais de scolarité et lien avec les parents",
+ "nb_mots": 2273,
+ "liens_internes": [
+  "https://fluxintelligent.com/chatbots-experience-client/chatbot-whatsapp-maroc/",
+  "https://fluxintelligent.com/chatbots-experience-client/chatbots-multilingues-service-client-maroc/",
+  "https://fluxintelligent.com/automatisation-des-processus/workflows-integrations-api/",
+  "https://fluxintelligent.com/agent-ia-whatsapp-business-pme-maroc/",
+  "https://fluxintelligent.com/automatisation-des-processus/",
+  "https://fluxintelligent.com/automatisation-ia-pme-maroc/",
+  "https://fluxintelligent.com/ia/devis/"
+ ],
+ "sources_externes": [],
+ "limites_ou_blocages": "Image non téléversée (consigne) : featured_media = 0 ; 1re image régénérée car logo Apple visible sur l'ordinateur. Score 68 au 1er passage, 85 après ajout d'une section « Bien choisir un logiciel de gestion scolaire au Maroc » (critères génériques, aucun éditeur cité) et de termes Surfer. Massar mentionné prudemment (système du ministère, l'automatisation ne s'y substitue pas), sans affirmation technique. Loi 09-08/CNDP de façon générale. Rank Math non accessible. ai_search « unavailable »."
+}

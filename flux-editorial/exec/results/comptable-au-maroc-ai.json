@@ -1,0 +1,38 @@
+{
+ "sujet": "Page service Automatisation comptable : ajout d'une section « Pour les cabinets comptables et fiduciaires » (collecte des pièces, rapprochement bancaire assisté) reprise du brouillon 3139",
+ "type": "page",
+ "wp_id": 4107,
+ "url_prevue": "https://fluxintelligent.com/automatisation-des-processus/comptable-au-maroc-ai/",
+ "statut_wp": "publish (inchangé, non mis à jour)",
+ "date_prevue": null,
+ "requete": "automatisation comptable maroc",
+ "editeur_surfer": null,
+ "score_total": null,
+ "score_seo": null,
+ "score_ai_search": null,
+ "iterations": 0,
+ "media_id": null,
+ "image_locale": "img/comptable-au-maroc-ai.webp",
+ "alt": "Comptable en blazer bleu marine comparant une facture papier à son ordinateur portable, dossiers et calculatrice sur un bureau en bois",
+ "categories": [],
+ "tags": [],
+ "excerpt": "Automatisation comptable au Maroc : factures, rapprochement bancaire, relances et collecte des pièces pour cabinets, connectés à votre logiciel existant.",
+ "titre": "Automatisation comptable au Maroc (inchangé)",
+ "nb_mots": 2031,
+ "liens_internes": [
+  "https://fluxintelligent.com/agent-ia-comptable-maroc/",
+  "https://fluxintelligent.com/automatisation-des-processus/",
+  "https://fluxintelligent.com/automatisation-des-processus/automatisation-administrative/",
+  "https://fluxintelligent.com/automatisation-des-processus/automatisation-n8n-make/",
+  "https://fluxintelligent.com/automatisation-des-processus/workflows-integrations-api/",
+  "https://fluxintelligent.com/automatisation-factures-ia-maroc/",
+  "https://fluxintelligent.com/automatisation-ia-agence-de-change-maroc/",
+  "https://fluxintelligent.com/crm-ventes-marketing-ia/relances-commerciales-automatisees/",
+  "https://fluxintelligent.com/ia/contact/",
+  "https://fluxintelligent.com/ia/devis/"
+ ],
+ "sources_externes": [
+  "https://www.cndp.ma/ (déjà présent)"
+ ],
+ "limites_ou_blocages": "Surfer content_editor__create refusé : « content_editor__create failed: quota_exceeded — Content Editor quota exceeded » (deux essais, 12:10 et 12:16 UTC). Aucun score vérifiable, donc AUCUNE écriture WordPress (règle 80–90). Format Gutenberg conservé (blocs paragraph/heading/list/html, template page-templates/service.php, parent 4009) : html/comptable-au-maroc-ai.html = contenu brut reconstruit + nouvelle section insérée avant « Budget et délais » (section seule : html/4107-section-cabinets.html ; brut reconstruit sans ajout : html/4107-raw-reconstruit.html, à recomparer au raw de wp_get_page context edit avant écriture). Reste de la page non modifié ; FAQ et JSON-LD inchangés. Repris du brouillon 3139 : collecte e-mail/Drive/dossiers partagés, classement, pièces manquantes, contrôles, assistant IA de réponse ; écartés : « prototype en 2 à 4 semaines » (non vérifié), conseils SEO internes, liste d'outils, images. Lien préexistant hors liste §3 (/automatisation-ia-agence-de-change-maroc/, répond 200) laissé en place. Lien vers l'article 15 (cabinet comptable, programmé 18/11) non ajouté. Image générée non téléversée (règle §5), featured_media reste 0. Sauvegarde : backup/4107.json."
+}
