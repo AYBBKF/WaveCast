@@ -1,0 +1,43 @@
+{
+  "post_id": 3828,
+  "url": "https://fluxintelligent.com/automatisation-ia-hotel-fiabilite-technique-experience-client/",
+  "date": "2026-11-03",
+  "surfer": {
+    "workspace_id": 1403832,
+    "content_editor_id": 16973226,
+    "iterations": 1,
+    "seo_score": 83,
+    "total_score": 83,
+    "status": "ready",
+    "calculated_at": "2026-11-03T13:36:54Z"
+  },
+  "backups": [
+    "backup/3828-avant-xtremehd.json",
+    "backup/3288-original.json"
+  ],
+  "lien_retire": "https://xtremehd.fr/iptv-qui-coupe-ou-freeze-diagnostic-solutions/",
+  "reecriture": [
+    "Section 'Le point aveugle' : paragraphe xtremehd (avec seuils Mbps issus de ce site) remplacé par une méthode de diagnostic générique (débit depuis TV/box, test 4G, comparaison filaire) ; 'système IPTV' remplacé par 'télévision connectée ou box fournie par l'établissement'",
+    "Checklist : 'applications de streaming ou IPTV' remplacé par 'applications de télévision et de streaming installées sur les téléviseurs ou les box'",
+    "FAQ 'Faut-il être un expert technique...' (renvoyait au guide xtremehd) supprimée, son contenu intégré dans la section 'Le point aveugle'"
+  ],
+  "passages_repris_de_3288": [
+    "Autres acteurs du tourisme (agences, organisateurs d'excursions, services de transfert) : section 'Le cas marocain'",
+    "Indicateur : nombre de demandes de réservation qualifiées transmises à l'équipe",
+    "Par où commencer : choisir le canal principal (WhatsApp ou site web) ; relier le canal au PMS, au CRM ou à un tableau de suivi",
+    "FAQ 'L'IA remplace-t-elle la réception ?'",
+    "FAQ 'Comment l'IA est-elle utilisée' : réponses en français, anglais, arabe et autres langues selon le contenu validé"
+  ],
+  "verifications": {
+    "raw_local_vs_en_ligne_avant_edition": "freeform identique ; le bloc wp:html breadcrumb existait en ligne mais pas dans le fichier local, il a été conservé",
+    "raw_apres_update_identique_au_fichier": true,
+    "http_code": 200,
+    "grep_c_xtremehd": 0,
+    "grep_ci_iptv": 0,
+    "liens_sortants_externes": 0,
+    "structure": "1 bloc wp:freeform + 1 bloc wp:html breadcrumb",
+    "date_et_statut_inchanges": "publish, date 2026-08-10T12:32:40",
+    "post_3288": "non modifié, toujours en ligne (200)"
+  },
+  "non_fait": "Redirection 301 3288 -> 3828 (pas d'accès Rank Math)"
+}
