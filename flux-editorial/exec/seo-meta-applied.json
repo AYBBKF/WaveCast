@@ -1,0 +1,135 @@
+{
+ "3162": {
+  "title": "Logiciel transport marchandises : BL, suivi et facturation",
+  "len": 58,
+  "desc_len": 150,
+  "kw": "logiciel transport marchandises",
+  "resp": "{\"slug\":true,\"schemas\":[]}"
+ },
+ "4489": {
+  "title": "IA immobilier Maroc : agent IA pour agences et promoteurs",
+  "len": 57,
+  "desc_len": 150,
+  "kw": "ia immobilier maroc",
+  "resp": "{\"slug\":true,\"schemas\":[]}"
+ },
+ "4486": {
+  "title": "Confirmation commande e-commerce Maroc : COD par WhatsApp",
+  "len": 57,
+  "desc_len": 152,
+  "kw": "confirmation commande e-commerce maroc",
+  "resp": "{\"slug\":true,\"schemas\":[]}"
+ },
+ "4506": {
+  "title": "Relance facture impayée : recouvrement automatisé au Maroc",
+  "len": 58,
+  "desc_len": 155,
+  "kw": "relance facture impayée",
+  "resp": "{\"slug\":true,\"schemas\":[]}"
+ },
+ "4512": {
+  "title": "Logiciel gestion centre de formation Maroc : automatiser",
+  "len": 56,
+  "desc_len": 153,
+  "kw": "logiciel gestion centre de formation maroc",
+  "resp": "{\"slug\":true,\"schemas\":[]}"
+ },
+ "4490": {
+  "title": "Calcul food cost restaurant : méthode et suivi des prix",
+  "len": 55,
+  "desc_len": 146,
+  "kw": "calcul food cost restaurant",
+  "resp": "{\"slug\":true,\"schemas\":[]}"
+ },
+ "4497": {
+  "title": "Logiciel devis bâtiment Maroc : devis, situations, chantier",
+  "len": 59,
+  "desc_len": 151,
+  "kw": "logiciel devis bâtiment maroc",
+  "resp": "{\"slug\":true,\"schemas\":[]}"
+ },
+ "4492": {
+  "title": "Logiciel gestion auto-école Maroc : rappels et paiements",
+  "len": 56,
+  "desc_len": 142,
+  "kw": "logiciel gestion auto école maroc",
+  "resp": "{\"slug\":true,\"schemas\":[]}"
+ },
+ "4509": {
+  "title": "Logiciel gestion école privée Maroc : frais et parents",
+  "len": 54,
+  "desc_len": 146,
+  "kw": "logiciel gestion école privée maroc",
+  "resp": "{\"slug\":true,\"schemas\":[]}"
+ },
+ "4518": {
+  "title": "Veille appels d'offres Maroc : automatiser le repérage",
+  "len": 54,
+  "desc_len": 151,
+  "kw": "veille appels d'offres maroc",
+  "resp": "{\"slug\":true,\"schemas\":[]}"
+ },
+ "4494": {
+  "title": "Logiciel location voiture Maroc : documents et contrats",
+  "len": 55,
+  "desc_len": 145,
+  "kw": "logiciel location voiture maroc",
+  "resp": "{\"slug\":true,\"schemas\":[]}"
+ },
+ "4508": {
+  "title": "Logiciel cabinet comptable Maroc : collecte des pièces",
+  "len": 54,
+  "desc_len": 145,
+  "kw": "logiciel cabinet comptable maroc",
+  "resp": "{\"slug\":true,\"schemas\":[]}"
+ },
+ "4517": {
+  "title": "Réservation hôtel WhatsApp : réservations directes au Maroc",
+  "len": 59,
+  "desc_len": 149,
+  "kw": "réservation hôtel whatsapp",
+  "resp": "{\"slug\":true,\"schemas\":[]}"
+ },
+ "4519": {
+  "title": "Prévision des ventes restaurant : produire et acheter juste",
+  "len": 59,
+  "desc_len": 147,
+  "kw": "prévision des ventes restaurant",
+  "resp": "{\"slug\":true,\"schemas\":[]}"
+ },
+ "4498": {
+  "title": "Encaissement COD Maroc : rapprocher chaque virement",
+  "len": 51,
+  "desc_len": 151,
+  "kw": "encaissement cod maroc",
+  "resp": "{\"slug\":true,\"schemas\":[]}"
+ },
+ "4505": {
+  "title": "Fidélisation salle de sport : repérer les départs, relancer",
+  "len": 59,
+  "desc_len": 155,
+  "kw": "fidélisation salle de sport",
+  "resp": "{\"slug\":true,\"schemas\":[]}"
+ },
+ "4510": {
+  "title": "Devis nettoyage bureaux : chiffrage et contrôle qualité",
+  "len": 55,
+  "desc_len": 154,
+  "kw": "devis nettoyage bureaux",
+  "resp": "{\"slug\":true,\"schemas\":[]}"
+ },
+ "4488": {
+  "title": "Carnet de crédit client : du cahier papier au téléphone",
+  "len": 55,
+  "desc_len": 145,
+  "kw": "carnet de crédit client",
+  "resp": "{\"slug\":true,\"schemas\":[]}"
+ },
+ "4503": {
+  "title": "Traçabilité agricole Maroc : carnet vocal en darija",
+  "len": 51,
+  "desc_len": 151,
+  "kw": "traçabilité agricole maroc",
+  "resp": "{\"slug\":true,\"schemas\":[]}"
+ }
+}
