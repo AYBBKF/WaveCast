@@ -61,7 +61,7 @@ Fuseau horaire : WordPress déclare Africa/Casablanca, mais avec gmt_offset 0, s
 
 - **Brouillons mis à la corbeille :** 3576 et 3814, doublons de 3569 et 3815, sauvegardés dans `draft-*.html`.
 - **Image de 4516 :** remplacée par une image d'eau en bouteilles transparentes et de jus d'orange (média 4543). L'ancienne est conservée sous le nom `-src-v1`.
-- **WP-Cron :** wp-cron.php répond en 200. Un contrôle réel est programmé le 04/11 à 09:15, heure marocaine, sur la publication de 4489.
+- **WP-Cron vérifié le 04/11 à 09:16 GMT :** la page 4489 est passée en `publish` (date et date_gmt 2026-11-04T08:00:00). La page répond en 200, son image 4536 apparaît dans le HTML public, son canonical pointe vers elle-même, et sa meta description reprend l'extrait comme prévu. Le `<title>` est le titre suivi de « - Flux Intelligent », gabarit par défaut de Rank Math.
 
 ## F. Blocages
 
