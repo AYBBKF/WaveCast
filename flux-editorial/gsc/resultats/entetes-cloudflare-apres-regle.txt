@@ -1,0 +1,11 @@
+# En-têtes Cloudflare (2026-11-16T22:48:30Z)
+passe 1 /sitemap_index.xml : Cache-Control: max-age=14400, must-revalidate Cf-Cache-Status: MISS 
+passe 1 /post-sitemap.xml : Cache-Control: max-age=14400, must-revalidate Cf-Cache-Status: MISS 
+passe 1 /page-sitemap.xml : Cache-Control: max-age=14400, must-revalidate Cf-Cache-Status: MISS 
+passe 1 /category-sitemap.xml : Cache-Control: max-age=14400, must-revalidate Cf-Cache-Status: MISS 
+passe 1 / : Cf-Cache-Status: BYPASS 
+passe 2 /sitemap_index.xml : Age: 4 Cache-Control: max-age=14400, must-revalidate Cf-Cache-Status: HIT 
+passe 2 /post-sitemap.xml : Age: 3 Cache-Control: max-age=14400, must-revalidate Cf-Cache-Status: HIT 
+passe 2 /page-sitemap.xml : Age: 2 Cache-Control: max-age=14400, must-revalidate Cf-Cache-Status: HIT 
+passe 2 /category-sitemap.xml : Age: 2 Cache-Control: max-age=14400, must-revalidate Cf-Cache-Status: HIT 
+passe 2 / : Cf-Cache-Status: BYPASS 

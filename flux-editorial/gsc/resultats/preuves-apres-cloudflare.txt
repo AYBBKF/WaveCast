@@ -1,0 +1,42 @@
+# Preuves APRÈS (2026-11-16T22:48:38Z)
+OK    4473 absente du sitemap (0)
+OK    4473 noindex inchangé (<meta name="robots" content="nofollow, noindex"/>)
+OK    301 directe /automatisation-des-factures-par-ia-au-maroc/ (301 https://fluxintelligent.com/automatisation-factures-ia-maroc/)
+OK    301 directe /automatisation-des-factures-par-ia-au-maroc (301 https://fluxintelligent.com/automatisation-factures-ia-maroc/)
+OK    factures : 1 saut, 200, destination 3569 (200 1 https://fluxintelligent.com/automatisation-factures-ia-maroc/)
+ECHEC sitemap_index.xml hors cache Cloudflare (obtenu: HIT | attendu: BYPASS|DYNAMIC)
+ECHEC post-sitemap.xml hors cache Cloudflare (obtenu: HIT | attendu: BYPASS|DYNAMIC)
+ECHEC page-sitemap.xml hors cache Cloudflare (obtenu: HIT | attendu: BYPASS|DYNAMIC)
+ECHEC category-sitemap.xml hors cache Cloudflare (obtenu: HIT | attendu: BYPASS|DYNAMIC)
+INFO  cache HTML accueil : Cf-Cache-Status: BYPASS  (relevé avant : BYPASS ou HIT selon le moment ; ne doit pas devenir systématiquement DYNAMIC)
+OK    page 4100 sans lien ia-hotels-tourisme-maroc-2026 (0)
+OK    page 4009 sans lien automatisation-entreprise-maroc (0)
+7 OK, 4 échec(s)
+Traceback (most recent call last):
+  File "/home/user/WaveCast/flux-editorial/gsc/./tests_indexation.py", line 58, in <module>
+    s, h, b = get(u)
+              ~~~^^^
+  File "/home/user/WaveCast/flux-editorial/gsc/./tests_indexation.py", line 12, in get
+    try: r = op.open(urllib.request.Request(u, headers={"User-Agent": UA}), timeout=30); return r.status, {k.lower(): v for k, v in r.headers.items()}, r.read().decode("utf-8", "replace")
+                                                                                                                                                        ~~~~~~^^
+  File "/usr/lib/python3.13/http/client.py", line 488, in read
+    return self._read_chunked(amt)
+           ~~~~~~~~~~~~~~~~~~^^^^^
+  File "/usr/lib/python3.13/http/client.py", line 621, in _read_chunked
+    while (chunk_left := self._get_chunk_left()) is not None:
+                         ~~~~~~~~~~~~~~~~~~~~^^
+  File "/usr/lib/python3.13/http/client.py", line 603, in _get_chunk_left
+    chunk_left = self._read_next_chunk_size()
+  File "/usr/lib/python3.13/http/client.py", line 554, in _read_next_chunk_size
+    line = self.fp.readline(_MAXLINE + 1)
+  File "/usr/lib/python3.13/socket.py", line 723, in readinto
+    return self._sock.recv_into(b)
+           ~~~~~~~~~~~~~~~~~~~~^^^
+  File "/usr/lib/python3.13/ssl.py", line 1315, in recv_into
+    return self.read(nbytes, buffer)
+           ~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/ssl.py", line 1149, in read
+    return self._sslobj.read(len, buffer)
+           ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+ConnectionResetError: [Errno 104] Connection reset by peer
+OK    https://fluxintelligent.com/category-sitemap.xml 200 XML

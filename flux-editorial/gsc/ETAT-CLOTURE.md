@@ -30,3 +30,12 @@
 - Exports CSV « Page en double… » et « Bloquée par robots.txt » : à analyser avec `analyse_exports_gsc.py` sur les URL réelles.
 - Ensuite seulement : inspection d'URL, « Valider la correction », nouvelle soumission de `sitemap_index.xml`, puis attente de la nouvelle exploration par Google.
 - Aucune des deux alertes n'est déclarée résolue.
+
+## E. Contrôle après la règle Cloudflare annoncée (16/11, 22:48–23:00 UTC)
+
+- **En-têtes** (`resultats/entetes-cloudflare-apres-regle.txt`) :
+  - les 4 sitemaps passent de `MISS` à `HIT` avec `Age` de 2 à 4 s : Cloudflare les **met toujours en cache**, la règle de bypass **ne s'applique pas** ;
+  - la page d'accueil reste en `BYPASS`, inchangée.
+- **`valider_cloture.sh`** : 7 OK sur 11. Les 4 échecs portent sur le cache des sitemaps.
+- **70 tests** : 67 OK sur 70. Les 3 échecs portent sur le cache des sitemaps.
+- **Incident passager** : deux exécutions des tests ont été interrompues par des coupures de connexion, et deux réponses 502 ont été observées sur `/` et `/ia/blog/`. Elles coïncident avec une coupure du tunnel de sortie relevée par le proxy de l'environnement d'exécution. Le site est revenu en 200 juste après (12 requêtes vérifiées, moins de 1 s chacune). Une erreur passagère côté origine n'est pas exclue.
