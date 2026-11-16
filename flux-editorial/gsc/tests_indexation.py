@@ -58,4 +58,21 @@ for u in urls:
     s, h, b = get(u)
     if not (s == 200 and canon(b) == [u] and "noindex" not in robots(b)): bad.append(f"{u} {s} {canon(b)} {robots(b)}")
 check(f"sitemap : {len(urls)} URL toutes 200/indexables/auto-canoniques", not bad, " ; ".join(bad))
+
+# 7. Contrôles ajoutés le 16/11 (finalisation)
+s, h, x = get(B + "/post-sitemap.xml")   # version PUBLIQUE, sans contournement du cache
+check("post-sitemap.xml public sans 3092 ni 3288", s == 200 and "automatisation-entreprise-maroc" not in x and "ia-hotels-tourisme-maroc-2026" not in x)
+for sm in ["/sitemap_index.xml", "/post-sitemap.xml", "/page-sitemap.xml"]:
+    s, h, _ = get(B + sm); cc = h.get("cache-control", "")
+    m = re.search(r"(?:s-maxage|max-age)=(\d+)", cc)
+    check(f"{sm} : durée de cache <= 3600 s (actuel : {cc or 'absent'})", ("no-cache" in cc or "no-store" in cc) or (m is not None and int(m.group(1)) <= 3600))
+s, h, _ = get(B + "/automatisation-des-factures-par-ia-au-maroc/")
+check("ancienne URL factures : 301 directe vers /automatisation-factures-ia-maroc/", s == 301 and h.get("location", "").rstrip("/") == B + "/automatisation-factures-ia-maroc", h.get("location"))
+s, h, b = get(B + "/entretien-en-ligne/")
+pm = get(B + "/page-sitemap.xml?nocache=" + str(random.randint(1, 10**9)))[2]
+check("page 4473 : noindex conservé ET absente du sitemap", "noindex" in robots(b) and B + "/entretien-en-ligne/" not in pm)
+for pid in (4100, 4009):
+    import json as _j
+    c = _j.loads(get(f"{B}/wp-json/wp/v2/pages/{pid}?_fields=content")[2])["content"]["rendered"]
+    check(f"page {pid} : aucun lien vers 3092/3288", "ia-hotels-tourisme-maroc-2026" not in c and "automatisation-entreprise-maroc" not in c)
 print(f"\n{fails} échec(s)"); sys.exit(1 if fails else 0)

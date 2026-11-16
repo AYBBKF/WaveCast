@@ -1,0 +1,72 @@
+OK    / 200 + canonical auto-référent + index
+OK    /ia/blog/ 200 + canonical auto-référent + index
+OK    /agents-ia/ 200 + canonical auto-référent + index
+OK    /automatisation-des-processus/ 200 + canonical auto-référent + index
+OK    /chatbots-experience-client/ 200 + canonical auto-référent + index
+OK    /crm-ventes-marketing-ia/ 200 + canonical auto-référent + index
+OK    /ia/automatisation-ia-casablanca/ 200 + canonical auto-référent + index
+OK    /ia/agence-ia-rabat/ 200 + canonical auto-référent + index
+OK    /ia/automatisation-ia-marrakech/ 200 + canonical auto-référent + index
+OK    /automatisation-ia-tanger/ 200 + canonical auto-référent + index
+OK    /automatisation-ia-fes/ 200 + canonical auto-référent + index
+OK    /automatisation-ia-meknes/ 200 + canonical auto-référent + index
+OK    /automatisation-ia-agadir/ 200 + canonical auto-référent + index
+OK    /ia/automatisation-ia-oujda/ 200 + canonical auto-référent + index
+OK    /ia/automatisation-ia-tetouan/ 200 + canonical auto-référent + index
+OK    /agence-ia-immobilier-maroc/ 200 + canonical auto-référent + index
+OK    /ia/nos-services/ 200 + canonical auto-référent + index
+OK    /ia/devis/ 200 + canonical auto-référent + index
+OK    /ia/contact/ 200 + canonical auto-référent + index
+OK    /automatisation-ia-pme-maroc/ 200 + canonical auto-référent + index
+OK    /automatisation-ia-hotel-fiabilite-technique-experience-client/ 200 + canonical auto-référent + index
+OK    /automatisation-factures-ia-maroc/ 200 + canonical auto-référent + index
+OK    http://fluxintelligent.com/ -> https://fluxintelligent.com/ en 301 (1 saut(s))
+OK    https://www.fluxintelligent.com/ -> https://fluxintelligent.com/ en 301 (1 saut(s))
+OK    http://www.fluxintelligent.com/ -> https://fluxintelligent.com/ en 301 (2 saut(s))
+OK    /ia-hotels-tourisme-maroc-2026/ 301 -> /automatisation-ia-hotel-fiabilite-technique-experience-client/
+OK    /automatisation-entreprise-maroc/ 301 -> /automatisation-ia-pme-maroc/
+OK    /ia/about/ 301 -> /ia/propos-de-nous/
+OK    paramètre utm -> canonical propre
+OK    robots.txt autorise Googlebot sur /
+OK    robots.txt autorise Googlebot sur /ia/blog/
+OK    robots.txt autorise Googlebot sur /agents-ia/
+OK    robots.txt autorise Googlebot sur /automatisation-des-processus/
+OK    robots.txt autorise Googlebot sur /chatbots-experience-client/
+OK    robots.txt autorise Googlebot sur /crm-ventes-marketing-ia/
+OK    robots.txt autorise Googlebot sur /ia/automatisation-ia-casablanca/
+OK    robots.txt autorise Googlebot sur /ia/agence-ia-rabat/
+OK    robots.txt autorise Googlebot sur /ia/automatisation-ia-marrakech/
+OK    robots.txt autorise Googlebot sur /automatisation-ia-tanger/
+OK    robots.txt autorise Googlebot sur /automatisation-ia-fes/
+OK    robots.txt autorise Googlebot sur /automatisation-ia-meknes/
+OK    robots.txt autorise Googlebot sur /automatisation-ia-agadir/
+OK    robots.txt autorise Googlebot sur /ia/automatisation-ia-oujda/
+OK    robots.txt autorise Googlebot sur /ia/automatisation-ia-tetouan/
+OK    robots.txt autorise Googlebot sur /agence-ia-immobilier-maroc/
+OK    robots.txt autorise Googlebot sur /ia/nos-services/
+OK    robots.txt autorise Googlebot sur /ia/devis/
+OK    robots.txt autorise Googlebot sur /ia/contact/
+OK    robots.txt autorise Googlebot sur /automatisation-ia-pme-maroc/
+OK    robots.txt autorise Googlebot sur /automatisation-ia-hotel-fiabilite-technique-experience-client/
+OK    robots.txt autorise Googlebot sur /automatisation-factures-ia-maroc/
+OK    robots.txt autorise Googlebot sur /wp-content/uploads/2026/11/x.webp
+OK    robots.txt autorise Googlebot sur /wp-includes/js/jquery/jquery.min.js
+OK    robots.txt autorise Googlebot sur /wp-admin/admin-ajax.php
+OK    robots.txt autorise Googlebot sur /sitemap_index.xml
+OK    robots.txt bloque /wp-admin/ pour Googlebot
+OK    robots.txt déclare le sitemap
+OK    sitemap_index.xml 200
+OK    https://fluxintelligent.com/post-sitemap.xml 200 XML
+OK    https://fluxintelligent.com/page-sitemap.xml 200 XML
+OK    https://fluxintelligent.com/category-sitemap.xml 200 XML
+ECHEC sitemap : 98 URL toutes 200/indexables/auto-canoniques  [https://fluxintelligent.com/entretien-en-ligne/ 200 [] nofollow, noindex]
+OK    post-sitemap.xml public sans 3092 ni 3288
+ECHEC /sitemap_index.xml : durée de cache <= 3600 s (actuel : max-age=14400, must-revalidate)
+ECHEC /post-sitemap.xml : durée de cache <= 3600 s (actuel : max-age=14400, must-revalidate)
+ECHEC /page-sitemap.xml : durée de cache <= 3600 s (actuel : max-age=14400, must-revalidate)
+ECHEC ancienne URL factures : 301 directe vers /automatisation-factures-ia-maroc/  [https://fluxintelligent.com]
+ECHEC page 4473 : noindex conservé ET absente du sitemap
+ECHEC page 4100 : aucun lien vers 3092/3288
+ECHEC page 4009 : aucun lien vers 3092/3288
+
+8 échec(s)

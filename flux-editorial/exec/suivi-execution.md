@@ -113,3 +113,14 @@ Voir `flux-editorial/gsc/RAPPORT-GSC-2026-11-16.md`.
   - liens internes des pages 4100 et 4009 ;
   - purge du cache Hostinger ;
   - validation dans GSC (aucun accès).
+
+## J. Finalisation (16/11 après-midi)
+
+Voir `flux-editorial/gsc/RAPPORT-FINALISATION-2026-11-16.md`.
+- Le sitemap public ne contient plus 3092 ni 3288 (vérifié).
+- En attente d'un accès admin, Rank Math ou Cloudflare :
+  - page 4473 : rester en noindex et la retirer du sitemap ;
+  - redirection factures vers 3569 ;
+  - liens des pages 4100 et 4009 ;
+  - cache court pour les sitemaps (fichiers dans `a-appliquer/`).
+- Exports Search Console attendus dans `gsc/gsc-exports/`.
