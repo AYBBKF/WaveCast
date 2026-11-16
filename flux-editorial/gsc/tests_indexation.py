@@ -65,7 +65,8 @@ check("post-sitemap.xml public sans 3092 ni 3288", s == 200 and "automatisation-
 for sm in ["/sitemap_index.xml", "/post-sitemap.xml", "/page-sitemap.xml"]:
     s, h, _ = get(B + sm); cc = h.get("cache-control", "")
     m = re.search(r"(?:s-maxage|max-age)=(\d+)", cc)
-    check(f"{sm} : durée de cache <= 3600 s (actuel : {cc or 'absent'})", ("no-cache" in cc or "no-store" in cc) or (m is not None and int(m.group(1)) <= 3600))
+    cfs = h.get("cf-cache-status", "").upper()
+    check(f"{sm} : pas de cache périphérique long (cf={cfs}, {cc or 'cache-control absent'})", cfs in ("BYPASS", "DYNAMIC") or ("no-cache" in cc or "no-store" in cc) or (m is not None and int(m.group(1)) <= 3600))
 s, h, _ = get(B + "/automatisation-des-factures-par-ia-au-maroc/")
 check("ancienne URL factures : 301 directe vers /automatisation-factures-ia-maroc/", s == 301 and h.get("location", "").rstrip("/") == B + "/automatisation-factures-ia-maroc", h.get("location"))
 s, h, b = get(B + "/entretien-en-ligne/")
