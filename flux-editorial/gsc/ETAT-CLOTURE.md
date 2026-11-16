@@ -1,35 +1,32 @@
-# État de clôture : fluxintelligent.com (16/11/2026, 20:41 UTC)
+# État de clôture : fluxintelligent.com (16/11/2026, 22:40 UTC)
 
-**Mission NON terminée** : en attente des exports Search Console réels.
+**Mission NON terminée.** Les corrections techniques sont déployées, mais aucune validation Google n'a été faite : les exports Search Console ne sont pas encore fournis.
 
-## Corrections effectuées sur le site
+## A. Corrections techniques déployées et vérifiées publiquement
 
-| Correction | Preuve publique |
-|---|---|
-| 3092 et 3288 passés de publish à draft, 301 conservées | `post-sitemap.xml` public : 55 URL, 0 occurrence ; 301 en 1 saut puis 200 (tests OK) |
+| # | Correction | Modification réelle | Preuve publique après | Rollback |
+|---|---|---|---|---|
+| 1 | 4473 hors sitemap | Rank Math sitemap : `exclude_posts` passe de *(vide)* à `4473`. Autres réglages identiques (seule la représentation false/'' diffère). | `page-sitemap.xml` public : 39 URL, 0 `entretien-en-ligne` (40 avant) ; meta toujours `nofollow, noindex` | vider `exclude_posts` (sauvegarde : `backup/rankmath-sitemap-settings-avant.json`) |
+| 2 | 301 factures vers 3569 | **Cause réelle** : le média 3568 (image mise en avant de 3569) portait le slug `automatisation-des-factures-par-ia-au-maroc`. Rank Math redirigeait cette page de pièce jointe vers l'accueil (`attachment_redirect_default`), avant la règle 17, qui était déjà correcte. Seul le slug du média a été modifié, en `…-image`. Fichier, URL de l'image et association à l'article inchangés. | `301 → /automatisation-factures-ia-maroc/` (avec et sans slash), 1 saut, puis 200 ; image de 3569 toujours en 200 | remettre le slug (sauvegarde : `backup/media-3568-avant.json`) |
+| 3 | Liens des pages 4100 et 4009 | `remplacement_liens.py --apply`, 1 occurrence par page. Le diff du brut ne porte que sur l'URL (+32 et −4 caractères). JSON-LD (1/1) et blocs (53/53, 72/72) inchangés. | HTML public : 0 ancienne URL, nouvelles URL présentes, pages en 200 | `backup/page-4100-raw-*.json`, `backup/page-4009-raw-*.json` |
+| – | Cache | Cache serveur Hostinger purgé (`hosting_cache_clear`). | – | – |
+| (avant) | 3092 et 3288 hors sitemap | statut draft, 301 conservées | `post-sitemap.xml` public : 0 occurrence | republier |
 
-## Corrections prêtes, bloquées faute d'accès autorisé
+**Aucune autre** page, réglage SEO, règle de redirection ou règle de sécurité n'a été modifiée. Les 21 règles Rank Math sont sauvegardées et inchangées (`backup/rankmath-redirections-avant.json`).
 
-| Correction | Procédure | Preuve « avant » (`resultats/preuves-avant-cloture-script.txt`) |
-|---|---|---|
-| Exclure l'ID 4473 du sitemap, noindex inchangé | CLOTURE.md §1 | sitemap : 1 occurrence ; meta `nofollow, noindex` |
-| 301 directe de l'ancienne URL factures vers 3569 | CLOTURE.md §2 | 301 → `/` (accueil) |
-| Bypass Cloudflare des sitemaps | `a-appliquer/cloudflare-regle-cache-sitemaps.md` | les 4 sitemaps en HIT |
-| Liens des pages 4100 et 4009 | `remplacement_liens.py --apply` (test à blanc : 1 occurrence par page) | 1 lien obsolète par page |
+## B. Tests (preuves techniques, pas des preuves d'indexation)
 
-**Validation après application :** `bash valider_cloture.sh`. Attendu : 11 OK, puis `tests_indexation.py` sans échec.
+- `valider_cloture.sh` : 7 OK sur 11. Les 4 échecs portent tous sur le cache Cloudflare des sitemaps. Fichier : `resultats/preuves-apres-cloture.txt`.
+- `tests_indexation.py` : 67 OK sur 70. Les 3 échecs portent sur ce même cache. Fichier : `resultats/apres/tests-apres-corrections-2026-11-16.txt`.
+- Surveillance 5xx : 20 requêtes, 0 erreur.
 
-## Accès
+## C. Toujours bloqué
 
-- Ancien mot de passe d'application : à révoquer par vous dans WordPress, et à supprimer des Network secrets de l'environnement Default.
-- Accès temporaire retenu : réautorisation du connecteur Hostinger.
+- **Cache Rule Cloudflare** : ni l'intégration Cloudflare ni Hostinger ne gèrent les Cache Rules de la zone. Règle à appliquer manuellement : `a-appliquer/cloudflare-regle-cache-sitemaps.md`.
+- **Ancien mot de passe d'application** : à révoquer dans WordPress, et l'entrée `fluxintelligent.com` à supprimer des Network secrets de l'environnement Default.
 
-## Surveillance
+## D. Validations Google encore nécessaires
 
-`surveillance_5xx.py`, une fois par semaine : séquentiel, 1 requête par seconde. Dernier passage : 0 erreur.
-
-## Search Console
-
-- Rien n'est confirmé.
-- À réception des deux exports : `analyse_exports_gsc.py` classe chaque URL en légitime, corrigée, à corriger, à examiner ou en attente de nouvelle exploration.
-- « Valider la correction » ne sera lancé que s'il ne reste aucune URL à corriger.
+- Exports CSV « Page en double… » et « Bloquée par robots.txt » : à analyser avec `analyse_exports_gsc.py` sur les URL réelles.
+- Ensuite seulement : inspection d'URL, « Valider la correction », nouvelle soumission de `sitemap_index.xml`, puis attente de la nouvelle exploration par Google.
+- Aucune des deux alertes n'est déclarée résolue.

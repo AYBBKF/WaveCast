@@ -1,0 +1,22 @@
+{
+ "items_per_page": 200,
+ "include_images": true,
+ "include_featured_image": false,
+ "exclude_roles": [
+  "contributor",
+  "subscriber"
+ ],
+ "html_sitemap": true,
+ "html_sitemap_display": "shortcode",
+ "html_sitemap_sort": "published",
+ "html_sitemap_seo_titles": "titles",
+ "authors_sitemap": true,
+ "pt_post_sitemap": true,
+ "pt_page_sitemap": true,
+ "pt_attachment_sitemap": false,
+ "pt_product_sitemap": true,
+ "pt_web-story_sitemap": false,
+ "tax_category_sitemap": true,
+ "tax_post_tag_sitemap": false,
+ "tax_post_format_sitemap": false
+}

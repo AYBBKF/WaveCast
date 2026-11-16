@@ -32,7 +32,7 @@ for pid, old, new in CHANGES:
         n = rend.count(old); print(f"[dry-run] page {pid} : {n} occurrence(s) de {old} dans le rendu public -> remplacement par {new}"); ok &= n == 1; continue
     d = call(f"{B}/wp-json/wp/v2/pages/{pid}?context=edit&_fields=id,modified_gmt,content")
     raw, before = d["content"]["raw"], d["content"]["rendered"]
-    ts = datetime.datetime.utcnow().strftime("%Y%m%dT%H%M%SZ")
+    ts = datetime.datetime.now(datetime.timezone.utc).strftime("%Y%m%dT%H%M%SZ")
     json.dump(d, open(f"{here}/backup/page-{pid}-raw-{ts}.json", "w"), ensure_ascii=False)
     n = raw.count(old) + raw.count(esc(old))
     if n != 1: print(f"page {pid} : {n} occurrence(s) dans le brut, ARRÊT sans écriture"); ok = False; continue
