@@ -1,0 +1,2344 @@
+{
+ "sitemaps": [
+  {
+   "sitemap": "https://fluxintelligent.com/post-sitemap.xml",
+   "status": 200,
+   "n": 57
+  },
+  {
+   "sitemap": "https://fluxintelligent.com/page-sitemap.xml",
+   "status": 200,
+   "n": 40
+  },
+  {
+   "sitemap": "https://fluxintelligent.com/category-sitemap.xml",
+   "status": 200,
+   "n": 3
+  }
+ ],
+ "rows": [
+  {
+   "url": "https://fluxintelligent.com/ia/blog/",
+   "in_sitemap": true,
+   "sitemap": "https://fluxintelligent.com/post-sitemap.xml",
+   "status_initial": 200,
+   "chain": [],
+   "final_url": "https://fluxintelligent.com/ia/blog/",
+   "status_final": 200,
+   "robots_googlebot_allowed": true,
+   "x_robots_tag": "",
+   "meta_robots": [
+    "follow, index, max-snippet:-1, max-video-preview:-1, max-image-preview:large"
+   ],
+   "canonical": [
+    "https://fluxintelligent.com/ia/blog/"
+   ],
+   "canonical_count": 1,
+   "link_header_canonical": [],
+   "self_canonical": true,
+   "noindex": false
+  },
+  {
+   "url": "https://fluxintelligent.com/agents-ia-vocaux-restaurants-hotels-maroc-choco/",
+   "in_sitemap": true,
+   "sitemap": "https://fluxintelligent.com/post-sitemap.xml",
+   "status_initial": 200,
+   "chain": [],
+   "final_url": "https://fluxintelligent.com/agents-ia-vocaux-restaurants-hotels-maroc-choco/",
+   "status_final": 200,
+   "robots_googlebot_allowed": true,
+   "x_robots_tag": "",
+   "meta_robots": [
+    "follow, index, max-snippet:-1, max-video-preview:-1, max-image-preview:large"
+   ],
+   "canonical": [
+    "https://fluxintelligent.com/agents-ia-vocaux-restaurants-hotels-maroc-choco/"
+   ],
+   "canonical_count": 1,
+   "link_header_canonical": [],
+   "self_canonical": true,
+   "noindex": false
+  },
+  {
+   "url": "https://fluxintelligent.com/automatisation-ia-cafes-maroc-2025/",
+   "in_sitemap": true,
+   "sitemap": "https://fluxintelligent.com/post-sitemap.xml",
+   "status_initial": 200,
+   "chain": [],
+   "final_url": "https://fluxintelligent.com/automatisation-ia-cafes-maroc-2025/",
+   "status_final": 200,
+   "robots_googlebot_allowed": true,
+   "x_robots_tag": "",
+   "meta_robots": [
+    "follow, index, max-snippet:-1, max-video-preview:-1, max-image-preview:large"
+   ],
+   "canonical": [
+    "https://fluxintelligent.com/automatisation-ia-cafes-maroc-2025/"
+   ],
+   "canonical_count": 1,
+   "link_header_canonical": [],
+   "self_canonical": true,
+   "noindex": false
+  },
+  {
+   "url": "https://fluxintelligent.com/logiciel-devis-btp-maroc/",
+   "in_sitemap": true,
+   "sitemap": "https://fluxintelligent.com/post-sitemap.xml",
+   "status_initial": 200,
+   "chain": [],
+   "final_url": "https://fluxintelligent.com/logiciel-devis-btp-maroc/",
+   "status_final": 200,
+   "robots_googlebot_allowed": true,
+   "x_robots_tag": "",
+   "meta_robots": [
+    "follow, index, max-snippet:-1, max-video-preview:-1, max-image-preview:large"
+   ],
+   "canonical": [
+    "https://fluxintelligent.com/logiciel-devis-btp-maroc/"
+   ],
+   "canonical_count": 1,
+   "link_header_canonical": [],
+   "self_canonical": true,
+   "noindex": false
+  },
+  {
+   "url": "https://fluxintelligent.com/automatisation-cabinet-comptable-maroc/",
+   "in_sitemap": true,
+   "sitemap": "https://fluxintelligent.com/post-sitemap.xml",
+   "status_initial": 200,
+   "chain": [],
+   "final_url": "https://fluxintelligent.com/automatisation-cabinet-comptable-maroc/",
+   "status_final": 200,
+   "robots_googlebot_allowed": true,
+   "x_robots_tag": "",
+   "meta_robots": [
+    "follow, index, max-snippet:-1, max-video-preview:-1, max-image-preview:large"
+   ],
+   "canonical": [
+    "https://fluxintelligent.com/automatisation-cabinet-comptable-maroc/"
+   ],
+   "canonical_count": 1,
+   "link_header_canonical": [],
+   "self_canonical": true,
+   "noindex": false
+  },
+  {
+   "url": "https://fluxintelligent.com/prevision-ventes-cafe-restaurant/",
+   "in_sitemap": true,
+   "sitemap": "https://fluxintelligent.com/post-sitemap.xml",
+   "status_initial": 200,
+   "chain": [],
+   "final_url": "https://fluxintelligent.com/prevision-ventes-cafe-restaurant/",
+   "status_final": 200,
+   "robots_googlebot_allowed": true,
+   "x_robots_tag": "",
+   "meta_robots": [
+    "follow, index, max-snippet:-1, max-video-preview:-1, max-image-preview:large"
+   ],
+   "canonical": [
+    "https://fluxintelligent.com/prevision-ventes-cafe-restaurant/"
+   ],
+   "canonical_count": 1,
+   "link_header_canonical": [],
+   "self_canonical": true,
+   "noindex": false
+  },
+  {
+   "url": "https://fluxintelligent.com/logiciel-location-voiture-maroc/",
+   "in_sitemap": true,
+   "sitemap": "https://fluxintelligent.com/post-sitemap.xml",
+   "status_initial": 200,
+   "chain": [],
+   "final_url": "https://fluxintelligent.com/logiciel-location-voiture-maroc/",
+   "status_final": 200,
+   "robots_googlebot_allowed": true,
+   "x_robots_tag": "",
+   "meta_robots": [
+    "follow, index, max-snippet:-1, max-video-preview:-1, max-image-preview:large"
+   ],
+   "canonical": [
+    "https://fluxintelligent.com/logiciel-location-voiture-maroc/"
+   ],
+   "canonical_count": 1,
+   "link_header_canonical": [],
+   "self_canonical": true,
+   "noindex": false
+  },
+  {
+   "url": "https://fluxintelligent.com/food-cost-restaurant-prix-achat/",
+   "in_sitemap": true,
+   "sitemap": "https://fluxintelligent.com/post-sitemap.xml",
+   "status_initial": 200,
+   "chain": [],
+   "final_url": "https://fluxintelligent.com/food-cost-restaurant-prix-achat/",
+   "status_final": 200,
+   "robots_googlebot_allowed": true,
+   "x_robots_tag": "",
+   "meta_robots": [
+    "follow, index, max-snippet:-1, max-video-preview:-1, max-image-preview:large"
+   ],
+   "canonical": [
+    "https://fluxintelligent.com/food-cost-restaurant-prix-achat/"
+   ],
+   "canonical_count": 1,
+   "link_header_canonical": [],
+   "self_canonical": true,
+   "noindex": false
+  },
+  {
+   "url": "https://fluxintelligent.com/automatisation-ia-agence-transport/",
+   "in_sitemap": true,
+   "sitemap": "https://fluxintelligent.com/post-sitemap.xml",
+   "status_initial": 200,
+   "chain": [],
+   "final_url": "https://fluxintelligent.com/automatisation-ia-agence-transport/",
+   "status_final": 200,
+   "robots_googlebot_allowed": true,
+   "x_robots_tag": "",
+   "meta_robots": [
+    "follow, index, max-snippet:-1, max-video-preview:-1, max-image-preview:large"
+   ],
+   "canonical": [
+    "https://fluxintelligent.com/automatisation-ia-agence-transport/"
+   ],
+   "canonical_count": 1,
+   "link_header_canonical": [],
+   "self_canonical": true,
+   "noindex": false
+  },
+  {
+   "url": "https://fluxintelligent.com/reservation-directe-whatsapp-riad/",
+   "in_sitemap": true,
+   "sitemap": "https://fluxintelligent.com/post-sitemap.xml",
+   "status_initial": 200,
+   "chain": [],
+   "final_url": "https://fluxintelligent.com/reservation-directe-whatsapp-riad/",
+   "status_final": 200,
+   "robots_googlebot_allowed": true,
+   "x_robots_tag": "",
+   "meta_robots": [
+    "follow, index, max-snippet:-1, max-video-preview:-1, max-image-preview:large"
+   ],
+   "canonical": [
+    "https://fluxintelligent.com/reservation-directe-whatsapp-riad/"
+   ],
+   "canonical_count": 1,
+   "link_header_canonical": [],
+   "self_canonical": true,
+   "noindex": false
+  },
+  {
+   "url": "https://fluxintelligent.com/veille-appels-offres-maroc/",
+   "in_sitemap": true,
+   "sitemap": "https://fluxintelligent.com/post-sitemap.xml",
+   "status_initial": 200,
+   "chain": [],
+   "final_url": "https://fluxintelligent.com/veille-appels-offres-maroc/",
+   "status_final": 200,
+   "robots_googlebot_allowed": true,
+   "x_robots_tag": "",
+   "meta_robots": [
+    "follow, index, max-snippet:-1, max-video-preview:-1, max-image-preview:large"
+   ],
+   "canonical": [
+    "https://fluxintelligent.com/veille-appels-offres-maroc/"
+   ],
+   "canonical_count": 1,
+   "link_header_canonical": [],
+   "self_canonical": true,
+   "noindex": false
+  },
+  {
+   "url": "https://fluxintelligent.com/automatisation-centre-de-formation-maroc/",
+   "in_sitemap": true,
+   "sitemap": "https://fluxintelligent.com/post-sitemap.xml",
+   "status_initial": 200,
+   "chain": [],
+   "final_url": "https://fluxintelligent.com/automatisation-centre-de-formation-maroc/",
+   "status_final": 200,
+   "robots_googlebot_allowed": true,
+   "x_robots_tag": "",
+   "meta_robots": [
+    "follow, index, max-snippet:-1, max-video-preview:-1, max-image-preview:large"
+   ],
+   "canonical": [
+    "https://fluxintelligent.com/automatisation-centre-de-formation-maroc/"
+   ],
+   "canonical_count": 1,
+   "link_header_canonical": [],
+   "self_canonical": true,
+   "noindex": false
+  },
+  {
+   "url": "https://fluxintelligent.com/automatisation-ia-hotel-fiabilite-technique-experience-client/",
+   "in_sitemap": true,
+   "sitemap": "https://fluxintelligent.com/post-sitemap.xml",
+   "status_initial": 200,
+   "chain": [],
+   "final_url": "https://fluxintelligent.com/automatisation-ia-hotel-fiabilite-technique-experience-client/",
+   "status_final": 200,
+   "robots_googlebot_allowed": true,
+   "x_robots_tag": "",
+   "meta_robots": [
+    "follow, index, max-snippet:-1, max-video-preview:-1, max-image-preview:large"
+   ],
+   "canonical": [
+    "https://fluxintelligent.com/automatisation-ia-hotel-fiabilite-technique-experience-client/"
+   ],
+   "canonical_count": 1,
+   "link_header_canonical": [],
+   "self_canonical": true,
+   "noindex": false
+  },
+  {
+   "url": "https://fluxintelligent.com/gestion-ecole-privee-frais-scolarite/",
+   "in_sitemap": true,
+   "sitemap": "https://fluxintelligent.com/post-sitemap.xml",
+   "status_initial": 200,
+   "chain": [],
+   "final_url": "https://fluxintelligent.com/gestion-ecole-privee-frais-scolarite/",
+   "status_final": 200,
+   "robots_googlebot_allowed": true,
+   "x_robots_tag": "",
+   "meta_robots": [
+    "follow, index, max-snippet:-1, max-video-preview:-1, max-image-preview:large"
+   ],
+   "canonical": [
+    "https://fluxintelligent.com/gestion-ecole-privee-frais-scolarite/"
+   ],
+   "canonical_count": 1,
+   "link_header_canonical": [],
+   "self_canonical": true,
+   "noindex": false
+  },
+  {
+   "url": "https://fluxintelligent.com/logiciel-gestion-auto-ecole-maroc/",
+   "in_sitemap": true,
+   "sitemap": "https://fluxintelligent.com/post-sitemap.xml",
+   "status_initial": 200,
+   "chain": [],
+   "final_url": "https://fluxintelligent.com/logiciel-gestion-auto-ecole-maroc/",
+   "status_final": 200,
+   "robots_googlebot_allowed": true,
+   "x_robots_tag": "",
+   "meta_robots": [
+    "follow, index, max-snippet:-1, max-video-preview:-1, max-image-preview:large"
+   ],
+   "canonical": [
+    "https://fluxintelligent.com/logiciel-gestion-auto-ecole-maroc/"
+   ],
+   "canonical_count": 1,
+   "link_header_canonical": [],
+   "self_canonical": true,
+   "noindex": false
+  },
+  {
+   "url": "https://fluxintelligent.com/confirmation-commande-cod-whatsapp-maroc/",
+   "in_sitemap": true,
+   "sitemap": "https://fluxintelligent.com/post-sitemap.xml",
+   "status_initial": 200,
+   "chain": [],
+   "final_url": "https://fluxintelligent.com/confirmation-commande-cod-whatsapp-maroc/",
+   "status_final": 200,
+   "robots_googlebot_allowed": true,
+   "x_robots_tag": "",
+   "meta_robots": [
+    "follow, index, max-snippet:-1, max-video-preview:-1, max-image-preview:large"
+   ],
+   "canonical": [
+    "https://fluxintelligent.com/confirmation-commande-cod-whatsapp-maroc/"
+   ],
+   "canonical_count": 1,
+   "link_header_canonical": [],
+   "self_canonical": true,
+   "noindex": false
+  },
+  {
+   "url": "https://fluxintelligent.com/suivi-relance-devis-sans-double-saisie/",
+   "in_sitemap": true,
+   "sitemap": "https://fluxintelligent.com/post-sitemap.xml",
+   "status_initial": 200,
+   "chain": [],
+   "final_url": "https://fluxintelligent.com/suivi-relance-devis-sans-double-saisie/",
+   "status_final": 200,
+   "robots_googlebot_allowed": true,
+   "x_robots_tag": "",
+   "meta_robots": [
+    "follow, index, max-snippet:-1, max-video-preview:-1, max-image-preview:large"
+   ],
+   "canonical": [
+    "https://fluxintelligent.com/suivi-relance-devis-sans-double-saisie/"
+   ],
+   "canonical_count": 1,
+   "link_header_canonical": [],
+   "self_canonical": true,
+   "noindex": false
+  },
+  {
+   "url": "https://fluxintelligent.com/comparer-devis-automatisation-ia-maroc/",
+   "in_sitemap": true,
+   "sitemap": "https://fluxintelligent.com/post-sitemap.xml",
+   "status_initial": 200,
+   "chain": [],
+   "final_url": "https://fluxintelligent.com/comparer-devis-automatisation-ia-maroc/",
+   "status_final": 200,
+   "robots_googlebot_allowed": true,
+   "x_robots_tag": "",
+   "meta_robots": [
+    "follow, index, max-snippet:-1, max-video-preview:-1, max-image-preview:large"
+   ],
+   "canonical": [
+    "https://fluxintelligent.com/comparer-devis-automatisation-ia-maroc/"
+   ],
+   "canonical_count": 1,
+   "link_header_canonical": [],
+   "self_canonical": true,
+   "noindex": false
+  },
+  {
+   "url": "https://fluxintelligent.com/automatisation-ia-pme-maroc/",
+   "in_sitemap": true,
+   "sitemap": "https://fluxintelligent.com/post-sitemap.xml",
+   "status_initial": 200,
+   "chain": [],
+   "final_url": "https://fluxintelligent.com/automatisation-ia-pme-maroc/",
+   "status_final": 200,
+   "robots_googlebot_allowed": true,
+   "x_robots_tag": "",
+   "meta_robots": [
+    "follow, index, max-snippet:-1, max-video-preview:-1, max-image-preview:large"
+   ],
+   "canonical": [
+    "https://fluxintelligent.com/automatisation-ia-pme-maroc/"
+   ],
+   "canonical_count": 1,
+   "link_header_canonical": [],
+   "self_canonical": true,
+   "noindex": false
+  },
+  {
+   "url": "https://fluxintelligent.com/chatbot-ia-whatsapp-maroc/",
+   "in_sitemap": true,
+   "sitemap": "https://fluxintelligent.com/post-sitemap.xml",
+   "status_initial": 200,
+   "chain": [],
+   "final_url": "https://fluxintelligent.com/chatbot-ia-whatsapp-maroc/",
+   "status_final": 200,
+   "robots_googlebot_allowed": true,
+   "x_robots_tag": "",
+   "meta_robots": [
+    "follow, index, max-snippet:-1, max-video-preview:-1, max-image-preview:large"
+   ],
+   "canonical": [
+    "https://fluxintelligent.com/chatbot-ia-whatsapp-maroc/"
+   ],
+   "canonical_count": 1,
+   "link_header_canonical": [],
+   "self_canonical": true,
+   "noindex": false
+  },
+  {
+   "url": "https://fluxintelligent.com/automatisation-factures-ia-maroc/",
+   "in_sitemap": true,
+   "sitemap": "https://fluxintelligent.com/post-sitemap.xml",
+   "status_initial": 200,
+   "chain": [],
+   "final_url": "https://fluxintelligent.com/automatisation-factures-ia-maroc/",
+   "status_final": 200,
+   "robots_googlebot_allowed": true,
+   "x_robots_tag": "",
+   "meta_robots": [
+    "follow, index, max-snippet:-1, max-video-preview:-1, max-image-preview:large"
+   ],
+   "canonical": [
+    "https://fluxintelligent.com/automatisation-factures-ia-maroc/"
+   ],
+   "canonical_count": 1,
+   "link_header_canonical": [],
+   "self_canonical": true,
+   "noindex": false
+  },
+  {
+   "url": "https://fluxintelligent.com/agent-ia-whatsapp-business-pme-maroc/",
+   "in_sitemap": true,
+   "sitemap": "https://fluxintelligent.com/post-sitemap.xml",
+   "status_initial": 200,
+   "chain": [],
+   "final_url": "https://fluxintelligent.com/agent-ia-whatsapp-business-pme-maroc/",
+   "status_final": 200,
+   "robots_googlebot_allowed": true,
+   "x_robots_tag": "",
+   "meta_robots": [
+    "follow, index, max-snippet:-1, max-video-preview:-1, max-image-preview:large"
+   ],
+   "canonical": [
+    "https://fluxintelligent.com/agent-ia-whatsapp-business-pme-maroc/"
+   ],
+   "canonical_count": 1,
+   "link_header_canonical": [],
+   "self_canonical": true,
+   "noindex": false
+  },
+  {
+   "url": "https://fluxintelligent.com/ia-pour-immobilier-au-maroc-automatiser-la-gestion-des-leads-et-des-visites-en-2026/",
+   "in_sitemap": true,
+   "sitemap": "https://fluxintelligent.com/post-sitemap.xml",
+   "status_initial": 200,
+   "chain": [],
+   "final_url": "https://fluxintelligent.com/ia-pour-immobilier-au-maroc-automatiser-la-gestion-des-leads-et-des-visites-en-2026/",
+   "status_final": 200,
+   "robots_googlebot_allowed": true,
+   "x_robots_tag": "",
+   "meta_robots": [
+    "follow, index, max-snippet:-1, max-video-preview:-1, max-image-preview:large"
+   ],
+   "canonical": [
+    "https://fluxintelligent.com/ia-pour-immobilier-au-maroc-automatiser-la-gestion-des-leads-et-des-visites-en-2026/"
+   ],
+   "canonical_count": 1,
+   "link_header_canonical": [],
+   "self_canonical": true,
+   "noindex": false
+  },
+  {
+   "url": "https://fluxintelligent.com/ia-salon-coiffure-automatisation/",
+   "in_sitemap": true,
+   "sitemap": "https://fluxintelligent.com/post-sitemap.xml",
+   "status_initial": 200,
+   "chain": [],
+   "final_url": "https://fluxintelligent.com/ia-salon-coiffure-automatisation/",
+   "status_final": 200,
+   "robots_googlebot_allowed": true,
+   "x_robots_tag": "",
+   "meta_robots": [
+    "follow, index, max-snippet:-1, max-video-preview:-1, max-image-preview:large"
+   ],
+   "canonical": [
+    "https://fluxintelligent.com/ia-salon-coiffure-automatisation/"
+   ],
+   "canonical_count": 1,
+   "link_header_canonical": [],
+   "self_canonical": true,
+   "noindex": false
+  },
+  {
+   "url": "https://fluxintelligent.com/chatbot-whatsapp-pour-verifier-la-compatibilite-des-pieces-auto-au-maroc-guide-pour-boutiques-en-ligne/",
+   "in_sitemap": true,
+   "sitemap": "https://fluxintelligent.com/post-sitemap.xml",
+   "status_initial": 200,
+   "chain": [],
+   "final_url": "https://fluxintelligent.com/chatbot-whatsapp-pour-verifier-la-compatibilite-des-pieces-auto-au-maroc-guide-pour-boutiques-en-ligne/",
+   "status_final": 200,
+   "robots_googlebot_allowed": true,
+   "x_robots_tag": "",
+   "meta_robots": [
+    "follow, index, max-snippet:-1, max-video-preview:-1, max-image-preview:large"
+   ],
+   "canonical": [
+    "https://fluxintelligent.com/chatbot-whatsapp-pour-verifier-la-compatibilite-des-pieces-auto-au-maroc-guide-pour-boutiques-en-ligne/"
+   ],
+   "canonical_count": 1,
+   "link_header_canonical": [],
+   "self_canonical": true,
+   "noindex": false
+  },
+  {
+   "url": "https://fluxintelligent.com/agent-ia-clinique-veterinaire-maroc/",
+   "in_sitemap": true,
+   "sitemap": "https://fluxintelligent.com/post-sitemap.xml",
+   "status_initial": 200,
+   "chain": [],
+   "final_url": "https://fluxintelligent.com/agent-ia-clinique-veterinaire-maroc/",
+   "status_final": 200,
+   "robots_googlebot_allowed": true,
+   "x_robots_tag": "",
+   "meta_robots": [
+    "follow, index, max-snippet:-1, max-video-preview:-1, max-image-preview:large"
+   ],
+   "canonical": [
+    "https://fluxintelligent.com/agent-ia-clinique-veterinaire-maroc/"
+   ],
+   "canonical_count": 1,
+   "link_header_canonical": [],
+   "self_canonical": true,
+   "noindex": false
+  },
+  {
+   "url": "https://fluxintelligent.com/technology-ai-structurer-une-demarche-fiable/",
+   "in_sitemap": true,
+   "sitemap": "https://fluxintelligent.com/post-sitemap.xml",
+   "status_initial": 200,
+   "chain": [],
+   "final_url": "https://fluxintelligent.com/technology-ai-structurer-une-demarche-fiable/",
+   "status_final": 200,
+   "robots_googlebot_allowed": true,
+   "x_robots_tag": "",
+   "meta_robots": [
+    "follow, index, max-snippet:-1, max-video-preview:-1, max-image-preview:large"
+   ],
+   "canonical": [
+    "https://fluxintelligent.com/technology-ai-structurer-une-demarche-fiable/"
+   ],
+   "canonical_count": 1,
+   "link_header_canonical": [],
+   "self_canonical": true,
+   "noindex": false
+  },
+  {
+   "url": "https://fluxintelligent.com/automatisation-ia-agence-de-change-maroc/",
+   "in_sitemap": true,
+   "sitemap": "https://fluxintelligent.com/post-sitemap.xml",
+   "status_initial": 200,
+   "chain": [],
+   "final_url": "https://fluxintelligent.com/automatisation-ia-agence-de-change-maroc/",
+   "status_final": 200,
+   "robots_googlebot_allowed": true,
+   "x_robots_tag": "",
+   "meta_robots": [
+    "follow, index, max-snippet:-1, max-video-preview:-1, max-image-preview:large"
+   ],
+   "canonical": [
+    "https://fluxintelligent.com/automatisation-ia-agence-de-change-maroc/"
+   ],
+   "canonical_count": 1,
+   "link_header_canonical": [],
+   "self_canonical": true,
+   "noindex": false
+  },
+  {
+   "url": "https://fluxintelligent.com/ia-transformation-fabrication-mecanique/",
+   "in_sitemap": true,
+   "sitemap": "https://fluxintelligent.com/post-sitemap.xml",
+   "status_initial": 200,
+   "chain": [],
+   "final_url": "https://fluxintelligent.com/ia-transformation-fabrication-mecanique/",
+   "status_final": 200,
+   "robots_googlebot_allowed": true,
+   "x_robots_tag": "",
+   "meta_robots": [
+    "follow, index, max-snippet:-1, max-video-preview:-1, max-image-preview:large"
+   ],
+   "canonical": [
+    "https://fluxintelligent.com/ia-transformation-fabrication-mecanique/"
+   ],
+   "canonical_count": 1,
+   "link_header_canonical": [],
+   "self_canonical": true,
+   "noindex": false
+  },
+  {
+   "url": "https://fluxintelligent.com/avant-apres-paquet-leadership-projet-ia/",
+   "in_sitemap": true,
+   "sitemap": "https://fluxintelligent.com/post-sitemap.xml",
+   "status_initial": 200,
+   "chain": [],
+   "final_url": "https://fluxintelligent.com/avant-apres-paquet-leadership-projet-ia/",
+   "status_final": 200,
+   "robots_googlebot_allowed": true,
+   "x_robots_tag": "",
+   "meta_robots": [
+    "follow, index, max-snippet:-1, max-video-preview:-1, max-image-preview:large"
+   ],
+   "canonical": [
+    "https://fluxintelligent.com/avant-apres-paquet-leadership-projet-ia/"
+   ],
+   "canonical_count": 1,
+   "link_header_canonical": [],
+   "self_canonical": true,
+   "noindex": false
+  },
+  {
+   "url": "https://fluxintelligent.com/automatisation-entreprise-maroc/",
+   "in_sitemap": true,
+   "sitemap": "https://fluxintelligent.com/post-sitemap.xml",
+   "status_initial": 301,
+   "chain": [
+    "301->https://fluxintelligent.com/automatisation-ia-pme-maroc/"
+   ],
+   "final_url": "https://fluxintelligent.com/automatisation-ia-pme-maroc/",
+   "status_final": 200,
+   "robots_googlebot_allowed": true,
+   "x_robots_tag": "",
+   "meta_robots": [
+    "follow, index, max-snippet:-1, max-video-preview:-1, max-image-preview:large"
+   ],
+   "canonical": [
+    "https://fluxintelligent.com/automatisation-ia-pme-maroc/"
+   ],
+   "canonical_count": 1,
+   "link_header_canonical": [],
+   "self_canonical": true,
+   "noindex": false
+  },
+  {
+   "url": "https://fluxintelligent.com/comment-ai-revolutionne-le-controle-qualite/",
+   "in_sitemap": true,
+   "sitemap": "https://fluxintelligent.com/post-sitemap.xml",
+   "status_initial": 200,
+   "chain": [],
+   "final_url": "https://fluxintelligent.com/comment-ai-revolutionne-le-controle-qualite/",
+   "status_final": 200,
+   "robots_googlebot_allowed": true,
+   "x_robots_tag": "",
+   "meta_robots": [
+    "follow, index, max-snippet:-1, max-video-preview:-1, max-image-preview:large"
+   ],
+   "canonical": [
+    "https://fluxintelligent.com/comment-ai-revolutionne-le-controle-qualite/"
+   ],
+   "canonical_count": 1,
+   "link_header_canonical": [],
+   "self_canonical": true,
+   "noindex": false
+  },
+  {
+   "url": "https://fluxintelligent.com/ia-avenir-emplois-maroc/",
+   "in_sitemap": true,
+   "sitemap": "https://fluxintelligent.com/post-sitemap.xml",
+   "status_initial": 200,
+   "chain": [],
+   "final_url": "https://fluxintelligent.com/ia-avenir-emplois-maroc/",
+   "status_final": 200,
+   "robots_googlebot_allowed": true,
+   "x_robots_tag": "",
+   "meta_robots": [
+    "follow, index, max-snippet:-1, max-video-preview:-1, max-image-preview:large"
+   ],
+   "canonical": [
+    "https://fluxintelligent.com/ia-avenir-emplois-maroc/"
+   ],
+   "canonical_count": 1,
+   "link_header_canonical": [],
+   "self_canonical": true,
+   "noindex": false
+  },
+  {
+   "url": "https://fluxintelligent.com/arbre-kpi-sprint-automatisation-ia/",
+   "in_sitemap": true,
+   "sitemap": "https://fluxintelligent.com/post-sitemap.xml",
+   "status_initial": 200,
+   "chain": [],
+   "final_url": "https://fluxintelligent.com/arbre-kpi-sprint-automatisation-ia/",
+   "status_final": 200,
+   "robots_googlebot_allowed": true,
+   "x_robots_tag": "",
+   "meta_robots": [
+    "follow, index, max-snippet:-1, max-video-preview:-1, max-image-preview:large"
+   ],
+   "canonical": [
+    "https://fluxintelligent.com/arbre-kpi-sprint-automatisation-ia/"
+   ],
+   "canonical_count": 1,
+   "link_header_canonical": [],
+   "self_canonical": true,
+   "noindex": false
+  },
+  {
+   "url": "https://fluxintelligent.com/agent-ia-docteur-maroc/",
+   "in_sitemap": true,
+   "sitemap": "https://fluxintelligent.com/post-sitemap.xml",
+   "status_initial": 200,
+   "chain": [],
+   "final_url": "https://fluxintelligent.com/agent-ia-docteur-maroc/",
+   "status_final": 200,
+   "robots_googlebot_allowed": true,
+   "x_robots_tag": "",
+   "meta_robots": [
+    "follow, index, max-snippet:-1, max-video-preview:-1, max-image-preview:large"
+   ],
+   "canonical": [
+    "https://fluxintelligent.com/agent-ia-docteur-maroc/"
+   ],
+   "canonical_count": 1,
+   "link_header_canonical": [],
+   "self_canonical": true,
+   "noindex": false
+  },
+  {
+   "url": "https://fluxintelligent.com/journal-decision-automatisation-ia-prioriser/",
+   "in_sitemap": true,
+   "sitemap": "https://fluxintelligent.com/post-sitemap.xml",
+   "status_initial": 200,
+   "chain": [],
+   "final_url": "https://fluxintelligent.com/journal-decision-automatisation-ia-prioriser/",
+   "status_final": 200,
+   "robots_googlebot_allowed": true,
+   "x_robots_tag": "",
+   "meta_robots": [
+    "follow, index, max-snippet:-1, max-video-preview:-1, max-image-preview:large"
+   ],
+   "canonical": [
+    "https://fluxintelligent.com/journal-decision-automatisation-ia-prioriser/"
+   ],
+   "canonical_count": 1,
+   "link_header_canonical": [],
+   "self_canonical": true,
+   "noindex": false
+  },
+  {
+   "url": "https://fluxintelligent.com/marketing-digital-maroc/",
+   "in_sitemap": true,
+   "sitemap": "https://fluxintelligent.com/post-sitemap.xml",
+   "status_initial": 200,
+   "chain": [],
+   "final_url": "https://fluxintelligent.com/marketing-digital-maroc/",
+   "status_final": 200,
+   "robots_googlebot_allowed": true,
+   "x_robots_tag": "",
+   "meta_robots": [
+    "follow, index, max-snippet:-1, max-video-preview:-1, max-image-preview:large"
+   ],
+   "canonical": [
+    "https://fluxintelligent.com/marketing-digital-maroc/"
+   ],
+   "canonical_count": 1,
+   "link_header_canonical": [],
+   "self_canonical": true,
+   "noindex": false
+  },
+  {
+   "url": "https://fluxintelligent.com/ecommerce-automatise-ia/",
+   "in_sitemap": true,
+   "sitemap": "https://fluxintelligent.com/post-sitemap.xml",
+   "status_initial": 200,
+   "chain": [],
+   "final_url": "https://fluxintelligent.com/ecommerce-automatise-ia/",
+   "status_final": 200,
+   "robots_googlebot_allowed": true,
+   "x_robots_tag": "",
+   "meta_robots": [
+    "follow, index, max-snippet:-1, max-video-preview:-1, max-image-preview:large"
+   ],
+   "canonical": [
+    "https://fluxintelligent.com/ecommerce-automatise-ia/"
+   ],
+   "canonical_count": 1,
+   "link_header_canonical": [],
+   "self_canonical": true,
+   "noindex": false
+  },
+  {
+   "url": "https://fluxintelligent.com/exemple-plan-exploitation-ia-30-jours-pme/",
+   "in_sitemap": true,
+   "sitemap": "https://fluxintelligent.com/post-sitemap.xml",
+   "status_initial": 200,
+   "chain": [],
+   "final_url": "https://fluxintelligent.com/exemple-plan-exploitation-ia-30-jours-pme/",
+   "status_final": 200,
+   "robots_googlebot_allowed": true,
+   "x_robots_tag": "",
+   "meta_robots": [
+    "follow, index, max-snippet:-1, max-video-preview:-1, max-image-preview:large"
+   ],
+   "canonical": [
+    "https://fluxintelligent.com/exemple-plan-exploitation-ia-30-jours-pme/"
+   ],
+   "canonical_count": 1,
+   "link_header_canonical": [],
+   "self_canonical": true,
+   "noindex": false
+  },
+  {
+   "url": "https://fluxintelligent.com/agent-ia-cabinet-dentaire-maroc/",
+   "in_sitemap": true,
+   "sitemap": "https://fluxintelligent.com/post-sitemap.xml",
+   "status_initial": 200,
+   "chain": [],
+   "final_url": "https://fluxintelligent.com/agent-ia-cabinet-dentaire-maroc/",
+   "status_final": 200,
+   "robots_googlebot_allowed": true,
+   "x_robots_tag": "",
+   "meta_robots": [
+    "follow, index, max-snippet:-1, max-video-preview:-1, max-image-preview:large"
+   ],
+   "canonical": [
+    "https://fluxintelligent.com/agent-ia-cabinet-dentaire-maroc/"
+   ],
+   "canonical_count": 1,
+   "link_header_canonical": [],
+   "self_canonical": true,
+   "noindex": false
+  },
+  {
+   "url": "https://fluxintelligent.com/agent-ia-pharmacie-maroc/",
+   "in_sitemap": true,
+   "sitemap": "https://fluxintelligent.com/post-sitemap.xml",
+   "status_initial": 200,
+   "chain": [],
+   "final_url": "https://fluxintelligent.com/agent-ia-pharmacie-maroc/",
+   "status_final": 200,
+   "robots_googlebot_allowed": true,
+   "x_robots_tag": "",
+   "meta_robots": [
+    "follow, index, max-snippet:-1, max-video-preview:-1, max-image-preview:large"
+   ],
+   "canonical": [
+    "https://fluxintelligent.com/agent-ia-pharmacie-maroc/"
+   ],
+   "canonical_count": 1,
+   "link_header_canonical": [],
+   "self_canonical": true,
+   "noindex": false
+  },
+  {
+   "url": "https://fluxintelligent.com/agent-ia-garage-automobile-maroc/",
+   "in_sitemap": true,
+   "sitemap": "https://fluxintelligent.com/post-sitemap.xml",
+   "status_initial": 200,
+   "chain": [],
+   "final_url": "https://fluxintelligent.com/agent-ia-garage-automobile-maroc/",
+   "status_final": 200,
+   "robots_googlebot_allowed": true,
+   "x_robots_tag": "",
+   "meta_robots": [
+    "follow, index, max-snippet:-1, max-video-preview:-1, max-image-preview:large"
+   ],
+   "canonical": [
+    "https://fluxintelligent.com/agent-ia-garage-automobile-maroc/"
+   ],
+   "canonical_count": 1,
+   "link_header_canonical": [],
+   "self_canonical": true,
+   "noindex": false
+  },
+  {
+   "url": "https://fluxintelligent.com/agent-ia-kinesitherapie-maroc/",
+   "in_sitemap": true,
+   "sitemap": "https://fluxintelligent.com/post-sitemap.xml",
+   "status_initial": 200,
+   "chain": [],
+   "final_url": "https://fluxintelligent.com/agent-ia-kinesitherapie-maroc/",
+   "status_final": 200,
+   "robots_googlebot_allowed": true,
+   "x_robots_tag": "",
+   "meta_robots": [
+    "follow, index, max-snippet:-1, max-video-preview:-1, max-image-preview:large"
+   ],
+   "canonical": [
+    "https://fluxintelligent.com/agent-ia-kinesitherapie-maroc/"
+   ],
+   "canonical_count": 1,
+   "link_header_canonical": [],
+   "self_canonical": true,
+   "noindex": false
+  },
+  {
+   "url": "https://fluxintelligent.com/agent-ia-institut-beaute-maroc/",
+   "in_sitemap": true,
+   "sitemap": "https://fluxintelligent.com/post-sitemap.xml",
+   "status_initial": 200,
+   "chain": [],
+   "final_url": "https://fluxintelligent.com/agent-ia-institut-beaute-maroc/",
+   "status_final": 200,
+   "robots_googlebot_allowed": true,
+   "x_robots_tag": "",
+   "meta_robots": [
+    "follow, index, max-snippet:-1, max-video-preview:-1, max-image-preview:large"
+   ],
+   "canonical": [
+    "https://fluxintelligent.com/agent-ia-institut-beaute-maroc/"
+   ],
+   "canonical_count": 1,
+   "link_header_canonical": [],
+   "self_canonical": true,
+   "noindex": false
+  },
+  {
+   "url": "https://fluxintelligent.com/automatisation-ia-transformer-entreprise/",
+   "in_sitemap": true,
+   "sitemap": "https://fluxintelligent.com/post-sitemap.xml",
+   "status_initial": 200,
+   "chain": [],
+   "final_url": "https://fluxintelligent.com/automatisation-ia-transformer-entreprise/",
+   "status_final": 200,
+   "robots_googlebot_allowed": true,
+   "x_robots_tag": "",
+   "meta_robots": [
+    "follow, index, max-snippet:-1, max-video-preview:-1, max-image-preview:large"
+   ],
+   "canonical": [
+    "https://fluxintelligent.com/automatisation-ia-transformer-entreprise/"
+   ],
+   "canonical_count": 1,
+   "link_header_canonical": [],
+   "self_canonical": true,
+   "noindex": false
+  },
+  {
+   "url": "https://fluxintelligent.com/agent-ia-comptable-maroc/",
+   "in_sitemap": true,
+   "sitemap": "https://fluxintelligent.com/post-sitemap.xml",
+   "status_initial": 200,
+   "chain": [],
+   "final_url": "https://fluxintelligent.com/agent-ia-comptable-maroc/",
+   "status_final": 200,
+   "robots_googlebot_allowed": true,
+   "x_robots_tag": "",
+   "meta_robots": [
+    "follow, index, max-snippet:-1, max-video-preview:-1, max-image-preview:large"
+   ],
+   "canonical": [
+    "https://fluxintelligent.com/agent-ia-comptable-maroc/"
+   ],
+   "canonical_count": 1,
+   "link_header_canonical": [],
+   "self_canonical": true,
+   "noindex": false
+  },
+  {
+   "url": "https://fluxintelligent.com/agent-ia-avocat-maroc/",
+   "in_sitemap": true,
+   "sitemap": "https://fluxintelligent.com/post-sitemap.xml",
+   "status_initial": 200,
+   "chain": [],
+   "final_url": "https://fluxintelligent.com/agent-ia-avocat-maroc/",
+   "status_final": 200,
+   "robots_googlebot_allowed": true,
+   "x_robots_tag": "",
+   "meta_robots": [
+    "follow, index, max-snippet:-1, max-video-preview:-1, max-image-preview:large"
+   ],
+   "canonical": [
+    "https://fluxintelligent.com/agent-ia-avocat-maroc/"
+   ],
+   "canonical_count": 1,
+   "link_header_canonical": [],
+   "self_canonical": true,
+   "noindex": false
+  },
+  {
+   "url": "https://fluxintelligent.com/ia-entreprises-casablanca/",
+   "in_sitemap": true,
+   "sitemap": "https://fluxintelligent.com/post-sitemap.xml",
+   "status_initial": 200,
+   "chain": [],
+   "final_url": "https://fluxintelligent.com/ia-entreprises-casablanca/",
+   "status_final": 200,
+   "robots_googlebot_allowed": true,
+   "x_robots_tag": "",
+   "meta_robots": [
+    "follow, index, max-snippet:-1, max-video-preview:-1, max-image-preview:large"
+   ],
+   "canonical": [
+    "https://fluxintelligent.com/ia-entreprises-casablanca/"
+   ],
+   "canonical_count": 1,
+   "link_header_canonical": [],
+   "self_canonical": true,
+   "noindex": false
+  },
+  {
+   "url": "https://fluxintelligent.com/workflow-ia-agence-transfert-argent-wafacash-cashplus/",
+   "in_sitemap": true,
+   "sitemap": "https://fluxintelligent.com/post-sitemap.xml",
+   "status_initial": 200,
+   "chain": [],
+   "final_url": "https://fluxintelligent.com/workflow-ia-agence-transfert-argent-wafacash-cashplus/",
+   "status_final": 200,
+   "robots_googlebot_allowed": true,
+   "x_robots_tag": "",
+   "meta_robots": [
+    "follow, index, max-snippet:-1, max-video-preview:-1, max-image-preview:large"
+   ],
+   "canonical": [
+    "https://fluxintelligent.com/workflow-ia-agence-transfert-argent-wafacash-cashplus/"
+   ],
+   "canonical_count": 1,
+   "link_header_canonical": [],
+   "self_canonical": true,
+   "noindex": false
+  },
+  {
+   "url": "https://fluxintelligent.com/workflow-ia-agence-voyage/",
+   "in_sitemap": true,
+   "sitemap": "https://fluxintelligent.com/post-sitemap.xml",
+   "status_initial": 200,
+   "chain": [],
+   "final_url": "https://fluxintelligent.com/workflow-ia-agence-voyage/",
+   "status_final": 200,
+   "robots_googlebot_allowed": true,
+   "x_robots_tag": "",
+   "meta_robots": [
+    "follow, index, max-snippet:-1, max-video-preview:-1, max-image-preview:large"
+   ],
+   "canonical": [
+    "https://fluxintelligent.com/workflow-ia-agence-voyage/"
+   ],
+   "canonical_count": 1,
+   "link_header_canonical": [],
+   "self_canonical": true,
+   "noindex": false
+  },
+  {
+   "url": "https://fluxintelligent.com/workflow-ia-coach-musculation-maroc-2025/",
+   "in_sitemap": true,
+   "sitemap": "https://fluxintelligent.com/post-sitemap.xml",
+   "status_initial": 200,
+   "chain": [],
+   "final_url": "https://fluxintelligent.com/workflow-ia-coach-musculation-maroc-2025/",
+   "status_final": 200,
+   "robots_googlebot_allowed": true,
+   "x_robots_tag": "",
+   "meta_robots": [
+    "follow, index, max-snippet:-1, max-video-preview:-1, max-image-preview:large"
+   ],
+   "canonical": [
+    "https://fluxintelligent.com/workflow-ia-coach-musculation-maroc-2025/"
+   ],
+   "canonical_count": 1,
+   "link_header_canonical": [],
+   "self_canonical": true,
+   "noindex": false
+  },
+  {
+   "url": "https://fluxintelligent.com/ia-hotels-tourisme-maroc-2026/",
+   "in_sitemap": true,
+   "sitemap": "https://fluxintelligent.com/post-sitemap.xml",
+   "status_initial": 301,
+   "chain": [
+    "301->https://fluxintelligent.com/automatisation-ia-hotel-fiabilite-technique-experience-client/"
+   ],
+   "final_url": "https://fluxintelligent.com/automatisation-ia-hotel-fiabilite-technique-experience-client/",
+   "status_final": 200,
+   "robots_googlebot_allowed": true,
+   "x_robots_tag": "",
+   "meta_robots": [
+    "follow, index, max-snippet:-1, max-video-preview:-1, max-image-preview:large"
+   ],
+   "canonical": [
+    "https://fluxintelligent.com/automatisation-ia-hotel-fiabilite-technique-experience-client/"
+   ],
+   "canonical_count": 1,
+   "link_header_canonical": [],
+   "self_canonical": true,
+   "noindex": false
+  },
+  {
+   "url": "https://fluxintelligent.com/digital-morocco-2030-pme-maroc-agents-ia/",
+   "in_sitemap": true,
+   "sitemap": "https://fluxintelligent.com/post-sitemap.xml",
+   "status_initial": 200,
+   "chain": [],
+   "final_url": "https://fluxintelligent.com/digital-morocco-2030-pme-maroc-agents-ia/",
+   "status_final": 200,
+   "robots_googlebot_allowed": true,
+   "x_robots_tag": "",
+   "meta_robots": [
+    "follow, index, max-snippet:-1, max-video-preview:-1, max-image-preview:large"
+   ],
+   "canonical": [
+    "https://fluxintelligent.com/digital-morocco-2030-pme-maroc-agents-ia/"
+   ],
+   "canonical_count": 1,
+   "link_header_canonical": [],
+   "self_canonical": true,
+   "noindex": false
+  },
+  {
+   "url": "https://fluxintelligent.com/ia-maroc-partenariat-orange-morocco-pme-2026/",
+   "in_sitemap": true,
+   "sitemap": "https://fluxintelligent.com/post-sitemap.xml",
+   "status_initial": 200,
+   "chain": [],
+   "final_url": "https://fluxintelligent.com/ia-maroc-partenariat-orange-morocco-pme-2026/",
+   "status_final": 200,
+   "robots_googlebot_allowed": true,
+   "x_robots_tag": "",
+   "meta_robots": [
+    "follow, index, max-snippet:-1, max-video-preview:-1, max-image-preview:large"
+   ],
+   "canonical": [
+    "https://fluxintelligent.com/ia-maroc-partenariat-orange-morocco-pme-2026/"
+   ],
+   "canonical_count": 1,
+   "link_header_canonical": [],
+   "self_canonical": true,
+   "noindex": false
+  },
+  {
+   "url": "https://fluxintelligent.com/systeme-agents-ia-gouverne-maroc/",
+   "in_sitemap": true,
+   "sitemap": "https://fluxintelligent.com/post-sitemap.xml",
+   "status_initial": 200,
+   "chain": [],
+   "final_url": "https://fluxintelligent.com/systeme-agents-ia-gouverne-maroc/",
+   "status_final": 200,
+   "robots_googlebot_allowed": true,
+   "x_robots_tag": "",
+   "meta_robots": [
+    "follow, index, max-snippet:-1, max-video-preview:-1, max-image-preview:large"
+   ],
+   "canonical": [
+    "https://fluxintelligent.com/systeme-agents-ia-gouverne-maroc/"
+   ],
+   "canonical_count": 1,
+   "link_header_canonical": [],
+   "self_canonical": true,
+   "noindex": false
+  },
+  {
+   "url": "https://fluxintelligent.com/comment-lintelligence-artificielle-va-changer-le-commerce-des-produits-automobiles/",
+   "in_sitemap": true,
+   "sitemap": "https://fluxintelligent.com/post-sitemap.xml",
+   "status_initial": 200,
+   "chain": [],
+   "final_url": "https://fluxintelligent.com/comment-lintelligence-artificielle-va-changer-le-commerce-des-produits-automobiles/",
+   "status_final": 200,
+   "robots_googlebot_allowed": true,
+   "x_robots_tag": "",
+   "meta_robots": [
+    "follow, index, max-snippet:-1, max-video-preview:-1, max-image-preview:large"
+   ],
+   "canonical": [
+    "https://fluxintelligent.com/comment-lintelligence-artificielle-va-changer-le-commerce-des-produits-automobiles/"
+   ],
+   "canonical_count": 1,
+   "link_header_canonical": [],
+   "self_canonical": true,
+   "noindex": false
+  },
+  {
+   "url": "https://fluxintelligent.com/agent-ia-opticien-maroc/",
+   "in_sitemap": true,
+   "sitemap": "https://fluxintelligent.com/post-sitemap.xml",
+   "status_initial": 200,
+   "chain": [],
+   "final_url": "https://fluxintelligent.com/agent-ia-opticien-maroc/",
+   "status_final": 200,
+   "robots_googlebot_allowed": true,
+   "x_robots_tag": "",
+   "meta_robots": [
+    "follow, index, max-snippet:-1, max-video-preview:-1, max-image-preview:large"
+   ],
+   "canonical": [
+    "https://fluxintelligent.com/agent-ia-opticien-maroc/"
+   ],
+   "canonical_count": 1,
+   "link_header_canonical": [],
+   "self_canonical": true,
+   "noindex": false
+  },
+  {
+   "url": "https://fluxintelligent.com/",
+   "in_sitemap": true,
+   "sitemap": "https://fluxintelligent.com/page-sitemap.xml",
+   "status_initial": 200,
+   "chain": [],
+   "final_url": "https://fluxintelligent.com/",
+   "status_final": 200,
+   "robots_googlebot_allowed": true,
+   "x_robots_tag": "",
+   "meta_robots": [
+    "follow, index, max-snippet:-1, max-video-preview:-1, max-image-preview:large"
+   ],
+   "canonical": [
+    "https://fluxintelligent.com/"
+   ],
+   "canonical_count": 1,
+   "link_header_canonical": [],
+   "self_canonical": true,
+   "noindex": false
+  },
+  {
+   "url": "https://fluxintelligent.com/automatisation-des-processus/recouvrement-factures-clients/",
+   "in_sitemap": true,
+   "sitemap": "https://fluxintelligent.com/page-sitemap.xml",
+   "status_initial": 200,
+   "chain": [],
+   "final_url": "https://fluxintelligent.com/automatisation-des-processus/recouvrement-factures-clients/",
+   "status_final": 200,
+   "robots_googlebot_allowed": true,
+   "x_robots_tag": "",
+   "meta_robots": [
+    "follow, index, max-snippet:-1, max-video-preview:-1, max-image-preview:large"
+   ],
+   "canonical": [
+    "https://fluxintelligent.com/automatisation-des-processus/recouvrement-factures-clients/"
+   ],
+   "canonical_count": 1,
+   "link_header_canonical": [],
+   "self_canonical": true,
+   "noindex": false
+  },
+  {
+   "url": "https://fluxintelligent.com/agence-ia-immobilier-maroc/",
+   "in_sitemap": true,
+   "sitemap": "https://fluxintelligent.com/page-sitemap.xml",
+   "status_initial": 200,
+   "chain": [],
+   "final_url": "https://fluxintelligent.com/agence-ia-immobilier-maroc/",
+   "status_final": 200,
+   "robots_googlebot_allowed": true,
+   "x_robots_tag": "",
+   "meta_robots": [
+    "follow, index, max-snippet:-1, max-video-preview:-1, max-image-preview:large"
+   ],
+   "canonical": [
+    "https://fluxintelligent.com/agence-ia-immobilier-maroc/"
+   ],
+   "canonical_count": 1,
+   "link_header_canonical": [],
+   "self_canonical": true,
+   "noindex": false
+  },
+  {
+   "url": "https://fluxintelligent.com/entretien-en-ligne/",
+   "in_sitemap": true,
+   "sitemap": "https://fluxintelligent.com/page-sitemap.xml",
+   "status_initial": 200,
+   "chain": [],
+   "final_url": "https://fluxintelligent.com/entretien-en-ligne/",
+   "status_final": 200,
+   "robots_googlebot_allowed": true,
+   "x_robots_tag": "noindex, nofollow",
+   "meta_robots": [
+    "nofollow, noindex"
+   ],
+   "canonical": [],
+   "canonical_count": 0,
+   "link_header_canonical": [],
+   "self_canonical": false,
+   "noindex": true
+  },
+  {
+   "url": "https://fluxintelligent.com/rejoignez-nous/",
+   "in_sitemap": true,
+   "sitemap": "https://fluxintelligent.com/page-sitemap.xml",
+   "status_initial": 200,
+   "chain": [],
+   "final_url": "https://fluxintelligent.com/rejoignez-nous/",
+   "status_final": 200,
+   "robots_googlebot_allowed": true,
+   "x_robots_tag": "",
+   "meta_robots": [
+    "follow, index, max-snippet:-1, max-video-preview:-1, max-image-preview:large"
+   ],
+   "canonical": [
+    "https://fluxintelligent.com/rejoignez-nous/"
+   ],
+   "canonical_count": 1,
+   "link_header_canonical": [],
+   "self_canonical": true,
+   "noindex": false
+  },
+  {
+   "url": "https://fluxintelligent.com/chatbots-experience-client/chatbot-whatsapp-maroc/",
+   "in_sitemap": true,
+   "sitemap": "https://fluxintelligent.com/page-sitemap.xml",
+   "status_initial": 200,
+   "chain": [],
+   "final_url": "https://fluxintelligent.com/chatbots-experience-client/chatbot-whatsapp-maroc/",
+   "status_final": 200,
+   "robots_googlebot_allowed": true,
+   "x_robots_tag": "",
+   "meta_robots": [
+    "follow, index, max-snippet:-1, max-video-preview:-1, max-image-preview:large"
+   ],
+   "canonical": [
+    "https://fluxintelligent.com/chatbots-experience-client/chatbot-whatsapp-maroc/"
+   ],
+   "canonical_count": 1,
+   "link_header_canonical": [],
+   "self_canonical": true,
+   "noindex": false
+  },
+  {
+   "url": "https://fluxintelligent.com/ia/propos-de-nous/",
+   "in_sitemap": true,
+   "sitemap": "https://fluxintelligent.com/page-sitemap.xml",
+   "status_initial": 200,
+   "chain": [],
+   "final_url": "https://fluxintelligent.com/ia/propos-de-nous/",
+   "status_final": 200,
+   "robots_googlebot_allowed": true,
+   "x_robots_tag": "",
+   "meta_robots": [
+    "follow, index, max-snippet:-1, max-video-preview:-1, max-image-preview:large"
+   ],
+   "canonical": [
+    "https://fluxintelligent.com/ia/propos-de-nous/"
+   ],
+   "canonical_count": 1,
+   "link_header_canonical": [],
+   "self_canonical": true,
+   "noindex": false
+  },
+  {
+   "url": "https://fluxintelligent.com/agents-ia/",
+   "in_sitemap": true,
+   "sitemap": "https://fluxintelligent.com/page-sitemap.xml",
+   "status_initial": 200,
+   "chain": [],
+   "final_url": "https://fluxintelligent.com/agents-ia/",
+   "status_final": 200,
+   "robots_googlebot_allowed": true,
+   "x_robots_tag": "",
+   "meta_robots": [
+    "follow, index, max-snippet:-1, max-video-preview:-1, max-image-preview:large"
+   ],
+   "canonical": [
+    "https://fluxintelligent.com/agents-ia/"
+   ],
+   "canonical_count": 1,
+   "link_header_canonical": [],
+   "self_canonical": true,
+   "noindex": false
+  },
+  {
+   "url": "https://fluxintelligent.com/chatbots-experience-client/prise-de-rendez-vous-ia/",
+   "in_sitemap": true,
+   "sitemap": "https://fluxintelligent.com/page-sitemap.xml",
+   "status_initial": 200,
+   "chain": [],
+   "final_url": "https://fluxintelligent.com/chatbots-experience-client/prise-de-rendez-vous-ia/",
+   "status_final": 200,
+   "robots_googlebot_allowed": true,
+   "x_robots_tag": "",
+   "meta_robots": [
+    "follow, index, max-snippet:-1, max-video-preview:-1, max-image-preview:large"
+   ],
+   "canonical": [
+    "https://fluxintelligent.com/chatbots-experience-client/prise-de-rendez-vous-ia/"
+   ],
+   "canonical_count": 1,
+   "link_header_canonical": [],
+   "self_canonical": true,
+   "noindex": false
+  },
+  {
+   "url": "https://fluxintelligent.com/ia/contact/",
+   "in_sitemap": true,
+   "sitemap": "https://fluxintelligent.com/page-sitemap.xml",
+   "status_initial": 200,
+   "chain": [],
+   "final_url": "https://fluxintelligent.com/ia/contact/",
+   "status_final": 200,
+   "robots_googlebot_allowed": true,
+   "x_robots_tag": "",
+   "meta_robots": [
+    "follow, index, max-snippet:-1, max-video-preview:-1, max-image-preview:large"
+   ],
+   "canonical": [
+    "https://fluxintelligent.com/ia/contact/"
+   ],
+   "canonical_count": 1,
+   "link_header_canonical": [],
+   "self_canonical": true,
+   "noindex": false
+  },
+  {
+   "url": "https://fluxintelligent.com/ia/conditions/",
+   "in_sitemap": true,
+   "sitemap": "https://fluxintelligent.com/page-sitemap.xml",
+   "status_initial": 200,
+   "chain": [],
+   "final_url": "https://fluxintelligent.com/ia/conditions/",
+   "status_final": 200,
+   "robots_googlebot_allowed": true,
+   "x_robots_tag": "",
+   "meta_robots": [
+    "follow, index, max-snippet:-1, max-video-preview:-1, max-image-preview:large"
+   ],
+   "canonical": [
+    "https://fluxintelligent.com/ia/conditions/"
+   ],
+   "canonical_count": 1,
+   "link_header_canonical": [],
+   "self_canonical": true,
+   "noindex": false
+  },
+  {
+   "url": "https://fluxintelligent.com/ia/politique-confidentialite/",
+   "in_sitemap": true,
+   "sitemap": "https://fluxintelligent.com/page-sitemap.xml",
+   "status_initial": 200,
+   "chain": [],
+   "final_url": "https://fluxintelligent.com/ia/politique-confidentialite/",
+   "status_final": 200,
+   "robots_googlebot_allowed": true,
+   "x_robots_tag": "",
+   "meta_robots": [
+    "follow, index, max-snippet:-1, max-video-preview:-1, max-image-preview:large"
+   ],
+   "canonical": [
+    "https://fluxintelligent.com/ia/politique-confidentialite/"
+   ],
+   "canonical_count": 1,
+   "link_header_canonical": [],
+   "self_canonical": true,
+   "noindex": false
+  },
+  {
+   "url": "https://fluxintelligent.com/ia/dmca/",
+   "in_sitemap": true,
+   "sitemap": "https://fluxintelligent.com/page-sitemap.xml",
+   "status_initial": 200,
+   "chain": [],
+   "final_url": "https://fluxintelligent.com/ia/dmca/",
+   "status_final": 200,
+   "robots_googlebot_allowed": true,
+   "x_robots_tag": "",
+   "meta_robots": [
+    "follow, index, max-snippet:-1, max-video-preview:-1, max-image-preview:large"
+   ],
+   "canonical": [
+    "https://fluxintelligent.com/ia/dmca/"
+   ],
+   "canonical_count": 1,
+   "link_header_canonical": [],
+   "self_canonical": true,
+   "noindex": false
+  },
+  {
+   "url": "https://fluxintelligent.com/ia/nos-services/",
+   "in_sitemap": true,
+   "sitemap": "https://fluxintelligent.com/page-sitemap.xml",
+   "status_initial": 200,
+   "chain": [],
+   "final_url": "https://fluxintelligent.com/ia/nos-services/",
+   "status_final": 200,
+   "robots_googlebot_allowed": true,
+   "x_robots_tag": "",
+   "meta_robots": [
+    "follow, index, max-snippet:-1, max-video-preview:-1, max-image-preview:large"
+   ],
+   "canonical": [
+    "https://fluxintelligent.com/ia/nos-services/"
+   ],
+   "canonical_count": 1,
+   "link_header_canonical": [],
+   "self_canonical": true,
+   "noindex": false
+  },
+  {
+   "url": "https://fluxintelligent.com/ia/automatisation-ia-casablanca/",
+   "in_sitemap": true,
+   "sitemap": "https://fluxintelligent.com/page-sitemap.xml",
+   "status_initial": 200,
+   "chain": [],
+   "final_url": "https://fluxintelligent.com/ia/automatisation-ia-casablanca/",
+   "status_final": 200,
+   "robots_googlebot_allowed": true,
+   "x_robots_tag": "",
+   "meta_robots": [
+    "follow, index, max-snippet:-1, max-video-preview:-1, max-image-preview:large"
+   ],
+   "canonical": [
+    "https://fluxintelligent.com/ia/automatisation-ia-casablanca/"
+   ],
+   "canonical_count": 1,
+   "link_header_canonical": [],
+   "self_canonical": true,
+   "noindex": false
+  },
+  {
+   "url": "https://fluxintelligent.com/ia/automatisation-ia-marrakech/",
+   "in_sitemap": true,
+   "sitemap": "https://fluxintelligent.com/page-sitemap.xml",
+   "status_initial": 200,
+   "chain": [],
+   "final_url": "https://fluxintelligent.com/ia/automatisation-ia-marrakech/",
+   "status_final": 200,
+   "robots_googlebot_allowed": true,
+   "x_robots_tag": "",
+   "meta_robots": [
+    "follow, index, max-snippet:-1, max-video-preview:-1, max-image-preview:large"
+   ],
+   "canonical": [
+    "https://fluxintelligent.com/ia/automatisation-ia-marrakech/"
+   ],
+   "canonical_count": 1,
+   "link_header_canonical": [],
+   "self_canonical": true,
+   "noindex": false
+  },
+  {
+   "url": "https://fluxintelligent.com/ia/automatisation-ia-oujda/",
+   "in_sitemap": true,
+   "sitemap": "https://fluxintelligent.com/page-sitemap.xml",
+   "status_initial": 200,
+   "chain": [],
+   "final_url": "https://fluxintelligent.com/ia/automatisation-ia-oujda/",
+   "status_final": 200,
+   "robots_googlebot_allowed": true,
+   "x_robots_tag": "",
+   "meta_robots": [
+    "follow, index, max-snippet:-1, max-video-preview:-1, max-image-preview:large"
+   ],
+   "canonical": [
+    "https://fluxintelligent.com/ia/automatisation-ia-oujda/"
+   ],
+   "canonical_count": 1,
+   "link_header_canonical": [],
+   "self_canonical": true,
+   "noindex": false
+  },
+  {
+   "url": "https://fluxintelligent.com/automatisation-ia-agadir/",
+   "in_sitemap": true,
+   "sitemap": "https://fluxintelligent.com/page-sitemap.xml",
+   "status_initial": 200,
+   "chain": [],
+   "final_url": "https://fluxintelligent.com/automatisation-ia-agadir/",
+   "status_final": 200,
+   "robots_googlebot_allowed": true,
+   "x_robots_tag": "",
+   "meta_robots": [
+    "follow, index, max-snippet:-1, max-video-preview:-1, max-image-preview:large"
+   ],
+   "canonical": [
+    "https://fluxintelligent.com/automatisation-ia-agadir/"
+   ],
+   "canonical_count": 1,
+   "link_header_canonical": [],
+   "self_canonical": true,
+   "noindex": false
+  },
+  {
+   "url": "https://fluxintelligent.com/ia/automatisation-ia-tetouan/",
+   "in_sitemap": true,
+   "sitemap": "https://fluxintelligent.com/page-sitemap.xml",
+   "status_initial": 200,
+   "chain": [],
+   "final_url": "https://fluxintelligent.com/ia/automatisation-ia-tetouan/",
+   "status_final": 200,
+   "robots_googlebot_allowed": true,
+   "x_robots_tag": "",
+   "meta_robots": [
+    "follow, index, max-snippet:-1, max-video-preview:-1, max-image-preview:large"
+   ],
+   "canonical": [
+    "https://fluxintelligent.com/ia/automatisation-ia-tetouan/"
+   ],
+   "canonical_count": 1,
+   "link_header_canonical": [],
+   "self_canonical": true,
+   "noindex": false
+  },
+  {
+   "url": "https://fluxintelligent.com/ia/agence-ia-rabat/",
+   "in_sitemap": true,
+   "sitemap": "https://fluxintelligent.com/page-sitemap.xml",
+   "status_initial": 200,
+   "chain": [],
+   "final_url": "https://fluxintelligent.com/ia/agence-ia-rabat/",
+   "status_final": 200,
+   "robots_googlebot_allowed": true,
+   "x_robots_tag": "",
+   "meta_robots": [
+    "follow, index, max-snippet:-1, max-video-preview:-1, max-image-preview:large"
+   ],
+   "canonical": [
+    "https://fluxintelligent.com/ia/agence-ia-rabat/"
+   ],
+   "canonical_count": 1,
+   "link_header_canonical": [],
+   "self_canonical": true,
+   "noindex": false
+  },
+  {
+   "url": "https://fluxintelligent.com/agents-ia/agent-ia-commercial/",
+   "in_sitemap": true,
+   "sitemap": "https://fluxintelligent.com/page-sitemap.xml",
+   "status_initial": 200,
+   "chain": [],
+   "final_url": "https://fluxintelligent.com/agents-ia/agent-ia-commercial/",
+   "status_final": 200,
+   "robots_googlebot_allowed": true,
+   "x_robots_tag": "",
+   "meta_robots": [
+    "follow, index, max-snippet:-1, max-video-preview:-1, max-image-preview:large"
+   ],
+   "canonical": [
+    "https://fluxintelligent.com/agents-ia/agent-ia-commercial/"
+   ],
+   "canonical_count": 1,
+   "link_header_canonical": [],
+   "self_canonical": true,
+   "noindex": false
+  },
+  {
+   "url": "https://fluxintelligent.com/agents-ia/agent-ia-support-client/",
+   "in_sitemap": true,
+   "sitemap": "https://fluxintelligent.com/page-sitemap.xml",
+   "status_initial": 200,
+   "chain": [],
+   "final_url": "https://fluxintelligent.com/agents-ia/agent-ia-support-client/",
+   "status_final": 200,
+   "robots_googlebot_allowed": true,
+   "x_robots_tag": "",
+   "meta_robots": [
+    "follow, index, max-snippet:-1, max-video-preview:-1, max-image-preview:large"
+   ],
+   "canonical": [
+    "https://fluxintelligent.com/agents-ia/agent-ia-support-client/"
+   ],
+   "canonical_count": 1,
+   "link_header_canonical": [],
+   "self_canonical": true,
+   "noindex": false
+  },
+  {
+   "url": "https://fluxintelligent.com/automatisation-des-processus/automatisation-n8n-make/",
+   "in_sitemap": true,
+   "sitemap": "https://fluxintelligent.com/page-sitemap.xml",
+   "status_initial": 200,
+   "chain": [],
+   "final_url": "https://fluxintelligent.com/automatisation-des-processus/automatisation-n8n-make/",
+   "status_final": 200,
+   "robots_googlebot_allowed": true,
+   "x_robots_tag": "",
+   "meta_robots": [
+    "follow, index, max-snippet:-1, max-video-preview:-1, max-image-preview:large"
+   ],
+   "canonical": [
+    "https://fluxintelligent.com/automatisation-des-processus/automatisation-n8n-make/"
+   ],
+   "canonical_count": 1,
+   "link_header_canonical": [],
+   "self_canonical": true,
+   "noindex": false
+  },
+  {
+   "url": "https://fluxintelligent.com/automatisation-des-processus/workflows-integrations-api/",
+   "in_sitemap": true,
+   "sitemap": "https://fluxintelligent.com/page-sitemap.xml",
+   "status_initial": 200,
+   "chain": [],
+   "final_url": "https://fluxintelligent.com/automatisation-des-processus/workflows-integrations-api/",
+   "status_final": 200,
+   "robots_googlebot_allowed": true,
+   "x_robots_tag": "",
+   "meta_robots": [
+    "follow, index, max-snippet:-1, max-video-preview:-1, max-image-preview:large"
+   ],
+   "canonical": [
+    "https://fluxintelligent.com/automatisation-des-processus/workflows-integrations-api/"
+   ],
+   "canonical_count": 1,
+   "link_header_canonical": [],
+   "self_canonical": true,
+   "noindex": false
+  },
+  {
+   "url": "https://fluxintelligent.com/automatisation-des-processus/automatisation-administrative/",
+   "in_sitemap": true,
+   "sitemap": "https://fluxintelligent.com/page-sitemap.xml",
+   "status_initial": 200,
+   "chain": [],
+   "final_url": "https://fluxintelligent.com/automatisation-des-processus/automatisation-administrative/",
+   "status_final": 200,
+   "robots_googlebot_allowed": true,
+   "x_robots_tag": "",
+   "meta_robots": [
+    "follow, index, max-snippet:-1, max-video-preview:-1, max-image-preview:large"
+   ],
+   "canonical": [
+    "https://fluxintelligent.com/automatisation-des-processus/automatisation-administrative/"
+   ],
+   "canonical_count": 1,
+   "link_header_canonical": [],
+   "self_canonical": true,
+   "noindex": false
+  },
+  {
+   "url": "https://fluxintelligent.com/chatbots-experience-client/agent-vocal-ia/",
+   "in_sitemap": true,
+   "sitemap": "https://fluxintelligent.com/page-sitemap.xml",
+   "status_initial": 200,
+   "chain": [],
+   "final_url": "https://fluxintelligent.com/chatbots-experience-client/agent-vocal-ia/",
+   "status_final": 200,
+   "robots_googlebot_allowed": true,
+   "x_robots_tag": "",
+   "meta_robots": [
+    "follow, index, max-snippet:-1, max-video-preview:-1, max-image-preview:large"
+   ],
+   "canonical": [
+    "https://fluxintelligent.com/chatbots-experience-client/agent-vocal-ia/"
+   ],
+   "canonical_count": 1,
+   "link_header_canonical": [],
+   "self_canonical": true,
+   "noindex": false
+  },
+  {
+   "url": "https://fluxintelligent.com/crm-ventes-marketing-ia/qualification-scoring-leads-ia/",
+   "in_sitemap": true,
+   "sitemap": "https://fluxintelligent.com/page-sitemap.xml",
+   "status_initial": 200,
+   "chain": [],
+   "final_url": "https://fluxintelligent.com/crm-ventes-marketing-ia/qualification-scoring-leads-ia/",
+   "status_final": 200,
+   "robots_googlebot_allowed": true,
+   "x_robots_tag": "",
+   "meta_robots": [
+    "follow, index, max-snippet:-1, max-video-preview:-1, max-image-preview:large"
+   ],
+   "canonical": [
+    "https://fluxintelligent.com/crm-ventes-marketing-ia/qualification-scoring-leads-ia/"
+   ],
+   "canonical_count": 1,
+   "link_header_canonical": [],
+   "self_canonical": true,
+   "noindex": false
+  },
+  {
+   "url": "https://fluxintelligent.com/crm-ventes-marketing-ia/relances-commerciales-automatisees/",
+   "in_sitemap": true,
+   "sitemap": "https://fluxintelligent.com/page-sitemap.xml",
+   "status_initial": 200,
+   "chain": [],
+   "final_url": "https://fluxintelligent.com/crm-ventes-marketing-ia/relances-commerciales-automatisees/",
+   "status_final": 200,
+   "robots_googlebot_allowed": true,
+   "x_robots_tag": "",
+   "meta_robots": [
+    "follow, index, max-snippet:-1, max-video-preview:-1, max-image-preview:large"
+   ],
+   "canonical": [
+    "https://fluxintelligent.com/crm-ventes-marketing-ia/relances-commerciales-automatisees/"
+   ],
+   "canonical_count": 1,
+   "link_header_canonical": [],
+   "self_canonical": true,
+   "noindex": false
+  },
+  {
+   "url": "https://fluxintelligent.com/automatisation-des-processus/",
+   "in_sitemap": true,
+   "sitemap": "https://fluxintelligent.com/page-sitemap.xml",
+   "status_initial": 200,
+   "chain": [],
+   "final_url": "https://fluxintelligent.com/automatisation-des-processus/",
+   "status_final": 200,
+   "robots_googlebot_allowed": true,
+   "x_robots_tag": "",
+   "meta_robots": [
+    "follow, index, max-snippet:-1, max-video-preview:-1, max-image-preview:large"
+   ],
+   "canonical": [
+    "https://fluxintelligent.com/automatisation-des-processus/"
+   ],
+   "canonical_count": 1,
+   "link_header_canonical": [],
+   "self_canonical": true,
+   "noindex": false
+  },
+  {
+   "url": "https://fluxintelligent.com/chatbots-experience-client/",
+   "in_sitemap": true,
+   "sitemap": "https://fluxintelligent.com/page-sitemap.xml",
+   "status_initial": 200,
+   "chain": [],
+   "final_url": "https://fluxintelligent.com/chatbots-experience-client/",
+   "status_final": 200,
+   "robots_googlebot_allowed": true,
+   "x_robots_tag": "",
+   "meta_robots": [
+    "follow, index, max-snippet:-1, max-video-preview:-1, max-image-preview:large"
+   ],
+   "canonical": [
+    "https://fluxintelligent.com/chatbots-experience-client/"
+   ],
+   "canonical_count": 1,
+   "link_header_canonical": [],
+   "self_canonical": true,
+   "noindex": false
+  },
+  {
+   "url": "https://fluxintelligent.com/crm-ventes-marketing-ia/",
+   "in_sitemap": true,
+   "sitemap": "https://fluxintelligent.com/page-sitemap.xml",
+   "status_initial": 200,
+   "chain": [],
+   "final_url": "https://fluxintelligent.com/crm-ventes-marketing-ia/",
+   "status_final": 200,
+   "robots_googlebot_allowed": true,
+   "x_robots_tag": "",
+   "meta_robots": [
+    "follow, index, max-snippet:-1, max-video-preview:-1, max-image-preview:large"
+   ],
+   "canonical": [
+    "https://fluxintelligent.com/crm-ventes-marketing-ia/"
+   ],
+   "canonical_count": 1,
+   "link_header_canonical": [],
+   "self_canonical": true,
+   "noindex": false
+  },
+  {
+   "url": "https://fluxintelligent.com/chatbots-experience-client/chatbots-multilingues-service-client-maroc/",
+   "in_sitemap": true,
+   "sitemap": "https://fluxintelligent.com/page-sitemap.xml",
+   "status_initial": 200,
+   "chain": [],
+   "final_url": "https://fluxintelligent.com/chatbots-experience-client/chatbots-multilingues-service-client-maroc/",
+   "status_final": 200,
+   "robots_googlebot_allowed": true,
+   "x_robots_tag": "",
+   "meta_robots": [
+    "follow, index, max-snippet:-1, max-video-preview:-1, max-image-preview:large"
+   ],
+   "canonical": [
+    "https://fluxintelligent.com/chatbots-experience-client/chatbots-multilingues-service-client-maroc/"
+   ],
+   "canonical_count": 1,
+   "link_header_canonical": [],
+   "self_canonical": true,
+   "noindex": false
+  },
+  {
+   "url": "https://fluxintelligent.com/automatisation-des-processus/comptable-au-maroc-ai/",
+   "in_sitemap": true,
+   "sitemap": "https://fluxintelligent.com/page-sitemap.xml",
+   "status_initial": 200,
+   "chain": [],
+   "final_url": "https://fluxintelligent.com/automatisation-des-processus/comptable-au-maroc-ai/",
+   "status_final": 200,
+   "robots_googlebot_allowed": true,
+   "x_robots_tag": "",
+   "meta_robots": [
+    "follow, index, max-snippet:-1, max-video-preview:-1, max-image-preview:large"
+   ],
+   "canonical": [
+    "https://fluxintelligent.com/automatisation-des-processus/comptable-au-maroc-ai/"
+   ],
+   "canonical_count": 1,
+   "link_header_canonical": [],
+   "self_canonical": true,
+   "noindex": false
+  },
+  {
+   "url": "https://fluxintelligent.com/crm-ventes-marketing-ia/crm-automation-maroc/",
+   "in_sitemap": true,
+   "sitemap": "https://fluxintelligent.com/page-sitemap.xml",
+   "status_initial": 200,
+   "chain": [],
+   "final_url": "https://fluxintelligent.com/crm-ventes-marketing-ia/crm-automation-maroc/",
+   "status_final": 200,
+   "robots_googlebot_allowed": true,
+   "x_robots_tag": "",
+   "meta_robots": [
+    "follow, index, max-snippet:-1, max-video-preview:-1, max-image-preview:large"
+   ],
+   "canonical": [
+    "https://fluxintelligent.com/crm-ventes-marketing-ia/crm-automation-maroc/"
+   ],
+   "canonical_count": 1,
+   "link_header_canonical": [],
+   "self_canonical": true,
+   "noindex": false
+  },
+  {
+   "url": "https://fluxintelligent.com/crm-ventes-marketing-ia/agence-de-marketing-digital/",
+   "in_sitemap": true,
+   "sitemap": "https://fluxintelligent.com/page-sitemap.xml",
+   "status_initial": 200,
+   "chain": [],
+   "final_url": "https://fluxintelligent.com/crm-ventes-marketing-ia/agence-de-marketing-digital/",
+   "status_final": 200,
+   "robots_googlebot_allowed": true,
+   "x_robots_tag": "",
+   "meta_robots": [
+    "follow, index, max-snippet:-1, max-video-preview:-1, max-image-preview:large"
+   ],
+   "canonical": [
+    "https://fluxintelligent.com/crm-ventes-marketing-ia/agence-de-marketing-digital/"
+   ],
+   "canonical_count": 1,
+   "link_header_canonical": [],
+   "self_canonical": true,
+   "noindex": false
+  },
+  {
+   "url": "https://fluxintelligent.com/automatisation-ia-fes/",
+   "in_sitemap": true,
+   "sitemap": "https://fluxintelligent.com/page-sitemap.xml",
+   "status_initial": 200,
+   "chain": [],
+   "final_url": "https://fluxintelligent.com/automatisation-ia-fes/",
+   "status_final": 200,
+   "robots_googlebot_allowed": true,
+   "x_robots_tag": "",
+   "meta_robots": [
+    "follow, index, max-snippet:-1, max-video-preview:-1, max-image-preview:large"
+   ],
+   "canonical": [
+    "https://fluxintelligent.com/automatisation-ia-fes/"
+   ],
+   "canonical_count": 1,
+   "link_header_canonical": [],
+   "self_canonical": true,
+   "noindex": false
+  },
+  {
+   "url": "https://fluxintelligent.com/ia/devis/",
+   "in_sitemap": true,
+   "sitemap": "https://fluxintelligent.com/page-sitemap.xml",
+   "status_initial": 200,
+   "chain": [],
+   "final_url": "https://fluxintelligent.com/ia/devis/",
+   "status_final": 200,
+   "robots_googlebot_allowed": true,
+   "x_robots_tag": "",
+   "meta_robots": [
+    "follow, index, max-snippet:-1, max-video-preview:-1, max-image-preview:large"
+   ],
+   "canonical": [
+    "https://fluxintelligent.com/ia/devis/"
+   ],
+   "canonical_count": 1,
+   "link_header_canonical": [],
+   "self_canonical": true,
+   "noindex": false
+  },
+  {
+   "url": "https://fluxintelligent.com/automatisation-ia-meknes/",
+   "in_sitemap": true,
+   "sitemap": "https://fluxintelligent.com/page-sitemap.xml",
+   "status_initial": 200,
+   "chain": [],
+   "final_url": "https://fluxintelligent.com/automatisation-ia-meknes/",
+   "status_final": 200,
+   "robots_googlebot_allowed": true,
+   "x_robots_tag": "",
+   "meta_robots": [
+    "follow, index, max-snippet:-1, max-video-preview:-1, max-image-preview:large"
+   ],
+   "canonical": [
+    "https://fluxintelligent.com/automatisation-ia-meknes/"
+   ],
+   "canonical_count": 1,
+   "link_header_canonical": [],
+   "self_canonical": true,
+   "noindex": false
+  },
+  {
+   "url": "https://fluxintelligent.com/automatisation-ia-tanger/",
+   "in_sitemap": true,
+   "sitemap": "https://fluxintelligent.com/page-sitemap.xml",
+   "status_initial": 200,
+   "chain": [],
+   "final_url": "https://fluxintelligent.com/automatisation-ia-tanger/",
+   "status_final": 200,
+   "robots_googlebot_allowed": true,
+   "x_robots_tag": "",
+   "meta_robots": [
+    "follow, index, max-snippet:-1, max-video-preview:-1, max-image-preview:large"
+   ],
+   "canonical": [
+    "https://fluxintelligent.com/automatisation-ia-tanger/"
+   ],
+   "canonical_count": 1,
+   "link_header_canonical": [],
+   "self_canonical": true,
+   "noindex": false
+  },
+  {
+   "url": "https://fluxintelligent.com/ia/remboursement/",
+   "in_sitemap": true,
+   "sitemap": "https://fluxintelligent.com/page-sitemap.xml",
+   "status_initial": 200,
+   "chain": [],
+   "final_url": "https://fluxintelligent.com/ia/remboursement/",
+   "status_final": 200,
+   "robots_googlebot_allowed": true,
+   "x_robots_tag": "",
+   "meta_robots": [
+    "follow, index, max-snippet:-1, max-video-preview:-1, max-image-preview:large"
+   ],
+   "canonical": [
+    "https://fluxintelligent.com/ia/remboursement/"
+   ],
+   "canonical_count": 1,
+   "link_header_canonical": [],
+   "self_canonical": true,
+   "noindex": false
+  },
+  {
+   "url": "https://fluxintelligent.com/category/agents-ia-blog/",
+   "in_sitemap": true,
+   "sitemap": "https://fluxintelligent.com/category-sitemap.xml",
+   "status_initial": 200,
+   "chain": [],
+   "final_url": "https://fluxintelligent.com/category/agents-ia-blog/",
+   "status_final": 200,
+   "robots_googlebot_allowed": true,
+   "x_robots_tag": "",
+   "meta_robots": [
+    "follow, index, max-snippet:-1, max-video-preview:-1, max-image-preview:large"
+   ],
+   "canonical": [
+    "https://fluxintelligent.com/category/agents-ia-blog/"
+   ],
+   "canonical_count": 1,
+   "link_header_canonical": [],
+   "self_canonical": true,
+   "noindex": false
+  },
+  {
+   "url": "https://fluxintelligent.com/category/chatbots-experience-client-blog/",
+   "in_sitemap": true,
+   "sitemap": "https://fluxintelligent.com/category-sitemap.xml",
+   "status_initial": 200,
+   "chain": [],
+   "final_url": "https://fluxintelligent.com/category/chatbots-experience-client-blog/",
+   "status_final": 200,
+   "robots_googlebot_allowed": true,
+   "x_robots_tag": "",
+   "meta_robots": [
+    "follow, index, max-snippet:-1, max-video-preview:-1, max-image-preview:large"
+   ],
+   "canonical": [
+    "https://fluxintelligent.com/category/chatbots-experience-client-blog/"
+   ],
+   "canonical_count": 1,
+   "link_header_canonical": [],
+   "self_canonical": true,
+   "noindex": false
+  },
+  {
+   "url": "https://fluxintelligent.com/category/crm-ventes-marketing-blog/",
+   "in_sitemap": true,
+   "sitemap": "https://fluxintelligent.com/category-sitemap.xml",
+   "status_initial": 200,
+   "chain": [],
+   "final_url": "https://fluxintelligent.com/category/crm-ventes-marketing-blog/",
+   "status_final": 200,
+   "robots_googlebot_allowed": true,
+   "x_robots_tag": "",
+   "meta_robots": [
+    "follow, index, max-snippet:-1, max-video-preview:-1, max-image-preview:large"
+   ],
+   "canonical": [
+    "https://fluxintelligent.com/category/crm-ventes-marketing-blog/"
+   ],
+   "canonical_count": 1,
+   "link_header_canonical": [],
+   "self_canonical": true,
+   "noindex": false
+  },
+  {
+   "url": "https://fluxintelligent.com/ia/blog/page/2/",
+   "in_sitemap": false,
+   "sitemap": "",
+   "status_initial": 200,
+   "chain": [],
+   "final_url": "https://fluxintelligent.com/ia/blog/page/2/",
+   "status_final": 200,
+   "robots_googlebot_allowed": true,
+   "x_robots_tag": "",
+   "meta_robots": [
+    "follow, index, max-snippet:-1, max-video-preview:-1, max-image-preview:large"
+   ],
+   "canonical": [
+    "https://fluxintelligent.com/ia/blog/page/2/"
+   ],
+   "canonical_count": 1,
+   "link_header_canonical": [],
+   "self_canonical": true,
+   "noindex": false
+  },
+  {
+   "url": "https://fluxintelligent.com/category/automatisation-des-processus/",
+   "in_sitemap": false,
+   "sitemap": "",
+   "status_initial": 404,
+   "chain": [],
+   "final_url": "https://fluxintelligent.com/category/automatisation-des-processus/",
+   "status_final": 404,
+   "robots_googlebot_allowed": true,
+   "x_robots_tag": "",
+   "meta_robots": [
+    "follow, noindex"
+   ],
+   "canonical": [],
+   "canonical_count": 0,
+   "link_header_canonical": [],
+   "self_canonical": false,
+   "noindex": true
+  },
+  {
+   "url": "https://fluxintelligent.com/author/admin/",
+   "in_sitemap": false,
+   "sitemap": "",
+   "status_initial": 404,
+   "chain": [],
+   "final_url": "https://fluxintelligent.com/author/admin/",
+   "status_final": 404,
+   "robots_googlebot_allowed": true,
+   "x_robots_tag": "",
+   "meta_robots": [
+    "follow, noindex"
+   ],
+   "canonical": [],
+   "canonical_count": 0,
+   "link_header_canonical": [],
+   "self_canonical": false,
+   "noindex": true
+  },
+  {
+   "url": "https://fluxintelligent.com/?s=ia",
+   "in_sitemap": false,
+   "sitemap": "",
+   "status_initial": 200,
+   "chain": [],
+   "final_url": "https://fluxintelligent.com/?s=ia",
+   "status_final": 200,
+   "robots_googlebot_allowed": true,
+   "x_robots_tag": "",
+   "meta_robots": [
+    "follow, noindex"
+   ],
+   "canonical": [],
+   "canonical_count": 0,
+   "link_header_canonical": [],
+   "self_canonical": false,
+   "noindex": true
+  },
+  {
+   "url": "https://fluxintelligent.com/feed/",
+   "in_sitemap": false,
+   "sitemap": "",
+   "status_initial": 200,
+   "chain": [],
+   "final_url": "https://fluxintelligent.com/feed/",
+   "status_final": 200,
+   "robots_googlebot_allowed": true,
+   "x_robots_tag": "",
+   "meta_robots": [],
+   "canonical": [],
+   "canonical_count": 0,
+   "link_header_canonical": [],
+   "self_canonical": false,
+   "noindex": false
+  },
+  {
+   "url": "https://fluxintelligent.com/ia/blog/?utm_source=x",
+   "in_sitemap": false,
+   "sitemap": "",
+   "status_initial": 200,
+   "chain": [],
+   "final_url": "https://fluxintelligent.com/ia/blog/?utm_source=x",
+   "status_final": 200,
+   "robots_googlebot_allowed": true,
+   "x_robots_tag": "",
+   "meta_robots": [
+    "follow, index, max-snippet:-1, max-video-preview:-1, max-image-preview:large"
+   ],
+   "canonical": [
+    "https://fluxintelligent.com/ia/blog/"
+   ],
+   "canonical_count": 1,
+   "link_header_canonical": [],
+   "self_canonical": false,
+   "noindex": false
+  },
+  {
+   "url": "https://fluxintelligent.com/agence-ia-immobilier-maroc",
+   "in_sitemap": false,
+   "sitemap": "",
+   "status_initial": 301,
+   "chain": [
+    "301->https://fluxintelligent.com/agence-ia-immobilier-maroc/"
+   ],
+   "final_url": "https://fluxintelligent.com/agence-ia-immobilier-maroc/",
+   "status_final": 200,
+   "robots_googlebot_allowed": true,
+   "x_robots_tag": "",
+   "meta_robots": [
+    "follow, index, max-snippet:-1, max-video-preview:-1, max-image-preview:large"
+   ],
+   "canonical": [
+    "https://fluxintelligent.com/agence-ia-immobilier-maroc/"
+   ],
+   "canonical_count": 1,
+   "link_header_canonical": [],
+   "self_canonical": true,
+   "noindex": false
+  },
+  {
+   "url": "https://fluxintelligent.com/wp-admin/",
+   "in_sitemap": false,
+   "sitemap": "",
+   "status_initial": 302,
+   "chain": [
+    "302->https://fluxintelligent.com/wp-login.php?redirect_to=https%3A%2F%2Ffluxintelligent.com%2Fwp-admin%2F&reauth=1"
+   ],
+   "final_url": "https://fluxintelligent.com/wp-login.php?redirect_to=https%3A%2F%2Ffluxintelligent.com%2Fwp-admin%2F&reauth=1",
+   "status_final": 200,
+   "robots_googlebot_allowed": false,
+   "x_robots_tag": "",
+   "meta_robots": [
+    "max-image-preview:large, noindex, noarchive"
+   ],
+   "canonical": [],
+   "canonical_count": 0,
+   "link_header_canonical": [],
+   "self_canonical": false,
+   "noindex": true
+  },
+  {
+   "url": "https://fluxintelligent.com/wp-login.php",
+   "in_sitemap": false,
+   "sitemap": "",
+   "status_initial": 200,
+   "chain": [],
+   "final_url": "https://fluxintelligent.com/wp-login.php",
+   "status_final": 200,
+   "robots_googlebot_allowed": true,
+   "x_robots_tag": "",
+   "meta_robots": [
+    "max-image-preview:large, noindex, noarchive"
+   ],
+   "canonical": [],
+   "canonical_count": 0,
+   "link_header_canonical": [],
+   "self_canonical": false,
+   "noindex": true
+  },
+  {
+   "url": "https://fluxintelligent.com/ia/",
+   "in_sitemap": false,
+   "sitemap": "",
+   "status_initial": 301,
+   "chain": [
+    "301->https://fluxintelligent.com/"
+   ],
+   "final_url": "https://fluxintelligent.com/",
+   "status_final": 200,
+   "robots_googlebot_allowed": true,
+   "x_robots_tag": "",
+   "meta_robots": [
+    "follow, index, max-snippet:-1, max-video-preview:-1, max-image-preview:large"
+   ],
+   "canonical": [
+    "https://fluxintelligent.com/"
+   ],
+   "canonical_count": 1,
+   "link_header_canonical": [],
+   "self_canonical": true,
+   "noindex": false
+  },
+  {
+   "url": "https://fluxintelligent.com/tag/ia/",
+   "in_sitemap": false,
+   "sitemap": "",
+   "status_initial": 404,
+   "chain": [],
+   "final_url": "https://fluxintelligent.com/tag/ia/",
+   "status_final": 404,
+   "robots_googlebot_allowed": true,
+   "x_robots_tag": "",
+   "meta_robots": [
+    "follow, noindex"
+   ],
+   "canonical": [],
+   "canonical_count": 0,
+   "link_header_canonical": [],
+   "self_canonical": false,
+   "noindex": true
+  }
+ ]
+}

@@ -1,0 +1,27 @@
+{
+ "https://fluxintelligent.com/pack-automatisation-ia-starter-89-e/": {
+  "status": 301,
+  "location": "https://www.paypal.com/ncp/payment/GEHJEQEJ8GMWW",
+  "depuis": [
+   "https://fluxintelligent.com/avant-apres-paquet-leadership-projet-ia/",
+   "https://fluxintelligent.com/arbre-kpi-sprint-automatisation-ia/",
+   "https://fluxintelligent.com/journal-decision-automatisation-ia-prioriser/",
+   "https://fluxintelligent.com/exemple-plan-exploitation-ia-30-jours-pme/"
+  ]
+ },
+ "https://fluxintelligent.com/automatisation-entreprise-maroc/": {
+  "status": 301,
+  "location": "https://fluxintelligent.com/automatisation-ia-pme-maroc/",
+  "depuis": [
+   "https://fluxintelligent.com/automatisation-des-processus/"
+  ]
+ },
+ "https://fluxintelligent.com/ia-hotels-tourisme-maroc-2026/": {
+  "status": 301,
+  "location": "https://fluxintelligent.com/automatisation-ia-hotel-fiabilite-technique-experience-client/",
+  "depuis": [
+   "https://fluxintelligent.com/chatbots-experience-client/",
+   "https://fluxintelligent.com/category/chatbots-experience-client-blog/"
+  ]
+ }
+}

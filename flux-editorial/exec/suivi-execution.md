@@ -102,3 +102,14 @@ Vérification : HTML public pour 3162, 3208 et 4489 ; aperçu authentifié (`?pr
 
 1. **Quota Surfer :** la création d'éditeur renvoie `quota_exceeded`. 19 contenus restent en attente, en brouillon ou non appliqués, sans score vérifié : 12 brouillons (section C) et 7 enrichissements (section D).
 2. **Purge LiteSpeed via Hostinger :** l'opération échoue (« 'litespeed-purge' is not a registered wp command »). La purge du cache serveur a suffi.
+
+## I. Indexation GSC (16/11)
+
+Voir `flux-editorial/gsc/RAPPORT-GSC-2026-11-16.md`.
+- Articles 3092 (/automatisation-entreprise-maroc/) et 3288 (/ia-hotels-tourisme-maroc-2026/) passés de publish à draft : leur 301 Rank Math est conservée et ils sortent du sitemap.
+- Restent à traiter :
+  - page 4473 : noindex mais présente dans le sitemap ;
+  - redirection factures qui pointe vers l'accueil ;
+  - liens internes des pages 4100 et 4009 ;
+  - purge du cache Hostinger ;
+  - validation dans GSC (aucun accès).

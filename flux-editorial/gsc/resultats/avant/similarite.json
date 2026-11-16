@@ -1,0 +1,801 @@
+{
+ "pairs": [
+  {
+   "a": "https://fluxintelligent.com/agent-ia-cabinet-dentaire-maroc/",
+   "b": "https://fluxintelligent.com/agent-ia-kinesitherapie-maroc/",
+   "jaccard": 0.344
+  },
+  {
+   "a": "https://fluxintelligent.com/agent-ia-clinique-veterinaire-maroc/",
+   "b": "https://fluxintelligent.com/agent-ia-cabinet-dentaire-maroc/",
+   "jaccard": 0.308
+  }
+ ],
+ "titres_dupliques": {},
+ "pages": [
+  {
+   "url": "https://fluxintelligent.com/ia/blog/",
+   "title": "Blog automatisation IA Maroc | Flux Intelligent",
+   "h1": [
+    "Archives"
+   ],
+   "mots": 379
+  },
+  {
+   "url": "https://fluxintelligent.com/agents-ia-vocaux-restaurants-hotels-maroc-choco/",
+   "title": "Agents IA vocaux pour restaurants et hôtels au Maroc",
+   "h1": [
+    "Réservation restaurant WhatsApp et agent vocal IA : guide pour restaurants et hôtels au Maroc"
+   ],
+   "mots": 2289
+  },
+  {
+   "url": "https://fluxintelligent.com/automatisation-ia-cafes-maroc-2025/",
+   "title": "Gestion café Maroc : piloter avec ses données de caisse",
+   "h1": [
+    "Gestion d’un café au Maroc : piloter avec ses données de caisse"
+   ],
+   "mots": 2110
+  },
+  {
+   "url": "https://fluxintelligent.com/logiciel-devis-btp-maroc/",
+   "title": "Logiciel devis bâtiment Maroc : devis, situations, chantier",
+   "h1": [
+    "Logiciel devis bâtiment Maroc : automatiser devis, situations et suivi de chantier"
+   ],
+   "mots": 2221
+  },
+  {
+   "url": "https://fluxintelligent.com/automatisation-cabinet-comptable-maroc/",
+   "title": "Logiciel cabinet comptable Maroc : collecte des pièces",
+   "h1": [
+    "Logiciel cabinet comptable au Maroc : automatiser la collecte des pièces et le suivi des dossiers"
+   ],
+   "mots": 2297
+  },
+  {
+   "url": "https://fluxintelligent.com/prevision-ventes-cafe-restaurant/",
+   "title": "Prévision des ventes restaurant : produire et acheter juste",
+   "h1": [
+    "Prévision des ventes restaurant : produire et acheter au plus juste dans un café ou un restaurant au Maroc"
+   ],
+   "mots": 1842
+  },
+  {
+   "url": "https://fluxintelligent.com/logiciel-location-voiture-maroc/",
+   "title": "Logiciel location voiture Maroc : documents et contrats",
+   "h1": [
+    "Logiciel de location de voiture au Maroc : automatiser documents, contrats et états des lieux"
+   ],
+   "mots": 2752
+  },
+  {
+   "url": "https://fluxintelligent.com/food-cost-restaurant-prix-achat/",
+   "title": "Calcul food cost restaurant : méthode et suivi des prix",
+   "h1": [
+    "Calcul food cost restaurant : méthode et suivi automatique des prix d’achat"
+   ],
+   "mots": 1960
+  },
+  {
+   "url": "https://fluxintelligent.com/automatisation-ia-agence-transport/",
+   "title": "Logiciel transport marchandises : BL, suivi et facturation",
+   "h1": [
+    "Logiciel transport marchandises : automatiser BL, suivi et facturation"
+   ],
+   "mots": 2369
+  },
+  {
+   "url": "https://fluxintelligent.com/reservation-directe-whatsapp-riad/",
+   "title": "Réservation hôtel WhatsApp : réservations directes au Maroc",
+   "h1": [
+    "Réservation hôtel WhatsApp : recevoir des réservations directes pour votre riad ou hôtel au Maroc"
+   ],
+   "mots": 1711
+  },
+  {
+   "url": "https://fluxintelligent.com/veille-appels-offres-maroc/",
+   "title": "Veille appels d'offres Maroc : automatiser le repérage",
+   "h1": [
+    "Veille appels d’offres au Maroc : automatiser le repérage et la préparation des dossiers"
+   ],
+   "mots": 1694
+  },
+  {
+   "url": "https://fluxintelligent.com/automatisation-centre-de-formation-maroc/",
+   "title": "Logiciel gestion centre de formation Maroc : automatiser",
+   "h1": [
+    "Logiciel gestion centre de formation Maroc : quoi automatiser autour de votre outil"
+   ],
+   "mots": 1753
+  },
+  {
+   "url": "https://fluxintelligent.com/automatisation-ia-hotel-fiabilite-technique-experience-client/",
+   "title": "Automatisation IA à l'hôtel : fiabilité avant tout",
+   "h1": [
+    "Automatisation hôtel au Maroc : cas d’usage IA et fiabilité technique en chambre"
+   ],
+   "mots": 3126
+  },
+  {
+   "url": "https://fluxintelligent.com/gestion-ecole-privee-frais-scolarite/",
+   "title": "Logiciel gestion école privée Maroc : frais et parents",
+   "h1": [
+    "Logiciel de gestion d’école privée au Maroc : automatiser frais de scolarité et lien avec les parents"
+   ],
+   "mots": 2423
+  },
+  {
+   "url": "https://fluxintelligent.com/logiciel-gestion-auto-ecole-maroc/",
+   "title": "Logiciel gestion auto-école Maroc : rappels et paiements",
+   "h1": [
+    "Logiciel de gestion d’auto-école au Maroc : automatiser rappels, paiements et WhatsApp"
+   ],
+   "mots": 1551
+  },
+  {
+   "url": "https://fluxintelligent.com/confirmation-commande-cod-whatsapp-maroc/",
+   "title": "Confirmation commande e-commerce Maroc : COD par WhatsApp",
+   "h1": [
+    "Confirmation de commande e-commerce au Maroc : automatiser le COD par WhatsApp"
+   ],
+   "mots": 2572
+  },
+  {
+   "url": "https://fluxintelligent.com/suivi-relance-devis-sans-double-saisie/",
+   "title": "Relancer ses devis sans double saisie au Maroc",
+   "h1": [
+    "Suivre et relancer ses devis sans double saisie : la méthode pour une PME au Maroc"
+   ],
+   "mots": 1515
+  },
+  {
+   "url": "https://fluxintelligent.com/comparer-devis-automatisation-ia-maroc/",
+   "title": "Comparer deux devis d'automatisation IA : la méthode pour une PME au Maroc - Flux Intelligent",
+   "h1": [
+    "Comparer deux devis d’automatisation IA : la méthode pour une PME au Maroc"
+   ],
+   "mots": 1779
+  },
+  {
+   "url": "https://fluxintelligent.com/automatisation-ia-pme-maroc/",
+   "title": "Automatisation PME au Maroc : par où commencer ?",
+   "h1": [
+    "Automatisation IA pour PME au Maroc : quel processus automatiser en premier ?"
+   ],
+   "mots": 1842
+  },
+  {
+   "url": "https://fluxintelligent.com/chatbot-ia-whatsapp-maroc/",
+   "title": "Chatbot WhatsApp ou agent IA au Maroc ?",
+   "h1": [
+    "Chatbot WhatsApp ou agent IA : lequel choisir pour votre PME au Maroc ?"
+   ],
+   "mots": 1414
+  },
+  {
+   "url": "https://fluxintelligent.com/automatisation-factures-ia-maroc/",
+   "title": "Factures et IA au Maroc : le guide opérationnel PME",
+   "h1": [
+    "Automatisation des factures au Maroc : le parcours d’une facture, de la réception à la validation"
+   ],
+   "mots": 1564
+  },
+  {
+   "url": "https://fluxintelligent.com/agent-ia-whatsapp-business-pme-maroc/",
+   "title": "Agent IA WhatsApp pour PME au Maroc : fonctions, tarifs et mise en place - Flux Intelligent",
+   "h1": [
+    "Agent IA WhatsApp pour PME au Maroc : fonctions, tarifs et mise en place"
+   ],
+   "mots": 2135
+  },
+  {
+   "url": "https://fluxintelligent.com/ia-pour-immobilier-au-maroc-automatiser-la-gestion-des-leads-et-des-visites-en-2026/",
+   "title": "IA immobilier au Maroc : automatiser leads et visites",
+   "h1": [
+    "IA pour l’immobilier au Maroc : qualifier les leads WhatsApp avant la visite"
+   ],
+   "mots": 2181
+  },
+  {
+   "url": "https://fluxintelligent.com/ia-salon-coiffure-automatisation/",
+   "title": "IA pour salon de coiffure au Maroc",
+   "h1": [
+    "IA pour salon de coiffure au Maroc : guide d’automatisation"
+   ],
+   "mots": 418
+  },
+  {
+   "url": "https://fluxintelligent.com/chatbot-whatsapp-pour-verifier-la-compatibilite-des-pieces-auto-au-maroc-guide-pour-boutiques-en-ligne/",
+   "title": "Chatbot WhatsApp pièces auto au Maroc : guide e-commerce",
+   "h1": [
+    "Chatbot WhatsApp pour vérifier la compatibilité des pièces auto au Maroc : guide pour boutiques en ligne"
+   ],
+   "mots": 1696
+  },
+  {
+   "url": "https://fluxintelligent.com/agent-ia-clinique-veterinaire-maroc/",
+   "title": "Agent IA clinique vétérinaire au Maroc : accueil automatisé",
+   "h1": [
+    "Agent IA pour clinique vétérinaire au Maroc : automatiser l’accueil sans remplacer le vétérinaire"
+   ],
+   "mots": 2179
+  },
+  {
+   "url": "https://fluxintelligent.com/technology-ai-structurer-une-demarche-fiable/",
+   "title": "Technology / AI : structurer une démarche fiable",
+   "h1": [
+    "Technology / AI : comment structurer une démarche technologique fiable"
+   ],
+   "mots": 1733
+  },
+  {
+   "url": "https://fluxintelligent.com/automatisation-ia-agence-de-change-maroc/",
+   "title": "Automatisation IA pour agences de change au Maroc",
+   "h1": [
+    "Agences de change au Maroc : ce que l’automatisation IA peut prendre en charge"
+   ],
+   "mots": 677
+  },
+  {
+   "url": "https://fluxintelligent.com/ia-transformation-fabrication-mecanique/",
+   "title": "IA pour fabrication mécanique Maroc",
+   "h1": [
+    "L’IA dans la fabrication mécanique au Maroc : production, qualité et maintenance"
+   ],
+   "mots": 943
+  },
+  {
+   "url": "https://fluxintelligent.com/avant-apres-paquet-leadership-projet-ia/",
+   "title": "Paquet leadership pour décider un projet IA",
+   "h1": [
+    "Avant / après : le paquet leadership pour décider d’un projet IA"
+   ],
+   "mots": 383
+  },
+  {
+   "url": "https://fluxintelligent.com/comment-ai-revolutionne-le-controle-qualite/",
+   "title": "IA et automatisation du contrôle qualité",
+   "h1": [
+    "Comment l’IA et l’automatisation transforment le contrôle qualité"
+   ],
+   "mots": 690
+  },
+  {
+   "url": "https://fluxintelligent.com/ia-avenir-emplois-maroc/",
+   "title": "Avenir des jobs au Maroc et intelligence artificielle",
+   "h1": [
+    "Avenir des jobs au Maroc face à l’intelligence artificielle"
+   ],
+   "mots": 490
+  },
+  {
+   "url": "https://fluxintelligent.com/arbre-kpi-sprint-automatisation-ia/",
+   "title": "Arbre KPI pour sprint d’automatisation IA",
+   "h1": [
+    "Arbre KPI pour piloter un sprint d’automatisation IA"
+   ],
+   "mots": 367
+  },
+  {
+   "url": "https://fluxintelligent.com/agent-ia-docteur-maroc/",
+   "title": "Agent IA pour docteur au Maroc",
+   "h1": [
+    "Agent IA pour docteur au Maroc : guide pour cabinets médicaux"
+   ],
+   "mots": 827
+  },
+  {
+   "url": "https://fluxintelligent.com/journal-decision-automatisation-ia-prioriser/",
+   "title": "Journal de décision pour automatisation IA",
+   "h1": [
+    "Journal de décision : prioriser vos projets d’automatisation IA"
+   ],
+   "mots": 340
+  },
+  {
+   "url": "https://fluxintelligent.com/marketing-digital-maroc/",
+   "title": "Marketing digital Maroc: Votre guide 2026 IA pour PME/ETI",
+   "h1": [
+    "Marketing digital au Maroc : guide IA 2026 pour PME et ETI"
+   ],
+   "mots": 3578
+  },
+  {
+   "url": "https://fluxintelligent.com/ecommerce-automatise-ia/",
+   "title": "E-commerce automatisé avec IA Maroc",
+   "h1": [
+    "E-commerce automatisé avec l’IA au Maroc : guide pratique"
+   ],
+   "mots": 613
+  },
+  {
+   "url": "https://fluxintelligent.com/exemple-plan-exploitation-ia-30-jours-pme/",
+   "title": "Plan d’exploitation IA en 30 jours pour PME",
+   "h1": [
+    "Exemple de plan d’exploitation IA sur 30 jours pour une PME"
+   ],
+   "mots": 410
+  },
+  {
+   "url": "https://fluxintelligent.com/agent-ia-cabinet-dentaire-maroc/",
+   "title": "Agent IA pour cabinet dentaire au Maroc | Flux Intelligent",
+   "h1": [
+    "Agent IA pour cabinet dentaire au Maroc : automatiser l’accueil sans perdre le contact humain"
+   ],
+   "mots": 2049
+  },
+  {
+   "url": "https://fluxintelligent.com/agent-ia-pharmacie-maroc/",
+   "title": "Agent IA Pharmacie Maroc | Flux Intelligent",
+   "h1": [
+    "Agent IA Pharmacie Maroc : automatiser le comptoir sans remplacer le pharmacien"
+   ],
+   "mots": 1906
+  },
+  {
+   "url": "https://fluxintelligent.com/agent-ia-garage-automobile-maroc/",
+   "title": "Agent IA garage automobile Maroc : RDV et rappels",
+   "h1": [
+    "Agent IA pour garage automobile au Maroc : automatiser l’accueil sans remplacer le mécanicien"
+   ],
+   "mots": 2074
+  },
+  {
+   "url": "https://fluxintelligent.com/agent-ia-kinesitherapie-maroc/",
+   "title": "Agent IA kinésithérapie Maroc | Flux Intelligent",
+   "h1": [
+    "Agent IA pour cabinet de kinésithérapie au Maroc : automatiser l’accueil sans remplacer le kinésithérapeute"
+   ],
+   "mots": 2267
+  },
+  {
+   "url": "https://fluxintelligent.com/agent-ia-institut-beaute-maroc/",
+   "title": "Agent IA Institut de Beauté au Maroc | Flux Intelligent",
+   "h1": [
+    "Agent IA pour institut de beauté au Maroc : automatiser la prise de rendez-vous sans remplacer l’esthéticienne"
+   ],
+   "mots": 2094
+  },
+  {
+   "url": "https://fluxintelligent.com/automatisation-ia-transformer-entreprise/",
+   "title": "Agence automatisation IA au Maroc",
+   "h1": [
+    "🚀 Comment une Agence d’Automatisation IA peut transformer votre entreprise au Maroc"
+   ],
+   "mots": 718
+  },
+  {
+   "url": "https://fluxintelligent.com/agent-ia-comptable-maroc/",
+   "title": "Comment un agent IA aide les comptables au Maroc",
+   "h1": [
+    "Agent IA comptable au Maroc : automatiser factures, relances et rapports"
+   ],
+   "mots": 1447
+  },
+  {
+   "url": "https://fluxintelligent.com/agent-ia-avocat-maroc/",
+   "title": "Comment un agent IA aide les avocats au Maroc 2025",
+   "h1": [
+    "⚖️ Comment un agent IA peut aider un avocat au Maroc à gérer son cabinet efficacement"
+   ],
+   "mots": 649
+  },
+  {
+   "url": "https://fluxintelligent.com/ia-entreprises-casablanca/",
+   "title": "Comment l’Intelligence Artificielle transforme Casablanca",
+   "h1": [
+    "🧠 Ce que l’Intelligence Artificielle peut changer à Casablanca"
+   ],
+   "mots": 535
+  },
+  {
+   "url": "https://fluxintelligent.com/workflow-ia-agence-transfert-argent-wafacash-cashplus/",
+   "title": "Workflow IA pour agence de transfert d argent",
+   "h1": [
+    "Comment un Workflow IA peut résoudre 80% des problèmes d’une agence de transfert d’argent (Wafacash, CashPlus, MoneyGram…)"
+   ],
+   "mots": 686
+  },
+  {
+   "url": "https://fluxintelligent.com/workflow-ia-agence-voyage/",
+   "title": "Comment l’IA fait gagner du temps aux agences de voyage",
+   "h1": [
+    "✈️🤖 Comment l’IA et les Workflows Automatisés font gagner des heures chaque jour à une agence de voyage"
+   ],
+   "mots": 651
+  },
+  {
+   "url": "https://fluxintelligent.com/workflow-ia-coach-musculation-maroc-2025/",
+   "title": "Workflow IA Coach Musculation Maroc 2025 : Guide Complet",
+   "h1": [
+    "🏋️‍♂️ Workflow IA Coach de Musculation au Maroc 2025 : Le Guide Complet"
+   ],
+   "mots": 903
+  },
+  {
+   "url": "https://fluxintelligent.com/digital-morocco-2030-pme-maroc-agents-ia/",
+   "title": "Digital Morocco 2030 : les agents IA pour les PME",
+   "h1": [
+    "Digital Morocco 2030 : pourquoi les PME marocaines doivent déployer des agents IA maintenant"
+   ],
+   "mots": 749
+  },
+  {
+   "url": "https://fluxintelligent.com/ia-maroc-partenariat-orange-morocco-pme-2026/",
+   "title": "Partenariat Orange Morocco : impact IA pour les PME",
+   "h1": [
+    "IA au Maroc : ce que le partenariat Orange Morocco change pour les PME"
+   ],
+   "mots": 1509
+  },
+  {
+   "url": "https://fluxintelligent.com/systeme-agents-ia-gouverne-maroc/",
+   "title": "Système d'agents IA gouverné au Maroc : le guide",
+   "h1": [
+    "Pourquoi votre entreprise a besoin d’un système d’agents IA gouverné au Maroc"
+   ],
+   "mots": 269
+  },
+  {
+   "url": "https://fluxintelligent.com/comment-lintelligence-artificielle-va-changer-le-commerce-des-produits-automobiles/",
+   "title": "L'IA dans le commerce automobile : ce qui change",
+   "h1": [
+    "Comment l’intelligence artificielle va changer le commerce des produits automobiles"
+   ],
+   "mots": 602
+  },
+  {
+   "url": "https://fluxintelligent.com/agent-ia-opticien-maroc/",
+   "title": "Agent IA pour opticien au Maroc : automatiser l'accueil",
+   "h1": [
+    "Agent IA pour opticien au Maroc : automatiser l’accueil sans remplacer l’opticien"
+   ],
+   "mots": 2022
+  },
+  {
+   "url": "https://fluxintelligent.com/",
+   "title": "Agence IA Maroc | Automatisation IA & Intégration IA",
+   "h1": [
+    "Agence IA Maroc : automatisez vos processus métier"
+   ],
+   "mots": 3987
+  },
+  {
+   "url": "https://fluxintelligent.com/automatisation-des-processus/recouvrement-factures-clients/",
+   "title": "Relance facture impayée : recouvrement automatisé au Maroc",
+   "h1": [
+    "Relance facture impayée : recouvrement des factures clients automatisé"
+   ],
+   "mots": 1944
+  },
+  {
+   "url": "https://fluxintelligent.com/agence-ia-immobilier-maroc/",
+   "title": "IA immobilier Maroc : agent IA pour agences et promoteurs",
+   "h1": [
+    "IA immobilier au Maroc : agent IA et automatisation pour agences et promoteurs"
+   ],
+   "mots": 1607
+  },
+  {
+   "url": "https://fluxintelligent.com/entretien-en-ligne/",
+   "title": "Entretien en ligne - Flux Intelligent",
+   "h1": [
+    "Entretien en ligne"
+   ],
+   "mots": 26
+  },
+  {
+   "url": "https://fluxintelligent.com/rejoignez-nous/",
+   "title": "Rejoignez-nous - Flux Intelligent",
+   "h1": [
+    "Vous construisez des systèmes qui tournent sans vous ? Écrivez-nous."
+   ],
+   "mots": 941
+  },
+  {
+   "url": "https://fluxintelligent.com/chatbots-experience-client/chatbot-whatsapp-maroc/",
+   "title": "Chatbot WhatsApp Maroc : automatisation pour PME",
+   "h1": [
+    "Chatbot WhatsApp Maroc pour automatiser vos ventes et votre support"
+   ],
+   "mots": 1303
+  },
+  {
+   "url": "https://fluxintelligent.com/ia/propos-de-nous/",
+   "title": "A propos | Agence automatisation IA Maroc",
+   "h1": [
+    "Flux Intelligent · Agence IA Maroc · Automatisation"
+   ],
+   "mots": 1837
+  },
+  {
+   "url": "https://fluxintelligent.com/agents-ia/",
+   "title": "Agents IA pour entreprises | Flux Intelligent",
+   "h1": [
+    "Nos Agents IA"
+   ],
+   "mots": 1288
+  },
+  {
+   "url": "https://fluxintelligent.com/chatbots-experience-client/prise-de-rendez-vous-ia/",
+   "title": "Prise de rendez-vous IA au Maroc - Flux Intelligent",
+   "h1": [
+    "Prise de rendez-vous IA au Maroc"
+   ],
+   "mots": 2241
+  },
+  {
+   "url": "https://fluxintelligent.com/ia/contact/",
+   "title": "Contact — Agence IA Maroc à Casablanca | Flux Intelligent",
+   "h1": [
+    "Parlez-nous de votre projet"
+   ],
+   "mots": 467
+  },
+  {
+   "url": "https://fluxintelligent.com/ia/conditions/",
+   "title": "Conditions générales | Flux Intelligent",
+   "h1": [
+    "Conditions générales d’utilisation et de vente"
+   ],
+   "mots": 409
+  },
+  {
+   "url": "https://fluxintelligent.com/ia/politique-confidentialite/",
+   "title": "Politique de confidentialité | Flux Intelligent",
+   "h1": [
+    "Politique de confidentialité"
+   ],
+   "mots": 315
+  },
+  {
+   "url": "https://fluxintelligent.com/ia/dmca/",
+   "title": "Politique DMCA | Flux Intelligent",
+   "h1": [
+    "Politique DMCA"
+   ],
+   "mots": 327
+  },
+  {
+   "url": "https://fluxintelligent.com/ia/nos-services/",
+   "title": "Services IA au Maroc | Flux Intelligent",
+   "h1": [
+    "Services IA Maroc : vendre plus vite, répondre mieux, travailler avec moins de friction."
+   ],
+   "mots": 1339
+  },
+  {
+   "url": "https://fluxintelligent.com/ia/automatisation-ia-casablanca/",
+   "title": "Agence IA Casablanca | Automatisation & agents IA",
+   "h1": [
+    "Agence IA Casablanca : automatiser les demandes qui saturent vos équipes"
+   ],
+   "mots": 1033
+  },
+  {
+   "url": "https://fluxintelligent.com/ia/automatisation-ia-marrakech/",
+   "title": "Agence IA Marrakech | Automatisation IA pour PME",
+   "h1": [
+    "Agence IA Marrakech : automatisation IA pour hôtels, tourisme, restaurants et PME"
+   ],
+   "mots": 692
+  },
+  {
+   "url": "https://fluxintelligent.com/ia/automatisation-ia-oujda/",
+   "title": "Agence IA Oujda | Automatisation IA pour PME",
+   "h1": [
+    "Agence IA Oujda : automatiser les demandes qui saturent vos équipes"
+   ],
+   "mots": 772
+  },
+  {
+   "url": "https://fluxintelligent.com/automatisation-ia-agadir/",
+   "title": "Agence IA Agadir | Automatisation IA pour PME",
+   "h1": [
+    "Automatisation IA Agadir : agence IA pour tourisme, commerce et PME"
+   ],
+   "mots": 715
+  },
+  {
+   "url": "https://fluxintelligent.com/ia/automatisation-ia-tetouan/",
+   "title": "Agence IA Tétouan | Automatisation IA pour PME",
+   "h1": [
+    "Agence IA Tétouan : automatiser les demandes qui saturent vos équipes"
+   ],
+   "mots": 1106
+  },
+  {
+   "url": "https://fluxintelligent.com/ia/agence-ia-rabat/",
+   "title": "Agence IA Rabat | Automatisation IA pour PME",
+   "h1": [
+    "Agence IA Rabat : automatiser les demandes qui saturent vos équipes"
+   ],
+   "mots": 1264
+  },
+  {
+   "url": "https://fluxintelligent.com/agents-ia/agent-ia-commercial/",
+   "title": "Agent IA commercial au Maroc - Flux Intelligent",
+   "h1": [
+    "Agent IA commercial au Maroc"
+   ],
+   "mots": 2653
+  },
+  {
+   "url": "https://fluxintelligent.com/agents-ia/agent-ia-support-client/",
+   "title": "Agent IA pour le support client au Maroc - Flux Intelligent",
+   "h1": [
+    "Agent IA pour le support client au Maroc"
+   ],
+   "mots": 2695
+  },
+  {
+   "url": "https://fluxintelligent.com/automatisation-des-processus/automatisation-n8n-make/",
+   "title": "Automatisation n8n et Make au Maroc - Flux Intelligent",
+   "h1": [
+    "Automatisation n8n et Make au Maroc"
+   ],
+   "mots": 2430
+  },
+  {
+   "url": "https://fluxintelligent.com/automatisation-des-processus/workflows-integrations-api/",
+   "title": "Intégration API au Maroc - Flux Intelligent",
+   "h1": [
+    "Intégration API au Maroc"
+   ],
+   "mots": 1956
+  },
+  {
+   "url": "https://fluxintelligent.com/automatisation-des-processus/automatisation-administrative/",
+   "title": "Automatisation administrative au Maroc - Flux Intelligent",
+   "h1": [
+    "Automatisation administrative au Maroc"
+   ],
+   "mots": 2450
+  },
+  {
+   "url": "https://fluxintelligent.com/chatbots-experience-client/agent-vocal-ia/",
+   "title": "Agent vocal IA au Maroc - Flux Intelligent",
+   "h1": [
+    "Agent vocal IA au Maroc"
+   ],
+   "mots": 1946
+  },
+  {
+   "url": "https://fluxintelligent.com/crm-ventes-marketing-ia/qualification-scoring-leads-ia/",
+   "title": "Scoring de leads IA au Maroc | Flux Intelligent",
+   "h1": [
+    "Qualification et scoring des leads IA au Maroc"
+   ],
+   "mots": 2149
+  },
+  {
+   "url": "https://fluxintelligent.com/crm-ventes-marketing-ia/relances-commerciales-automatisees/",
+   "title": "Relances commerciales IA au Maroc | Flux Intelligent",
+   "h1": [
+    "Relances commerciales automatisées IA au Maroc"
+   ],
+   "mots": 2203
+  },
+  {
+   "url": "https://fluxintelligent.com/automatisation-des-processus/",
+   "title": "Automatisation des processus IA au Maroc - Flux Intelligent",
+   "h1": [
+    "Automatisation des processus IA au Maroc"
+   ],
+   "mots": 2511
+  },
+  {
+   "url": "https://fluxintelligent.com/chatbots-experience-client/",
+   "title": "Chatbots & expérience client au Maroc - Flux Intelligent",
+   "h1": [
+    "Chatbots & expérience client au Maroc"
+   ],
+   "mots": 1700
+  },
+  {
+   "url": "https://fluxintelligent.com/crm-ventes-marketing-ia/",
+   "title": "CRM, ventes & marketing IA au Maroc - Flux Intelligent",
+   "h1": [
+    "CRM, ventes & marketing IA au Maroc"
+   ],
+   "mots": 2291
+  },
+  {
+   "url": "https://fluxintelligent.com/chatbots-experience-client/chatbots-multilingues-service-client-maroc/",
+   "title": "Chatbot IA multilingue au Maroc - Flux Intelligent",
+   "h1": [
+    "Chatbot IA multilingue au Maroc"
+   ],
+   "mots": 1769
+  },
+  {
+   "url": "https://fluxintelligent.com/automatisation-des-processus/comptable-au-maroc-ai/",
+   "title": "Automatisation comptable au Maroc - Flux Intelligent",
+   "h1": [
+    "Automatisation comptable au Maroc"
+   ],
+   "mots": 1713
+  },
+  {
+   "url": "https://fluxintelligent.com/crm-ventes-marketing-ia/crm-automation-maroc/",
+   "title": "CRM intelligent au Maroc - Flux Intelligent",
+   "h1": [
+    "CRM intelligent au Maroc"
+   ],
+   "mots": 1663
+  },
+  {
+   "url": "https://fluxintelligent.com/crm-ventes-marketing-ia/agence-de-marketing-digital/",
+   "title": "Marketing automation IA au Maroc | Flux Intelligent",
+   "h1": [
+    "Marketing automation et reporting au Maroc"
+   ],
+   "mots": 2121
+  },
+  {
+   "url": "https://fluxintelligent.com/automatisation-ia-fes/",
+   "title": "Agence IA Fès | Automatisation IA pour PME",
+   "h1": [
+    "Automatisation IA Fès : agence IA pour PME, services et commerce"
+   ],
+   "mots": 667
+  },
+  {
+   "url": "https://fluxintelligent.com/ia/devis/",
+   "title": "Devis IA Instantané | Flux Intelligent Maroc",
+   "h1": [
+    "Obtenez votre devis IA instantané"
+   ],
+   "mots": 348
+  },
+  {
+   "url": "https://fluxintelligent.com/automatisation-ia-meknes/",
+   "title": "Agence IA Meknès | Automatisation IA pour PME",
+   "h1": [
+    "Automatisation IA Meknès : agence IA pour PME et croissance commerciale"
+   ],
+   "mots": 685
+  },
+  {
+   "url": "https://fluxintelligent.com/automatisation-ia-tanger/",
+   "title": "Agence IA Tanger | Automatisation IA pour PME",
+   "h1": [
+    "Automatisation IA Tanger : agence IA pour PME, industrie et services"
+   ],
+   "mots": 427
+  },
+  {
+   "url": "https://fluxintelligent.com/ia/remboursement/",
+   "title": "Politique de Remboursement - Flux Intelligent",
+   "h1": [
+    "Politique de Remboursement"
+   ],
+   "mots": 274
+  },
+  {
+   "url": "https://fluxintelligent.com/category/agents-ia-blog/",
+   "title": "Agents IA - Flux Intelligent",
+   "h1": [
+    "Catégorie : Agents IA"
+   ],
+   "mots": 401
+  },
+  {
+   "url": "https://fluxintelligent.com/category/chatbots-experience-client-blog/",
+   "title": "Chatbots & expérience client - Flux Intelligent",
+   "h1": [
+    "Catégorie : Chatbots & expérience client"
+   ],
+   "mots": 359
+  },
+  {
+   "url": "https://fluxintelligent.com/category/crm-ventes-marketing-blog/",
+   "title": "CRM, ventes & marketing IA - Flux Intelligent",
+   "h1": [
+    "Catégorie : CRM, ventes & marketing IA"
+   ],
+   "mots": 295
+  }
+ ]
+}
