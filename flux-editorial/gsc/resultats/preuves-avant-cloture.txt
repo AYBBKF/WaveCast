@@ -1,0 +1,12 @@
+# Preuves publiques AVANT corrections (2026-11-16T20:39:41Z)
+page-sitemap contient entretien-en-ligne : 1
+meta robots 4473 : <meta name="robots" content="nofollow, noindex"/>
+ancienne URL factures : 301 https://fluxintelligent.com/
+3569 : 200
+sitemap_index.xml : Cf-Cache-Status: EXPIRED 
+post-sitemap.xml : Cf-Cache-Status: EXPIRED 
+page-sitemap.xml : Cf-Cache-Status: EXPIRED 
+category-sitemap.xml : Cf-Cache-Status: EXPIRED 
+accueil : Cf-Cache-Status: BYPASS
+[dry-run] page 4100 : 1 occurrence(s) de https://fluxintelligent.com/ia-hotels-tourisme-maroc-2026/ dans le rendu public -> remplacement par https://fluxintelligent.com/automatisation-ia-hotel-fiabilite-technique-experience-client/
+[dry-run] page 4009 : 1 occurrence(s) de https://fluxintelligent.com/automatisation-entreprise-maroc/ dans le rendu public -> remplacement par https://fluxintelligent.com/automatisation-ia-pme-maroc/
