@@ -117,3 +117,26 @@ Aucune page indexée, statuts inchangés ou fluctuants. C'est attendu : Google n
 - **Pertinence :** intention « logiciel salon de coiffure » (agenda, acompte, absences, rappels, réactivation des clientes), distincte de la page institut de beauté.
 - **Surfer :** non connecté (réauthentification requise). Aucun éditeur créé, aucun crédit consommé.
 - **Statut :** l'article publié reste inchangé jusqu'à un score Surfer vérifié entre 80 et 90.
+
+## État au 17/11, 12:30 UTC : contenus P3 préparés
+
+| Contenu | Fichier | État | Score Surfer | Vérification factuelle | Conditions restantes avant publication |
+|---|---|---|---|---|---|
+| Coach (3234), version B2B | `exec/html/workflow-ia-coach-musculation-maroc-2025-B2B-proposition.html` (1 539 mots) | **finalisé, en brouillon local**, URL conservée, distinct de 4505 | non mesuré (Surfer non connecté) | faite : aucun chiffre, client ni résultat inventé ; cas d'usage présentés comme scénarios types ; limites médicales et loi 09-08 ; seuls tarifs : ceux déjà publiés ; 6 liens internes en 200 | 1. score Surfer 80–90 ; 2. votre validation ; 3. lien vers 4505 seulement après vérification de sa publication (contrôle programmé le 18/11 à 09:30 UTC, `trig_015xsXZhSB843BUCoJtdogBW`) |
+| Salon (3299), enrichissement | `exec/html/ia-salon-coiffure-automatisation.html` (environ 1 700 mots) | **relu, en brouillon local** ; article publié inchangé | non mesuré | faite (voir « Décisions P3 ») | 1. Surfer reconnecté et **éditeur existant** retrouvé ; aucun nouveau crédit sans accord ; 2. score 80–90 ; 3. votre validation |
+
+**Cas d'usage ajoutés à la version coach :**
+- **Coach indépendant :** créneaux selon les zones de déplacement, carnets de séances, bilan mensuel.
+- **Coach en ligne :** retours vidéo, semaine type validée par le coach, relances sans automatisme répété.
+- **Studio multi-coachs :** planning partagé, petits groupes avec liste d'attente, remplacement d'un coach, vue gérant.
+
+**Demandes d'indexation manuelles prioritaires :**
+1. `https://fluxintelligent.com/agence-ia-immobilier-maroc/`
+2. `https://fluxintelligent.com/automatisation-ia-agence-transport/`
+
+Aucune autre demande, pas de nouvelle soumission du sitemap.
+
+**Contrôles programmés :**
+- 18/11 : publication de 4505.
+- 01/12 : statuts des 14 pages et dates d'exploration, comparés au relevé du 17/11.
+- 22/12 : bilan approfondi.
