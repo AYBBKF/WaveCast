@@ -39,3 +39,19 @@
 - **`valider_cloture.sh`** : 7 OK sur 11. Les 4 échecs portent sur le cache des sitemaps.
 - **70 tests** : 67 OK sur 70. Les 3 échecs portent sur le cache des sitemaps.
 - **Incident passager** : deux exécutions des tests ont été interrompues par des coupures de connexion, et deux réponses 502 ont été observées sur `/` et `/ia/blog/`. Elles coïncident avec une coupure du tunnel de sortie relevée par le proxy de l'environnement d'exécution. Le site est revenu en 200 juste après (12 requêtes vérifiées, moins de 1 s chacune). Une erreur passagère côté origine n'est pas exclue.
+
+## F. Cloudflare via l'API (17/11)
+
+- **Zone :** `fluxintelligent.com`, id `4b1d9d0347f9ee31f57447ccea74c9a2`, offre Free. Sauvegardes : `backup/cloudflare/`.
+- **Constat :** le ruleset de cache de la zone (`d753763b19b54d0c9d43156ea2e7c92a`, phase `http_request_cache_settings`) a été modifié pour la dernière fois le **2026-09-06**. La règle « Sitemaps XML - bypass » **n'existe pas** dans cette zone.
+- **Configuration observée :**
+  - Workers Routes : aucune.
+  - `cache_level` : aggressive.
+  - `browser_cache_ttl` : 14400.
+- **Cause racine, déduction non confirmée par lecture des règles :** une règle de ce ruleset, créée avant le 06/09, rend les XML éligibles au cache. Elle est lue par les en-têtes : XML en MISS puis HIT, alors que Cloudflare ne met pas en cache les .xml par défaut.
+- **Bloqué :** le jeton API ne peut ni lire ni modifier les Cache Rules (« request is not authorized »), ni lire les Page Rules (code 9109).
+- **Permissions manquantes :**
+  - Zone > Cache Rules : Edit ;
+  - Zone > Page Rules : Read ;
+  - Zone > Cache Purge : Purge.
+- **Aucune modification Cloudflare effectuée, aucune purge.**
