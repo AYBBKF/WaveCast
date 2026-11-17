@@ -1,0 +1,1 @@
+{"description":"Ancienne URL emoji 3288 - bypass","enabled":true,"action":"set_cache_settings","action_parameters":{"cache":false},"expression":"(http.host eq \"fluxintelligent.com\" and ends_with(http.request.uri.path, \"-comment-lia-transforme-les-hotels-et-le-tourisme-en-2026/\"))"}

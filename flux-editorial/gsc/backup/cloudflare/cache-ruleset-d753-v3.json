@@ -1,0 +1,59 @@
+{
+  "result": {
+    "description": "",
+    "id": "d753763b19b54d0c9d43156ea2e7c92a",
+    "kind": "zone",
+    "last_updated": "2026-11-17T11:56:51.817107Z",
+    "name": "default",
+    "phase": "http_request_cache_settings",
+    "rules": [
+      {
+        "action": "set_cache_settings",
+        "action_parameters": {
+          "cache": true,
+          "edge_ttl": {
+            "default": 7200,
+            "mode": "override_origin"
+          }
+        },
+        "description": "Cache HTML anonyme",
+        "enabled": true,
+        "expression": "(http.request.method eq \"GET\" and not starts_with(http.request.uri.path, \"/wp-admin\") and not starts_with(http.request.uri.path, \"/wp-json\") and not starts_with(http.request.uri.path, \"/wp-login\") and not starts_with(http.request.uri.path, \"/ia/devis\") and not any(http.request.headers[\"cookie\"][*] contains \"wordpress_logged_in\") and not any(http.request.headers[\"cookie\"][*] contains \"wp-postpass\") and not any(http.request.headers[\"cookie\"][*] contains \"comment_author\"))",
+        "id": "4d2b3c2cd0b944f28b45faa9e42fc8cc",
+        "last_updated": "2026-09-06T00:11:34.500093Z",
+        "ref": "4d2b3c2cd0b944f28b45faa9e42fc8cc",
+        "version": "1"
+      },
+      {
+        "action": "set_cache_settings",
+        "action_parameters": {
+          "cache": false
+        },
+        "description": "Sitemaps XML - bypass",
+        "enabled": true,
+        "expression": "(http.host eq \"fluxintelligent.com\" and http.request.uri.path in {\"/sitemap_index.xml\" \"/post-sitemap.xml\" \"/page-sitemap.xml\" \"/category-sitemap.xml\"})",
+        "id": "87a66295df1c4106845b0b0506c1cda0",
+        "last_updated": "2026-11-17T11:14:05.239626Z",
+        "ref": "87a66295df1c4106845b0b0506c1cda0",
+        "version": "1"
+      },
+      {
+        "action": "set_cache_settings",
+        "action_parameters": {
+          "cache": false
+        },
+        "description": "Ancienne URL emoji 3288 - bypass",
+        "enabled": true,
+        "expression": "(http.host eq \"fluxintelligent.com\" and ends_with(http.request.uri.path, \"-comment-lia-transforme-les-hotels-et-le-tourisme-en-2026/\"))",
+        "id": "f5886706fe2e4cbd84acdf46b177eb6b",
+        "last_updated": "2026-11-17T11:56:51.817107Z",
+        "ref": "f5886706fe2e4cbd84acdf46b177eb6b",
+        "version": "1"
+      }
+    ],
+    "version": "3"
+  },
+  "success": true,
+  "errors": [],
+  "messages": []
+}

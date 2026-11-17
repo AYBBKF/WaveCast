@@ -246,3 +246,46 @@ Toutes sont en 200, indexables, auto-canoniques et présentes dans le sitemap (7
 2. Validation « Page en double », dans l'interface, après le point 1.
 3. Nouvelle exploration par Google des 2 URL corrigées et des 14 pages non indexées.
 4. Révocation des 2 jetons Cloudflare et suppression des secrets de l'environnement Default (action utilisateur).
+
+## M. Correction finale de l'URL à emoji et contrôle Google (17/11, 11:55–12:05 UTC)
+
+### Cause et correction
+
+- **Origine :** déjà conforme (règle Rank Math 22), 301 vers 3828.
+- **Cloudflare :** la purge par URL fonctionne sur la zone (test sur `robots.txt` : `HIT`, `Age` 4 286 s, devenu `BYPASS`). Pour l'URL à emoji, elle **reste sans effet** malgré trois formes d'encodage (`%F0%9F%8F%A8`, `%f0%9f%8f%a8`, UTF-8 brut), avec la normalisation d'URL `cloudflare` sur les requêtes entrantes. La clé de cache stockée pour ce chemin ne correspond pas à l'URL purgée. Cause exacte non exposée par l'API (offre Free, sans Custom Cache Key).
+- **Correction :** Cache Rule **`f5886706fe2e4cbd84acdf46b177eb6b`** « Ancienne URL emoji 3288 - bypass », ajoutée en dernière position (ruleset `d753…` passé de la version 2 à la version 3).
+  - Expression : `(http.host eq "fluxintelligent.com" and ends_with(http.request.uri.path, "-comment-lia-transforme-les-hotels-et-le-tourisme-en-2026/"))`.
+  - Action : `cache: false`.
+  - Effet limité à cette seule URL. La règle globale « Cache HTML anonyme » n'est pas modifiée.
+  - Sauvegarde : `backup/cloudflare/cache-ruleset-d753-v2-avant-regle-emoji.json`.
+  - Rollback : `DELETE …/rulesets/d753763b19b54d0c9d43156ea2e7c92a/rules/f5886706fe2e4cbd84acdf46b177eb6b`.
+
+### Preuves publiques
+
+- **URL à emoji :** 4 requêtes GET avec l'user-agent Googlebot, toutes en `DYNAMIC`, `Location` vers `/automatisation-ia-hotel-fiabilite-technique-experience-client/`, `X-Redirect-By: Rank Math`. Résolution finale : **200 en 1 saut**.
+- **Autres URL, sans régression :**
+
+  | URL | Réponse |
+  |---|---|
+  | `/` | BYPASS, 200 |
+  | 3828 | BYPASS, 200 |
+  | `/post-sitemap.xml` | DYNAMIC, 200 |
+  | `/robots.txt` | BYPASS, 200 (vidé par la purge de test) |
+
+- Recontrôle programmé de 13:32 UTC annulé, devenu inutile.
+
+### Google (inspection API)
+
+| URL | Couverture | Canonique déclarée lors de l'exploration | Canonique choisie par Google | Dernière exploration |
+|---|---|---|---|---|
+| `/ia-hotels-tourisme-maroc-2026/` | Page en double | elle-même | 3828 | 2026-10-23 |
+| `/🏨-comment-lia-transforme-…-2026/` | Page en double | elle-même | 3828 | 2026-08-23 |
+| 3828 `/automatisation-ia-hotel-fiabilite-technique-experience-client/` | **Envoyée et indexée**, verdict PASS, autorisée par robots.txt | elle-même | elle-même | 2026-11-08 |
+
+- **Lecture :** Google avait déjà regroupé ces deux URL sur 3828. Elles redirigent maintenant en 301 vers 3828. À la prochaine exploration, elles devraient passer en « Page avec redirection », une exclusion normale.
+- **Ces 2 URL ne sont pas la liste exhaustive du motif.** L'API ne fournit pas le rapport complet.
+
+### Pages non indexées
+
+- Liste séparée : `PAGES-NON-INDEXEES.md` (14 pages, priorités P1 à P3).
+- Aucune modification ni publication.
