@@ -140,3 +140,18 @@ Aucune autre demande, pas de nouvelle soumission du sitemap.
 - 18/11 : publication de 4505.
 - 01/12 : statuts des 14 pages et dates d'exploration, comparés au relevé du 17/11.
 - 22/12 : bilan approfondi.
+
+### Relevé GSC du 17/11 au soir (audit 360°)
+
+**Indexées : 2 sur 14**
+- **`/agence-ia-immobilier-maroc/` (P1)** : Envoyée et indexée, exploration du 17/11 à 15:23 UTC, canonique Google = la page elle-même, données structurées PASS.
+- **`/rapprochement-encaissements-cod/`** : Envoyée et indexée, exploration du 17/11 à 20:17 UTC.
+
+**Non indexées : 12, sans changement**
+- 8 détectées : dentaire, pharmacie, vétérinaire, institut de beauté, food cost, centre de formation, suivi-relance-devis, comparer-devis.
+- 1 inconnue : confirmation COD.
+- 3 explorées, non indexées : transport, coach, salon.
+
+**Demande manuelle restante :** `/automatisation-ia-agence-transport/` (la P1 est déjà indexée).
+
+Voir `AUDIT-GSC-360-2026-11-17.md`.

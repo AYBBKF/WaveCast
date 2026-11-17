@@ -1,0 +1,90 @@
+{
+ "pages": 98,
+ "pages_vides": [],
+ "contenu_mixte": {},
+ "internes_total": 106,
+ "internes_non_200": [
+  {
+   "url": "https://fluxintelligent.com/pack-automatisation-ia-starter-89-e/",
+   "status": 301,
+   "loc": "https://www.paypal.com/ncp/payment/GEHJEQEJ8GMWW",
+   "depuis": [
+    "https://fluxintelligent.com/arbre-kpi-sprint-automatisation-ia/",
+    "https://fluxintelligent.com/avant-apres-paquet-leadership-projet-ia/",
+    "https://fluxintelligent.com/exemple-plan-exploitation-ia-30-jours-pme/",
+    "https://fluxintelligent.com/journal-decision-automatisation-ia-prioriser/"
+   ],
+   "n": 4
+  }
+ ],
+ "externes_total": 82,
+ "externes_en_erreur": [
+  {
+   "url": "https://x.com/fluxintelligent",
+   "status": 403,
+   "info": "",
+   "depuis": [
+    "https://fluxintelligent.com/",
+    "https://fluxintelligent.com/agence-ia-immobilier-maroc/",
+    "https://fluxintelligent.com/agent-ia-avocat-maroc/",
+    "https://fluxintelligent.com/agent-ia-cabinet-dentaire-maroc/",
+    "https://fluxintelligent.com/agent-ia-clinique-veterinaire-maroc/"
+   ],
+   "n": 98
+  },
+  {
+   "url": "https://openai.com/index/choco/",
+   "status": 403,
+   "info": "",
+   "depuis": [
+    "https://fluxintelligent.com/agents-ia-vocaux-restaurants-hotels-maroc-choco/"
+   ],
+   "n": 1
+  },
+  {
+   "url": "https://www.lebrief.ma/tribunes/le-boom-du-marketing-digital-au-maroc-opportunites-ou-illusion/",
+   "status": 403,
+   "info": "",
+   "depuis": [
+    "https://fluxintelligent.com/marketing-digital-maroc/"
+   ],
+   "n": 1
+  },
+  {
+   "url": "https://medias24.com/2026/03/10/ouverture-du-capital-des-pharmacies-les-eclairages-dahmed-rahhou-1-2-1640749",
+   "status": 403,
+   "info": "",
+   "depuis": [
+    "https://fluxintelligent.com/agent-ia-pharmacie-maroc/"
+   ],
+   "n": 1
+  },
+  {
+   "url": "https://www.has-sante.fr/jcms/p_3703115/fr/premieres-clefs-d-usage-de-l-ia-generative-en-sante",
+   "status": 403,
+   "info": "",
+   "depuis": [
+    "https://fluxintelligent.com/agent-ia-kinesitherapie-maroc/"
+   ],
+   "n": 1
+  },
+  {
+   "url": "https://www.anrt.ma/indicateurs/observatoires/mobile",
+   "status": 0,
+   "info": "<urlopen error [Errno 104] Connection reset by peer>",
+   "depuis": [
+    "https://fluxintelligent.com/agent-ia-institut-beaute-maroc/"
+   ],
+   "n": 1
+  },
+  {
+   "url": "https://www.sgg.gov.ma/Portals/0/profession_reglementee/dah_opt_fr.pdf",
+   "status": 0,
+   "info": "<urlopen error [Errno 104] Connection reset by peer>",
+   "depuis": [
+    "https://fluxintelligent.com/agent-ia-opticien-maroc/"
+   ],
+   "n": 1
+  }
+ ]
+}
