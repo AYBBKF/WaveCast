@@ -135,3 +135,13 @@
 - **Données des alertes :** les impressions Site Kit ne sont **pas** utilisées comme substitut. Exports CSV attendus dans `gsc-exports/`.
 - **URL à emoji :** toujours servie depuis le cache Cloudflare (`HIT`, `Age` 479 s, ancienne cible `/?p=3288`, donc 404). L'origine est correcte : 301 Rank Math vers 3828. Expiration prévue vers 13:23 UTC, recontrôle programmé à 13:32 UTC. **Non encore conforme publiquement.**
 - **Jetons Cloudflare :** révocation impossible avec les droits du jeton actuel (pas de permission « API Tokens »). Révocation à faire par l'utilisateur.
+
+## J. Vérification Composio / Google Search Console (17/11, 11:34 UTC)
+
+- **Connexion Composio GSC :** active (`google_search_console_belter-stan`).
+- **Compte Google authentifié** (lu par l'API userinfo) : `salesandshop22@gmail.com` (« BW Startup »).
+- **Outils GSC disponibles :** LIST_SITES, GET_SITE, SEARCH_ANALYTICS_QUERY, INSPECT_URL, LIST_SITEMAPS, GET_SITEMAP, SUBMIT_SITEMAP, ADD_SITE.
+- **Propriétés accessibles :** 11, sans `fluxintelligent.com`. `GET_SITE` renvoie 404 « not a verified Search Console site in this account » pour `https://fluxintelligent.com/` comme pour `sc-domain:fluxintelligent.com`.
+- **Propriétaire actuel de la propriété** `https://fluxintelligent.com/` : le compte Google relié à Site Kit sur le site, différent du compte Composio.
+- **Autorisation manquante :** ajouter `salesandshop22@gmail.com` comme utilisateur **Complet** (ou Propriétaire) de la propriété `https://fluxintelligent.com/`.
+- **Limite de l'API, même avec cet accès :** aucun point d'accès pour exporter les listes du rapport « Pages » (motifs d'exclusion), ni pour « Valider la correction ». L'inspection d'URL, les statistiques et les sitemaps sont possibles.
