@@ -49,3 +49,71 @@
 Détail : `resultats/maillage-ajouts.json`. Mesures avant/après : `resultats/maillage-avant.json` et `resultats/maillage-apres.json`.
 
 **Retour arrière :** restaurer le champ `content.raw` de la sauvegarde horodatée de chaque page. Pour le title de P1 : `backup/maillage/rankmath-4489-avant.json`.
+
+## Suivi
+
+### Relevé GSC du 17/11, 12:10 UTC (quelques heures après le maillage)
+
+Aucune page indexée, statuts inchangés ou fluctuants. C'est attendu : Google n'est pas repassé.
+
+| URL | Couverture | Dernière exploration | Pages référentes vues par Google |
+|---|---|---|---|
+| `/agence-ia-immobilier-maroc/` (P1) | Google ne reconnaît pas cette URL | – | 0 |
+| `/agent-ia-cabinet-dentaire-maroc/` | Détectée, non indexée | – | 0 |
+| `/agent-ia-pharmacie-maroc/` | Détectée, non indexée | – | 0 |
+| `/agent-ia-clinique-veterinaire-maroc/` | Google ne reconnaît pas cette URL | – | 0 |
+| `/agent-ia-institut-beaute-maroc/` | Détectée, non indexée | – | 0 |
+| `/confirmation-commande-cod-whatsapp-maroc/` | Détectée, non indexée | – | 0 |
+| `/food-cost-restaurant-prix-achat/` | Détectée, non indexée | – | 0 |
+| `/automatisation-centre-de-formation-maroc/` | Détectée, non indexée | – | 0 |
+| `/suivi-relance-devis-sans-double-saisie/` | Google ne reconnaît pas cette URL | – | 0 |
+| `/comparer-devis-automatisation-ia-maroc/` | Google ne reconnaît pas cette URL | – | 0 |
+| `/rapprochement-encaissements-cod/` | Google ne reconnaît pas cette URL | – | 0 |
+| `/automatisation-ia-agence-transport/` | Explorée, non indexée | 2026-08-04 | 2 |
+| `/workflow-ia-coach-musculation-maroc-2025/` | Explorée, non indexée | 2026-09-06 | 1 |
+| `/ia-salon-coiffure-automatisation/` | Explorée, non indexée | 2026-06-16 | 1 |
+
+**Sitemap :** non resoumis. Dernière soumission le 17/11 à 11:45, acceptée.
+
+### Demandes d'indexation manuelles (API indisponible pour cette action)
+
+1. **`https://fluxintelligent.com/agence-ia-immobilier-maroc/`** : maintenant.
+2. **`https://fluxintelligent.com/automatisation-ia-agence-transport/`** : pertinent, car le contenu a été enrichi le 03/11 après la dernière exploration du 04/08.
+
+**Procédure :** Search Console > Inspection de l'URL > coller l'URL > « Demander une indexation ». Ne pas le faire pour les pages P3 non enrichies.
+
+### Contrôles programmés (dans cette session)
+
+| Date | Contrôle | Identifiant de la tâche |
+|---|---|---|
+| **01/12/2026, 09:10 UTC** | statuts des 14 pages, plus publication et indexabilité de 4505 | `trig_015VYrtNQeZtv7wHKtaLVche` |
+| **22/12/2026, 09:10 UTC** | bilan à 5 semaines : différenciation des pages métiers, pertinence des pages sources, aucun lien artificiel | `trig_01TC2m6WTpsSopqyoym9ZGy8` |
+
+## Décisions P3 (17/11)
+
+### Coach musculation (3234) : pas de fusion, deux contenus distincts
+
+| | `/workflow-ia-coach-musculation-maroc-2025/` (actuel) | `/fidelisation-salle-de-sport/` (4505, programmé le 18/11) |
+|---|---|---|
+| Intention | grand public : un pratiquant obtient un programme et un plan alimentaire d'une IA | B2B gérant de salle : repérer les abonnés sur le départ, relances, renouvellements |
+| Volume | 919 mots, intertitres à emojis, « 2025 » dans le titre | 2 043 mots, structure méthodique |
+| Risque | conseils d'entraînement et de nutrition nominatifs générés par une IA, angle « IA contre coach humain » | – |
+
+- **Proposition B2B préparée, non publiée :** `exec/html/workflow-ia-coach-musculation-maroc-2025-B2B-proposition.html`.
+  - Cible : le coach indépendant ou le studio (accueil, rappels de séances, suivi hebdomadaire, brouillon de programme **validé par le coach**, forfaits et paiements, limites médicales et loi 09-08).
+  - Intention distincte de 4505, vers lequel elle renvoie une seule fois.
+  - URL conservée. Title proposé sans « 2025 ».
+  - Aucun chiffre ni témoignage inventé ; seuls les tarifs déjà publiés par Flux Intelligent.
+- **Conditions de publication :** votre accord, plus un score Surfer officiel entre 80 et 90, plus 4505 publié et indexable (pour le lien).
+
+### Salon de coiffure (3299) : enrichissement relu, conservé en brouillon
+
+- **Fichier :** `exec/html/ia-salon-coiffure-automatisation.html` (environ 1 700 mots).
+- **Contrôle des faits :** conforme.
+  - Seuls tarifs : ceux déjà publiés (3 000 DH ; 8 000 à 80 000 DH).
+  - Fenêtre de 24 heures WhatsApp et modèles validés par Meta : exact.
+  - Loi 09-08 et CNDP mentionnées avec prudence.
+  - Aucun résultat promis.
+- **Pertinence :** intention « logiciel salon de coiffure » (agenda, acompte, absences, rappels, réactivation des clientes), distincte de la page institut de beauté.
+- **Surfer :** non connecté (réauthentification requise). Aucun éditeur créé, aucun crédit consommé.
+- **Statut :** l'article publié reste inchangé jusqu'à un score Surfer vérifié entre 80 et 90.
