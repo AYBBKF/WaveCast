@@ -1,0 +1,10 @@
+# AVANT (2026-11-17T11:14:01Z)
+sitemap_index.xml #1 : Cf-Cache-Status: EXPIRED 
+sitemap_index.xml #2 : Age: 0 Cf-Cache-Status: HIT 
+post-sitemap.xml #1 : Age: 1346 Cf-Cache-Status: HIT 
+post-sitemap.xml #2 : Age: 1346 Cf-Cache-Status: HIT 
+page-sitemap.xml #1 : Cf-Cache-Status: EXPIRED 
+page-sitemap.xml #2 : Age: 0 Cf-Cache-Status: HIT 
+category-sitemap.xml #1 : Cf-Cache-Status: EXPIRED 
+category-sitemap.xml #2 : Age: 0 Cf-Cache-Status: HIT 
+accueil : Cf-Cache-Status: BYPASS

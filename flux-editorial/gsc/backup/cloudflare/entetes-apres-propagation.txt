@@ -1,0 +1,14 @@
+# APRÈS propagation (2026-11-17T11:14:47Z)
+sitemap_index.xml #1 : Cf-Cache-Status: DYNAMIC HTTP 200 
+sitemap_index.xml #2 : Cf-Cache-Status: DYNAMIC HTTP 200 
+sitemap_index.xml #3 : Cf-Cache-Status: DYNAMIC HTTP 200 
+post-sitemap.xml #1 : Cf-Cache-Status: DYNAMIC HTTP 200 
+post-sitemap.xml #2 : Cf-Cache-Status: DYNAMIC HTTP 200 
+post-sitemap.xml #3 : Cf-Cache-Status: DYNAMIC HTTP 200 
+page-sitemap.xml #1 : Cf-Cache-Status: DYNAMIC HTTP 200 
+page-sitemap.xml #2 : Cf-Cache-Status: DYNAMIC HTTP 200 
+page-sitemap.xml #3 : Cf-Cache-Status: DYNAMIC HTTP 200 
+category-sitemap.xml #1 : Cf-Cache-Status: DYNAMIC HTTP 200 
+category-sitemap.xml #2 : Cf-Cache-Status: DYNAMIC HTTP 200 
+category-sitemap.xml #3 : Cf-Cache-Status: DYNAMIC HTTP 200 
+accueil : Cf-Cache-Status: BYPASS

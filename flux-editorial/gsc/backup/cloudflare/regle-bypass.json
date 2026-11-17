@@ -1,0 +1,1 @@
+{"description":"Sitemaps XML - bypass","enabled":true,"action":"set_cache_settings","action_parameters":{"cache":false},"expression":"(http.host eq \"fluxintelligent.com\" and http.request.uri.path in {\"/sitemap_index.xml\" \"/post-sitemap.xml\" \"/page-sitemap.xml\" \"/category-sitemap.xml\"})"}

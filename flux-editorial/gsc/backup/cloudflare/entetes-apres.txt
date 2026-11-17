@@ -1,0 +1,18 @@
+# APRÈS (2026-11-17T11:14:21Z)
+sitemap_index.xml #1 : Cf-Cache-Status: DYNAMIC HTTP 200 
+sitemap_index.xml #2 : Cf-Cache-Status: DYNAMIC HTTP 200 
+sitemap_index.xml #3 : Cf-Cache-Status: DYNAMIC HTTP 200 
+post-sitemap.xml #1 : Age: 1366 Cf-Cache-Status: HIT HTTP 200 
+post-sitemap.xml #2 : Cf-Cache-Status: DYNAMIC HTTP 200 
+post-sitemap.xml #3 : Cf-Cache-Status: DYNAMIC HTTP 200 
+page-sitemap.xml #1 : Cf-Cache-Status: DYNAMIC HTTP 200 
+page-sitemap.xml #2 : Cf-Cache-Status: DYNAMIC HTTP 200 
+page-sitemap.xml #3 : Cf-Cache-Status: DYNAMIC HTTP 200 
+category-sitemap.xml #1 : Cf-Cache-Status: DYNAMIC HTTP 200 
+category-sitemap.xml #2 : Age: 22 Cf-Cache-Status: HIT HTTP 200 
+category-sitemap.xml #3 : Age: 22 Cf-Cache-Status: HIT HTTP 200 
+accueil #1 : Cf-Cache-Status: BYPASS
+accueil #2 : Cf-Cache-Status: BYPASS
+page HTML /agents-ia/ : Cf-Cache-Status: BYPASS
+robots.txt : Age: 1784 Cf-Cache-Status: HIT 
+contenu : post=56 page=39 index=3 3092/3288/4473=0 xml_valide=1

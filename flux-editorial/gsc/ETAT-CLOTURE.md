@@ -55,3 +55,22 @@
   - Zone > Page Rules : Read ;
   - Zone > Cache Purge : Purge.
 - **Aucune modification Cloudflare effectuée, aucune purge.**
+
+## G. Correction Cloudflare appliquée (17/11, 11:14 UTC)
+
+- **Cause racine confirmée :** la Cache Rule existante « Cache HTML anonyme » (`4d2b3c2cd0b944f28b45faa9e42fc8cc`, ruleset `d753763b19b54d0c9d43156ea2e7c92a`) met en cache toutes les requêtes GET anonymes, avec un TTL de périphérie forcé à 7 200 s (`override_origin`). Les sitemaps y sont inclus. Il n'y a ni Page Rule, ni Workers Route.
+- **Modification :** ajout d'une seule règle, **`87a66295df1c4106845b0b0506c1cda0`** « Sitemaps XML - bypass », en dernière position (ruleset passé de la version 1 à la version 2) :
+  - expression : `(http.host eq "fluxintelligent.com" and http.request.uri.path in {"/sitemap_index.xml" "/post-sitemap.xml" "/page-sitemap.xml" "/category-sitemap.xml"})` ;
+  - action : `set_cache_settings`, `cache: false`.
+
+  La règle « Cache HTML anonyme » n'a pas été modifiée.
+- **Purge :** uniquement les 4 URL de sitemap, deux fois. La seconde purge a été faite après la propagation de la règle : un serveur Cloudflare avait remis `category-sitemap.xml` en cache pendant celle-ci.
+- **Preuves** (`backup/cloudflare/`) :
+  - `entetes-avant.txt` : sitemaps en EXPIRED puis HIT, avec un `Age` allant jusqu'à 1 346 s ;
+  - `entetes-apres-propagation.txt` : les 4 sitemaps en `DYNAMIC` sur 3 requêtes, en HTTP 200, sans `Age` ; page d'accueil toujours en `BYPASS`.
+- **Contenu des sitemaps :** XML valide. `post-sitemap.xml` contient 56 URL (un article programmé a été publié le 17/11 à 09:00 Maroc), `page-sitemap.xml` 39. Aucune occurrence de 3092, 3288 ni 4473.
+- **`valider_cloture.sh` :** 11 OK sur 11.
+- **70 tests :** 70 OK sur 70. Fichier : `resultats/apres/tests-apres-bypass-cloudflare.txt`.
+- **Rollback :** `DELETE /zones/4b1d9d0347f9ee31f57447ccea74c9a2/rulesets/d753763b19b54d0c9d43156ea2e7c92a/rules/87a66295df1c4106845b0b0506c1cda0`. Configuration initiale : `backup/cloudflare/cache-ruleset-d753-avant.json`.
+- **Ce sont des preuves techniques**, pas une validation Google. Les deux alertes Search Console restent à vérifier sur les exports réels.
+- **Sécurité :** révoquer les deux jetons API Cloudflare et supprimer l'entrée `api.cloudflare.com` des Network secrets de l'environnement Default.
