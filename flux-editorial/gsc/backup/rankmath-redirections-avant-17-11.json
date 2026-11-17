@@ -1,0 +1,275 @@
+[
+ {
+  "id": "21",
+  "sources": [
+   {
+    "ignore": "",
+    "pattern": "ia-hotels-tourisme-maroc-2026",
+    "comparison": "exact"
+   }
+  ],
+  "url_to": "https://fluxintelligent.com/automatisation-ia-hotel-fiabilite-technique-experience-client/",
+  "header_code": "301",
+  "status": "active"
+ },
+ {
+  "id": "20",
+  "sources": [
+   {
+    "ignore": "",
+    "pattern": "automatisation-entreprise-maroc/",
+    "comparison": "exact"
+   }
+  ],
+  "url_to": "https://fluxintelligent.com/automatisation-ia-pme-maroc/",
+  "header_code": "301",
+  "status": "active"
+ },
+ {
+  "id": "19",
+  "sources": [
+   {
+    "ignore": "",
+    "pattern": "whatsapp-business-maroc-agent-ia/",
+    "comparison": "exact"
+   }
+  ],
+  "url_to": "https://fluxintelligent.com/chatbots-experience-client/chatbot-whatsapp-maroc/",
+  "header_code": "301",
+  "status": "active"
+ },
+ {
+  "id": "18",
+  "sources": [
+   {
+    "ignore": "",
+    "pattern": "chatbot-ia-maroc-whatsapp-business-leads/",
+    "comparison": "exact"
+   }
+  ],
+  "url_to": "https://fluxintelligent.com/chatbots-experience-client/chatbot-whatsapp-maroc/",
+  "header_code": "301",
+  "status": "active"
+ },
+ {
+  "id": "17",
+  "sources": [
+   {
+    "ignore": "",
+    "pattern": "automatisation-des-factures-par-ia-au-maroc/",
+    "comparison": "exact"
+   }
+  ],
+  "url_to": "https://fluxintelligent.com/automatisation-factures-ia-maroc/",
+  "header_code": "301",
+  "status": "active"
+ },
+ {
+  "id": "16",
+  "sources": [
+   {
+    "ignore": "",
+    "pattern": "chatbots-multilingues-service-client-maroc/",
+    "comparison": "exact"
+   }
+  ],
+  "url_to": "https://fluxintelligent.com/chatbots-experience-client/chatbots-multilingues-service-client-maroc/",
+  "header_code": "301",
+  "status": "active"
+ },
+ {
+  "id": "15",
+  "sources": [
+   {
+    "ignore": "",
+    "pattern": "comptable-au-maroc-ai/",
+    "comparison": "exact"
+   }
+  ],
+  "url_to": "https://fluxintelligent.com/automatisation-des-processus/comptable-au-maroc-ai/",
+  "header_code": "301",
+  "status": "active"
+ },
+ {
+  "id": "14",
+  "sources": [
+   {
+    "ignore": "",
+    "pattern": "ia/about/",
+    "comparison": "exact"
+   }
+  ],
+  "url_to": "https://fluxintelligent.com/ia/propos-de-nous/",
+  "header_code": "301",
+  "status": "active"
+ },
+ {
+  "id": "13",
+  "sources": [
+   {
+    "ignore": "",
+    "pattern": "ia/agence-ia-maroc",
+    "comparison": "exact"
+   }
+  ],
+  "url_to": "https://fluxintelligent.com/",
+  "header_code": "301",
+  "status": "active"
+ },
+ {
+  "id": "12",
+  "sources": [
+   {
+    "ignore": "",
+    "pattern": "agence-ia-casablanca-automatisation-fiable",
+    "comparison": "exact"
+   }
+  ],
+  "url_to": "https://fluxintelligent.com/ia/automatisation-ia-casablanca/",
+  "header_code": "301",
+  "status": "active"
+ },
+ {
+  "id": "11",
+  "sources": [
+   {
+    "ignore": "",
+    "pattern": "🔹-product-title-usa-high-conversion/",
+    "comparison": "exact"
+   }
+  ],
+  "url_to": "https://www.paypal.com/ncp/payment/LV7CNT4R9LT4E",
+  "header_code": "301",
+  "status": "active"
+ },
+ {
+  "id": "10",
+  "sources": [
+   {
+    "ignore": "",
+    "pattern": "pack-automatisation-ia-starter-89-e/",
+    "comparison": "exact"
+   }
+  ],
+  "url_to": "https://www.paypal.com/ncp/payment/GEHJEQEJ8GMWW",
+  "header_code": "301",
+  "status": "active"
+ },
+ {
+  "id": "9",
+  "sources": [
+   {
+    "ignore": "",
+    "pattern": "formation-complete-ia-automatisation-pack-expert-5999-e/",
+    "comparison": "exact"
+   }
+  ],
+  "url_to": "https://www.paypal.com/ncp/payment/A5A6SMFKE5NDU",
+  "header_code": "301",
+  "status": "active"
+ },
+ {
+  "id": "8",
+  "sources": [
+   {
+    "ignore": "",
+    "pattern": "masterclass-ia-automatisation-pack-pro-4999-e/",
+    "comparison": "exact"
+   }
+  ],
+  "url_to": "https://www.paypal.com/ncp/payment/C8XR6W27YF9B2",
+  "header_code": "301",
+  "status": "active"
+ },
+ {
+  "id": "7",
+  "sources": [
+   {
+    "ignore": "",
+    "pattern": "crm-intelligent-pret-a-lemploi/",
+    "comparison": "exact"
+   }
+  ],
+  "url_to": "https://www.paypal.com/ncp/payment/PYK28M2CJSL5G",
+  "header_code": "301",
+  "status": "active"
+ },
+ {
+  "id": "6",
+  "sources": [
+   {
+    "ignore": "",
+    "pattern": "nom-du-produit/",
+    "comparison": "exact"
+   }
+  ],
+  "url_to": "https://whop.com/flux-intelligent/pro-360",
+  "header_code": "301",
+  "status": "active"
+ },
+ {
+  "id": "5",
+  "sources": [
+   {
+    "ignore": "",
+    "pattern": "automatisation-express-biz-ia-starter/",
+    "comparison": "exact"
+   }
+  ],
+  "url_to": "https://www.paypal.com/ncp/payment/G6KQZDM8J9DML",
+  "header_code": "301",
+  "status": "active"
+ },
+ {
+  "id": "4",
+  "sources": [
+   {
+    "ignore": "",
+    "pattern": "agent-ia-commercial-support-24-7/",
+    "comparison": "exact"
+   }
+  ],
+  "url_to": "https://whop.com/flux-intelligent/agent-ia-commercial-support",
+  "header_code": "301",
+  "status": "active"
+ },
+ {
+  "id": "3",
+  "sources": [
+   {
+    "ignore": "",
+    "pattern": "3-crm-intelligent-pret-a-lemploi-3999-e/",
+    "comparison": "exact"
+   }
+  ],
+  "url_to": "https://whop.com/flux-intelligent/crm-intelligent",
+  "header_code": "301",
+  "status": "active"
+ },
+ {
+  "id": "2",
+  "sources": [
+   {
+    "ignore": "",
+    "pattern": "pack-chatbot-ia-multilingue-4999-e/",
+    "comparison": "exact"
+   }
+  ],
+  "url_to": "https://whop.com/flux-intelligent/pack-chatbot-ia-multilingue/",
+  "header_code": "301",
+  "status": "active"
+ },
+ {
+  "id": "1",
+  "sources": [
+   {
+    "ignore": "",
+    "pattern": "5-automatisation-marketing-funnels-7999-e/",
+    "comparison": "exact"
+   }
+  ],
+  "url_to": "https://whop.com/flux-intelligent/automatisation-marketing/",
+  "header_code": "301",
+  "status": "active"
+ }
+]

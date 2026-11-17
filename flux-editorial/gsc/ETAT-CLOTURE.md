@@ -74,3 +74,55 @@
 - **Rollback :** `DELETE /zones/4b1d9d0347f9ee31f57447ccea74c9a2/rulesets/d753763b19b54d0c9d43156ea2e7c92a/rules/87a66295df1c4106845b0b0506c1cda0`. Configuration initiale : `backup/cloudflare/cache-ruleset-d753-avant.json`.
 - **Ce sont des preuves techniques**, pas une validation Google. Les deux alertes Search Console restent à vérifier sur les exports réels.
 - **Sécurité :** révoquer les deux jetons API Cloudflare et supprimer l'entrée `api.cloudflare.com` des Network secrets de l'environnement Default.
+
+## H. Search Console : prise en charge (17/11, 11:20 UTC)
+
+### Accès
+
+| Accès | Résultat |
+|---|---|
+| Composio (compte Google relié) | propriété `fluxintelligent.com` absente : 404 en préfixe d'URL comme en domaine |
+| **Site Kit**, sur le site | **connecté** à `https://fluxintelligent.com/` (permission `siteOwner`, propriétaire du module : l'admin WP n° 1). Seule donnée exposée : `searchanalytics`. Pas d'inspection d'URL, pas de sitemaps. |
+| Rank Math Analytics | non connecté à Google (`isConsoleConnected` vaut false) |
+| Navigateur authentifié | aucun disponible dans la session |
+| **Limite de l'API Google** | l'API Search Console ne fournit **ni** l'export des rapports « Pages / motif d'exclusion », **ni** le bouton « Valider la correction ». Seules l'inspection d'URL et la soumission de sitemaps sont possibles par API, avec un compte ayant accès à la propriété. |
+
+### Données Google réelles exploitées : URL avec impressions sur 90 jours (via Site Kit)
+
+- **91 URL** avec impressions entre le 17/08 et le 15/11 (`resultats/gsc-searchanalytics-pages-90j.json`).
+- **27** ne font pas partie des URL canoniques en 200 du sitemap. Elles ont été analysées avec `analyse_exports_gsc.py` (`resultats/analyse-gsc-searchanalytics-hors-sitemap.md`).
+
+| Verdict | Nb | URL |
+|---|---|---|
+| Corrigée : 301 vers une page 200, hors sitemap | 20 | anciennes URL et variantes `/ia/` ou racine, dont 3288, 3092 et la redirection factures |
+| Légitime : 404, page supprimée | 2 | `/agent-ia-maroc-pme/`, `/automatisation-ia-cliniques/` (aucun équivalent certain : pas de redirection forcée) |
+| Légitime : noindex hors sitemap | 1 | `/domain-name-maroc/` |
+| Légitime : 301 externe volontaire (PayPal) | 1 | `/crm-intelligent-pret-a-lemploi/` |
+| Légitime : pagination auto-canonique | 2 | `/ia/blog/page/2/`, `/category/agents-ia-blog/page/2/`. Candidats plausibles au motif « Google a choisi une autre canonique », à confirmer par inspection. |
+| **Anomalie corrigée** | 1 | `/🏨-comment-lia-transforme-les-hotels-et-le-tourisme-en-2026/` (voir ci-dessous) |
+
+**Ces URL ne sont pas les listes des deux alertes.** Ces listes ne sont disponibles que dans l'interface Search Console.
+
+### Correction complémentaire
+
+- **Problème :** l'ancien slug à emoji de 3288 (5 impressions) passait par la redirection automatique d'ancien slug de WordPress vers `/?p=3288`, qui renvoie 404 depuis que 3288 est en brouillon.
+- **Correction :** ajout de la **règle Rank Math 22**, en correspondance exacte, 301 vers `/automatisation-ia-hotel-fiabilite-technique-experience-client/` (3828).
+  - Sauvegarde : `backup/rankmath-redirections-avant-17-11.json`.
+  - Rollback : supprimer la règle 22.
+- **Vérification à l'origine :** 301 Rank Math vers 3828, vérifiée avec un paramètre anti-cache.
+- **Public :** l'ancienne redirection reste en cache Cloudflare (`HIT`). La purge par URL ne correspond pas à la clé de cache de cette URL encodée. Expiration naturelle au plus tard 2 h après la mise en cache (TTL de la règle « Cache HTML anonyme »). Recontrôle programmé le 17/11 vers 13:32 UTC.
+- **Tests après cette correction :** 70 sur 70 et 11 sur 11.
+
+### Demandes de validation Google
+
+- **Aucune envoyée.** Pas d'accès API à la propriété, et le bouton « Valider la correction » n'existe que dans l'interface.
+
+### Sécurité des accès temporaires
+
+| Accès | État | Action |
+|---|---|---|
+| Sessions WordPress temporaires (autologin Hostinger) | fichiers de session supprimés après chaque intervention | aucune |
+| Mots de passe d'application WordPress | 3 existants, créés en mai et juin 2026, **aucun créé le 16/11**. Celui saisi le 16/11 n'a jamais fonctionné (en-tête supprimé par le serveur). | non révoqués : ce sont des accès permanents possibles. Supprimer l'entrée `fluxintelligent.com` des Network secrets de l'environnement Default. |
+| Jeton Cloudflare actuel (id `5a893482c1951519968c61b0a104972b`, sans expiration) | sans permission « API Tokens » : je ne peux pas le révoquer | à révoquer dans Cloudflare, Profil > Jetons API, après le recontrôle de 13:32 UTC |
+| Premier jeton Cloudflare (droits larges) | remplacé dans l'environnement, toujours actif côté Cloudflare | à révoquer dans Cloudflare |
+| Secrets de l'environnement Default | `fluxintelligent.com` et `api.cloudflare.com` | à supprimer : aucun outil ne me permet de le faire |

@@ -21,6 +21,7 @@ def lire(path):
         txt = z.read(n[0]).decode("utf-8-sig")
     else: txt = open(path, encoding="utf-8-sig").read()
     rows = list(csv.DictReader(io.StringIO(txt)))
+    if not rows: return []
     ucol = next(k for k in rows[0] if re.search(r"url", k, re.I))
     dcol = next((k for k in rows[0] if re.search(r"explor|crawl", k, re.I)), None)
     return [(r[ucol].strip(), (r.get(dcol) or "").strip() if dcol else "") for r in rows if r[ucol].strip()]
