@@ -145,3 +145,53 @@
 - **Propriétaire actuel de la propriété** `https://fluxintelligent.com/` : le compte Google relié à Site Kit sur le site, différent du compte Composio.
 - **Autorisation manquante :** ajouter `salesandshop22@gmail.com` comme utilisateur **Complet** (ou Propriétaire) de la propriété `https://fluxintelligent.com/`.
 - **Limite de l'API, même avec cet accès :** aucun point d'accès pour exporter les listes du rapport « Pages » (motifs d'exclusion), ni pour « Valider la correction ». L'inspection d'URL, les statistiques et les sitemaps sont possibles.
+
+## K. Search Console via Composio : accès obtenu et inspections (17/11, 11:40–11:50 UTC)
+
+- **Accès :** nouveau compte Composio `google_search_console_camera-harper` (alias `fluxintelligent-owner`), permission **`siteOwner`** sur `https://fluxintelligent.com/`.
+- **Inspection d'URL (API) : 126 URL**, soit les 98 du sitemap public et 28 URL hors sitemap connues de Google (27 issues des impressions sur 90 jours, plus 4473). Aucune erreur API.
+
+### Motif « Page en double : Google n'a pas choisi la même URL canonique que l'utilisateur » : 2 URL confirmées par Google
+
+| URL | Dernière exploration Google | Canonique déclarée à ce moment | Canonique choisie par Google | État actuel du site | Statut |
+|---|---|---|---|---|---|
+| `/ia-hotels-tourisme-maroc-2026/` (3288) | 2026-10-23 | elle-même | `/automatisation-ia-hotel-fiabilite-technique-experience-client/` (3828) | 301 Rank Math en 1 saut vers 3828, puis 200 ; retirée du sitemap | **corrigée, en attente de nouvelle exploration** |
+| `/🏨-comment-lia-transforme-les-hotels-et-le-tourisme-en-2026/` (ancien slug de 3288) | 2026-08-23 | elle-même | 3828 | origine : 301 Rank Math (règle 22) vers 3828. **Public : encore servie depuis le cache Cloudflare** (ancienne cible `/?p=3288`, donc 404), expiration vers 13:23 UTC | corrigée à l'origine, **vérification publique en attente** (recontrôle à 13:32 UTC) |
+
+- **Sur les 98 URL du sitemap : 0 conflit de canonique.**
+
+### Motif « Bloquée par le fichier robots.txt »
+
+- **0 URL bloquée** parmi les 126 inspectées. Toutes sont `ALLOWED` ou inconnues de Google.
+- **Limite de l'API :** elle ne liste pas les URL d'un motif du rapport « Pages ». Les URL concernées ne sont donc pas connues avec certitude. Le seul blocage du robots.txt pour Googlebot porte sur `/wp-admin/` (sauf `admin-ajax.php`), volontaire.
+- **Aucune correction à faire et aucune validation à demander** tant que la liste du rapport ne montre pas d'URL publique.
+
+### Autres états relevés (hors périmètre des deux alertes, aucune anomalie technique)
+
+| État | Nb | Détail |
+|---|---|---|
+| Envoyée et indexée | 84 sur 98 | |
+| Détectée, actuellement non indexée | 9 | surtout des contenus récents (programmés en novembre) |
+| Explorée, actuellement non indexée | 3 | `/automatisation-ia-agence-transport/`, `/ia-salon-coiffure-automatisation/`, `/workflow-ia-coach-musculation-maroc-2025/` |
+| Inconnue de Google | 2 | `/rapprochement-encaissements-cod/` (publiée le 17/11), `/agent-ia-institut-beaute-maroc/` |
+
+- **Hors sitemap, toujours indexées chez Google** mais redirigées aujourd'hui en 301, en attente de nouvelle exploration :
+  - `/chatbots-` ;
+  - `/qualification-scoring-leads-ia/` ;
+  - `/💼-lavenir-des-jobs-au-maroc-…/`.
+- **Exclusions légitimes confirmées par Google :**
+  - 404 : `/agent-ia-maroc-pme/`, `/automatisation-ia-cliniques/` ;
+  - noindex : `/domain-name-maroc/` ;
+  - redirection externe : `/crm-intelligent-pret-a-lemploi/` ;
+  - 4473 inconnue de Google et hors sitemap.
+
+### Sitemap
+
+- **Avant :** `sitemap_index.xml` téléchargé par Google le 2026-11-14 (avant nettoyage), 98 URL web soumises, 0 erreur, 1 avertissement.
+- **Action :** **nouvelle soumission le 17/11, acceptée par l'API.**
+
+### Validations Google
+
+- « Valider la correction » n'existe que dans l'interface : l'API ne l'expose pas.
+- **Motif « Page en double » :** à lancer dans Search Console **après** le recontrôle public de l'URL à emoji (13:32 UTC). Les 2 URL confirmées seront alors corrigées. Une demande de validation n'est pas une indexation confirmée.
+- **Motif « Bloquée par robots.txt » :** ne pas valider si le rapport ne contient que des URL `/wp-admin/` (exclusion volontaire).
