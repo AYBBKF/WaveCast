@@ -126,3 +126,12 @@
 | Jeton Cloudflare actuel (id `5a893482c1951519968c61b0a104972b`, sans expiration) | sans permission « API Tokens » : je ne peux pas le révoquer | à révoquer dans Cloudflare, Profil > Jetons API, après le recontrôle de 13:32 UTC |
 | Premier jeton Cloudflare (droits larges) | remplacé dans l'environnement, toujours actif côté Cloudflare | à révoquer dans Cloudflare |
 | Secrets de l'environnement Default | `fluxintelligent.com` et `api.cloudflare.com` | à supprimer : aucun outil ne me permet de le faire |
+
+## I. Point du 17/11, 11:30 UTC
+
+- **Navigateur authentifié :** aucun disponible.
+  - Pas d'outil navigateur dans la session.
+  - Les dossiers de l'ordinateur « AYOUBBKF » ne sont pas proposés aux sessions cloud.
+- **Données des alertes :** les impressions Site Kit ne sont **pas** utilisées comme substitut. Exports CSV attendus dans `gsc-exports/`.
+- **URL à emoji :** toujours servie depuis le cache Cloudflare (`HIT`, `Age` 479 s, ancienne cible `/?p=3288`, donc 404). L'origine est correcte : 301 Rank Math vers 3828. Expiration prévue vers 13:23 UTC, recontrôle programmé à 13:32 UTC. **Non encore conforme publiquement.**
+- **Jetons Cloudflare :** révocation impossible avec les droits du jeton actuel (pas de permission « API Tokens »). Révocation à faire par l'utilisateur.
