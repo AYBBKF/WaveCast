@@ -1,0 +1,27 @@
+{
+ "postID": 4489,
+ "rankmath": {
+  "schemas": {
+   "new-9999": {
+    "@type": "Article",
+    "metadata": {
+     "title": "Article",
+     "type": "template",
+     "shortcode": "s-6afc445d0d551",
+     "isPrimary": true,
+     "name": "%seo_title%",
+     "description": "%seo_description%"
+    },
+    "headline": "%seo_title%",
+    "description": "%seo_description%",
+    "keywords": "%keywords%",
+    "author": {
+     "@type": "Person",
+     "name": "%name%"
+    }
+   }
+  }
+ },
+ "title_public_avant": "IA immobilier Maroc : agent IA pour agences et promoteurs",
+ "h1_avant": "IA immobilier au Maroc : agent IA et automatisation pour agences et promoteurs"
+}

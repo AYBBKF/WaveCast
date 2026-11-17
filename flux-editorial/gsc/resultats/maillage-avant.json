@@ -1,0 +1,148 @@
+{
+ "https://fluxintelligent.com/agence-ia-immobilier-maroc/": {
+  "profondeur": null,
+  "liens_entrants_total": 0,
+  "liens_entrants_contenu": 0,
+  "depuis_contenu": [],
+  "accueil": false
+ },
+ "https://fluxintelligent.com/agent-ia-cabinet-dentaire-maroc/": {
+  "profondeur": 3,
+  "liens_entrants_total": 7,
+  "liens_entrants_contenu": 7,
+  "depuis_contenu": [
+   "https://fluxintelligent.com/agent-ia-clinique-veterinaire-maroc/",
+   "https://fluxintelligent.com/agent-ia-docteur-maroc/",
+   "https://fluxintelligent.com/agent-ia-institut-beaute-maroc/",
+   "https://fluxintelligent.com/agent-ia-kinesitherapie-maroc/",
+   "https://fluxintelligent.com/agent-ia-opticien-maroc/",
+   "https://fluxintelligent.com/agent-ia-pharmacie-maroc/",
+   "https://fluxintelligent.com/category/agents-ia-blog/"
+  ],
+  "accueil": false
+ },
+ "https://fluxintelligent.com/agent-ia-pharmacie-maroc/": {
+  "profondeur": 2,
+  "liens_entrants_total": 7,
+  "liens_entrants_contenu": 7,
+  "depuis_contenu": [
+   "https://fluxintelligent.com/agent-ia-cabinet-dentaire-maroc/",
+   "https://fluxintelligent.com/agent-ia-clinique-veterinaire-maroc/",
+   "https://fluxintelligent.com/agent-ia-docteur-maroc/",
+   "https://fluxintelligent.com/agent-ia-garage-automobile-maroc/",
+   "https://fluxintelligent.com/agent-ia-opticien-maroc/",
+   "https://fluxintelligent.com/category/agents-ia-blog/",
+   "https://fluxintelligent.com/ia/automatisation-ia-casablanca/"
+  ],
+  "accueil": false
+ },
+ "https://fluxintelligent.com/agent-ia-clinique-veterinaire-maroc/": {
+  "profondeur": 3,
+  "liens_entrants_total": 14,
+  "liens_entrants_contenu": 2,
+  "depuis_contenu": [
+   "https://fluxintelligent.com/agent-ia-kinesitherapie-maroc/",
+   "https://fluxintelligent.com/category/agents-ia-blog/"
+  ],
+  "accueil": false
+ },
+ "https://fluxintelligent.com/agent-ia-institut-beaute-maroc/": {
+  "profondeur": 3,
+  "liens_entrants_total": 15,
+  "liens_entrants_contenu": 2,
+  "depuis_contenu": [
+   "https://fluxintelligent.com/category/agents-ia-blog/",
+   "https://fluxintelligent.com/technology-ai-structurer-une-demarche-fiable/"
+  ],
+  "accueil": false
+ },
+ "https://fluxintelligent.com/confirmation-commande-cod-whatsapp-maroc/": {
+  "profondeur": 2,
+  "liens_entrants_total": 11,
+  "liens_entrants_contenu": 1,
+  "depuis_contenu": [
+   "https://fluxintelligent.com/category/chatbots-experience-client-blog/"
+  ],
+  "accueil": false
+ },
+ "https://fluxintelligent.com/food-cost-restaurant-prix-achat/": {
+  "profondeur": 2,
+  "liens_entrants_total": 1,
+  "liens_entrants_contenu": 1,
+  "depuis_contenu": [
+   "https://fluxintelligent.com/ia/blog/"
+  ],
+  "accueil": false
+ },
+ "https://fluxintelligent.com/automatisation-centre-de-formation-maroc/": {
+  "profondeur": null,
+  "liens_entrants_total": 0,
+  "liens_entrants_contenu": 0,
+  "depuis_contenu": [],
+  "accueil": false
+ },
+ "https://fluxintelligent.com/suivi-relance-devis-sans-double-saisie/": {
+  "profondeur": 3,
+  "liens_entrants_total": 8,
+  "liens_entrants_contenu": 3,
+  "depuis_contenu": [
+   "https://fluxintelligent.com/automatisation-des-processus/recouvrement-factures-clients/",
+   "https://fluxintelligent.com/category/crm-ventes-marketing-blog/",
+   "https://fluxintelligent.com/logiciel-devis-btp-maroc/"
+  ],
+  "accueil": false
+ },
+ "https://fluxintelligent.com/comparer-devis-automatisation-ia-maroc/": {
+  "profondeur": 3,
+  "liens_entrants_total": 5,
+  "liens_entrants_contenu": 5,
+  "depuis_contenu": [
+   "https://fluxintelligent.com/agent-ia-whatsapp-business-pme-maroc/",
+   "https://fluxintelligent.com/automatisation-factures-ia-maroc/",
+   "https://fluxintelligent.com/automatisation-ia-pme-maroc/",
+   "https://fluxintelligent.com/logiciel-devis-btp-maroc/",
+   "https://fluxintelligent.com/veille-appels-offres-maroc/"
+  ],
+  "accueil": false
+ },
+ "https://fluxintelligent.com/rapprochement-encaissements-cod/": {
+  "profondeur": 1,
+  "liens_entrants_total": 23,
+  "liens_entrants_contenu": 2,
+  "depuis_contenu": [
+   "https://fluxintelligent.com/",
+   "https://fluxintelligent.com/ia/blog/"
+  ],
+  "accueil": true
+ },
+ "https://fluxintelligent.com/automatisation-ia-agence-transport/": {
+  "profondeur": 2,
+  "liens_entrants_total": 2,
+  "liens_entrants_contenu": 2,
+  "depuis_contenu": [
+   "https://fluxintelligent.com/automatisation-des-processus/",
+   "https://fluxintelligent.com/automatisation-ia-pme-maroc/"
+  ],
+  "accueil": false
+ },
+ "https://fluxintelligent.com/workflow-ia-coach-musculation-maroc-2025/": {
+  "profondeur": 2,
+  "liens_entrants_total": 2,
+  "liens_entrants_contenu": 2,
+  "depuis_contenu": [
+   "https://fluxintelligent.com/agents-ia/agent-ia-support-client/",
+   "https://fluxintelligent.com/category/chatbots-experience-client-blog/"
+  ],
+  "accueil": false
+ },
+ "https://fluxintelligent.com/ia-salon-coiffure-automatisation/": {
+  "profondeur": 2,
+  "liens_entrants_total": 2,
+  "liens_entrants_contenu": 2,
+  "depuis_contenu": [
+   "https://fluxintelligent.com/agents-ia/agent-ia-support-client/",
+   "https://fluxintelligent.com/category/chatbots-experience-client-blog/"
+  ],
+  "accueil": false
+ }
+}

@@ -289,3 +289,16 @@ Toutes sont en 200, indexables, auto-canoniques et présentes dans le sitemap (7
 
 - Liste séparée : `PAGES-NON-INDEXEES.md` (14 pages, priorités P1 à P3).
 - Aucune modification ni publication.
+
+## N. Mission indexation des 14 pages (17/11, après-midi)
+
+Voir `PAGES-NON-INDEXEES.md`.
+
+- **Constat :** 14 pages analysées, 0 indexée, toutes conformes techniquement. Cause dominante : maillage interne (2 pages orphelines, dont la P1).
+- **Corrections :**
+  - 9 paragraphes de liens contextuels ajoutés dans des pages indexées ;
+  - title de P1 différencié de l'article informatif (cannibalisation) ;
+  - caches Hostinger et Cloudflare purgés, URL par URL.
+- **Pages concernées :** 11 sur 14 ont reçu des liens. Les 3 pages P3 sont sans modification : propositions en attente d'accord.
+- **Tests :** 70 sur 70 après modifications. Public : 9 sur 9 liens présents, title P1 en ligne.
+- **Demandes d'indexation :** l'API Search Console ne permet pas de les envoyer. Demande manuelle recommandée pour la P1 (et éventuellement le transport).

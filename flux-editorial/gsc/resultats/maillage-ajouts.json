@@ -1,0 +1,101 @@
+[
+ {
+  "id": 3815,
+  "type": "posts",
+  "lien": "https://fluxintelligent.com/ia-pour-immobilier-au-maroc-automatiser-la-gestion-des-leads-et-des-visites-en-2026/",
+  "cibles": [
+   "/agence-ia-immobilier-maroc/"
+  ],
+  "ajout_seul": true,
+  "sauvegarde": "backup/maillage/posts-3815-20261117T120907Z.json"
+ },
+ {
+  "id": 3773,
+  "type": "pages",
+  "lien": "https://fluxintelligent.com/agents-ia/",
+  "cibles": [
+   "/agence-ia-immobilier-maroc/",
+   "/agent-ia-cabinet-dentaire-maroc/",
+   "/agent-ia-pharmacie-maroc/",
+   "/agent-ia-clinique-veterinaire-maroc/",
+   "/agent-ia-institut-beaute-maroc/"
+  ],
+  "ajout_seul": false,
+  "sauvegarde": "backup/maillage/pages-3773-20261117T120911Z.json"
+ },
+ {
+  "id": 4003,
+  "type": "pages",
+  "lien": "https://fluxintelligent.com/chatbots-experience-client/prise-de-rendez-vous-ia/",
+  "cibles": [
+   "/agent-ia-cabinet-dentaire-maroc/",
+   "/agent-ia-clinique-veterinaire-maroc/",
+   "/agent-ia-institut-beaute-maroc/"
+  ],
+  "ajout_seul": true,
+  "sauvegarde": "backup/maillage/pages-4003-20261117T120934Z.json"
+ },
+ {
+  "id": 3419,
+  "type": "pages",
+  "lien": "https://fluxintelligent.com/chatbots-experience-client/chatbot-whatsapp-maroc/",
+  "cibles": [
+   "/confirmation-commande-cod-whatsapp-maroc/",
+   "/agent-ia-pharmacie-maroc/"
+  ],
+  "ajout_seul": true,
+  "sauvegarde": "backup/maillage/pages-3419-20261117T120939Z.json"
+ },
+ {
+  "id": 3208,
+  "type": "posts",
+  "lien": "https://fluxintelligent.com/automatisation-ia-cafes-maroc-2025/",
+  "cibles": [
+   "/food-cost-restaurant-prix-achat/"
+  ],
+  "ajout_seul": true,
+  "sauvegarde": "backup/maillage/posts-3208-20261117T120942Z.json"
+ },
+ {
+  "id": 3293,
+  "type": "posts",
+  "lien": "https://fluxintelligent.com/ecommerce-automatise-ia/",
+  "cibles": [
+   "/confirmation-commande-cod-whatsapp-maroc/",
+   "/rapprochement-encaissements-cod/"
+  ],
+  "ajout_seul": true,
+  "sauvegarde": "backup/maillage/posts-3293-20261117T120946Z.json"
+ },
+ {
+  "id": 4007,
+  "type": "pages",
+  "lien": "https://fluxintelligent.com/crm-ventes-marketing-ia/relances-commerciales-automatisees/",
+  "cibles": [
+   "/suivi-relance-devis-sans-double-saisie/"
+  ],
+  "ajout_seul": true,
+  "sauvegarde": "backup/maillage/pages-4007-20261117T120948Z.json"
+ },
+ {
+  "id": 4509,
+  "type": "posts",
+  "lien": "https://fluxintelligent.com/gestion-ecole-privee-frais-scolarite/",
+  "cibles": [
+   "/automatisation-centre-de-formation-maroc/"
+  ],
+  "ajout_seul": true,
+  "sauvegarde": "backup/maillage/posts-4509-20261117T120953Z.json"
+ },
+ {
+  "id": 4000,
+  "type": "pages",
+  "lien": "https://fluxintelligent.com/automatisation-des-processus/automatisation-administrative/",
+  "cibles": [
+   "/automatisation-centre-de-formation-maroc/",
+   "/comparer-devis-automatisation-ia-maroc/"
+  ],
+  "ajout_seul": true,
+  "sauvegarde": "backup/maillage/pages-4000-20261117T120957Z.json"
+ }
+]
