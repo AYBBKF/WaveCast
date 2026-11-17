@@ -195,3 +195,54 @@
 - « Valider la correction » n'existe que dans l'interface : l'API ne l'expose pas.
 - **Motif « Page en double » :** à lancer dans Search Console **après** le recontrôle public de l'URL à emoji (13:32 UTC). Les 2 URL confirmées seront alors corrigées. Une demande de validation n'est pas une indexation confirmée.
 - **Motif « Bloquée par robots.txt » :** ne pas valider si le rapport ne contient que des URL `/wp-admin/` (exclusion volontaire).
+
+## L. Clôture : vérifications du 17/11 (11:52–12:00 UTC)
+
+### 1-2. Anciennes URL de 3288 (public et Google)
+
+| URL | Réponse publique (navigateur et Googlebot) | Google : couverture / canonique choisie / dernière exploration |
+|---|---|---|
+| `/ia-hotels-tourisme-maroc-2026/` | **301 Rank Math vers 3828, 1 saut, 200** | Page en double / 3828 / 2026-10-23 |
+| `/🏨-comment-lia-transforme-…-2026/` | **NON CONFORME** : cache Cloudflare `HIT` (`Age` 1 832 s), ancienne cible `/?p=3288`, donc 404. L'origine est conforme (règle 22 vers 3828). | Page en double / 3828 / 2026-08-23 |
+
+- **Canonique choisie par Google pour les deux URL :** 3828. Google ne les a pas réexplorées depuis les corrections.
+- **Liste non exhaustive :** ces 2 URL sont les cas « Page en double » **confirmés par inspection** parmi les 126 URL inspectées. L'API ne fournit pas le rapport complet de ce motif.
+
+### 4. Pages non indexées : 14, classées par priorité
+
+Toutes sont en 200, indexables, auto-canoniques et présentes dans le sitemap (70 tests). **Aucune n'est une exclusion légitime. Aucune n'a été forcée.**
+
+| Priorité | Page | Publiée | Mots | État Google | Lecture |
+|---|---|---|---|---|---|
+| P1 | `/agence-ia-immobilier-maroc/` (page commerciale) | 04/11 | 1 607 | Détectée, non explorée | file d'exploration normale. Demande d'indexation possible uniquement dans l'interface. |
+| P2 | `/confirmation-commande-cod-whatsapp-maroc/`, `/food-cost-restaurant-prix-achat/`, `/automatisation-centre-de-formation-maroc/`, `/suivi-relance-devis-sans-double-saisie/`, `/comparer-devis-automatisation-ia-maroc/` | 02–08/11 | 1 515 à 2 572 | Détectées | contenus de moins de 3 semaines : délai normal |
+| P2 | `/rapprochement-encaissements-cod/` | 17/11 | – | Inconnue | publiée aujourd'hui |
+| P2 | `/agent-ia-cabinet-dentaire-maroc/`, `/agent-ia-pharmacie-maroc/`, `/agent-ia-clinique-veterinaire-maroc/` | 12–14/08 | 1 906 à 2 179 | Détectées, jamais explorées en 3 mois | signal de priorité d'exploration faible, probablement le maillage interne : à renforcer éditorialement |
+| P2 | `/agent-ia-institut-beaute-maroc/` | 18/08 | 2 094 | Inconnue | même diagnostic |
+| P3 | `/automatisation-ia-agence-transport/` | 2025 | 2 369 | Explorée, non indexée (04/08) | enrichie le 03/11 : à réévaluer après nouvelle exploration |
+| P3 | `/workflow-ia-coach-musculation-maroc-2025/` | 2025 | 903 | Explorée, non indexée (06/09) | qualité ou intérêt jugés insuffisants par Google |
+| P3 | `/ia-salon-coiffure-automatisation/` | 04/2026 | 418 | Explorée, non indexée (16/06) | contenu mince. L'enrichissement est rédigé mais non appliqué (règle Surfer 80–90, quota épuisé). |
+
+### 5. Sitemap
+
+- `sitemap_index.xml` soumis le 2026-11-17 à 11:45:23 UTC et **téléchargé par Google à 11:45:24 UTC**.
+- 0 erreur, 0 avertissement (1 avant), 98 URL web.
+
+### 6. robots.txt
+
+- **0 URL publique bloquée** parmi les 126 inspectées.
+- Le seul blocage pour Googlebot est `/wp-admin/` (sauf `admin-ajax.php`) : **exclusion intentionnelle, conservée**.
+- La liste exacte du motif n'est pas fournie par l'API.
+
+### 7. Validations manuelles
+
+- **« Page en double… » :** à lancer **une seule fois, après** confirmation publique de l'URL à emoji (cache Cloudflare attendu à expiration vers 13:23 UTC, recontrôle programmé à 13:32 UTC).
+- **« Bloquée par robots.txt » :** **ne pas valider** si le rapport ne contient que des URL `/wp-admin/`.
+- **Pages « Détectée / Explorée, non indexée » :** pas de validation. Option : « Demander une indexation » pour la seule page P1, dans l'interface.
+
+### Restent ouverts
+
+1. URL à emoji : vérification publique après expiration du cache.
+2. Validation « Page en double », dans l'interface, après le point 1.
+3. Nouvelle exploration par Google des 2 URL corrigées et des 14 pages non indexées.
+4. Révocation des 2 jetons Cloudflare et suppression des secrets de l'environnement Default (action utilisateur).
