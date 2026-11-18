@@ -1,0 +1,43 @@
+[
+ {
+  "id": 4517,
+  "type": "posts",
+  "lien": "https://fluxintelligent.com/reservation-directe-whatsapp-riad/",
+  "cibles": [
+   "/ia/automatisation-ia-marrakech/",
+   "/automatisation-ia-agadir/"
+  ],
+  "ajout_seul": true,
+  "sauvegarde": "backup/maillage/posts-4517-20261118T114835Z.json"
+ },
+ {
+  "id": 3169,
+  "type": "posts",
+  "lien": "https://fluxintelligent.com/ia-transformation-fabrication-mecanique/",
+  "cibles": [
+   "/automatisation-ia-tanger/"
+  ],
+  "ajout_seul": true,
+  "sauvegarde": "backup/maillage/posts-3169-20261118T114838Z.json"
+ },
+ {
+  "id": 3200,
+  "type": "posts",
+  "lien": "https://fluxintelligent.com/ia-entreprises-casablanca/",
+  "cibles": [
+   "/ia/automatisation-ia-casablanca/"
+  ],
+  "ajout_seul": true,
+  "sauvegarde": "backup/maillage/posts-3200-20261118T114841Z.json"
+ },
+ {
+  "id": 3507,
+  "type": "posts",
+  "lien": "https://fluxintelligent.com/automatisation-ia-pme-maroc/",
+  "cibles": [
+   "/agents-ia/"
+  ],
+  "ajout_seul": true,
+  "sauvegarde": "backup/maillage/posts-3507-20261118T114842Z.json"
+ }
+]

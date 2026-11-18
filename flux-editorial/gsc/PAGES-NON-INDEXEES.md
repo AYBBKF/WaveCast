@@ -165,3 +165,9 @@ Voir `AUDIT-GSC-360-2026-11-17.md`.
   - présent dans `post-sitemap.xml`.
 - **GSC :** « Google ne reconnaît pas cette URL » (publié depuis environ 1 h 30, attente normale).
 - **Brouillon coach B2B :** lien vers 4505 ajouté (brouillon local uniquement, aucune publication).
+
+### 18/11 : inspection API (mission SEO organique)
+
+- **Indexées :** `/agence-ia-immobilier-maroc/` (P1) et `/rapprochement-encaissements-cod/`, explorées le 17/11.
+- **Inchangées :** les 10 autres pages. Aucune anomalie technique.
+- **Action :** sitemap renvoyé. Détail dans `SEO-ORGANIC-GROWTH-PLAN.md`, section 7.
