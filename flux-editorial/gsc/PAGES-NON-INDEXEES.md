@@ -155,3 +155,13 @@ Aucune autre demande, pas de nouvelle soumission du sitemap.
 **Demande manuelle restante :** `/automatisation-ia-agence-transport/` (la P1 est déjà indexée).
 
 Voir `AUDIT-GSC-360-2026-11-17.md`.
+
+### 18/11, 09:30 UTC : vérification de l'article 4505 `/fidelisation-salle-de-sport/`
+
+- **Publication vérifiée :**
+  - HTTP 200 ;
+  - canonique auto-référente ;
+  - `follow, index` ;
+  - présent dans `post-sitemap.xml`.
+- **GSC :** « Google ne reconnaît pas cette URL » (publié depuis environ 1 h 30, attente normale).
+- **Brouillon coach B2B :** lien vers 4505 ajouté (brouillon local uniquement, aucune publication).
