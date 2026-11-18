@@ -1,0 +1,142 @@
+{
+ "contact_succes": {
+  "ajax": [
+   "forminator_get_nonce",
+   "forminator_submit_form_custom-forms"
+  ],
+  "gtag": [
+   "generate_lead {\"lead_source\":\"formulaire_contact\",\"form_id\":\"forminator_3117\",\"method\":\"forminator\",\"page_path\":\"/ia/contact/\",\"send_to\":\"G-1JX1J3TWVZ\"}"
+  ],
+  "collect": [
+   "https://www.google-analytics.com/g/collect &tid=G-1JX1J3TWVZ en=generate_lead",
+   "https://www.google.com/g/collect &tid=G-1JX1J3TWVZ en=generate_lead"
+  ]
+ },
+ "contact_refus_serveur": {
+  "ajax": [
+   "forminator_get_nonce",
+   "forminator_submit_form_custom-forms"
+  ],
+  "gtag": [
+   "contact_submit_error {\"form_id\":\"forminator_3117\",\"page_path\":\"/ia/contact/\",\"send_to\":\"G-1JX1J3TWVZ\"}"
+  ],
+  "collect": [
+   "https://www.google-analytics.com/g/collect &tid=G-1JX1J3TWVZ en=contact_submit_error",
+   "https://www.google.com/g/collect &tid=G-1JX1J3TWVZ en=contact_submit_error"
+  ]
+ },
+ "contact_erreur_500": {
+  "ajax": [
+   "forminator_get_nonce",
+   "forminator_submit_form_custom-forms"
+  ],
+  "gtag": [
+   "contact_submit_error {\"form_id\":\"forminator_3117\",\"page_path\":\"/ia/contact/\",\"send_to\":\"G-1JX1J3TWVZ\"}"
+  ],
+  "collect": [
+   "https://www.google-analytics.com/g/collect &tid=G-1JX1J3TWVZ en=contact_submit_error",
+   "https://www.google.com/g/collect &tid=G-1JX1J3TWVZ en=contact_submit_error"
+  ]
+ },
+ "contact_invalide": {
+  "ajax": [
+   "forminator_get_nonce"
+  ],
+  "gtag": [],
+  "collect": []
+ },
+ "contact_rechargement": {
+  "ajax": [
+   "forminator_get_nonce",
+   "forminator_get_nonce"
+  ],
+  "gtag": []
+ },
+ "devis_succes_double_envoi": {
+  "ajax": [
+   "fdi_partiel",
+   "fdi_final",
+   "fdi_final"
+  ],
+  "gtag": [
+   "devis_open {\"form_id\":\"devis_ia\",\"page_path\":\"/ia/devis/\",\"send_to\":\"G-1JX1J3TWVZ\"}",
+   "devis_start {\"form_id\":\"devis_ia\",\"page_path\":\"/ia/devis/\",\"send_to\":\"G-1JX1J3TWVZ\"}",
+   "devis_contact_saved {\"form_id\":\"devis_ia\",\"page_path\":\"/ia/devis/\",\"send_to\":\"G-1JX1J3TWVZ\"}",
+   "generate_lead {\"lead_source\":\"devis_ia\",\"form_id\":\"devis_ia\",\"method\":\"devis_ia\",\"page_path\":\"/ia/devis/\",\"send_to\":\"G-1JX1J3TWVZ\"}"
+  ],
+  "collect": [
+   "https://www.google-analytics.com/g/collect &tid=G-1JX1J3TWVZ en=devis_open",
+   "https://www.google-analytics.com/g/collect &tid=G-1JX1J3TWVZ en=devis_start",
+   "https://www.google-analytics.com/g/collect &tid=G-1JX1J3TWVZ en=devis_contact_saved",
+   "https://www.google-analytics.com/g/collect &tid=G-1JX1J3TWVZ en=generate_lead",
+   "https://www.google.com/g/collect &tid=G-1JX1J3TWVZ en=devis_open",
+   "https://www.google.com/g/collect &tid=G-1JX1J3TWVZ en=devis_start",
+   "https://www.google.com/g/collect &tid=G-1JX1J3TWVZ en=devis_contact_saved",
+   "https://www.google.com/g/collect &tid=G-1JX1J3TWVZ en=generate_lead"
+  ]
+ },
+ "devis_echec_serveur": {
+  "ajax": [
+   "fdi_partiel",
+   "fdi_final",
+   "fdi_final"
+  ],
+  "gtag": [
+   "devis_open {\"form_id\":\"devis_ia\",\"page_path\":\"/ia/devis/\",\"send_to\":\"G-1JX1J3TWVZ\"}",
+   "devis_start {\"form_id\":\"devis_ia\",\"page_path\":\"/ia/devis/\",\"send_to\":\"G-1JX1J3TWVZ\"}",
+   "devis_contact_saved {\"form_id\":\"devis_ia\",\"page_path\":\"/ia/devis/\",\"send_to\":\"G-1JX1J3TWVZ\"}",
+   "devis_submit_error {\"form_id\":\"devis_ia\",\"error_type\":\"serveur\",\"page_path\":\"/ia/devis/\",\"send_to\":\"G-1JX1J3TWVZ\"}",
+   "devis_submit_error {\"form_id\":\"devis_ia\",\"error_type\":\"serveur\",\"page_path\":\"/ia/devis/\",\"send_to\":\"G-1JX1J3TWVZ\"}"
+  ],
+  "collect": [
+   "https://www.google-analytics.com/g/collect &tid=G-1JX1J3TWVZ en=devis_open",
+   "https://www.google-analytics.com/g/collect &tid=G-1JX1J3TWVZ en=devis_start",
+   "https://www.google-analytics.com/g/collect &tid=G-1JX1J3TWVZ en=devis_contact_saved",
+   "https://www.google-analytics.com/g/collect &tid=G-1JX1J3TWVZ en=devis_submit_error",
+   "https://www.google-analytics.com/g/collect &tid=G-1JX1J3TWVZ en=devis_submit_error",
+   "https://www.google.com/g/collect &tid=G-1JX1J3TWVZ en=devis_open",
+   "https://www.google.com/g/collect &tid=G-1JX1J3TWVZ en=devis_start",
+   "https://www.google.com/g/collect &tid=G-1JX1J3TWVZ en=devis_contact_saved",
+   "https://www.google.com/g/collect &tid=G-1JX1J3TWVZ en=devis_submit_error",
+   "https://www.google.com/g/collect &tid=G-1JX1J3TWVZ en=devis_submit_error"
+  ]
+ },
+ "devis_coupure_reseau": {
+  "ajax": [
+   "fdi_partiel",
+   "fdi_final",
+   "fdi_final"
+  ],
+  "gtag": [
+   "devis_open {\"form_id\":\"devis_ia\",\"page_path\":\"/ia/devis/\",\"send_to\":\"G-1JX1J3TWVZ\"}",
+   "devis_start {\"form_id\":\"devis_ia\",\"page_path\":\"/ia/devis/\",\"send_to\":\"G-1JX1J3TWVZ\"}",
+   "devis_contact_saved {\"form_id\":\"devis_ia\",\"page_path\":\"/ia/devis/\",\"send_to\":\"G-1JX1J3TWVZ\"}",
+   "devis_submit_error {\"form_id\":\"devis_ia\",\"error_type\":\"reseau\",\"page_path\":\"/ia/devis/\",\"send_to\":\"G-1JX1J3TWVZ\"}",
+   "devis_submit_error {\"form_id\":\"devis_ia\",\"error_type\":\"reseau\",\"page_path\":\"/ia/devis/\",\"send_to\":\"G-1JX1J3TWVZ\"}"
+  ],
+  "collect": [
+   "https://www.google-analytics.com/g/collect &tid=G-1JX1J3TWVZ en=devis_open",
+   "https://www.google-analytics.com/g/collect &tid=G-1JX1J3TWVZ en=devis_start",
+   "https://www.google-analytics.com/g/collect &tid=G-1JX1J3TWVZ en=devis_contact_saved",
+   "https://www.google-analytics.com/g/collect &tid=G-1JX1J3TWVZ en=devis_submit_error",
+   "https://www.google-analytics.com/g/collect &tid=G-1JX1J3TWVZ en=devis_submit_error",
+   "https://www.google.com/g/collect &tid=G-1JX1J3TWVZ en=devis_open",
+   "https://www.google.com/g/collect &tid=G-1JX1J3TWVZ en=devis_start",
+   "https://www.google.com/g/collect &tid=G-1JX1J3TWVZ en=devis_contact_saved",
+   "https://www.google.com/g/collect &tid=G-1JX1J3TWVZ en=devis_submit_error",
+   "https://www.google.com/g/collect &tid=G-1JX1J3TWVZ en=devis_submit_error"
+  ]
+ },
+ "clics_tel_whatsapp": {
+  "gtag": [
+   "click_phone {\"link_location\":\"contenu\",\"page_path\":\"/ia/contact/\",\"send_to\":\"G-1JX1J3TWVZ\"}",
+   "click_whatsapp {\"link_location\":\"contenu\",\"page_path\":\"/ia/contact/\",\"send_to\":\"G-1JX1J3TWVZ\"}"
+  ],
+  "collect": [
+   "https://www.google-analytics.com/g/collect &tid=G-1JX1J3TWVZ en=click_phone",
+   "https://www.google-analytics.com/g/collect &tid=G-1JX1J3TWVZ en=click_whatsapp",
+   "https://www.google.com/g/collect &tid=G-1JX1J3TWVZ en=click_phone",
+   "https://www.google.com/g/collect &tid=G-1JX1J3TWVZ en=click_whatsapp"
+  ]
+ }
+}
