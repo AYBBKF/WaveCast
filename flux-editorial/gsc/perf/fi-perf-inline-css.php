@@ -31,6 +31,13 @@ if ( ! defined( 'FI_INLINE_CSS_MODE' ) ) {
 const FI_INLINE_CSS_MAX_TOTAL = 120000;
 /** Taille maximale d'un fichier imprimé en ligne. */
 const FI_INLINE_CSS_MAX_FILE = 60000;
+/*
+ * Pages à formulaire Forminator (11 à 15 feuilles, ~190 Ko) : budget élargi,
+ * validé le 19/11 (LCP labo 2,3-2,8 s -> 1,2-1,4 s, CLS 0 grâce à fi-css-fixes.php,
+ * captures identiques, formulaires identiques). 101 = contact, 3773 = agents IA,
+ * 4081 = rejoignez-nous.
+ */
+const FI_INLINE_CSS_BIG_PAGES = array( 101, 3773, 4081 );
 
 function fi_inline_css_active() {
 	static $on = null;
@@ -120,7 +127,7 @@ add_filter(
 			return $tag;
 		}
 		$size = filesize( $path );
-		$big  = isset( $_GET['fi_inline'] ) && '2' === $_GET['fi_inline'] && 'test' === FI_INLINE_CSS_MODE; // phpcs:ignore WordPress.Security.NonceVerification
+		$big  = is_page( FI_INLINE_CSS_BIG_PAGES ) || ( isset( $_GET['fi_inline'] ) && '2' === $_GET['fi_inline'] ); // phpcs:ignore WordPress.Security.NonceVerification
 		$mf   = $big ? 80000 : FI_INLINE_CSS_MAX_FILE;
 		$mt   = $big ? 300000 : FI_INLINE_CSS_MAX_TOTAL;
 		if ( ! $size || $size > $mf || $total + $size > $mt ) {
